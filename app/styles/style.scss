@@ -1,0 +1,1256 @@
+$color:#FFFFFF;
+$color1:#33CCFF;
+$color2:#6ccff7;
+$color3:#3399CC;
+$color15:#06F;
+$color4:#cccccc;
+$color5:#999999;
+$color6:#666;
+$color7:#000000;
+$color8:#303836;
+$color9:#FFCC33;
+$color11:#fc773c;
+$color13:#EF3528;
+
+$fontStyle:'Signika', Verdana, Geneva, arial sans-serif;
+
+@mixin box-sizing($type:border-box) {
+  -webkit-box-sizing: $type; // Android < 2.3, iOS < 4
+     -moz-box-sizing: $type; // Firefox < 29
+          box-sizing: $type; // Chrome, IE 8+, Opera, Safari 5.1
+}
+
+
+@charset "utf-8";
+
+
+/*CSS RESET*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6,  blockquote, pre, a, abbr, acronym, address, big, cite, code,img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {  	margin: 0;  padding: 0;  border: 0;  outline: 0;  font-size: 100%;  vertical-align: baseline;  	background: transparent;  }  
+
+body { @include box-sizing($type:border-box);   line-height: 1;   padding:0;}  
+ol, ul {  list-style: none;   }  
+blockquote, q {  quotes: none;     }  
+blockquote:before, blockquote:after,  
+q:before, q:after {       content: '';  content: none;    }  
+table {   border-collapse: collapse;  border-spacing: 0; }  
+/*css reset end*/
+
+
+/*add to CSS.*/
+
+article, aside, details, figcaption,figure,footer,header,hgroup,nav,section,summary { display: block;}
+
+audio,canvas,video {  display: inline-block;}
+
+/*Global CSS*/
+a{ text-decoration:none; font-family:($fontStyle) ; font-size:1em;}
+p { font-family:($fontStyle) ; color:$color4; font-size:1em; width:100%; margin:0px; line-height:1.5em; padding:0; }
+h1{ color: $color7;  text-align:left; margin:2%;  width:50%; font-size:2.2em; height:40px; line-height:40px; font-family:($fontStyle) ; }
+h2{font-family:($fontStyle) ; color:$color; margin:0px; line-height:1.5em; font-size:100%; }
+
+h3{font-family:($fontStyle) ;}
+select{ font-family:($fontStyle) ; font-size:0.85em;  }
+
+img{width:100%; max-width:100%; height:auto;}
+
+.button{background-color:$color13;}
+.button, .link_btn , .button_contact {border:0; outline-style:none;}
+
+.copy{color:$color7; font-size:0.55em; width:100%; margin: 2% 0; letter-spacing:0.1em; line-height:1.5em;}
+
+.group:before, .group:after {  content: "";  display: table;}
+.group:after {  clear: both;}
+
+/*end of global css*/
+
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }  
+.clearfix { display: inline-block; clear: both;}  
+ 
+html[xmlns] .clearfix { display: block; }  
+* html .clearfix { height: 1%; }  
+
+[data-abide].error small.error{  padding:0.1rem; margin-bottom:0.5rem;text-indent:1%;}
+/*main wrapper*/
+
+#wrapper {
+  margin: auto; 
+  height: auto; 
+  width: 100%; 
+  font-family:($fontStyle) ;
+  min-height:900px;
+
+  #apDiv1 { 
+    position:absolute; 
+    width: 47.9485%; 
+    height:440px; 
+    z-index:1;
+    left: 50%; 
+    top: 10px; 
+    background-color:$color; 
+    list-style-type:none; 
+    display:none;
+
+    h1{ color:$color; width:100%; text-align:center; height:50px; line-height:50px;margin:0; background-color:$color1; font-size:2em; clear:both;}
+    li a{font-size:0.85em;}
+
+    p{
+      font-size:0.85em; 
+      height:40px; 
+      line-height:40px; 
+      width:41.0909%; 
+      margin:0; 
+      float:left; 
+      display:inline-block; 
+      font-weight:bold; 
+      float:left; 
+      padding-left:1%;
+      .dropcap{background-image: url("../images/span_bg.png"); background-repeat:no-repeat; margin:1% ; display:inline-block;width: 10%; height:60%; line-height:24px;color:$color;text-align: center;}
+    }
+   
+    p.formnum{ 
+
+      width:26.68181%; 
+      margin:0 0 0 0;
+      .dropcap{width:17%; text-align:center; color:$color; margin:0;} 
+    }
+   
+    .pickup_return{list-style:none; }
+
+    #booking_form {
+
+      li{ width:45%; height:45px; margin-top:5px; float:left; display: inline-block; list-style:none; padding-top:5px;  }
+      li label{ font-family:($fontStyle); font-size:0.90em; list-style:none; line-height:45px; color:$color5; padding-left:7%; height:45px; font-weight:bold;}
+      .pick_return, .start_end {width:55%; }
+      .pick_return p {width:100%;height:20px; line-height:20px; font-size: 0.75em; margin: 0; padding: 0; } 
+      .pick_return a {width:20%;height:20px; line-height:20px; font-size: 0.75em; margin: 0; padding: 0; }
+      .pick_return select{ width:90%;margin:1% 0 0 0; height:35px; font-size:0.85em;} 
+      li #date_quote{width:43%;}  
+      .start_end select{ width:60px; margin:1% 0 0 0; height:35px;line-height:1.5em; font-size: 0.8em; }
+      li .query_btn{text-align:center; line-height:34px; font-family:($fontStyle) ; color:$color; font-weight:bold; cursor: pointer; background-color:$color11; width:52.99568%; margin-left:5%; height:34px; background-image: url("../images/car_rental_btn_bg.gif"); background-repeat:no-repeat;border:0; display:block;} 
+      li .searchform_btn{width:53.5%; height: 34px;margin: 1% 0;background-image: url("../images/car_rental_btn_bg.gif");background-repeat: no-repeat;font-family:($fontStyle);color: $color; border:0; }
+    } 
+  }
+
+  #header {
+    background-color: $color8; 
+    height: 60px; 
+    width: 100%;
+    margin-bottom: 1%;
+
+    /*primary nav*/
+    nav.top-bar {
+
+      z-index:2;
+      height: 60px; 
+      margin:0; 
+      padding:0; 
+      display:block; 
+      text-decoration:none; 
+      list-style:none;
+
+      .name{ 
+
+        padding-left:1%; 
+        height: 60px; 
+        list-style:none;
+        h1 { width:100%; text-align:left; font-family:($fontStyle) ; color:$color; height:60px; line-height:60px; font-size:2.2em; margin:0; font-weight:bold; margin-left:1%;} 
+        h1 span{color:$color2; font-size:1em; margin:0 0 0 1%; width:50px; line-height:60px; height:60px;}
+      }
+      
+      .title-area{width:30%;}
+
+      #primary_nav{
+        height: 60px;
+        width: 60%;
+        float: right;
+        margin:0 0; 
+        padding:0px; 
+        ul{  height: 60px; width:100%;margin:0px;  text-align:center;    }
+        li{height: 60px;list-style:none;width:16%; float:left; background-color: $color8;display:inline-block; text-align:center; font-size:1em;   }
+        li:hover{ background-color:#333; }
+        a{ height:auto ;line-height:25px;  width:100%;  color:$color; font-size:0.9em;  height:60px;font-family:($fontStyle) ;}
+        a:hover{ color:$color; background-color:$color11; }
+        a:active{ background-color:$color9;} 
+      }
+    }
+  
+    /*end of primary nav*/
+  }
+
+  /*Form button*/
+  #index_form_btn{width: 47.42268%;height:100px;float:right;font-size:2em;line-height:2.1em; text-align:center; font-family:($fontStyle) ; color:$color; cursor:pointer; margin-right:1%;}
+
+  #index_form_btn:hover{color:$color9;}
+  /*End Form button*/
+
+  /*Banner*/
+  #banner {
+    height:450px;
+    width: 100%; 
+    margin:1% auto;
+    clear:both;
+    background-image: url("../images/car_rentalpics_bg_05.jpg") ;  background-repeat:no-repeat; 
+    float: left;
+
+    figure#bannerimage{ width:50.26016%; height:54.25531%; margin:0px;}
+    figcaption{ font-size:1.1em; width:50%;color:$color;margin:0; padding:1%; }
+    .big{font-size:2.8em; color:$color; font-family:($fontStyle) ; width:40%; display:block; height:auto; margin:0; padding:1%; line-height:1.2em;}
+   /*banner end*/
+  }
+  
+  /* left Column*/
+  #left_column{
+
+    float:left; 
+    margin:0; 
+    padding:0;
+    width:100%; 
+
+    p { font-family:($fontStyle) ;  color: $color6; font-size:1em; line-height:1.6em; }
+    h1{ color: $color7;  text-align:left; margin:1% 0;  width:70%; font-size:2.1em; height:40px; line-height:40px; font-weight:bold;}
+    h3{ color:#06F; margin:1% 0; height:25px; line-height:25px; font-size:1.5em;  }
+
+      /*Contact form*/
+    #contact_form{ 
+      width:80%; 
+      height:500px;  
+      margin-left: 2%;
+
+      input{width:75%; height:35px; font-size:1.5em;  }
+      input[type="submit"]{width: 123px;height: 35px; margin: 5px 0px 0px 17%; color:$color;  font-family:($fontStyle) ; line-height:0; }
+      textarea{ width:75%; font-size:1.5em; line-height:1.5em; }
+      label{ font-family:($fontStyle) ; color:$color6; font-size:1.2em; width:17%; height:30px; line-height:30px;float:left; text-indent:1%;}
+      input[type="submit"]{width: 20%; height: 35px; margin: 5px 0px 0px 17%; color:$color;  font-family:($fontStyle) ; line-height:0; background-color:$color13;font-size:1.2em; }
+      input[type="submit"]:hover{ background-color:$color; color:$color13; font-size:1.3em;  }
+    }
+    /*end of contact form*/
+
+    /*left Column*/
+    .cars_box{
+
+      width:100%; 
+      height:220px; 
+      margin-bottom:1.5%; 
+      display:block; 
+
+      .cars_box_img{ float:left; margin:0 0 0 4%; width:50%; padding: 0 5%; height:100%;}
+      .cars_box_img img{ margin-top:1em;} 
+      .cars_box_txt .car-icons-box{height:35px; display:block;}
+      .cars_box_txt{width:45.75602%;  display:inline-block; float:left;    padding-left: 3%; }
+      .cars_box_txt .car-icons{width:12%; float:left; display:inline-block; margin:1%; height:auto; }
+      .cars_box_txt p{ margin:5px 0px 5px 0px; width:100%; font-size:0.95em; height:25px; line-height:25px;}
+      .cars_box_txt p:nth-of-type(1){ font-weight:bold; font-size:1.1em;}
+      .cars_box_txt p:nth-of-type(2){color:#00CCFF; }
+      .cars_box_txt p:nth-of-type(3){color:$color5; font-style:italic; }
+      .carsbutton{width:100px; display:block; margin:0;}
+      .carsbutton a{display:block; }
+    }
+
+    /*specials page */
+       
+    .spacer{width:3px; height:300px; float:left;}
+  }
+
+  .specials_box{
+
+      width: 49.1%; 
+      height:300px;  
+      float:left; 
+      display:inline-block;  
+      margin-left: 8px;
+
+      .specials_btn_box {float:right; width:27.2716%; height:150px;}
+      .specials_btn_box .special_price {float:right ; margin:10px 0px 20px 0px; display:block;}
+      .specials_btn_box .cont_btn{float:right; width:70%; display:block; margin:0;}
+      .specials_btn_box .cont_btn a{display:block; height:40px;}
+      .specials_box_img{width:100%; height:140px; padding:10px; color:$color; background-image:url("../images/pagebg_03.png"); }
+      .specials_box_img figure.car{ width:45%; float:right; margin:0; padding:0;}
+      .specials_box_img p{color:$color; height:auto; width:45.44444%; float:left;margin:3px 0px 0px 3px; font-size:0.8em; line-height:1.5em; display:inline-block; }
+      .specials_box_img p span{ color:$color9; font-weight:bold;}
+      .specials_box_txt{width:320px; height:150px; padding:10px; color:$color4;}
+      .specials_box_txt p{color:$color5; font-size:0.75em; line-height:1.7em; margin:0px 0px 0px 5px; width:300px; height:auto; }
+  }
+
+  /*Search_box form*/
+  #worldsearchform {
+
+    background-color:$color3;
+    padding:1%; 
+    margin:0px; 
+    width:55%; 
+    display:block; 
+    height:auto;
+    h2{font-size: 1.3em;margin: 0px 0px 2% 0;line-height: 30px;font-family:($fontStyle) ;font-weight: bold; width: 70%;color:$color;}
+    .searchform{ 
+      width:80%; 
+      height:40px; 
+      display:block;
+      ul{width:100%; margin: 0; height:100%;}
+      ul li{width:50%; display:inline-block; float:left;}
+      ul li input{margin:0; width:100%; height:35px; display:block;}
+      ul li input[type="submit"]{  font-size:1.5em; margin:0 0 0 5%; padding:0; display:block;}
+      .searchform_btn { width: 120px; height: 34px;  font-size:1em; color:$color; font-family:($fontStyle) ; border:none; line-height:35px; background-color: $color13;}
+      .searchform_btn:hover{color:$color7; background-color:$color;}
+          /*end of searchform*/
+    }
+  }
+
+  /*destination Links*/
+  .destinations{ 
+
+    color:$color13; 
+    height:auto; 
+    margin:10px 0px 0px 10px; 
+    display:inline-block; 
+    float:left; 
+    width:15.094333%;
+    ul {list-style:none; } 
+    ul li{ list-style:none; display:block; margin:0px; font-family:($fontStyle) ; height:30px; line-height:30px;  }
+    ul li:nth-of-type(1){ font-size:1.2em; color:$color13; height:40px; line-height:40px;}
+    a { width:100%; text-decoration:none; height:100%; line-height:30px; display:block; }
+    a:hover{  text-decoration:none;color:$color13;  }
+    /*end*/
+  }
+    
+  /*right column*/
+  #right_coler { 
+
+    height: 900px; 
+    width: 100%; 
+    margin: 0px ; 
+    font-size:1em; 
+    border:none; 
+   
+    #image5{
+
+      height:310px; 
+      background-image: url("../images/car_rental_bg4.png");  background-repeat:no-repeat; 
+      width:100%;
+      margin-top:20%;
+      p{font-size:0.65em; color:$color; width:90%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; }
+      h2{ font-size:1em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center; }
+      form{width:90%; margin:auto;}
+      form input[type="text"]{width:90%; height:30px;}
+      form input[type="email"]{width:90%; height:30px;}
+      form input[type="submit"]{ width: 55.37931%;height: 34px;margin: 0 auto; background-color:$color13;font-family:($fontStyle) ;color: $color; border:0; display:block; }
+      form input[type="submit"]:hover{ height:34px; color:$color7;}
+      .link_btn a{color:$color; width:100%; font-size:1.1em; display:block; }
+      .link_btn a:hover{ color:$color7;}
+    }
+  
+    #image2{
+
+      height:290px;
+      background-image: url("../images/car_rental_bg1.png");  background-repeat:no-repeat; 
+      width:100%; 
+      margin-top:20%;
+      p{font-size:0.65em; color:$color; width:90%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em;}
+      h2{ font-size:1em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center;}
+      form input{width:95%;}
+      .link_btn { width:55.37931%; height:34px;  margin:5px auto; background-color:$color13; font-family:($fontStyle) ; color:$color; outline:none; border:0;  display:block;}
+      .link_btn a{color:$color; width:100%; font-size:1em; text-align:center; height:34px; display:block; line-height:34px; }
+      .link_btn a:hover{ color:$color7;}
+      /*Cars page Right Col Panel 2*/
+    }
+  
+    #image3{
+
+      background-image: url("../images/car_rental_bg2.png");  background-repeat:no-repeat; 
+      width:100%; 
+      height:290px;
+      p{font-size:0.65em; color:$color; width:90%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em;}
+      h2{ font-size:1em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center;}
+      form input{width:95%;}
+      .link_btn { width: 55.37931%;height: 34px;margin: 5px auto;background-color:$color13;font-family:($fontStyle);color: $color; border:0;padding:0; display:block;}
+      .link_btn a{color:$color; width:100%; font-size:1em; text-align:center; margin:auto; height:34px; display:block; line-height:34px;}
+      .link_btn a:hover{color:$color7; }
+      /*end of Cars page Right Col Panel 2*/
+    }
+  }
+    
+  #inner_wrapper{
+
+    width:100%; 
+    margin:0; 
+    padding:0; 
+    display:block;
+
+    .front_img{ width:100%; margin:0; padding:0; }
+    .panel { float: left; height: 290px; width: 23.9999%; margin: 0px 0px 15px 0.8%;  padding:5px; font-size:90%; border:none; background-color:$color; display:inline-block; }
+    .panel p{font-size:0.80em; color:$color; width:96%; margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; display:block; line-height:1.5em;}
+    .panel h2{ font-size:1.3em; color:$color; height:30px;margin:1% auto; line-height:30px;font-family:($fontStyle) ;  text-align:center; }
+    .panel .link_btn { width: 55.37931%; height:34px;  margin:1% auto;  font-family:($fontStyle) ; color:$color; background-color:$color13; }
+    .panel .link_btn:hover{background-color:$color;}
+    .panel .link_btn a{ height:34px; line-height:34px; width:100%; text-align:center; font-size:1em; font-weight:bold; color:$color; display:block;}
+    .panel .link_btn a:hover{ color:$color7; }
+
+    #image1{background-image: url("../images/car_rental_bg1.png");  background-repeat:no-repeat;}
+    #image2{background-image: url("../images/car_rental_bg2.png");  background-repeat:no-repeat;}
+    #image3{background-image: url("../images/car_rental_bg3.png");  background-repeat:no-repeat;}
+
+    #newsletter{background-image: url("../images/car_rental_bg4.png");  background-repeat:no-repeat;} 
+    #newsletter .newsletter {width:90%; margin:0.5em auto; padding:0;}
+    #newsletter .newsletter input[type="text"]{width:100%; height:30px;}
+    #newsletter .newsletter input[type="email"]{width:100%; height:30px;}
+    #newsletter .newsletter input[type="submit"]{margin:1% auto; display:block; width: 55.37931%;; height:34px; }
+    #newsletter .newsletter input[type="submit"]:hover{background-color:$color; color:$color7;}
+  }
+  /*end of info boxes*/
+
+  /*footer*/
+  footer {
+
+    background-color: $color8;  
+    height: 40px; 
+    width: 100%; 
+    clear:both; 
+    display:block; 
+			 font-family:($fontStyle) ;
+
+    #footer_nav{
+
+      height: 40px;
+      width: 100%;
+      margin:0px auto;
+      ul{ height: 40px;width:75%; margin:0px;  margin:0 auto;text-align:center;   }
+      li{ height: 40px; list-style:none;width:16%;  float:left; background-color: $color8;display:inline-block; text-align:center; font-size:1em; }
+      li:hover{ background-color:$color11;}
+      a{  height:40px ;line-height:40px;  width:100%;  color:$color; font-size:0.85em;  font-family:($fontStyle) ; display:block;}
+      a:hover{color:$color; background-color:$color11; } 
+      a:active{ background-color:$color9;}
+    }
+  }
+}
+/*end of wrapper*/
+
+
+
+/* Tablets */
+
+@media (max-width: 1024px){
+	
+#wrapper{
+
+  .copy {   width: 96%;}
+	/*header*/
+  #header {
+    nav.top-bar {
+      .name h1 {  font-family:($fontStyle) ; color: $color; height: 54px;line-height: 54px;  font-size: 2.1em; margin: 0px 0px 0px 0px; float:left;}
+      /*end*/
+      #primary_nav {
+
+        a{ font-size: 0.80em; color: $color; line-height:25px;}
+        ul { height: 60px; width: 100%; margin: 0px; text-align: center; float:right;}
+        li { height: 60px; list-style: outside none none;  width: 16%;  float: left;background-color: $color8;
+          display: inline-block;}
+      }
+    }
+  }
+    
+ 	#apDiv1 { 
+
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    top: 0px;
+    width: 49.9485%;
+    h1 {  font-size: 1.8em;}
+
+    p{font-size:0.80em; width: 43.0909%; }
+    p .dropcap{width: 10%; line-height:24px;color:$color;text-align: center;}
+    
+    p.formnum{ width:27.68181%; }
+    p.formnum .dropcap{width:15%; }
+    
+
+    /*booking Form*/
+    #booking_form { 
+      li label {  font-size: 0.85em; }
+      #date_quote {  width: 45%;}
+      .start_end select {   width: 60px; margin: 1% 0 0 0;   height: 35px; line-height: 40px;}
+      select { line-height: 1.5em;  font-family:($fontStyle) ;  font-size: 0.6em;}
+      .pick_return select { margin: 1% 0 0 0; }
+      li .searchform_btn { width: 53%;}
+      li .query_btn {width: 51.99568%;}
+    }
+    /*end*/
+  }
+ 
+	#index_form_btn { font-size: 2em; line-height: 50px; text-align: center;  cursor: pointer; margin-right:1.5%;}
+
+	/*Banner*/
+
+	#banner { 
+    height: 430px; 
+    width:98%;  
+    float: none;
+    p {   width: 49%;   color: $color;   margin: 0px 0px 0px 20px;}
+    figcaption {    font-size: 1em;}
+    #bannerimage{width: 45.2602%; height:46.25531%; margin-top:15px;}
+    .big {   font-size: 2.3em;   color: $color;   font-family:($fontStyle);}
+  }   
+
+	#right-coler {
+
+    .panel {  height: 220px;   width: 97%;}
+    .panel h2 {   font-size: 80%;   color: $color;   height: 30px;   margin: 5px auto;   line-height: 30px;  font-family:($fontStyle);}
+    .panel p {   font-size: 0.65em;}
+
+    #image5 { 
+      margin:auto;
+      h2 {    font-size: 1.1em; margin:auto;}
+      form {   padding: 5px;}
+      input {    width: 100%;}
+      form input[type="submit"] { width: 59.37931%; font-size:0.90em;}
+    }
+      
+  } 
+	/*end*/
+	
+	/* left Column*/
+	#left_column {
+
+    h1 {color: $color7; text-align: left;margin: 2% 0; width: 90%; font-size: 1.9em; height: 40px; line-height: 40px;}
+
+    h3 {   font-size: 1.2em;}
+    p {   font-family:($fontStyle);   color: $color6;   font-size: 80%;   line-height: 1.5em;}
+    /*end*/
+
+
+    #contact_form{ 
+      width:90%; 
+      height:500px; 
+      margin-left: 2%;
+      label {    width: 20%;}
+      input[type="submit"] {margin: 5px 0px 0px 20%;}
+    }
+    /*Contact form*/
+      
+    /*left column -cars page*/
+    .cars_box {  
+
+      width: 100%;  
+      height: 227px;  
+      margin-bottom: 1.5%;  
+      display: block;
+      .cars_box_img {  width: 41%;   }
+      .cars_box_txt p { font-size: 0.85em;}
+      .cars_box_txt p:nth-of-type(1) {  font-weight: bold;  font-size: 0.85em;}
+      .cars_box_txt p:nth-of-type(2) {  font-weight: bold;  font-size: 0.85em;}
+      .cars_box_txt p:nth-of-type(3) {  font-weight: bold;  font-size: 0.85em;}
+    }
+
+  } 
+	/*end*/
+  .specials_box { 
+
+    float: left; 
+    display: inline-block;
+    .specials_box_txt {  
+      width: 70.7284%;  
+      height: 130px;  
+      padding: 10px;
+      p { line-height: 1.5em;   display: inline-block; font-size:0.7em;margin: 0px;}
+    }
+    .specials_btn_box {float: right; width: 27.2716%; height: 130px;}
+    .specials_box_img p {  font-size: 0.85em;}
+  /*Specials*/
+  }
+  #worldsearchform h2 { font-size:1.1em;}
+
+  .ui-tabs .ui-tabs-nav { margin: 0px;  padding: 0.2em 0.2em 0px;  font-size: 0.9em;}
+
+  
+	/* panel height in percentages = 50.541%*/
+  #inner_wrapper{
+
+    .panel figure{margin:0;}
+    .panel {  float: left; height:290px ; width: 24.1%; margin: 0px 0px 15px 5px; padding: 10px 5px; background-repeat: no-repeat; }
+    .panel p {font-size:0.75em;  margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; width:96%; }
+    .panel h2 {   font-size: 1.2em;}
+  }  
+
+	/*#inner_wrapper .panel> #panelImg { width: 94.5148%; height: 38.6360%;    }*/
+	
+	/*footer*/
+  footer{
+
+    #footer_nav {    
+      width: 100%;    
+      margin: 0px auto;
+      li{ width: 16.6459%;  }
+      a {  font-size: 0.8em;  }
+    }
+  }
+	
+}
+
+}
+
+@media (max-width: 980px){
+
+#wrapper{
+  width:98%;
+
+  #header{
+
+    nav.top-bar .name h1 { font-size:2em;}
+  } 
+
+  #apDiv1 {
+
+    p.formnum .dropcap {    width: 16%;}
+  }
+
+  #left_column{
+    h1{font-size: 1.8em; width:100%;}
+    h3 {   font-size: 1.2em;}
+  }
+
+  #inner_wrapper{
+
+    .panel p { font-size: 0.85em; width:100%;}
+  } 
+
+  .specials_box {
+
+    .specials_box_img p {   font-size: 0.80em;}
+  }
+
+
+
+
+}
+
+}
+
+@media (max-width: 800px){
+
+[data-abide].error small.error {font-size:0.75em;margin-bottom:0.3rem;   }
+
+#wrapper{
+
+  #header {
+    nav.top-bar .name h1 {    font-size: 1.8em;}
+  } 
+  
+  #left_column{
+    h1{font-size: 1.7em; width:100%;}
+    h3 {   font-size: 1.1em;}
+
+    }
+
+
+  #right_coler {
+
+    #image5 {
+
+      form input[type="submit"] { width: 59.37931%; font-size:0.85em;}
+    }
+  }
+     
+  #inner_wrapper{
+
+    .panel h2 {   font-size: 1em;}
+     #newsletter .newsletter input[type="text"] { padding:0.3rem;}
+     #newsletter .newsletter input[type="email"] { padding:0.3rem;}
+  } 
+
+
+}  
+    
+}
+
+@media (max-width: 768px){
+
+#wrapper{
+
+  h1{ font-size:1.5em;}
+
+  [data-abide].error small.error {   font-size:0.65rem; margin-bottom:0.5rem;}
+
+  #apDiv1 {
+
+    width: 55.9485%; 
+    left:40%;
+
+    p {  font-size: 0.7em;}
+    p .dropcap {    width: 11%;}
+
+    p.formnum {   width: 27.6818%;   margin: 0px;}
+    p.formnum .dropcap {    width: 18%;}
+
+    h1 {   font-size: 1.6em;}
+
+    #booking_form .start_end select { width: 50px; font-size:0.7em;}
+    #booking_form #date_quote { width: 40%;}
+  }
+  
+  #banner { 
+
+    height:340px; 
+    .big { width:45%; font-size:2em;}
+    figcaption { font-size: 1em;}
+  }
+  
+  #left_column {
+
+    float: left;   
+    margin: 0px;   
+    padding: 5px;
+        
+    #contact_form .button_contact {   width: 123px;   height: 35px;   margin: 5px 0px 0px 20%;}
+    .cars_box .cars_box_txt { width: 45.756%; margin-left: 5%; height: 200px; display: inline-block;   float: left;   padding-left: 3%; font-size:0.9em;}
+     
+  }
+
+  .specials_box {
+    width: 48%;
+    margin-left:1%;
+    p {   font-size: 0.75em;}
+
+  .specials_box_img p {   font-size: 0.75em; width: 48.44444%;}
+
+  }
+
+  #worldsearchform h2 {  font-size: 1.2em;   width: 70%;}
+
+  #right_coler {
+
+    padding: 0px; 
+    font-size:0.7em;
+
+    #image5 { 
+
+     
+      h2 {    font-size: 1.1em; margin:auto;}
+      form {   padding: 5px; width:180px; }
+      input[type="submit"] { width: 120px;height: 34px;margin: 5px auto;  background-color:$color13;font-family:($fontStyle);color: $color; border:0; }
+    }
+   
+    #image3 { 
+
+      background-repeat: no-repeat;  
+      margin:auto;
+      h2 {  text-indent:5px; }
+      p { width:95%; margin: 5% auto;}
+      .link_btn {  margin:2% auto;  text-align:center; padding: 3% 0px 0px 0%;}
+      .link_btn a { color: $color; width: 100%;font-size: 1.1em;  text-align: center;  margin: auto;    height: 34px;}
+    }
+    
+    #image2 {   
+
+      background-repeat: no-repeat;  
+      margin:auto;
+      p { width:95%; margin:5% auto; }
+      h2 {  text-indent:5px; }
+      .link_btn {  margin:5px auto;  text-align:center; padding: 3% 0px 0px 0%;}
+      .link_btn a {   color: $color;   width: 100%;   font-size: 1.1em;}
+    }
+  }
+  
+  #inner_wrapper {
+
+    .panel {   
+
+      float: left; 
+      h2 {  font-size:1em; text-align:center; height:auto; margin: 0px;}
+      p {  font-size:0.66em; width:100%; margin: 10% auto;}
+      figure{margin:0;}
+      .link_btn {font-size:0.9em;}
+    }
+   
+    #newsletter .newsletter { width: 98%;}
+  }
+
+}
+    
+
+}
+
+
+/*end*/
+
+@media (max-width: 640px){
+
+#wrapper{
+
+  .error[data-abide] small.error {   font-size: 0.55rem;   margin-bottom: 0.2rem;}
+
+  h1 {  width: 70%;}
+
+  #header{
+
+    margin:0 ; 
+    padding:0;
+    nav.top-bar .toggle-topbar.menu-icon{ position:absolute; z-index:999; top:50%;}
+    nav.top-bar .name h1 {  margin:0; font-size:2em; }
+    nav.top-bar #primary_nav { width:100%;  height: auto;}
+    nav.top-bar #primary_nav a { line-height: 30px;  width: 100%; font-size:1.5em;}
+    nav.top-bar #primary_nav ul {    height: auto;}
+    nav.top-bar #primary_nav li { line-height: 30px;width: 100%; float: none;display: block;}
+  }
+
+  #apDiv1 {  
+
+    position: absolute;   
+    width: 68.0515%;   
+    left: 28%; 
+    height:500px;
+
+    p {   font-size: 0.6em;}
+    p.formnum {    width: 27.6818%;    margin: 0px;}
+    #booking_form #date_quote {   width: 40%; font-size:0.6em;}
+    #booking_form .start_end select {    font-size: 0.65em; width:50px;}
+  }
+   
+  #banner { 
+
+    height: 290px;
+    .big {   font-size: 1.8em;}
+    figcaption { font-size: 0.9em;}
+  }
+
+  #index_form_btn {   font-size: 1.5em;}
+  
+  #inner_wrapper{
+
+    .panel {
+
+     padding-top:20px ; 
+     height:280px;
+     h2 {    font-size: 0.9em; height:40px; line-height: 1.5em; text-align:center;}
+     p {font-size: 0.65em; }
+     input[type="text"]{width:100%; margin:auto; }
+     .link_btn, .newsletter a {  font-size:0.9em;}
+    }
+   
+    #newsletter .newsletter input[type="email"] {  margin-top:0.1rem;}
+    #newsletter .newsletter input[type="text"] {  margin-top:0.3rem;}
+  } 
+ 
+  #left_column {
+
+    float: none;   
+    margin: 0px auto;  
+    padding: 0px; 
+    width:98%;
+
+    h1 { font-size:1.5em;   width: 70%; margin:2% 0 2% 2%;}
+    p {     font-size: 0.7em;    line-height: 1.5em; }
+
+    .cars_box .cars_box_txt {  margin-left: 0%; width:140px; margin-left:10%;}    
+    
+    #contact_form{
+      label { font-size: 1em; width:24%;}
+      .button_contact {   margin: 5px 0px 0px 23%;}
+    } 
+    
+  }
+
+  .specials_box {
+
+      width: 48%; 
+      height:250px;
+
+      .specials_box_img { 
+        height: 120px; 
+        p { font-size:0.6em; margin:0;}
+      }
+
+      .specials_btn_box .special_price { float: right;  margin: 10px 0px 20px;  }
+
+      .specials_box_txt {  
+        padding: 5px;   
+        color: $color4;
+        p {  font-size: 0.60em;  width: 100%;  height: auto; margin:0;}
+      }
+  }
+
+  .ui-tabs {
+    .ui-tabs-nav a { font-size: 0.96em;}
+  }
+
+  .ui-tabs-panel { padding:0 ;} 
+
+  #right_coler { display:none;}
+
+  footer#footer_nav a {   font-size: 0.8em;   color: $color;}
+}
+
+}
+
+@media  (max-width: 480px){
+
+#wrapper{
+
+  h1 { width: 100%;}
+  
+  
+  #header{
+
+    nav.top-bar #primary_nav li { line-height:30px;}
+    nav.top-bar .name h1 { text-align: left; font-size:0.9em; margin-left:1%; }
+    nav.top-bar #primary_nav a {  height: 70px;  line-height: 40px;   font-size: 0.55em;}
+  } 
+
+  #apDiv1 { 
+
+    position: absolute; 
+    width: 70.9485%;  
+    height: 510px;  
+    z-index: 1;  
+    top: 10px;  
+    background-color: $color; 
+    list-style-type: none;  
+    font-size: 0.85em;   
+    left: 26%;
+    #booking_form {
+
+      #date_quote {   width: 40%;    font-size: 0.75em;}
+      .start_end select { width: 40px;}
+      .pick_return select { width: 180px; margin: 5px 0px 0px 4px; height: 35px;}
+      .pick_return, #booking_form .start_end {  }
+    } 
+  }
+      
+  #index_form_btn {height: 50px;  float: right;  font-size: 1.1em;  line-height: 50px;   text-align: center;   margin-right:10px; width:40%;}
+
+  #banner {
+
+    height:220px;  
+    margin-top:5px; 
+    #bannerimage {    width: 99.2602%;    height: 54.2553%;}
+    .big {font-size: 1.3em; width:45%;  }
+    figcaption {   font-size: 0.7em; margin:0;}
+    p { font-size: 1em; }
+  }
+
+  #left_column{
+
+    h1 { margin: 1%;   width: 100%;  font-size:1.8em;}
+
+    .cars_box{
+      .cars_box_img {  float: left; width:50%;}
+      a img{width:50%;}
+    } 
+        
+    #contact_form { 
+
+      width: 90%;  
+      height: auto;  
+      margin-left: 2%;
+      label { width: 23%; }
+    }
+    
+    
+  }
+
+  .specials_box { 
+
+        width: 48.4%;    
+        height: 240px;    
+        float: left;    
+        display: inline-block;    
+        margin-left: 6px;
+
+        .specials_box_img {
+
+          width: 100%;  
+          height: 100px;    
+          padding: 5px;    
+          color: $color;
+          p {   font-size: 0.55em;}
+          p {   font-size: 0.55em;}
+          .specials_box_txt p { font-size: 50%;}
+          .specials_box_txt p {   font-size: 0.55em;}
+          .specials_box .specials_btn_box .special_price { width: 100%; }
+        }
+  } 
+
+  #worldsearchform {  width: 70%;}
+
+  #right_coler  {  display:none;}
+
+  .ui-tabs .ui-tabs-nav a { margin: 0px;  padding: 0.2em 0.2em 0px;  font-size: 0.80em;}
+    
+  #inner_wrapper{
+
+    .panel {  
+
+      float: left;
+      height: 250px; 
+      width:48%; 
+      padding: 10px 5px; 
+      background-repeat: no-repeat; 
+      font-size:1.2em;
+      
+      h2 { text-align:center; font-size: 90%; height:25px; line-height:25px; text-indent:0px;}
+      .front_img{width:60%; margin:auto;}
+      p {  font-size: 0.5em; width:96%; margin:0.5em auto  }
+      .link_btn, .newsletter a {    font-size: 0.8em; margin:auto;}
+
+    }
+
+    #newsletter .newsletter input[type="submit"]{margin:0px 20%;}
+    #newsletter .newsletter input[type="email"] {  margin-top:0.5rem;}
+    #newsletter .newsletter input[type="text"] {  margin-top:0.3rem;}
+  } 
+  /*Specials*/
+  
+  #footer_nav li { width: 16.3459%;  }
+}
+
+}
+
+/* Mobiles in landscape mode */
+@media  (max-width: 360px){
+
+#wrapper{
+
+  [data-abide].error small.error {  font-size: 0.75rem;  margin-bottom: 0.2rem;}
+
+  #header{
+
+    nav.top-bar .name { height: 60px;    list-style: outside none none;}
+    nav.top-bar .name h1 {  width: 100%;   text-align:left;   font-family:($fontStyle);  color: $color;  height: 60px; line-height: 60px; font-size:1em;    margin-top: 0px;}
+    nav.top-bar .name h1 span {  margin: 0px 0px 0px 10px ; text-align:left;}
+    nav.top-bar .title-area {    }
+    nav.top-bar #primary_nav a { width: 100%; font-size: 0.8em; color: $color; line-height:20px;}
+  } 
+
+  #apDiv1 {  
+
+    width: 90%;
+    left: 10%;
+  }
+ 
+  #banner {  
+
+    height: 180px;   
+    margin-bottom: 5px;   
+    clear: both;    
+    float: none;
+    .big { font-size:1.1em; width: 45%; ;}
+    #bannerimage {   width: 99.2602%;   height: auto;}
+    p {   font-size: 95%;   width: 90%;   color: $color;   margin: 0px 0px 10px 20px;}
+    figcaption {   font-size: 0.6em;}
+  }
+
+  #index_form_btn { float: right;  font-size: 0.8em;   text-align: center;   margin-right:10px; width:40%;}
+
+  #right_coler { display:none;}
+
+  #left_column {
+
+    h1 { color: $color7;  text-align: left;  margin: 1%;  width: 100%;   font-size: 1.5em;   height: 40px;  line-height: 40px;}
+    
+    .cars_box { 
+
+      width: 100%; 
+      height: 210px; 
+      margin-bottom: 10px;
+      .cars_box_img  {   width: 99.4376%;  margin: 0; height: 82.7692%;}
+      .carsbutton {    width: 220px;}
+      .cars_box_txt {margin-left:0;}
+      .cars_box_txt p {   margin: 5px 0px 5px 0px; font-size:75%;}
+    }
+
+    #contact_form { 
+
+      width: 96%;    
+      height: auto;    
+      margin: auto;
+      .button_contact {    margin: 5px 0px 0px 23%;}
+    }
+        
+  }
+
+  .specials_box { 
+
+        width: 100%; 
+        height: 260px;
+        float: none; 
+        display: block;   
+        margin:0px;
+        .specials_box_img { 
+          width: 100%; 
+          height: 110px; 
+          padding: 10px; 
+          color: $color; 
+          background-image: url("../images/pagebg_03.png");
+          p {  width: 45.2%;  font-size: 0.65em; margin: 0;}
+          .car {   width: 51.1513%;   height: 99.2908%;}
+        }
+        .specials_box_txt { 
+
+          width: 70.7284%;    
+          height: 120px;    
+          padding: 5px;
+          p {  color: #333;  height: auto;   width: 100%;   margin: 5px 0px 0px 5px;  font-size: 50%;  line-height: 1.5em;  display: inline-block;}
+        }
+        .specials_btn_box {
+          float: right; 
+          width: 27.2716%; 
+          height: 120px;
+          .special_price { float: right;  margin: 10px 0px 20px;  width:60%;}
+
+        }
+  }
+
+  .destinations { color: $color13;   height: auto;  margin: 10px 0px 0px 10px;  display: inline-block;  float: none;  width: 100%;}
+  #worldsearchform {    width: 100%;}
+
+  .ui-tabs .ui-tabs-nav a { margin: 0px;  padding: 0.2em 0.2em 0px;  font-size:79.6%;}
+  .ui-tabs .ui-tabs-panel {    display: block;      padding:0;   }
+
+  #inner_wrapper { 
+
+    margin-top: 20px;
+    .panel { 
+
+      float: none; 
+      height:292px ;
+      font-size: 0.9em;
+      width: 75.9994%;
+      margin: auto; 
+      padding: 10px 5px;
+      background-repeat: no-repeat;
+      display: block;
+
+
+      p {  font-size: 0.75em;  width: 90%;   margin: 1em auto;}
+      h2 { text-align: center; font-size: 1.1em; height: 25px; line-height: 25px; text-indent: 0px;}
+      #panelImg {   margin-left:20%;}
+      .link_btn, .newsletter a {  font-size: 0.9em;  margin: auto;}
+      .front_img{width:80%; margin:auto;}
+    }
+  }
+
+  footer#footer_nav a {   height: 40px;   width: 100%;   line-height: 40px;   font-size: 0.75em;   color: $color;}
+}    
+
+}
+
+/* Common general styles go here */
+/* Mobiles in Potrait mode */
+@media all and (max-width: 320px){
+
+#wrapper{
+
+  h1 {    width: 90%; font-size:145%;}
+
+  #header{
+
+    nav.top-bar .name { height: 60px;    list-style: outside none none;}
+    nav.top-bar .name h1 {  width: 100%;   text-align:left;   font-family:($fontStyle);  color: $color;  height: 60px; line-height: 60px; font-size:0.9em;    margin-top: 0px;}
+    nav.top-bar .name h1 span {  margin: 0px 0px 0px 10px ; text-align:left; }
+    nav.top-bar .title-area {    }
+    nav.top-bar #primary_nav a { width: 100%; font-size: 0.8em; color: $color; line-height:20px;}
+    nav.top-bar #primary_nav {  }
+    nav.top-bar #primary_nav li {  line-height: 30px;}
+  } 
+
+  #apDiv1 {  display:none;}
+  
+  #banner {
+    p {  font-size: 0.9em;  width: 90%;  color: $color;  margin: 0px 0px 0px 20px;}
+    .big { font-size: 1.125em; font-family:($fontStyle);}
+    #bannerimage {  width: 99.2602%; height: 54.2553%;}
+  }
+
+  #index_form_btn { display:none;}
+  #right_column { display:none;}
+
+  #left_column {
+    
+    h1 {  color: $color7;  text-align: left;  margin: 1%;  width: 100%;   font-size: 1em;   height: 40px;  line-height: 40px;}
+    p { font-family:($fontStyle);  color: $color6;   font-size: 75%;  line-height: 1.5em;}
+            
+    #contact_form {
+
+      width: 100%;    
+      height: auto;    
+      margin-left: 1%;
+      label { font-size: 0.8em; width:22%;}
+      .button_contact {  width: 123px;  height: 34px;   margin: 5px 0px 0px 21%;}
+      /*end*/
+    }
+    
+   .cars_box {
+      width: 100%; 
+      height: 200px;  
+      margin-bottom: 10px;
+      .cars_box_img {width: 45%; }
+      .cars_box_txt {  margin-left: 0%; }
+      .cars_box_txt .cont_btn{  margin:0px 0 0 0; width:100%;}
+      .carsbutton {    width: 180px;}
+    }
+
+  }
+
+  .specials_box {  
+
+        width: 100%;   
+        height: 250px;  
+        float: none;  
+        display: block;   
+        margin:0px;
+
+        .specials_btn_box {  
+          float: right;  
+          width: 27.2716%;  
+          height: 130px;
+          .special_price { width: 90%;  margin: 5px;}
+        }
+
+        .specials_box_img {  
+
+          width: 100%;  
+          height: 120px;   
+          padding: 10px;   
+          color: $color;   
+          background-image: url("../images/pagebg_03.png");
+          .car {  width: 52.1513%;   height: 89.2908%;}
+          p { color: $color;  height: auto;  width: 45.4444%;  float: left;  margin: 5px 0px 0px 5px;   font-size: 55%;  line-height: 1.5em;    display: inline-block;}
+        }
+
+        .specials_box_txt {
+
+          width: 71.7284%;   
+          height: 130px;   
+          padding: 5px;
+          p {  color: #3b3b3b;  height: auto;   width: 100%;   margin: 0px ;  font-size: 50%;  line-height: 1.5em;  display: inline-block;}
+        }
+  }
+
+  .ui-tabs {
+      .ui-tabs-nav { margin: 0px;  padding: 0.2em 0.2em 0px;  font-size: 110%;}
+      .ui-tabs-nav li { margin: 0px;  padding: 0.2em 0.2em 0px;  font-size: 43%;}
+      .ui-tabs-nav a { margin: 0px;  padding: 0.2em 0.2em 0px;  font-size:130%;}
+  } 
+
+  #worldsearchform{
+
+    .searchform .searchform_btn {  width: 125px;  height: 40px;  margin: 5px 0px 0px 10px;  background-image: url("../images/car_rental_btn_bg.png");    background-repeat: no-repeat;  font-size: 100%;  color: $color;}
+  } 
+
+  .destinations {  color: $color13;   height: auto;  margin: 10px 0px 0px 10px;  display: inline-block;  float: none;  width: 100%;}
+  
+  #inner_wrapper { 
+
+    margin-top: 10px;
+    .panel {  float: none; height:292px ;width: 66.9994%; margin: 10px auto; background-repeat: no-repeat;font-size: 0.85em;}
+    .panel p {font-size: 0.8em; width: 95%; }
+    .panel h2 {text-align: center; font-size: 110%; height: 25px;  line-height: 25px;text-indent: 0px;}
+    .panel #panelImg { width: 74.5148%; height: 38.636%; margin-left:10%;}
+  }
+
+  footer#footer_nav a {  height: 40px;   width: 100%;  line-height: 40px;  font-size: 0.7em;  color: $color;}
+}
+
+
+}
+
+

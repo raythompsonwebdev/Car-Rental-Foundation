@@ -17,31 +17,44 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# =========================
-# Operating System Files
-# =========================
+.sass-cache
+.tmp
+bower_components
+dist
+node_modules
+package.json
+bower.json
+.jshintrc
+.editorconfig
+.bowerrc
+.gitignore
+Gruntfile.js
+docs
 
-# OSX
-# =========================
+app/Foundation-5/
+app/Foundation-5/css/
+app/Foundation-5/img/
+app/Foundation-5/js/
+app/Foundation-5/js/foundation/
+app/Foundation-5/js/vendor/
+app/images/
+app/page1_images/
+app/scripts/html5shiv.min.js
+app/scripts/jquery-1.11.2.js
+app/scripts/jquery.validate.min.js
+app/scripts/selectivizr-min.js
+app/scripts/selectivizr.js
 
-.DS_Store
-.AppleDouble
-.LSOverride
+app/scripts/jquery-ui-1.11.2.custom/
+app/scripts/jquery-ui-1.11.2.custom/external/
+app/scripts/jquery-ui-1.11.2.custom/external/jquery/
+app/scripts/jquery-ui-1.11.2.custom/images/
+app/scripts/Respond-master/
+app/scripts/vendor/
 
-# Thumbnails
-._*
+app/styles/redmond/
+app/styles/redmond/images/
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+app/text files/
+app/.htaccess

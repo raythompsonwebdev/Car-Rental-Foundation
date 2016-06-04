@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="minimum-scale=0">
+<meta name="viewport" content="user-scalable=yes">
+<meta name="viewport" content="target-densitydpi=device-dpi">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Car-Rental-Home-Page</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css" />
+<link rel="stylesheet" href="Foundation-5/css/foundation.min.css" />
+<link rel="stylesheet" href="styles/style.css" />
+<link rel="stylesheet" href="styles/normalize.css" />
+<link href='http://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<link rel="stylesheet" href="styles/ie8.css" />
+<script src="scripts/html5shiv.min.js"></script>
+<script src="scripts/Respond-master/dest/respond.min.js"></script>
+<script src="scripts/selectivizr.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body >
+   
+<div class="row">
+<div id="wrapper">
+ 
+<div class="row"><!--header section-->
+<div class="large-12 medium-12 small-12 columns">
+
+<header id="header">
+
+<nav class="top-bar" data-topbar role="navigation" >
+
+<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+<ul class="title-area"><li class="name"><h1><span >CAR</span> Rental</h1></li></ul>
+
+<section class="top-bar-section" id="primary_nav">
+    <ul  class="right" >
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="specials.html" title="special" >Special Offers</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="location.html">Locations</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>    
+</section>
+
+</nav>
+
+</header>
+
+</div>    
+</div><!--header section end-->
+ 
+   
+<div class="row" role="banner">
+<div class="large-12 medium-12 small-12  columns" >
+
+<!--Quote_form box-->
+<section id="apDiv1">
+
+<p><span class="dropcap">1</span>Date, Time and Location</p>
+<p class="formnum"><span class="dropcap">2</span>Chose Vehicle</p>
+<p class="formnum"><span class="dropcap">3</span>Confirm Booking</p>
+
+<h1>Get a Car Rental Quote</h1>
+
+<!--form-->
+<form id="booking_form" action="" method="post">
+
+<li><label>Rental Start Date/Time</label></li>
+
+<li class="start_end">
+    <select name="rental_start_date" size="1" id="date_quote">
+        <option value="Date">22/10/2013</option>
+        <option value="Date">24/10/2013</option>
+    </select>
+    <select name="rental_start_time_hr" size="1">
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+    </select>
+    <select name="rental_start_time_min" size="1">
+        <option value="05">05</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+        <option value="50">50</option>
+        <option value="55">55</option>
+        <option value="00">00</option>
+    </select>
+</li>
+
+<li><label>Rental End Date/Time</label></li>
+
+<li class="start_end">
+    <select name="rental_end_date" size="1" id="date_quote">
+        <option value="Date">22/10/2013</option>
+        <option value="Date">24/10/2013</option>
+    </select>
+
+    <select name="rental_end_time_hr" size="1">
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+    </select>
+
+    <select name="rental_end_time_min" size="1">
+        <option value="05">05</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+        <option value="50">50</option>
+        <option value="55">55</option>
+        <option value="00">00</option>
+    </select>
+</li>
+
+<li><label>Pick Up Location</label></li>
+
+<li class="pick_return">
+<select name="pickup_location" size="1">
+    <option value="Home">Home</option>
+    <option value="Office">Office</option>
+    <option value="Specified Location">Specified Location</option>
+</select>
+</li >
+
+<li><label>Returning to</label></li>
+
+<li class="pick_return">
+<select name="returning_to">
+    <option value="Home">Home</option>
+    <option value="Office">Office</option>
+    <option value="Specified Location">Specified Location</option>
+</select>
+</li>
+
+<li></li>
+
+<li class="pick_return">
+<p>Can't find the location you are looking for?</p>
+<a href="">View Map</a>
+</li>
+
+<li><span class="query_btn" id="clearQuote" onclick="fadeOut();">Hide Form</span></li>
+<li><input name="Get Quote" type="submit" class="searchform_btn" value="Get Quote" /></li>
+</form><!--form end-->
+   
+</section><!---appDiv end-->
+
+<figure id="banner"><!--Banner Text-->
+  <figcaption class="big"> Lorem ipsum dolor sit amet,</figcaption>
+    <div id="index_form_btn" onclick="fadeIn();"  >Click here to get Quote</div><!--SeeQuote_button-->
+    <figcaption>consectetur adipiscing elit.Nulla cursus dolor in enim sagittis </figcaption><!--Banner Text-->
+  <figure id="bannerimage"><img src="images/car_rental_4x4car.png" alt="Car_Rental_4x4_car" /></figure>
+</figure><!--banner end-->
+
+</div><!--content end-->
+</div><!--row end-->
+
+<div class="row"><!--inner wrapper start-->  
+<div  class="large-12 medium-12 small-12 columns">
+
+<article id="inner_wrapper">
+
+<div class="panel" id="image1"><!--info box--> 
+
+<h2>Different Makes and Models</h2>
+
+<figure class="front_img"><img src="images/car_rental_luxury_car.png" alt="Car_rental_Audi_luxury_car"  /></figure>
+
+<p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
+
+<div class="link_btn"><a href="specials.html" >Learn More</a></div>
+
+</div><!--info_box end--> 
+<div class="panel" id="image2" ><!--info box--> 
+
+<h2>Weekend Car Rental Special</h2>
+
+<figure class="front_img"><img src="images/car_rental_standard_cars.png" alt="Car_Rental_4x4_Standard_car"  /></figure>
+
+<p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
+
+<div class="link_btn"><a href="cars.html" >Learn More</a></div> 
+
+</div><!--info_box2 end-->
+<div class="panel" id="image3"><!--info box-->
+
+<h2>Our Locations</h2>
+
+<figure class="front_img"><img src="images/car_rental_world_map.png" alt="Car_Rental-World_Map"  /></figure>
+
+<p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
+
+<div class="link_btn"><a href="location.html" >All Locations</a></div>
+
+</div><!--info_box3 end-->
+<div class="panel" id="newsletter"><!--info box--> 
+
+<h2>Subscribe to newsletter</h2>
+
+<p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
+
+<form action="" method="post" class="newsletter" data-abide>
+
+<input name="NAME" type="text" placeholder="Name" required pattern="[a-zA-Z]+" />
+<small class="error">Name must be letters.</small>
+<input name="EMAIL" type="email" placeholder="Email" required/>
+<small class="error">A valid email address is required.</small>
+<input type="submit" class="link_btn" value="SUBSCRIBE"  /> 
+</form>
+
+</div><!--info_box4 end--> 
+</article>     
+</div>
+</div><!--inner wrapper end--> 
+
+<div class="row"><!--footer-->
+<footer>
+  <div class="large-12 medium-12 small-12 columns">
+       
+   
+      <ul id="footer_nav">
+        <li><a href="index.html" tabindex="1">Home</a></li>
+          <li><a href="specials.html" tabindex="2">Specials</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="location.html">Locations</a></li>
+          <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+   
+      
+  </div> 
+ </footer>
+</div><!--row end-->
+
+<p class="copy">Raymond Thompson 2013<br/>built from Photoshop template downloaded from www.phpjabber.com<br/>
+<script type="text/javascript">document.write("Page Last Updated: " + document.lastModified);</script>
+</p> 
+
+</div><!--wrapper end-->
+</div><!--row end-->
+
+<!-- jsDelivr CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script > window.jQuery || document.write('<script src="scripts/jquery-1.11.2.js"><\/script>');</script>
+<!-- Fallback to local -->
+<script>
+$(init);
+  
+function init(){$("#index_form_btn").click(fadeIn);
+$("#clearQuote").click(fadeOut);}
+    
+function fadeIn(){  $("#apDiv1").fadeIn("slow");  }
+function fadeOut(){  $("#apDiv1").fadeOut("fast");  } 
+</script>
+
+<script src="//cdn.jsdelivr.net/foundation/4.3.1/js/foundation.min.js"></script>
+<script src="Foundation-5/js/foundation.min.js"></script>
+
+<script>
+$(document).foundation({
+  abide : {
+    live_validate : true, // validate the form as you go
+    validate_on_blur : true, // validate whenever you focus/blur on an input field
+    focus_on_invalid : true, // automatically bring the focus to an invalid input field
+    error_labels: true, // labels with a for="inputId" will recieve an `error` class
+    // the amount of time Abide will take before it validates the form (in ms). 
+    // smaller time will result in faster validation
+    timeout : 1000,
+    patterns : {
+      alpha: /^[a-zA-Z]+$/,
+      alpha_numeric : /^[a-zA-Z0-9]+$/,
+      integer: /^[-+]?\d+$/,
+      number: /^[-+]?[1-9]\d*$/,
+ 
+      // http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#valid-e-mail-address
+      email : /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+      
+    },
+
+    reveal : {
+    animation_speed: 500
+  },
+  tooltip : {
+    disable_for_touch: true
+  },
+  topbar : {
+    custom_back_text: false,
+    is_hover: false,
+    mobile_show_parent_link: true
+  }
+    
+  }
+});    
+</script>
+
+     
+    
+</body>
+</html>
