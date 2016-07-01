@@ -1,7 +1,7 @@
 /*
 Error: File to import not found or unreadable: ../functions.
-       Load path: P:/xampp/htdocs/www/CarRentalFoundationproject/app/styles
-        on line 39 of P:\xampp\htdocs\www\CarRentalFoundationproject\app\styles\main.scss
+       Load path: P:/xampp/htdocs/www/Car-Rental-Foundation/app/styles
+        on line 39 of P:\xampp\htdocs\www\Car-Rental-Foundation\app\styles\main.scss
 
 34: /*gLOBAL STYLE*\/
 35: // Foundation by ZURB
@@ -16,7 +16,7 @@ Error: File to import not found or unreadable: ../functions.
 44: // Data attribute namespace
 
 Backtrace:
-P:\xampp\htdocs\www\CarRentalFoundationproject\app\styles\main.scss:39
+P:\xampp\htdocs\www\Car-Rental-Foundation\app\styles\main.scss:39
 P:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
 P:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
 P:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -54,4 +54,4 @@ P:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../functions.\A        Load path: P:/xampp/htdocs/www/CarRentalFoundationproject/app/styles\A         on line 39 of P:\xampp\htdocs\www\CarRentalFoundationproject\app\styles\main.scss\A \A 34: /*gLOBAL STYLE*/\A 35: // Foundation by ZURB\A 36: // foundation.zurb.com\A 37: // Licensed under MIT Open Source\A 38: \A 39: @import \"../functions\";\A 40: //\A 41: // Foundation Variables\A 42: //\A 43: \A 44: // Data attribute namespace"; }
+  content: "Error: File to import not found or unreadable: ../functions.\A        Load path: P:/xampp/htdocs/www/Car-Rental-Foundation/app/styles\A         on line 39 of P:\xampp\htdocs\www\Car-Rental-Foundation\app\styles\main.scss\A \A 34: /*gLOBAL STYLE*/\A 35: // Foundation by ZURB\A 36: // foundation.zurb.com\A 37: // Licensed under MIT Open Source\A 38: \A 39: @import \"../functions\";\A 40: //\A 41: // Foundation Variables\A 42: //\A 43: \A 44: // Data attribute namespace"; }
