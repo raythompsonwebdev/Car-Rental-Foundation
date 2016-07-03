@@ -308,7 +308,7 @@
 <!----right column---->
 <div class="large-3 medium-3 small-12 columns">
 <aside id="right_coler">
-
+<br/><br/><br/>
 <!--info_box2-->
 <div id="image2">
 <h2>Weekend Car Rental Special</h2>
@@ -361,26 +361,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script> window.jQuery || document.write('<script src="scripts/jquery-1.11.2.js"><\/script>');</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<!-<script src="scripts/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>-->
-<script>
-  $(function() {
-    $( "#tabs" ).tabs();
-  });
-</script>
-  
-<script>
-$(document).ready(function(){
-
-  $('#image2').css('background-image', 'url("images/car_rental_bg1.png")');
-  $('#image3').css('background-image', 'url("images/car_rental_bg3.png")');
-
-});
-  
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type='text/javascript'> window.jQuery || document.write('<script src="scripts/jquery-1.11.2.js"><\/script>'); </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="scripts/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>      
@@ -390,12 +370,24 @@ $( "#tabs" ).tabs();
 });
 </script>
 
+<script>
+$(document).ready(function(){
+
+  $('#image2').css('background-image', 'url("images/car-rental-website-front-bg-3.png")');
+  $('#image3').css('background-image', 'url("images/car-rental-website-front-bg-1.png")');
+
+});
+  
+</script>
+
 <!-- Fallback to local -->
 <script src="//cdn.jsdelivr.net/foundation/4.3.1/js/foundation.min.js"></script>
 <script src="Foundation-5/js/foundation.min.js"></script>
+<script src="Foundation-5/js/foundation/foundation.abide.js"></script>
+<script src="Foundation-5/js/foundation/foundation.topbar.js"></script>
 <script>
       $(document).foundation({
-  abide : {
+  		abide : {
     live_validate : true, // validate the form as you go
     validate_on_blur : true, // validate whenever you focus/blur on an input field
     focus_on_invalid : true, // automatically bring the focus to an invalid input field
@@ -429,6 +421,8 @@ $( "#tabs" ).tabs();
   }
 });    
 </script>
+
+
 
 <!-- Fallback to local -->
 

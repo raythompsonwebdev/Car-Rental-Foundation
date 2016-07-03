@@ -373,13 +373,13 @@ html[xmlns] .clearfix { display: block; }
     #image2{
 
       height:290px;
-      background-image: url("../images/car-rental-website-front-bg-3.png");  
+      background-image: url("../images/car-rental-website-front-bg-3.png") ; 
 	  background-repeat:no-repeat; 
       width:93%; 
       margin:1% auto;
 	  figure{ width:96%; margin:0 auto; }
-      p{font-size:0.65em; color:$color; width:90%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em;}
-      h2{ font-size:1em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center;}
+      p{font-size:0.65em; color:$color; width:96%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em;}
+      h2{ font-size:0.95em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center;}
       form input{width:95%;}
       .link_btn { width:55.37931%; height:34px;  margin:5px auto; background-color:$color13; font-family:($fontStyle) ; color:$color; outline:none; border:0;  display:block;}
       .link_btn a{color:$color; width:100%; font-size:1em; text-align:center; height:34px; display:block; line-height:34px; }
@@ -487,9 +487,7 @@ html[xmlns] .clearfix { display: block; }
 	
 #wrapper{
  
- div.large-12, .medium-12, .small-12{padding:0 3%;}
- div.large-9, .medium-9,{padding:0 3%;}
- div.large-3, .medium-3{padding:0 3%;}
+ 
 
   .copy {   width: 96%;}
 	/*header*/
@@ -667,6 +665,7 @@ html[xmlns] .clearfix { display: block; }
 
 #wrapper{
   width:98%;
+  .medium-3{ padding:0 2% 0 1%;}
   h1{ width:97%;}
 
   #header{
@@ -697,6 +696,12 @@ html[xmlns] .clearfix { display: block; }
     
     }
   }
+  #right_coler{
+	  #image5 { height: 290px; width:100%;}
+	  #image2 { height: 290px; width:100%;}
+	  #image3 { height: 290px; width:100%;}
+  } 
+  
 
   #inner_wrapper{
 
@@ -718,9 +723,7 @@ html[xmlns] .clearfix { display: block; }
 @media (max-width: 800px){
 
 [data-abide].error small.error {font-size:0.75em;margin-bottom:0.3rem;   }
-div.large-12, .medium-12, .small-12{padding:1%;}
-div.large-9, .medium-9,{padding:1%;}
-div.large-3, .medium-3{padding:1%;} 
+ 
 
 #wrapper{
 
@@ -745,8 +748,6 @@ div.large-3, .medium-3{padding:1%;}
 	  .cars_box_txt {  width: 47.75602%;}
     
     }
-    
-
     }
 
   .specials_box {
@@ -758,11 +759,27 @@ div.large-3, .medium-3{padding:1%;}
   }	
  
   #right_coler {
-
-    #image5 {
-
-      form input[type="submit"] { width: 59.37931%; font-size:0.85em;}
-    }
+	  
+	 #image2 { 
+	   height: 250px; 
+	   width:100%;
+	   h2 { font-size: 0.90em; height:30px; line-height:30px;}
+	   p {font-size: 0.60em; width:96%; margin:5px auto;}
+	  }
+	  #image3 { 
+	   height: 250px;  
+	   width:100%;
+	   h2 { font-size: 0.90em; height:30px; line-height:30px;}
+	   p {font-size: 0.60em; width:96%;margin:5px auto; }
+	  }
+      #image5 {
+	   height: 250px; 
+	   width:100%;
+	   h2 { font-size: 0.90em; height:30px; line-height:30px;}
+	   p {font-size: 0.60em; width:96%; margin:5px auto; }
+	   form {  width: 96%;}
+	   form input[type="submit"] { width: 59.37931%; font-size:0.80em;}
+      }
   }
      
   #inner_wrapper{
@@ -838,30 +855,29 @@ div.large-3, .medium-3{padding:1%;}
     font-size:0.7em;
 
     #image5 { 
-
-     
-      h2 {    font-size: 1.1em; margin:auto;}
+      height: 230px;
+      margin:4% auto;
+      h2 {    font-size: 1.1em; margin:1% auto;}
+	  p { width:96%; margin: 5% auto; font-size:0.80em;}	
       form {   padding: 5px;  }
       input[type="submit"] { width: 120px;height: 34px;margin: 5px auto;  background-color:$color13;font-family:($fontStyle);color: $color; border:0; }
     }
    
     #image3 { 
-
-      background-repeat: no-repeat;  
-      margin:auto;
-      h2 {  text-indent:5px; }
-      p { width:95%; margin: 5% auto;}
-      .link_btn {  margin:2% auto;  text-align:center; padding: 3% 0px 0px 0%;}
+      height: 230px;  
+      margin:4% auto;
+      h2 {  font-size: 1.1em; margin:1% auto;}
+      p { width:96%; margin: 5% auto; font-size:0.80em;}
+      .link_btn {  margin:2% auto;  text-align:center; }
       .link_btn a { color: $color; width: 100%;font-size: 1.1em;  text-align: center;  margin: auto;    height: 34px;}
     }
     
     #image2 {   
-
-      background-repeat: no-repeat;  
-      margin:auto;
-      p { width:95%; margin:5% auto; }
-      h2 {  text-indent:5px; }
-      .link_btn {  margin:5px auto;  text-align:center; padding: 3% 0px 0px 0%;}
+      height: 230px; 
+      margin:4% auto;
+      p { width:96%; margin:5% auto;font-size:0.80em; }
+      h2 {  font-size: 1.1em;margin:1% auto; }
+      .link_btn {  margin:5px auto;  text-align:center; }
       .link_btn a {   color: $color;   width: 100%;   font-size: 1.1em;}
     }
   }
@@ -892,9 +908,7 @@ div.large-3, .medium-3{padding:1%;}
 
 #wrapper{
   width: 96%;
-  div.medium-12, .small-12{padding: 0 2%;}
-  div.medium-9,{padding: 0 2%;}
-  div.medium-3{padding: 0 2%;} 
+  
 
   .error[data-abide] small.error {font-size: 0.55rem; margin-bottom: 0.2rem;}
 
@@ -904,7 +918,7 @@ div.large-3, .medium-3{padding:1%;}
 
     margin:0 ; 
     padding:0;
-    nav.top-bar .toggle-topbar.menu-icon{ position:absolute; z-index:999; top:50%;}
+    nav.top-bar .toggle-topbar.menu-icon{ position:absolute; z-index:2; top:50%;}
     nav.top-bar .name h1 {  margin-left:1%; font-size:1.8em; }
     nav.top-bar #primary_nav { width:100%;  height: auto;}
     nav.top-bar #primary_nav a { line-height: 30px;  width: 100%; font-size:1.5em;}
@@ -1010,9 +1024,7 @@ div.large-3, .medium-3{padding:1%;}
 #wrapper{
 
   h1 { width: 98%; font-size:1.2em;}
-  div.medium-12, .small-12{padding: 0 4%;}
-  div.medium-9,{padding: 0 4%;}
-  div.medium-3{padding: 0 4%;}  
+  
   
   
   #header{
@@ -1100,7 +1112,7 @@ div.large-3, .medium-3{padding:1%;}
 
   #right_coler  {  display:none;}
 
-  .ui-tabs .ui-tabs-nav a { margin: 0px;  padding: 0.4em ;  font-size: 0.98em;}
+  .ui-tabs .ui-tabs-nav a { margin: 0px;  padding: 0.68em; font-size: 0.99em;}
     
   #inner_wrapper{
 
@@ -1137,12 +1149,11 @@ div.large-3, .medium-3{padding:1%;}
 
 /* Mobiles in landscape mode */
 @media  (max-width: 360px){
+.tabs{height:auto;}
 
 #wrapper{
-  div.medium-12, .small-12{padding: 0 4%;}
-  div.medium-9,{padding: 0 4%;}
-  div.medium-3{padding: 0 4%;}
-
+  
+  
   [data-abide].error small.error {  font-size: 0.75rem;  margin-bottom: 0.2rem;}
 
   #header{
@@ -1179,6 +1190,11 @@ div.large-3, .medium-3{padding:1%;}
   #left_column {
 
     h1 { color: $color7;  text-align: left;  margin: 1%;  width: 100%;   font-size: 1.5em;   height: 40px;  line-height: 40px;}
+	  
+	.ui-tabs {
+      
+      .ui-tabs-nav a { margin: 0px;  padding: 0.58em;font-size: 0.75em;}
+    } 
     
     .cars_box { 
 
@@ -1186,8 +1202,9 @@ div.large-3, .medium-3{padding:1%;}
       height: 210px; 
       margin-bottom: 10px;
       .cars_box_img  {   width: 100%;  margin: 0; height: 82.7692%;}
-	  .cars_box_img img {    margin: 0 auto; display:block;    width: 59.324%;}
-      .carsbutton {    width: 220px;}
+	  .cars_box_img img {   margin: 5% auto; display:block;    width: 59.324%;}
+	  .cars_box_txt .carsbutton {    width: 190px;}
+	  .cars_box_txt .car-icons {  width: 13%;}
       .cars_box_txt {margin-left:0; width:100%; font-size: 1em;}
       .cars_box_txt p {   margin: 5px 0px 5px 0px; font-size:0.75em;}
     }
@@ -1322,6 +1339,13 @@ div.large-3, .medium-3{padding:1%;}
       .cars_box_txt .cont_btn{  margin:0px 0 0 0; width:100%;}
       .carsbutton {    width: 180px;}
     }
+	  
+	.ui-tabs {
+      .ui-tabs-nav { margin: 0px;  }
+      .ui-tabs-nav li { margin: 0px; }
+	  .ui-tabs-nav a { margin: 0px;  font-size: 0.77em;padding: 0.38em; }
+      
+    } 
 
   }
 
@@ -1360,11 +1384,7 @@ div.large-3, .medium-3{padding:1%;}
         }
   }
 
-  .ui-tabs {
-      .ui-tabs-nav { margin: 0px;  font-size: 1.1em;}
-      .ui-tabs-nav li { margin: 0px; font-size: 43%;}
-      .ui-tabs-nav a { margin: 0px;  padding: 1em;  font-size:1.5em;}
-  } 
+  
 
   #worldsearchform{
 
