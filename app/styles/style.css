@@ -44,6 +44,8 @@ figure { margin: 0; padding: 0; }
 
 .group:after { clear: both; }
 
+.no-js .top-bar { display: none; }
+
 /*end of global css*/
 .clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
 
@@ -57,8 +59,10 @@ html[xmlns] .clearfix { display: block; }
 
 /*main wrapper*/
 #wrapper { margin: auto; height: auto; width: 100%; font-family: "Signika", Verdana, Geneva, arial, sans-serif; min-height: 900px; /*Form button*/ /*End Form button*/ /*Banner*/ /* left Column*/ /*Search_box form*/ /*destination Links*/ /*right column*/ /*end of info boxes*/ /*footer*/ }
+#wrapper .no-js .top-bar { display: none; }
+#wrapper .title-bar { width: 10%; float: right; }
 #wrapper h1 { color: #000000; text-align: left; margin: 1% auto; width: 98%; font-size: 1.8em; height: 40px; line-height: 40px; display: block; font-weight: bold; font-family: "Signika", Verdana, Geneva, arial, sans-serif; }
-#wrapper #apDiv1 { position: absolute; width: 47.9485%; height: 440px; z-index: 1; left: 50%; top: 10px; background-color: #FFFFFF; list-style-type: none; display: none; }
+#wrapper #apDiv1 { position: absolute; width: 35.9485%; height: 440px; z-index: 1; left: 50%; top: 70px; background-color: #FFFFFF; list-style-type: none; display: none; }
 #wrapper #apDiv1 h1 { color: #FFFFFF; width: 100%; text-align: center; height: 50px; line-height: 50px; margin: 0; background-color: #33CCFF; font-size: 2em; clear: both; }
 #wrapper #apDiv1 li a { font-size: 0.85em; }
 #wrapper #apDiv1 p { font-size: 0.85em; height: 40px; line-height: 40px; width: 41.0909%; margin: 0; float: left; display: inline-block; font-weight: bold; float: left; padding-left: 1%; }
@@ -77,18 +81,18 @@ html[xmlns] .clearfix { display: block; }
 #wrapper #apDiv1 #booking_form li .query_btn { text-align: center; line-height: 34px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; font-weight: bold; cursor: pointer; background-color: #fc773c; width: 52.99568%; margin-left: 5%; height: 34px; background-image: url("../images/car-rental-website-btn.gif"); background-repeat: no-repeat; border: 0; display: block; }
 #wrapper #apDiv1 #booking_form li .searchform_btn { width: 53.5%; height: 34px; margin: 1% 0; background-image: url("../images/car-rental-website-btn.gif"); background-repeat: no-repeat; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; border: 0; }
 #wrapper #header { background-color: #303836; height: 60px; width: 100%; margin: 0; /*primary nav*/ /*end of primary nav*/ }
-#wrapper #header nav.top-bar { z-index: 2; height: 60px; margin: 0; padding: 0; display: block; text-decoration: none; list-style: none; }
-#wrapper #header nav.top-bar .name { padding-left: 1%; height: 60px; list-style: none; }
-#wrapper #header nav.top-bar .name h1 { width: 100%; text-align: left; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; height: 60px; line-height: 60px; font-size: 2.2em; margin: 0; font-weight: bold; margin-left: 1%; }
-#wrapper #header nav.top-bar .name h1 span { color: #6ccff7; font-size: 1em; margin: 0 0 0 1%; width: 50px; line-height: 60px; height: 60px; }
-#wrapper #header nav.top-bar .title-area { width: 30%; }
-#wrapper #header nav.top-bar #primary_nav { height: 60px; width: 60%; float: right; margin: 0 0; padding: 0px; }
-#wrapper #header nav.top-bar #primary_nav ul { height: 60px; width: 100%; margin: 0px; text-align: center; }
-#wrapper #header nav.top-bar #primary_nav li { height: 60px; list-style: none; width: 16%; float: left; background-color: #303836; display: inline-block; text-align: center; font-size: 1em; }
-#wrapper #header nav.top-bar #primary_nav li:hover { background-color: #333; }
-#wrapper #header nav.top-bar #primary_nav a { height: auto; line-height: 25px; width: 100%; color: #FFFFFF; font-size: 0.9em; height: 60px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; }
-#wrapper #header nav.top-bar #primary_nav a:hover { color: #FFFFFF; background-color: #fc773c; }
-#wrapper #header nav.top-bar #primary_nav a:active { background-color: #FFCC33; }
+#wrapper #header #primary_nav { height: 60px; width: 60%; display: inline-block; margin: 0 0; padding: 0px; float: right; }
+#wrapper #header #primary_nav ul { height: 60px; width: 100%; margin: 0px; text-align: center; }
+#wrapper #header #primary_nav li { height: 60px; list-style: none; width: 16.66%; float: left; background-color: #303836; display: inline-block; text-align: center; font-size: 1em; }
+#wrapper #header #primary_nav li:hover { background-color: #333; }
+#wrapper #header #primary_nav a { height: auto; line-height: 20px; width: 100%; color: #FFFFFF; font-size: 0.9em; height: 60px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; }
+#wrapper #header #primary_nav a:hover { color: #FFFFFF; background-color: #fc773c; }
+#wrapper #header #primary_nav a:active { background-color: #FFCC33; }
+#wrapper #header .title-area { width: 100%; }
+#wrapper #header .title-area .name { padding-left: 1%; height: 60px; list-style: none; width: 100%; }
+#wrapper #header .title-area .name h1 { width: 100%; text-align: left; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; height: 60px; line-height: 60px; font-size: 2.2em; margin: 0; font-weight: bold; margin-left: 1%; }
+#wrapper #header .title-area .name h1 span { color: #6ccff7; font-size: 1em; margin: 0 0 0 1%; width: 50px; line-height: 60px; height: 60px; }
+#wrapper #header .top-bar { z-index: 2; height: 60px; margin: 0; padding: 0; display: block; text-decoration: none; list-style: none; }
 #wrapper #index_form_btn { width: 47.42268%; height: 100px; float: right; font-size: 2em; line-height: 2.1em; text-align: center; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; cursor: pointer; margin-right: 1%; }
 #wrapper #index_form_btn:hover { color: #FFCC33; }
 #wrapper #banner { height: 450px; width: 100%; margin: 1% auto; clear: both; background-image: url("../images/car-rental-website-banner-bg.jpg"); background-repeat: no-repeat; float: left; /*banner end*/ }
@@ -176,7 +180,7 @@ html[xmlns] .clearfix { display: block; }
 #wrapper #inner_wrapper .front_img { width: 100%; margin: 0; padding: 0; }
 #wrapper #inner_wrapper .panel { float: left; height: 290px; width: 23.9999%; margin: 0px 0px 15px 0.8%; padding: 5px; font-size: 90%; border: none; background-color: #FFFFFF; display: inline-block; }
 #wrapper #inner_wrapper .panel p { font-size: 0.80em; color: #FFFFFF; width: 96%; margin: 4% auto; height: auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; letter-spacing: 0.1em; display: block; line-height: 1.5em; }
-#wrapper #inner_wrapper .panel h2 { font-size: 1.3em; color: #FFFFFF; height: 30px; margin: 1% auto; line-height: 30px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; text-align: center; }
+#wrapper #inner_wrapper .panel h2 { font-size: 1.1em; color: #FFFFFF; height: 30px; margin: 1% auto; line-height: 30px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; text-align: center; }
 #wrapper #inner_wrapper .panel .link_btn { width: 55.37931%; height: 34px; margin: 1% auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; background-color: #EF3528; }
 #wrapper #inner_wrapper .panel .link_btn:hover { background-color: #FFFFFF; }
 #wrapper #inner_wrapper .panel a { height: 34px; line-height: 34px; width: 100%; text-align: center; font-size: 1em; font-weight: bold; color: #FFFFFF; display: block; }
@@ -219,7 +223,7 @@ html[xmlns] .clearfix { display: block; }
   #wrapper #apDiv1 #booking_form .start_end select { width: 60px; margin: 1% 0 0 0; height: 35px; line-height: 40px; }
   #wrapper #apDiv1 #booking_form select { line-height: 1.5em; font-family: "Signika", Verdana, Geneva, arial, sans-serif; font-size: 0.6em; }
   #wrapper #apDiv1 #booking_form .pick_return select { margin: 1% 0 0 0; }
-  #wrapper #apDiv1 #booking_form li .searchform_btn { width: 53%; }
+  #wrapper #apDiv1 #booking_form li .searchform_btn { width: 53%; font-size: 90%; }
   #wrapper #apDiv1 #booking_form li .query_btn { width: 51.99568%; }
   #wrapper #index_form_btn { font-size: 2em; line-height: 50px; text-align: center; cursor: pointer; margin-right: 1.5%; }
   #wrapper #banner { height: 430px; width: 98%; float: none; }
@@ -267,10 +271,12 @@ html[xmlns] .clearfix { display: block; }
   #wrapper footer #footer_nav li { width: 16.6459%; }
   #wrapper footer #footer_nav a { font-size: 0.8em; } }
 @media (max-width: 980px) { #wrapper { width: 98%; }
-  #wrapper .medium-3 { padding: 0 2% 0 1%; }
+  #wrapper .medium-3 { padding: 0 2% 0 0; }
   #wrapper h1 { width: 97%; }
   #wrapper #header nav.top-bar .name h1 { font-size: 2em; }
   #wrapper #apDiv1 p.formnum .dropcap { width: 16%; }
+  #wrapper #apDiv1 li .searchform_btn { width: 53%; font-size: 85%; }
+  #wrapper #apDiv1 #booking_form li .query_btn { font-size: 85%; }
   #wrapper #left_column h1 { font-size: 1.8em; width: 100%; }
   #wrapper #left_column h3 { font-size: 1.2em; }
   #wrapper #left_column .cars_box .cars_box_img { float: left; width: 50%; height: 100%; }
@@ -297,7 +303,7 @@ html[xmlns] .clearfix { display: block; }
   #wrapper #right_coler #image3 { height: 250px; width: 100%; }
   #wrapper #right_coler #image3 h2 { font-size: 0.90em; height: 30px; line-height: 30px; }
   #wrapper #right_coler #image3 p { font-size: 0.60em; width: 96%; margin: 5px auto; }
-  #wrapper #right_coler #image5 { height: 250px; width: 100%; }
+  #wrapper #right_coler #image5 { height: 250px; width: 100%; padding: 1%; }
   #wrapper #right_coler #image5 h2 { font-size: 0.90em; height: 30px; line-height: 30px; }
   #wrapper #right_coler #image5 p { font-size: 0.60em; width: 96%; margin: 5px auto; }
   #wrapper #right_coler #image5 form { width: 96%; }
@@ -309,13 +315,15 @@ html[xmlns] .clearfix { display: block; }
   #wrapper .ui-tabs .ui-tabs-panel { padding: 1% 0; }
   #wrapper [data-abide].error small.error { font-size: 0.65rem; margin-bottom: 0.5rem; }
   #wrapper #apDiv1 { width: 55.9485%; left: 40%; }
-  #wrapper #apDiv1 p { font-size: 0.7em; }
+  #wrapper #apDiv1 p { font-size: 0.65em; }
   #wrapper #apDiv1 p .dropcap { width: 11%; }
-  #wrapper #apDiv1 p.formnum { width: 27.6818%; margin: 0px; }
+  #wrapper #apDiv1 p.formnum { width: 28%; margin: 0px; font-size: 0.65em; }
   #wrapper #apDiv1 p.formnum .dropcap { width: 18%; }
   #wrapper #apDiv1 h1 { font-size: 1.6em; }
   #wrapper #apDiv1 #booking_form .start_end select { width: 50px; font-size: 0.7em; }
   #wrapper #apDiv1 #booking_form #date_quote { width: 40%; }
+  #wrapper #apDiv1 #booking_form li .searchform_btn { width: 53%; font-size: 80%; }
+  #wrapper #apDiv1 #booking_form li .query_btn { font-size: 80%; }
   #wrapper #banner { height: 340px; }
   #wrapper #banner .big { width: 45%; font-size: 2em; }
   #wrapper #banner figcaption { font-size: 1em; }
@@ -349,15 +357,16 @@ html[xmlns] .clearfix { display: block; }
   #wrapper #inner_wrapper .panel .link_btn { font-size: 0.9em; }
   #wrapper #inner_wrapper #newsletter .newsletter { width: 98%; } }
 /*end*/
-@media (max-width: 640px) { #wrapper { width: 96%; }
+@media (max-width: 640px) { .no-js .top-bar { display: block; }
+  #wrapper { width: 96%; }
   #wrapper .error[data-abide] small.error { font-size: 0.55rem; margin-bottom: 0.2rem; }
   #wrapper h1 { width: 100%; }
   #wrapper #header { margin: 0; padding: 0; }
   #wrapper #header nav.top-bar .toggle-topbar.menu-icon { position: absolute; z-index: 2; top: 50%; }
   #wrapper #header nav.top-bar .name h1 { margin-left: 1%; font-size: 1.8em; }
-  #wrapper #header nav.top-bar #primary_nav { width: 100%; height: auto; }
-  #wrapper #header nav.top-bar #primary_nav a { line-height: 30px; width: 100%; font-size: 1.5em; }
-  #wrapper #header nav.top-bar #primary_nav ul { height: auto; }
+  #wrapper #header nav.top-bar #primary_nav { display: block; width: 100%; height: auto; }
+  #wrapper #header nav.top-bar #primary_nav a { display: block; line-height: 30px; width: 100%; font-size: 1.5em; }
+  #wrapper #header nav.top-bar #primary_nav ul { display: block; height: auto; }
   #wrapper #header nav.top-bar #primary_nav li { line-height: 30px; width: 100%; float: none; display: block; }
   #wrapper #apDiv1 { position: absolute; width: 68.0515%; left: 28%; height: 500px; }
   #wrapper #apDiv1 p { font-size: 0.6em; }
@@ -372,9 +381,10 @@ html[xmlns] .clearfix { display: block; }
   #wrapper #inner_wrapper .panel h2 { font-size: 0.9em; height: 40px; line-height: 1.5em; text-align: center; }
   #wrapper #inner_wrapper .panel p { font-size: 0.65em; }
   #wrapper #inner_wrapper .panel input[type="text"] { width: 100%; margin: auto; }
-  #wrapper #inner_wrapper .panel .link_btn, #wrapper #inner_wrapper .panel .newsletter a { font-size: 0.9em; }
+  #wrapper #inner_wrapper .panel .link_btn, #wrapper #inner_wrapper .panel .newsletter a { font-size: 0.9em; width: 65.379%; }
   #wrapper #inner_wrapper #newsletter .newsletter input[type="email"] { margin-top: 0.1rem; }
   #wrapper #inner_wrapper #newsletter .newsletter input[type="text"] { margin-top: 0.3rem; }
+  #wrapper #inner_wrapper #newsletter .newsletter input[type="submit"] { width: 65.379%; font-size: 0.85em; }
   #wrapper #left_column { float: none; margin: 0px auto; padding: 0px; width: 98%; }
   #wrapper #left_column h1 { font-size: 1.5em; width: 70%; margin: 2% 0 2% 2%; }
   #wrapper #left_column p { font-size: 0.7em; line-height: 1.5em; }
@@ -454,9 +464,9 @@ html[xmlns] .clearfix { display: block; }
   #wrapper #left_column .cars_box { width: 100%; height: 210px; margin-bottom: 10px; }
   #wrapper #left_column .cars_box .cars_box_img { width: 100%; margin: 0; height: 82.7692%; }
   #wrapper #left_column .cars_box .cars_box_img img { margin: 5% auto; display: block; width: 59.324%; }
+  #wrapper #left_column .cars_box .cars_box_txt { margin-left: 0; width: 100%; font-size: 1em; }
   #wrapper #left_column .cars_box .cars_box_txt .carsbutton { width: 190px; }
   #wrapper #left_column .cars_box .cars_box_txt .car-icons { width: 13%; }
-  #wrapper #left_column .cars_box .cars_box_txt { margin-left: 0; width: 100%; font-size: 1em; }
   #wrapper #left_column .cars_box .cars_box_txt p { margin: 5px 0px 5px 0px; font-size: 0.75em; }
   #wrapper #left_column #contact_form { width: 96%; height: auto; margin: auto; }
   #wrapper #left_column #contact_form .button_contact { margin: 5px 0px 0px 23%; }

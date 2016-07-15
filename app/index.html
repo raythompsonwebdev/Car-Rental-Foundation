@@ -8,11 +8,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Car-Rental-Home-Page</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css" />
-<link rel="stylesheet" href="Foundation-5/css/foundation.min.css" />
+
+<link rel="stylesheet" href="Foundation-6/css/foundation.min.css" />
 <link rel="stylesheet" href="styles/normalize.css" />
 <link rel="stylesheet" href="styles/style.css" />
 <link href='http://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="foundation-icons/foundation-icons.css">
 <!--[if lt IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -34,13 +35,17 @@
 
 <header id="header">
 
-<nav class="top-bar" data-topbar role="navigation" >
+<div class="top-bar" >
+<div class="title-bar" data-responsive-toggle="primary_nav" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+</div>
 
-<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-<ul class="title-area"><li class="name"><h1><span >CAR</span> Rental</h1></li></ul>
 
-<section class="top-bar-section" id="primary_nav">
-    <ul  class="right" >
+ <ul class="title-area"><li class="name"><h1><span >CAR</span> Rental</h1></li></ul>
+  
+
+     <nav  id="primary_nav" class="top-bar-right" >
+    <ul  class="vertical medium-horizontal menu" >
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="specials.html" title="special" >Special Offers</a></li>
         <li><a href="cars.html">Cars</a></li>
@@ -48,9 +53,10 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>    
-</section>
-
 </nav>
+ 
+</div>
+
 
 </header>
 
@@ -262,7 +268,7 @@
 
 <!-- jsDelivr CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script > window.jQuery || document.write('<script src="scripts/jquery-1.11.2.js"><\/script>');</script>
+<script > window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>');</script>
 <!-- Fallback to local -->
 <script>
 $(init);
@@ -274,45 +280,14 @@ function fadeIn(){  $("#apDiv1").fadeIn("slow");  }
 function fadeOut(){  $("#apDiv1").fadeOut("fast");  } 
 </script>
 
-<script src="//cdn.jsdelivr.net/foundation/4.3.1/js/foundation.min.js"></script>
-<script src="Foundation-5/js/foundation.min.js"></script>
-
-<script>
-$(document).foundation({
-  abide : {
-    live_validate : true, // validate the form as you go
-    validate_on_blur : true, // validate whenever you focus/blur on an input field
-    focus_on_invalid : true, // automatically bring the focus to an invalid input field
-    error_labels: true, // labels with a for="inputId" will recieve an `error` class
-    // the amount of time Abide will take before it validates the form (in ms). 
-    // smaller time will result in faster validation
-    timeout : 1000,
-    patterns : {
-      alpha: /^[a-zA-Z]+$/,
-      alpha_numeric : /^[a-zA-Z0-9]+$/,
-      integer: /^[-+]?\d+$/,
-      number: /^[-+]?[1-9]\d*$/,
- 
-      // http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#valid-e-mail-address
-      email : /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
-      
-    },
-
-    reveal : {
-    animation_speed: 500
-  },
-  tooltip : {
-    disable_for_touch: true
-  },
-  topbar : {
-    custom_back_text: false,
-    is_hover: false,
-    mobile_show_parent_link: true
-  }
+<script src="foundation-6/js/vendor/foundation.min.js"></script>
+<script src="foundation-6/js/vendor/what-input.min.js"></script>
     
-  }
-});    
-</script>
+<script>
+
+    $(document).foundation();
+    
+</script>   
 
      
     
