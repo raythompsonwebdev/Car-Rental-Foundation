@@ -86,7 +86,8 @@ html[xmlns] .clearfix { display: block; }
 	min-height:900px;
 	.no-js .top-bar {  display: none;}
 	
-	.title-bar{width:10%; float:right;}
+	.title-bar{width:10%; float:right; height: 100%; }
+	
 	h1{ color: $color7;  text-align:left; margin:1% auto;  width:98%; font-size:1.8em; height:40px; line-height:40px; display:block; font-weight:bold; font-family:($fontStyle) ;}
 
 #apDiv1 { 
@@ -160,15 +161,16 @@ html[xmlns] .clearfix { display: block; }
 		ul{  height: 60px; width:100%;margin:0px;  text-align:center;    }
 		li{height: 60px;list-style:none;width: 16.66%; float:left; background-color: $color8;display:inline-block; text-align:center; font-size:1em;   }
 		li:hover{ background-color:#333; }
-		a{ height:auto ;line-height:20px;  width:100%;  color:$color; font-size:0.9em;  height:60px;font-family:($fontStyle) ;}
+		a{ height:auto ;line-height:20px;  width:100%;  color:$color; font-size:0.9em;  height:60px;font-family:($fontStyle) ; }
 		a:hover{ color:$color; background-color:$color11; }
 		a:active{ background-color:$color9;} 
 	}
 	  	
 	.title-area{
-		width:100%;
+		float:left;
+		width:32%;
 		.name{ 
-
+			background-color:#333;
 			padding-left:1%; 
 			height: 60px; 
 			list-style:none;
@@ -179,7 +181,7 @@ html[xmlns] .clearfix { display: block; }
 	  }
 	  
 	.top-bar {
-
+		background-color:#333;
 		z-index:2;
 		height: 60px; 
 		margin:0; 
@@ -881,7 +883,130 @@ html[xmlns] .clearfix { display: block; }
     
 }
 
+@media (max-width: 667px){
 
+#wrapper{
+
+	h1{ font-size:1.5em;}
+	.ui-tabs .ui-tabs-panel { padding: 1% 0;}
+
+	[data-abide].error small.error {   font-size:0.65rem; margin-bottom:0.5rem;}
+	
+	#header {
+		#primary_nav {
+			width: 68%;
+			li {   height: 60px;    list-style: none;	width: 16.66%;}
+			a { font-size:0.85em; padding: .7rem .7rem;}
+		}
+	}
+	#apDiv1 {
+
+		width: 55.9485%; 
+		left:40%;
+
+		p {  font-size: 0.65em;}
+		p .dropcap {    width: 11%;}
+
+
+		p.formnum {  width: 28%; margin: 0px; font-size: 0.65em;}
+		p.formnum .dropcap {    width: 18%;}
+
+		h1 {   font-size: 1.6em;}
+
+		#booking_form .start_end select { width: 50px; font-size:0.7em;}
+		#booking_form #date_quote { width: 40%;}
+		#booking_form li .searchform_btn { width: 53%; font-size:80%;}
+		#booking_form li .query_btn {   font-size:80%;}
+	}
+
+	#banner { 
+
+		height:340px; 
+		.big { width:45%; font-size:2em;}
+		figcaption { font-size: 1em;}
+	}
+
+	#left_column {
+
+		float: left;   
+		margin: 0px;   
+		padding: 5px;
+
+		#contact_form .button_contact {   width: 123px;   height: 35px;   margin: 5px 0px 0px 20%;}
+		.cars_box .cars_box_txt {  display: inline-block;   float: left;  font-size:0.9em;}
+	}
+
+	.specials_box {
+
+		width: 48%; 
+		height:250px;
+
+		.specials_box_img { 
+			height: 110px; 
+			p { font-size:0.65em; margin:0;}
+		}
+
+		.specials_btn_box .special_price { float: right;  margin: 10px 0px 20px;  }
+		.specials_btn_box .cont_btn {  float: right;   width: 100%;}
+
+		.specials_box_txt {  
+			padding: 5px;   
+			color: $color4;
+			p {  width: 100%; font-size:0.7em; height: auto; margin:0;}
+		}
+	}
+
+	#worldsearchform h2 {  font-size: 1.2em;   width: 70%;}
+
+	#right_coler {
+
+		padding: 0px; 
+		font-size:0.7em;
+
+		#image5 { 
+			height: 230px;
+			margin:4% auto;
+			h2 {    font-size: 1.1em; margin:1% auto;}
+			p { width:96%; margin: 5% auto; font-size:0.80em;}	
+			form {   padding: 5px;  }
+			input[type="submit"] { width: 120px;height: 34px;margin: 5px auto;  background-color:$color13;font-family:($fontStyle);color: $color; border:0; }
+		}
+
+		#image3 { 
+			height: 230px;  
+			margin:4% auto;
+			h2 {  font-size: 1.1em; margin:1% auto;}
+			p { width:96%; margin: 5% auto; font-size:0.80em;}
+			.link_btn {  margin:2% auto;  text-align:center; }
+			.link_btn a { color: $color; width: 100%;font-size: 1.1em;  text-align: center;  margin: auto;    height: 34px;}
+		}
+
+		#image2 {   
+			height: 230px; 
+			margin:4% auto;
+			p { width:96%; margin:5% auto;font-size:0.80em; }
+			h2 {  font-size: 1.1em;margin:1% auto; }
+			.link_btn {  margin:5px auto;  text-align:center; }
+			.link_btn a {   color: $color;   width: 100%;   font-size: 1.1em;}
+		}
+	}
+
+	#inner_wrapper {
+
+		.panel {   
+			float: left; 
+			h2 {  font-size:1em; text-align:center; height:auto; margin: 0px;}
+			p {  font-size:0.66em; width:100%; margin: 10% auto;}
+			figure{margin:0;}
+			.link_btn {font-size:0.9em;}
+		}
+
+		#newsletter .newsletter { width: 98%;}
+	}
+
+}
+	
+}
 /*end*/
 
 @media (max-width: 640px){
@@ -1000,6 +1125,50 @@ html[xmlns] .clearfix { display: block; }
 
 }
 
+@media (max-width: 600px){
+	
+#wrapper {
+	
+	#header {
+		
+		.title-area { float: left;  width: 40%;}
+		
+		#primary_nav {
+			height: auto;
+			width: 100%;
+			display: inline-block;
+			margin: 0 0;
+			padding: 0px;
+			float: right;
+			li {height: 60px;list-style: none; display:block; width: 100%;}
+			li a {  height: auto;	line-height: 30px;}
+			
+		}
+	}
+	
+	#left_column #contact_form input[type="submit"] {   margin: 5px 0px 0px 24%;}
+	.specials_box {
+
+		width: 48%; 
+		height:250px;
+
+		.specials_box_img { 
+			height: 110px; 
+			p { font-size:0.65em; margin:0; width: 51.444%;}
+		}
+
+		.specials_btn_box .special_price { float: right;  margin: 10px 0px 20px;  }
+		.specials_btn_box .cont_btn {  float: right;   width: 100%;}
+
+		.specials_box_txt {  
+			padding: 5px;   
+			color: $color4;
+			p {  width: 100%; font-size:0.7em; height: auto; margin:0;}
+		}
+	}
+}
+}
+
 @media  (max-width: 480px){
  
 #wrapper{
@@ -1009,11 +1178,21 @@ html[xmlns] .clearfix { display: block; }
 
 
 	#header{
-		nav.top-bar .title-area {    width: 45%;}
-		nav.top-bar #primary_nav li { line-height:30px;}
-		nav.top-bar .name h1 { text-align: left; font-size:1.6em; }
-		nav.top-bar #primary_nav a {  height: 70px;  line-height: 40px;   font-size: 0.55em;}
-	} 
+		.title-area { float: left;  width: 50%;}
+		
+		#primary_nav {
+			height: auto;
+			width: 100%;
+			display: inline-block;
+			margin: 0 0;
+			padding: 0px;
+			float: right;
+			li {height: 60px;list-style: none; display:block; width: 100%;}
+			li a {  height: auto;	line-height: 30px;}
+			
+		}
+	}
+
 
 	#apDiv1 { 
 

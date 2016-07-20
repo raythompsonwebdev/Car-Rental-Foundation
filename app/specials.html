@@ -8,10 +8,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Car-Rental-Special-Offers-Page</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css" />
-<link rel="stylesheet" href="Foundation-5/css/foundation.min.css" />
-<link rel="stylesheet" href="styles/style.css" />
+<link rel="stylesheet" href="Foundation-6/css/foundation.min.css" />
 <link rel="stylesheet" href="styles/normalize.css" />
+<link rel="stylesheet" href="styles/style.css" />
+<link rel="stylesheet" href="foundation-icons/foundation-icons.css">
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/richmond/jquery-ui.css" /> 
 <link rel="stylesheet" href="styles/redmond/jquery-ui-1.10.3.custom.min.css" />
 
@@ -38,24 +38,26 @@
 <div class="large-12 medium-12 small-12 columns">
 <header id="header">
 
-<nav class="top-bar" data-topbar role="navigation" >
-<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-<ul class="title-area">
-<li class="name">
-<h1><span >CAR</span> Rental</h1>
-</li>
-</ul>
-<section class="top-bar-section" id="primary_nav">
-<ul  class="right" >
-<li class="active"><a href="index.html">Home</a></li>
-<li><a href="specials.html" title="special" >Special Offers</a></li>
-<li><a href="cars.html">Cars</a></li>
-<li><a href="location.html">Locations</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>    
-</section>
+<div class="top-bar" >
+<div class="title-bar" data-responsive-toggle="primary_nav" data-hide-for="medium">
+   <button type="button" data-toggle>Menu</button>
+</div>
+
+ <ul class="title-area"><li class="name"><h1><span >CAR</span> Rental</h1></li></ul>
+  
+   <nav  id="primary_nav" class="top-bar-right" >
+    <ul  class="vertical medium-horizontal menu" >
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="specials.html" title="special" >Special Offers</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="location.html">Locations</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>    
 </nav>
+ 
+</div>
+
 
 </header>
 </div>    
@@ -540,7 +542,8 @@ Advance booking time: 4 hours
 
 <!-- jsDelivr CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type='text/javascript'> window.jQuery || document.write('<script src="scripts/jquery-1.11.2.js"><\/script>'); </script>
+<script > window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>');</script>
+<!-- Fallback to local -->
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="scripts/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>      
 <script>
@@ -551,23 +554,14 @@ $( "#tabs" ).tabs();
 
 <!-- Fallback to local -->
 <script src="//cdn.jsdelivr.net/foundation/4.3.1/js/foundation.min.js"></script>
-<script src="Foundation-5/js/foundation.min.js"></script>
-
+<script src="foundation-6/js/vendor/foundation.min.js"></script>
+<script src="foundation-6/js/vendor/what-input.min.js"></script>
+    
 <script>
-      $(document).foundation({
-  reveal : {
-    animation_speed: 500
-  },
-  tooltip : {
-    disable_for_touch: true
-  },
-  topbar : {
-    custom_back_text: false,
-    is_hover: false,
-    mobile_show_parent_link: true
-  }
-});
-</script>
+
+    $(document).foundation();
+    
+</script>   
      
     
 </body>

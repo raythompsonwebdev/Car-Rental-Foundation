@@ -11,15 +11,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--End Scale-->
 <title>Car-Rental-401-Page</title>
-
-<!--<link rel="stylesheet" href="styles/foundation-css/foundation.css" />-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css" />
-<!--<link rel="stylesheet" href="Foundation-5/css/foundation.min.css" />-->
-<link rel="stylesheet" href="Foundation-5/css/foundation.min.css" />
-<link rel="stylesheet" href="styles/style.css" />
+<link rel="stylesheet" href="Foundation-6/css/foundation.min.css" />
 <link rel="stylesheet" href="styles/normalize.css" />
-
+<link rel="stylesheet" href="styles/style.css" />
 <link href='http://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="foundation-icons/foundation-icons.css">
 
 <!--[if lt IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -39,20 +35,28 @@
 <div class="row">
 <div class="large-12 medium-12 small-12 columns">
 <header id="header">
-<nav class="top-bar" data-topbar role="navigation" >
-<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-<ul class="title-area"><li class="name"><h1><span >CAR</span> Rental</h1></li></ul>
-<section class="top-bar-section" id="primary_nav">
-<ul  class="right" >
-<li class="active"><a href="">Home</a></li>
-<li><a href="" title="special" >Special Offers</a></li>
-<li><a href="">Cars</a></li>
-<li><a href="">Locations</a></li>
-<li><a href="">About</a></li>
-<li><a href="">Contact</a></li>
-</ul>    
-</section>
+
+<div class="top-bar" >
+<div class="title-bar" data-responsive-toggle="primary_nav" data-hide-for="medium">
+   <button type="button" data-toggle>Menu</button>
+</div>
+
+ <ul class="title-area"><li class="name"><h1><span >CAR</span> Rental</h1></li></ul>
+  
+   <nav  id="primary_nav" class="top-bar-right" >
+    <ul  class="vertical medium-horizontal menu" >
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#" title="special" >Special Offers</a></li>
+        <li><a href="#">Cars</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>    
 </nav>
+ 
+</div>
+
+
 </header>
 </div>    
 </div>
@@ -91,12 +95,12 @@
 <div class="large-12 medium-12 small-12 columns">
 
 <ul id="footer_nav">
-<li><a href="" tabindex="1">Home</a></li>
-<li><a href="" tabindex="2">Specials</a></li>
-<li><a href="">Cars</a></li>
-<li><a href="">Locations</a></li>
-<li><a href="">About</a></li>
-<li><a href="">Contact</a></li>
+<li><a href="#" >Home</a></li>
+<li><a href="#">Specials</a></li>
+<li><a href="#">Cars</a></li>
+<li><a href="#">Locations</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
 </ul>
 
 
@@ -112,29 +116,19 @@
 
 </div><!--row end-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>if (!window.jQuery) { document.write('<script src="scripts/jquery-1.11.2.js"><\/script>'); }</script>
-
 <!-- jsDelivr CDN -->
-<script src="//cdn.jsdelivr.net/foundation/4.3.1/js/foundation.min.js"></script>
-<script src="Foundation-5/js/foundation.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script > window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>');</script>
 <!-- Fallback to local -->
 
+<script src="//cdn.jsdelivr.net/foundation/4.3.1/js/foundation.min.js"></script>
+<script src="foundation-6/js/vendor/foundation.min.js"></script>
+<script src="foundation-6/js/vendor/what-input.min.js"></script>
+    
 <script>
-      $(document).foundation({
-  reveal : {
-    animation_speed: 500
-  },
-  tooltip : {
-    disable_for_touch: true
-  },
-  topbar : {
-    custom_back_text: false,
-    is_hover: false,
-    mobile_show_parent_link: true
-  }
-});
-</script>
+
+    $(document).foundation();
+    
+</script> 
 </body>
 </html>
