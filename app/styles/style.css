@@ -451,7 +451,7 @@ html[xmlns] .clearfix { display: block; }
   #wrapper .specials_box .specials_btn_box .cont_btn { float: right; width: 100%; }
   #wrapper .specials_box .specials_box_txt { padding: 5px; color: #cccccc; }
   #wrapper .specials_box .specials_box_txt p { width: 100%; font-size: 0.8em; height: auto; margin: 0; }
-  #wrapper .ui-tabs .ui-tabs-nav a { font-size: 0.96em; }
+  #wrapper .ui-tabs .ui-tabs-nav a { font-size: 0.95em; }
   #wrapper .ui-tabs-panel { padding: 0; margin-top: 1%; }
   #wrapper #right_coler { display: none; }
   #wrapper footer { height: 40px; }
