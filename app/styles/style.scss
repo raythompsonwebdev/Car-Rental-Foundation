@@ -21,6 +21,24 @@ $fontStyle:'Signika', Verdana, Geneva, arial, sans-serif;
 }
 
 
+@mixin gradient($baseColor, $toColor){
+  background-color:$baseColor;
+  background-image: -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
+  background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, $baseColor),color-stop(1, $toColor));  /* Saf4+, Chrome */
+  background-image: linear-gradient(top,$baseColor, $toColor);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');   /* IE6â��IE9 */
+}
+
+
+@mixin rounded($radius: 5px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+
+
+
 @charset "utf-8";
 
 
@@ -28,7 +46,7 @@ $fontStyle:'Signika', Verdana, Geneva, arial, sans-serif;
 
 html, body, div, span, h1, h2, h3, h4, h5, h6,  blockquote, pre, a, abbr, acronym, address, big, cite, code,img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {  	margin: 0;  padding: 0;  border: 0;  outline: 0;  font-size: 100%;  vertical-align: baseline;  	background: transparent;  }  
 
-body { @include box-sizing($type:border-box);   line-height: 1;   padding:0;}  
+body { @include box-sizing($type:border-box);  line-height: 1; height: auto;  padding:0;}  
 ol, ul {  list-style: none;   }  
 blockquote, q {  quotes: none;     }  
 blockquote:before, blockquote:after,  
@@ -138,8 +156,12 @@ html[xmlns] .clearfix { display: block; }
 	.pick_return select{ width:90%;margin:1% 0 0 0; height:35px; font-size:0.85em;} 
 	li #date_quote{width:43%;}  
 	.start_end select{ width:60px; margin:1% 0 0 0; height:35px;line-height:1.5em; font-size: 0.8em; }
-	li .query_btn{text-align:center; line-height:34px; font-family:($fontStyle) ; color:$color; font-weight:bold; cursor: pointer; background-color:$color11; width:52.99568%; margin-left:5%; height:34px; background-image: url("../images/car-rental-website-btn.gif"); background-repeat:no-repeat;border:0; display:block;} 
-	li .searchform_btn{width:53.5%; height: 34px;margin: 1% 0;background-image: url("../images/car-rental-website-btn.gif");background-repeat: no-repeat;font-family:($fontStyle);color: $color; border:0; }
+	li .query_btn{text-align:center; line-height:34px; font-family:($fontStyle) ; color:$color; font-weight:bold; cursor: pointer; background-color:$color11; width:52.99568%; margin-left:5%; height:34px;  @include gradient(#FC7D3C, #EE2A26); border:0; display:block;} 
+	li .query_btn:hover{@include gradient(#EE2A26,#FC7D3C)}
+	
+	li .searchform_btn{width:53.5%; height: 34px;margin: 1% 0;@include gradient(#FC7D3C, #EE2A26);font-family:($fontStyle);color: $color; border:0; }
+	li .searchform_btn:hover{@include gradient(#EE2A26,#FC7D3C)}
+		
 	} 
 }
 
@@ -217,7 +239,10 @@ html[xmlns] .clearfix { display: block; }
 		width: 100%; 
 		margin:1% auto;
 		clear:both;
-		background-image: url("../images/car-rental-website-banner-bg.jpg") ;  background-repeat:no-repeat; 
+		@include rounded();
+		/*background-image: url("../images/car-rental-website-banner-bg.jpg") ;  background-repeat:no-repeat;*/
+		@include gradient(#35BEF2, #B6E6FC);
+		
 		float: left;
 
 		figure#bannerimage{ width:50.26016%; height:54.25531%; margin:0px;}
@@ -234,9 +259,9 @@ html[xmlns] .clearfix { display: block; }
 		padding:0;
 		width:100%; 
 
-		p { font-family:($fontStyle) ;  color: $color6; font-size:1em; line-height:1.6em; }
+		p { font-family:($fontStyle) ;  color: $color6; font-size:1em; line-height:1.8em; }
 		h1{ color: $color7;  text-align:left; margin:1% 0;  width:70%; font-size:2.1em; height:40px; line-height:40px; font-weight:bold;}
-		h3{ color:#06F; margin:1% 0; height:25px; line-height:25px; font-size:1.5em;  }
+		h3{ color:#06F; margin:1% 0; height:25px; line-height:25px; font-size:1.3em;  }
 
 		/*Contact form*/
 		#contact_form{ 
@@ -244,12 +269,12 @@ html[xmlns] .clearfix { display: block; }
 			height:500px;  
 			margin-left: 2%;
 
-			input{width:75%; height:35px; font-size:1.5em;  }
+			input{width:75%; height:35px; font-size:1em;  }
 			input[type="submit"]{width: 123px;height: 35px; margin: 5px 0px 0px 17%; color:$color;  font-family:($fontStyle) ; line-height:0; }
-			textarea{ width:75%; font-size:1.5em; line-height:1.5em; }
-			label{ font-family:($fontStyle) ; color:$color6; font-size:1.2em; width:17%; height:30px; line-height:30px;float:left; text-indent:1%;}
-			input[type="submit"]{width: 20%; height: 35px; margin: 5px 0px 0px 17%; color:$color;  font-family:($fontStyle) ; line-height:0; background-color:$color13;font-size:1.2em; }
-			input[type="submit"]:hover{ background-color:$color; color:$color13; font-size:1.3em;  }
+			textarea{ width:75%; font-size:1em; line-height:1.5em; }
+			label{ font-family:($fontStyle) ; color:$color6; font-size:1.2em; width:17%; height:35px; line-height:35px;float:left; text-indent:1%;}
+			input[type="submit"]{width: 20%; height: 35px; margin: 5px 0px 0px 17%;  font-family:($fontStyle) ; line-height:0; font-size:1em; @include gradient(#FC7D3C, #EE2A26); color:$color; }
+			input[type="submit"]:hover{ @include gradient(#EE2A26, #FC7D3C); font-weight:bold;  }
 		}
 		/*end of contact form*/
 
@@ -276,12 +301,13 @@ html[xmlns] .clearfix { display: block; }
 				float:left; 
 				padding: 0;
 				.car-icons{width:12%; float:left; display:inline-block; margin:1%; height:auto; }
-				p{ margin:5px 0px 5px 0px; width:100%; font-size:0.95em; height:25px; line-height:25px;}
+				p{ margin:5px 0px 5px 0px; width:100%; font-size:1em; height:25px; line-height:25px;}
 				p:nth-of-type(1){ font-weight:bold; font-size:1.1em;}
-				p:nth-of-type(2){color:#00CCFF; }
-				p:nth-of-type(3){color:$color5; font-style:italic; }
-				.carsbutton{width:100px; display:block; margin:0;}
-				.carsbutton a{display:block; }
+				p:nth-of-type(2){color:#00CCFF;font-size:1em; }
+				p:nth-of-type(3){color:$color5; font-style:italic;font-size:0.9em; }
+				.carsbutton{width:120px; display:block; margin:0;}
+				.carsbutton a{display:block; @include gradient(#FC7D3C, #EE2A26); color:$color; height:100%; width:100%; padding:7%; @include rounded(); text-align:center;}
+				.carsbutton a:hover{@include gradient(#EE2A26, #FC7D3C); font-weight:bold;}
 			}
 		}
 	/*specials page */
@@ -296,10 +322,13 @@ html[xmlns] .clearfix { display: block; }
 		margin-left: 8px;
 
 		.specials_btn_box {float:right; width:27.2716%; height:150px;}
-		.specials_btn_box .special_price {float:right ; margin:10px 0px 20px 0px; display:block;}
-		.specials_btn_box .cont_btn{float:right; width:70%; display:block; margin:0;}
-		.specials_btn_box .cont_btn a{display:block; height:40px;}
-		.specials_box_img{width:100%; height:140px; padding:10px; color:$color; background-image:url("../images/car-rental-website-specials-car-bg.png"); }
+		.specials_btn_box .special_price {font-family:($fontStyle) ;float:right ; margin:10px 0px 30px 0px; display:block; text-align:center; @include gradient(#38BFF3, #AFE5FC); padding:7%; width: 50%; color:$color; font-size: 1.5em; line-height: 0.8em;@include rounded();}
+		.specials_btn_box .special_price span{font-size:37%; display:block;}
+		
+		.specials_btn_box .cont_btn{float:right; width:90%; display:block; margin:0;}
+		.specials_btn_box .cont_btn a{font-family:($fontStyle) ; height: 35px;  line-height:17px; margin: 0 auto; font-family:($fontStyle) ;border:0; display:block; padding:7%; @include gradient(#FC7D3C, #EE2A26); @include rounded(); color:$color; text-align:center;}
+		.specials_btn_box .cont_btn a:hover{@include gradient(#EE2A26, #FC7D3C); font-weight:bold;line-height:17px;}
+		.specials_box_img{width:100%; height:140px; padding:10px; color:$color; background-color:#185F79; @include rounded(); }
 		.specials_box_img figure.car{ width:45%; float:right; margin:0; padding:0;}
 		.specials_box_img p{color:$color; height:auto; width:45.44444%; float:left;margin:3px 0px 0px 3px; font-size:0.8em; line-height:1.5em; display:inline-block; }
 		.specials_box_img p span{ color:$color9; font-weight:bold;}
@@ -325,8 +354,8 @@ html[xmlns] .clearfix { display: block; }
 			ul li{width:50%; display:inline-block; float:left;}
 			ul li input{margin:0; width:100%; height:35px; display:block;}
 			ul li input[type="submit"]{  font-size:1.5em; margin:0 0 0 5%; padding:0; display:block;}
-			.searchform_btn { width: 120px; height: 34px;  font-size:1em; color:$color; font-family:($fontStyle) ; border:none; line-height:35px; background-color: $color13;}
-			.searchform_btn:hover{color:$color7; background-color:$color;}
+			.searchform_btn { width: 120px; height: 34px;  font-size:1em; color:$color; font-family:($fontStyle) ; border:none; line-height:35px; background-color: $color13;@include gradient(#FC7D3C, #EE2A26); @include rounded(); color:$color;}
+			.searchform_btn:hover{@include gradient(#EE2A26, #FC7D3C); font-weight:bold;}
 			/*end of searchform*/
 		}
 	}
@@ -360,52 +389,62 @@ html[xmlns] .clearfix { display: block; }
 	    #image5{
 
 			height:290px; 
-			background-image: url("../images/car-rental-website-front-bg-2.png");  
-			background-repeat:no-repeat; 
-			width:93%;
+			/*background-image: url("../images/car-rental-website-front-bg-2.png");  
+			background-repeat:no-repeat; */
+			
+			@include gradient(#747877, #A2A5A5);
+			@include rounded();
+			
+			width:100%;
 			margin:1% auto;
-			p{font-size:0.65em; color:$color; width:90%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; }
-			h2{ font-size:1em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center; }
-			form{width:90%; margin:auto;}
+			p{font-size:0.65em; color:$color; width:90%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; line-height:2em; font-weight: 100;}
+			h2{ font-size:1em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center; font-weight: bold; letter-spacing:0.05em;}
+			form{width:90%; margin:auto; }
 			form input[type="text"]{width:100%; height:30px;}
 			form input[type="email"]{width:100%; height:30px;}
-			form input[type="submit"]{ width: 50.37931%;height: 34px;margin: 0 auto; background-color:$color13;font-family:($fontStyle) ;color: $color; border:0; display:block;line-height: 34px; }
-			form input[type="submit"]:hover{ line-height:34px; color:$color7; font-weight:bold;}
-			.link_btn a{color:$color; width:100%; font-size:1.1em; display:block; }
-			.link_btn a:hover{ color:$color7;}
+			form input[type="submit"]{ width: 54.379%; height: 35px;  line-height:2px; margin: 0 auto; font-family:($fontStyle) ;border:0; display:block; padding:7%; @include gradient(#FC7D3C, #EE2A26); @include rounded(); color:$color;}
+			form input[type="submit"]:hover{  line-height:2px; color:$color; @include gradient(#EE2A26, #FC7D3C); @include rounded(); font-weight:bold;}
+			
 	    }
 	  
 		#image2{
 
 			height:290px;
-			background-image: url("../images/car-rental-website-front-bg-3.png") ; 
-			background-repeat:no-repeat; 
-			width:93%; 
+			/*background-image: url("../images/car-rental-website-front-bg-3.png") ; 
+			background-repeat:no-repeat; */
+			@include gradient(#ff7f13, #ffb260);
+			@include rounded();
+						
+			width:100%; 
 			margin:1% auto;
 			figure{ width:96%; margin:0 auto; }
-			p{font-size:0.65em; color:$color; width:96%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em;}
-			h2{ font-size:0.95em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center;}
+			p{font-size:0.65em; color:$color; width:90%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em;line-height:2em; font-weight: 100;letter-spacing:0.05em;}
+			h2{ font-size:0.95em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center; font-weight: bold;}
 			form input{width:95%;}
-			.link_btn { width:55.37931%; height:34px;  margin:5px auto; background-color:$color13; font-family:($fontStyle) ; color:$color; outline:none; border:0;  display:block;}
-			.link_btn a{color:$color; width:100%; font-size:1em; text-align:center; height:34px; display:block; line-height:34px; }
-			.link_btn a:hover{ color:$color7;}
+			.link_btn { width: 54.379%; height:34px;  margin:5px auto;  font-family:($fontStyle) ;  border:0;  display:block;}
+			.link_btn a{@include gradient(#FC7D3C, #EE2A26); width:100%; font-size:1em; text-align:center;line-height:17px; padding:7%; height:34px; display:block; @include rounded();color:$color; }
+			.link_btn a:hover{ @include gradient(#EE2A26, #FC7D3C); line-height:17px; font-weight:bold;}
 			/*Cars page Right Col Panel 2*/
 		}
 	  
 		#image3{
-
-			background-image: url("../images/car-rental-website-front-bg-4.png");  
-			background-repeat:no-repeat; 
-			width:93%; 
+	 			 		  	
+		   /*background-image: url("../images/car-rental-website-front-bg-1.png"); 
+			background-repeat:no-repeat;*/
+			height:290px;
+			@include gradient(#0B4763, #3E7D9A);
+			@include rounded();
+						
+			width:100%; 
 			height:290px;
 			margin:1% auto;
 			figure{ width:96%; margin:0 auto; }
-			p{font-size:0.65em; color:$color; width:90%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em;}
-			h2{ font-size:1em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center;}
-			form input{width:95%;}
-			.link_btn { width: 55.37931%;height: 34px;margin: 5px auto;background-color:$color13;font-family:($fontStyle);color: $color; border:0;padding:0; display:block;}
-			.link_btn a{color:$color; width:100%; font-size:1em; text-align:center; margin:auto; height:34px; display:block; line-height:34px;}
-			.link_btn a:hover{color:$color7; }
+			p{font-size:0.65em; color:$color; width:90%; margin:10px auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em;line-height:2em; font-weight: 100;}
+			h2{ font-size:1em; color:$color; height:40px;margin:5px auto; line-height:40px;font-family:($fontStyle) ; text-align:center; font-weight: bold;letter-spacing:0.05em;}
+			form input{width:95%; }
+			.link_btn { width: 54.379%; height: 34px;margin: 5px auto;font-family:($fontStyle);border:0;padding:0; display:block;}
+			.link_btn a{@include gradient(#FC7D3C, #EE2A26); width:100%; font-size:1em; text-align:center; height:100%; display:block; line-height:17px; padding:7%;;@include rounded(); color:$color;}
+			.link_btn a:hover{ @include gradient(#EE2A26, #FC7D3C); font-weight:bold;line-height:17px;}
 			/*end of Cars page Right Col Panel 2*/
 		}
 
@@ -430,30 +469,31 @@ html[xmlns] .clearfix { display: block; }
 		border:none; 
 		background-color:$color; 
 		display:inline-block;
-		p{font-size:0.80em; color:$color; width:96%; margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; display:block; line-height:1.5em;}
-		h2{ font-size:1.1em; color:$color; height:30px;margin:1% auto; line-height:30px;font-family:($fontStyle) ;  text-align:center; }
-		.link_btn { width: 55.37931%; height:34px;  margin:1% auto;  font-family:($fontStyle) ; color:$color; background-color:$color13; }
-		.link_btn:hover{background-color:$color;}
-		a{ height:34px; line-height:34px; width:100%; text-align:center; font-size:1em; font-weight:bold; color:$color; display:block;}
-		a:hover{ color:$color11; }
+		h2{ font-size:1.1em; color:$color; height:30px;margin:1% auto; line-height:30px;font-family:($fontStyle) ;  text-align:center; font-weight: bold; letter-spacing: 0.05em;}	
+		p{font-size:0.80em; color:$color; width:96%; margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; display:block; line-height:1.8em; font-weight: 100;}
+		
+		.link_btn { width: 55.37931%; height:34px;  margin:1% auto;  font-family:($fontStyle) ; }
+		a{ height:34px; line-height:34px; width:100%; text-align:center; font-size:1em; line-height:17px; padding:7%; @include gradient(#FC7D3C, #EE2A26);@include rounded(); display:block; color:$color; }			
+		a:hover{ @include gradient(#EE2A26, #FC7D3C);font-weight:bold;line-height:17px; }
 
 		}
 
-		#image1{background-image: url("../images/car-rental-website-front-bg-3.png");  background-repeat:no-repeat;}
-		#image2{background-image: url("../images/car-rental-website-front-bg-4.png");  background-repeat:no-repeat;}
-		#image3{background-image: url("../images/car-rental-website-front-bg-1.png");  background-repeat:no-repeat;}
+		#image1{@include gradient(#ff7f13, #ffb260);}
+		#image2{@include gradient(#8DC7E2, #C6E2F0);}
+		#image3{@include gradient(#0B4763, #3E7D9A);}
 
 		#newsletter{ 
-			background-image: url("../images/car-rental-website-front-bg-2.png");  
-			background-repeat:no-repeat;
+			/*background-image: url("../images/car-rental-website-front-bg-2.png");  
+			background-repeat:no-repeat;*/
+			@include gradient(#747877, #A2A5A5);
 			.newsletter {
 				width:97%; 
 				margin:0; 
 				padding:0;
 				input[type="text"]{width:100%; height:30px;}
 				input[type="email"]{width:100%; height:30px;}
-				input[type="submit"]{margin:1% auto;display:block;width:55.37931%;height:34px; }
-				input[type="submit"]:hover{background-color:$color; color:$color11;}
+				input[type="submit"]{margin:1% auto;display:block;width:55.37931%; line-height:5px; padding:7%; @include gradient(#FC7D3C, #EE2A26); color:$color; @include rounded(); }
+				input[type="submit"]:hover{@include gradient(#EE2A26, #FC7D3C);line-height:5px; font-weight:bold;}
 			}
 		} 
 	}
@@ -461,18 +501,19 @@ html[xmlns] .clearfix { display: block; }
 
   /*footer*/
 	footer {
-		background-color: $color8;  
+		  
 		height: 40px; 
 		width: 100%; 
 		clear:both; 
 		display:block; 
 		font-family:($fontStyle) ;
 		#footer_nav{
+			background-color: $color8;
 			height: 40px;
 			width: 100%;
 			margin:0px auto;
 			ul{ height: 40px;width:75%; margin:0px;  margin:0 auto;text-align:center;   }
-			li{ height: 40px; list-style:none;width:16%;  float:left; background-color: $color8;display:inline-block; text-align:center; font-size:1em; }
+			li{ height: 40px; list-style:none;width: 16.6682%;  float:left; background-color: $color8;display:inline-block; text-align:center; font-size:1em; }
 			li:hover{ background-color:$color11;}
 			a{  height:40px ;line-height:40px;  width:100%;  color:$color; font-size:0.85em;  font-family:($fontStyle) ; display:block;}
 			a:hover{color:$color; background-color:$color11; } 
@@ -534,7 +575,7 @@ html[xmlns] .clearfix { display: block; }
 		/*end*/
 	}
  
-	#index_form_btn { font-size: 2em; line-height: 50px; text-align: center;  cursor: pointer; margin-right:1.5%;}
+	#index_form_btn { font-size: 2em; line-height: 63px; text-align: center;  cursor: pointer; margin-right:1.5%; height: 63px;}
 
 	/*Banner*/
 
@@ -548,29 +589,36 @@ html[xmlns] .clearfix { display: block; }
 		.big {   font-size: 2.3em;   color: $color;   font-family:($fontStyle);}
 	}   
 
-	#right-coler {
-
-		.panel {  height: 220px;   width: 97%;}
-		.panel h2 {   font-size: 80%;   color: $color;   height: 30px;   margin: 5px auto;   line-height: 30px;  font-family:($fontStyle);}
-		.panel p {   font-size: 0.65em;}
-
+	#right_coler {
+		
 		#image5 { 
-			margin:auto;
-			h2 {    font-size: 1.1em; margin:auto;}
-			form {   padding: 5px;}
+			height:300px;
+			h2 {  font-size: 0.95em; }
+			p {	font-size: 0.65em;}
 			input {    width: 100%;}
-			form input[type="submit"] { width: 59.37931%; font-size:0.90em;}
+			form input[type="submit"] { font-size:0.90em;}
 		}
+		#image3{
+			height:300px;
+			h2 { font-size: 0.95em; margin:auto;}
+			p {	font-size: 0.65em;}
+		}
+		#image2{
+			height:300px;
+			h2 { font-size: 0.95em; margin:auto;}
+			p {	font-size: 0.65em;}
+		}
+		
 	} 
 	/*end*/
 	
 	/* left Column*/
 	#left_column {
 
-		h1 {color: $color7; text-align: left;margin: 2% 0; width: 90%; font-size: 1.9em; height: 40px; line-height: 40px;}
+		h1 {color: $color7; text-align: left;margin: 2% 0; width: 90%; font-size: 1.85em; height: 40px; line-height: 40px;}
 
-		h3 {   font-size: 1.2em;}
-		p {   font-family:($fontStyle);   color: $color6;   font-size: 80%;   line-height: 1.5em;}
+		h3 {   font-size: 1.15em;}
+		p {  font-size: 0.9em;   line-height: 1.8em;}
 		/*end*/
 
 
@@ -598,9 +646,9 @@ html[xmlns] .clearfix { display: block; }
 				img { margin: 0; width: 71.324174%; height: 80.454545%; display: block;}
 			}
 			.cars_box_txt {  width: 47.75602%;}
-			.cars_box_txt p { font-size: 0.85em;}
-			.cars_box_txt p:nth-of-type(1) {  font-weight: bold;  font-size: 0.85em;}
-			.cars_box_txt p:nth-of-type(2) {  font-weight: bold;  font-size: 0.85em;}
+			.cars_box_txt p { font-size: 0.90em;}
+			.cars_box_txt p:nth-of-type(1) {  font-weight: bold;  font-size: 1em;}
+			.cars_box_txt p:nth-of-type(2) {  font-weight: bold;  font-size: 0.9em;}
 			.cars_box_txt p:nth-of-type(3) {  font-weight: bold;  font-size: 0.85em;}
 		}
 	} 
@@ -613,7 +661,7 @@ html[xmlns] .clearfix { display: block; }
 			width: 70.7284%;  
 			height: 130px;  
 			padding: 10px;
-			p { line-height: 1.5em;   display: inline-block; font-size:0.7em;margin: 0px;}
+			p { line-height: 1.5em;   display: inline-block; font-size:0.75em;margin: 0px;}
 		}
 		.specials_btn_box {
 			float: right; 
@@ -626,16 +674,17 @@ html[xmlns] .clearfix { display: block; }
 	}
 	
 	.ui-tabs .ui-tabs-panel { padding:0.5em 1.2em;}
-	#worldsearchform h2 { font-size:1.1em;}
+	#worldsearchform h2 { font-size:1.2em;}
 
 	.ui-tabs .ui-tabs-nav { margin: 0px;  padding: 0.2em 0.2em 0px;  font-size: 0.9em;}
 
 	/* panel height in percentages = 50.541%*/
 	#inner_wrapper{
 		.panel figure{margin:0;}
-		.panel {  float: left; height:290px ; width: 24.1%; margin: 0px 0px 15px 5px; padding: 10px 5px; background-repeat: no-repeat; }
-		.panel p {font-size:0.75em;  margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; width:96%; }
-		.panel h2 {   font-size: 1.2em;}
+		.panel {  float: left; height:300px ; width: 24.1%;  padding: 5px; }
+		.panel h2 { font-size: 1.1em;}
+		.panel p {font-size:0.75em; margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; width:96%; }
+		
 	}  
 
 	/*#inner_wrapper .panel> #panelImg { width: 94.5148%; height: 38.6360%;    }*/
@@ -698,8 +747,10 @@ html[xmlns] .clearfix { display: block; }
 	} 
 
 	.specials_box {
-
-		.specials_box_img p {   font-size: 0.80em;}
+		
+		.specials_btn_box .cont_btn a {line-height: 17px; height:30px;}
+		.specials_btn_box .cont_btn a:hover{line-height: 17px; height:30px;}
+		.specials_box_img p {   font-size: 0.85em;}
 	}
 
 	.ui-tabs .ui-tabs-panel {  padding: 0.5em 0.5em;}
@@ -883,6 +934,15 @@ html[xmlns] .clearfix { display: block; }
     
 }
 
+@media (max-width: 736px){
+	
+#wrapper #header #primary_nav a {font-size:0.75em;}	
+#wrapper #left_column h3 {  font-size: 1em;}
+
+
+
+}
+
 @media (max-width: 667px){
 
 #wrapper{
@@ -964,7 +1024,7 @@ html[xmlns] .clearfix { display: block; }
 		font-size:0.7em;
 
 		#image5 { 
-			height: 230px;
+			height: 245px;
 			margin:4% auto;
 			h2 {    font-size: 1.1em; margin:1% auto;}
 			p { width:96%; margin: 5% auto; font-size:0.80em;}	
@@ -973,7 +1033,7 @@ html[xmlns] .clearfix { display: block; }
 		}
 
 		#image3 { 
-			height: 230px;  
+			height: 245px;  
 			margin:4% auto;
 			h2 {  font-size: 1.1em; margin:1% auto;}
 			p { width:96%; margin: 5% auto; font-size:0.80em;}
@@ -982,7 +1042,7 @@ html[xmlns] .clearfix { display: block; }
 		}
 
 		#image2 {   
-			height: 230px; 
+			height: 245px; 
 			margin:4% auto;
 			p { width:96%; margin:5% auto;font-size:0.80em; }
 			h2 {  font-size: 1.1em;margin:1% auto; }
@@ -1302,6 +1362,10 @@ html[xmlns] .clearfix { display: block; }
 }
 
 }
+
+@media (max-width: 414px){}
+
+@media (max-width: 375px){}
 
 /* Mobiles in landscape mode */
 @media  (max-width: 360px){

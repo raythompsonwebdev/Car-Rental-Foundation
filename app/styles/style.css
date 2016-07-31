@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /*CSS RESET*/
 html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 
-body { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; line-height: 1; padding: 0; }
+body { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; line-height: 1; height: auto; padding: 0; }
 
 ol, ul { list-style: none; }
 
@@ -78,8 +79,10 @@ html[xmlns] .clearfix { display: block; }
 #wrapper #apDiv1 #booking_form .pick_return select { width: 90%; margin: 1% 0 0 0; height: 35px; font-size: 0.85em; }
 #wrapper #apDiv1 #booking_form li #date_quote { width: 43%; }
 #wrapper #apDiv1 #booking_form .start_end select { width: 60px; margin: 1% 0 0 0; height: 35px; line-height: 1.5em; font-size: 0.8em; }
-#wrapper #apDiv1 #booking_form li .query_btn { text-align: center; line-height: 34px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; font-weight: bold; cursor: pointer; background-color: #fc773c; width: 52.99568%; margin-left: 5%; height: 34px; background-image: url("../images/car-rental-website-btn.gif"); background-repeat: no-repeat; border: 0; display: block; }
-#wrapper #apDiv1 #booking_form li .searchform_btn { width: 53.5%; height: 34px; margin: 1% 0; background-image: url("../images/car-rental-website-btn.gif"); background-repeat: no-repeat; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; border: 0; }
+#wrapper #apDiv1 #booking_form li .query_btn { text-align: center; line-height: 34px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; font-weight: bold; cursor: pointer; background-color: #fc773c; width: 52.99568%; margin-left: 5%; height: 34px; background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ border: 0; display: block; }
+#wrapper #apDiv1 #booking_form li .query_btn:hover { background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ }
+#wrapper #apDiv1 #booking_form li .searchform_btn { width: 53.5%; height: 34px; margin: 1% 0; background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; border: 0; }
+#wrapper #apDiv1 #booking_form li .searchform_btn:hover { background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ }
 #wrapper #header { background-color: #303836; height: 60px; width: 100%; margin: 0; /*primary nav*/ /*end of primary nav*/ }
 #wrapper #header #primary_nav { height: 60px; width: 60%; display: inline-block; margin: 0 0; padding: 0px; float: right; }
 #wrapper #header #primary_nav ul { height: 60px; width: 100%; margin: 0px; text-align: center; }
@@ -95,40 +98,43 @@ html[xmlns] .clearfix { display: block; }
 #wrapper #header .top-bar { background-color: #333; z-index: 2; height: 60px; margin: 0; padding: 0; display: block; text-decoration: none; list-style: none; }
 #wrapper #index_form_btn { width: 47.42268%; height: 100px; float: right; font-size: 2em; line-height: 2.1em; text-align: center; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; cursor: pointer; margin-right: 1%; }
 #wrapper #index_form_btn:hover { color: #FFCC33; }
-#wrapper #banner { height: 450px; width: 100%; margin: 1% auto; clear: both; background-image: url("../images/car-rental-website-banner-bg.jpg"); background-repeat: no-repeat; float: left; /*banner end*/ }
+#wrapper #banner { height: 450px; width: 100%; margin: 1% auto; clear: both; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; /*background-image: url("../images/car-rental-website-banner-bg.jpg") ;  background-repeat:no-repeat;*/ background-color: #35BEF2; background-image: -moz-linear-gradient(top, #35BEF2, #B6E6FC); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #35BEF2), color-stop(1, #B6E6FC)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #35BEF2, #B6E6FC); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ float: left; /*banner end*/ }
 #wrapper #banner figure#bannerimage { width: 50.26016%; height: 54.25531%; margin: 0px; }
 #wrapper #banner figcaption { font-size: 1.1em; width: 50%; color: #FFFFFF; margin: 0; padding: 1%; }
 #wrapper #banner .big { font-size: 2.8em; color: #FFFFFF; font-family: "Signika", Verdana, Geneva, arial, sans-serif; width: 40%; display: block; height: auto; margin: 0; padding: 1%; line-height: 1.2em; }
 #wrapper #left_column { float: left; margin: 0; padding: 0; width: 100%; /*Contact form*/ /*end of contact form*/ /*left Column*/ /*specials page */ }
-#wrapper #left_column p { font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #666; font-size: 1em; line-height: 1.6em; }
+#wrapper #left_column p { font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #666; font-size: 1em; line-height: 1.8em; }
 #wrapper #left_column h1 { color: #000000; text-align: left; margin: 1% 0; width: 70%; font-size: 2.1em; height: 40px; line-height: 40px; font-weight: bold; }
-#wrapper #left_column h3 { color: #06F; margin: 1% 0; height: 25px; line-height: 25px; font-size: 1.5em; }
+#wrapper #left_column h3 { color: #06F; margin: 1% 0; height: 25px; line-height: 25px; font-size: 1.3em; }
 #wrapper #left_column #contact_form { width: 80%; height: 500px; margin-left: 2%; }
-#wrapper #left_column #contact_form input { width: 75%; height: 35px; font-size: 1.5em; }
+#wrapper #left_column #contact_form input { width: 75%; height: 35px; font-size: 1em; }
 #wrapper #left_column #contact_form input[type="submit"] { width: 123px; height: 35px; margin: 5px 0px 0px 17%; color: #FFFFFF; font-family: "Signika", Verdana, Geneva, arial, sans-serif; line-height: 0; }
-#wrapper #left_column #contact_form textarea { width: 75%; font-size: 1.5em; line-height: 1.5em; }
-#wrapper #left_column #contact_form label { font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #666; font-size: 1.2em; width: 17%; height: 30px; line-height: 30px; float: left; text-indent: 1%; }
-#wrapper #left_column #contact_form input[type="submit"] { width: 20%; height: 35px; margin: 5px 0px 0px 17%; color: #FFFFFF; font-family: "Signika", Verdana, Geneva, arial, sans-serif; line-height: 0; background-color: #EF3528; font-size: 1.2em; }
-#wrapper #left_column #contact_form input[type="submit"]:hover { background-color: #FFFFFF; color: #EF3528; font-size: 1.3em; }
+#wrapper #left_column #contact_form textarea { width: 75%; font-size: 1em; line-height: 1.5em; }
+#wrapper #left_column #contact_form label { font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #666; font-size: 1.2em; width: 17%; height: 35px; line-height: 35px; float: left; text-indent: 1%; }
+#wrapper #left_column #contact_form input[type="submit"] { width: 20%; height: 35px; margin: 5px 0px 0px 17%; font-family: "Signika", Verdana, Geneva, arial, sans-serif; line-height: 0; font-size: 1em; background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ color: #FFFFFF; }
+#wrapper #left_column #contact_form input[type="submit"]:hover { background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ font-weight: bold; }
 #wrapper #left_column .cars_box { width: 100%; height: 220px; margin-bottom: 1.5%; display: block; }
 #wrapper #left_column .cars_box .cars_box_img { float: left; margin: 0; width: 50%; padding: 0%; height: 100%; }
 #wrapper #left_column .cars_box .cars_box_img img { margin: 0; width: 71.324174%; height: 80.454545%; display: block; }
 #wrapper #left_column .cars_box .cars_box_txt .car-icons-box { height: 35px; display: block; }
 #wrapper #left_column .cars_box .cars_box_txt { width: 47.75602%; display: inline-block; float: left; padding: 0; }
 #wrapper #left_column .cars_box .cars_box_txt .car-icons { width: 12%; float: left; display: inline-block; margin: 1%; height: auto; }
-#wrapper #left_column .cars_box .cars_box_txt p { margin: 5px 0px 5px 0px; width: 100%; font-size: 0.95em; height: 25px; line-height: 25px; }
+#wrapper #left_column .cars_box .cars_box_txt p { margin: 5px 0px 5px 0px; width: 100%; font-size: 1em; height: 25px; line-height: 25px; }
 #wrapper #left_column .cars_box .cars_box_txt p:nth-of-type(1) { font-weight: bold; font-size: 1.1em; }
-#wrapper #left_column .cars_box .cars_box_txt p:nth-of-type(2) { color: #00CCFF; }
-#wrapper #left_column .cars_box .cars_box_txt p:nth-of-type(3) { color: #999999; font-style: italic; }
-#wrapper #left_column .cars_box .cars_box_txt .carsbutton { width: 100px; display: block; margin: 0; }
-#wrapper #left_column .cars_box .cars_box_txt .carsbutton a { display: block; }
+#wrapper #left_column .cars_box .cars_box_txt p:nth-of-type(2) { color: #00CCFF; font-size: 1em; }
+#wrapper #left_column .cars_box .cars_box_txt p:nth-of-type(3) { color: #999999; font-style: italic; font-size: 0.9em; }
+#wrapper #left_column .cars_box .cars_box_txt .carsbutton { width: 120px; display: block; margin: 0; }
+#wrapper #left_column .cars_box .cars_box_txt .carsbutton a { display: block; background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ color: #FFFFFF; height: 100%; width: 100%; padding: 7%; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; text-align: center; }
+#wrapper #left_column .cars_box .cars_box_txt .carsbutton a:hover { background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ font-weight: bold; }
 #wrapper #left_column .spacer { width: 3px; height: 300px; float: left; }
 #wrapper .specials_box { width: 49.1%; height: 300px; float: left; display: inline-block; margin-left: 8px; }
 #wrapper .specials_box .specials_btn_box { float: right; width: 27.2716%; height: 150px; }
-#wrapper .specials_box .specials_btn_box .special_price { float: right; margin: 10px 0px 20px 0px; display: block; }
-#wrapper .specials_box .specials_btn_box .cont_btn { float: right; width: 70%; display: block; margin: 0; }
-#wrapper .specials_box .specials_btn_box .cont_btn a { display: block; height: 40px; }
-#wrapper .specials_box .specials_box_img { width: 100%; height: 140px; padding: 10px; color: #FFFFFF; background-image: url("../images/car-rental-website-specials-car-bg.png"); }
+#wrapper .specials_box .specials_btn_box .special_price { font-family: "Signika", Verdana, Geneva, arial, sans-serif; float: right; margin: 10px 0px 30px 0px; display: block; text-align: center; background-color: #38BFF3; background-image: -moz-linear-gradient(top, #38BFF3, #AFE5FC); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #38BFF3), color-stop(1, #AFE5FC)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #38BFF3, #AFE5FC); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ padding: 7%; width: 50%; color: #FFFFFF; font-size: 1.5em; line-height: 0.8em; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#wrapper .specials_box .specials_btn_box .special_price span { font-size: 37%; display: block; }
+#wrapper .specials_box .specials_btn_box .cont_btn { float: right; width: 90%; display: block; margin: 0; }
+#wrapper .specials_box .specials_btn_box .cont_btn a { font-family: "Signika", Verdana, Geneva, arial, sans-serif; height: 35px; line-height: 17px; margin: 0 auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; border: 0; display: block; padding: 7%; background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #FFFFFF; text-align: center; }
+#wrapper .specials_box .specials_btn_box .cont_btn a:hover { background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ font-weight: bold; line-height: 17px; }
+#wrapper .specials_box .specials_box_img { width: 100%; height: 140px; padding: 10px; color: #FFFFFF; background-color: #185F79; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
 #wrapper .specials_box .specials_box_img figure.car { width: 45%; float: right; margin: 0; padding: 0; }
 #wrapper .specials_box .specials_box_img p { color: #FFFFFF; height: auto; width: 45.44444%; float: left; margin: 3px 0px 0px 3px; font-size: 0.8em; line-height: 1.5em; display: inline-block; }
 #wrapper .specials_box .specials_box_img p span { color: #FFCC33; font-weight: bold; }
@@ -141,8 +147,8 @@ html[xmlns] .clearfix { display: block; }
 #wrapper #worldsearchform .searchform ul li { width: 50%; display: inline-block; float: left; }
 #wrapper #worldsearchform .searchform ul li input { margin: 0; width: 100%; height: 35px; display: block; }
 #wrapper #worldsearchform .searchform ul li input[type="submit"] { font-size: 1.5em; margin: 0 0 0 5%; padding: 0; display: block; }
-#wrapper #worldsearchform .searchform .searchform_btn { width: 120px; height: 34px; font-size: 1em; color: #FFFFFF; font-family: "Signika", Verdana, Geneva, arial, sans-serif; border: none; line-height: 35px; background-color: #EF3528; }
-#wrapper #worldsearchform .searchform .searchform_btn:hover { color: #000000; background-color: #FFFFFF; }
+#wrapper #worldsearchform .searchform .searchform_btn { width: 120px; height: 34px; font-size: 1em; color: #FFFFFF; font-family: "Signika", Verdana, Geneva, arial, sans-serif; border: none; line-height: 35px; background-color: #EF3528; background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #FFFFFF; }
+#wrapper #worldsearchform .searchform .searchform_btn:hover { background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ font-weight: bold; }
 #wrapper .destinations { color: #EF3528; height: auto; margin: 10px 0px 0px 10px; display: inline-block; float: left; width: 15.094333%; /*end*/ }
 #wrapper .destinations ul { list-style: none; }
 #wrapper .destinations ul li { list-style: none; display: block; margin: 0px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; height: 30px; line-height: 30px; }
@@ -150,54 +156,55 @@ html[xmlns] .clearfix { display: block; }
 #wrapper .destinations a { width: 100%; text-decoration: none; height: 100%; line-height: 30px; display: block; }
 #wrapper .destinations a:hover { text-decoration: none; color: #EF3528; }
 #wrapper #right_coler { height: 900px; width: 100%; margin: 0px; font-size: 1em; border: none; }
-#wrapper #right_coler #image5 { height: 290px; background-image: url("../images/car-rental-website-front-bg-2.png"); background-repeat: no-repeat; width: 93%; margin: 1% auto; }
-#wrapper #right_coler #image5 p { font-size: 0.65em; color: #FFFFFF; width: 90%; margin: 10px auto; height: auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; letter-spacing: 0.1em; }
-#wrapper #right_coler #image5 h2 { font-size: 1em; color: #FFFFFF; height: 40px; margin: 5px auto; line-height: 40px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; text-align: center; }
+#wrapper #right_coler #image5 { height: 290px; /*background-image: url("../images/car-rental-website-front-bg-2.png");  
+background-repeat:no-repeat; */ background-color: #747877; background-image: -moz-linear-gradient(top, #747877, #A2A5A5); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #747877), color-stop(1, #A2A5A5)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #747877, #A2A5A5); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; width: 100%; margin: 1% auto; }
+#wrapper #right_coler #image5 p { font-size: 0.65em; color: #FFFFFF; width: 90%; margin: 10px auto; height: auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; letter-spacing: 0.1em; line-height: 2em; font-weight: 100; }
+#wrapper #right_coler #image5 h2 { font-size: 1em; color: #FFFFFF; height: 40px; margin: 5px auto; line-height: 40px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; text-align: center; font-weight: bold; letter-spacing: 0.05em; }
 #wrapper #right_coler #image5 form { width: 90%; margin: auto; }
 #wrapper #right_coler #image5 form input[type="text"] { width: 100%; height: 30px; }
 #wrapper #right_coler #image5 form input[type="email"] { width: 100%; height: 30px; }
-#wrapper #right_coler #image5 form input[type="submit"] { width: 50.37931%; height: 34px; margin: 0 auto; background-color: #EF3528; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; border: 0; display: block; line-height: 34px; }
-#wrapper #right_coler #image5 form input[type="submit"]:hover { line-height: 34px; color: #000000; font-weight: bold; }
-#wrapper #right_coler #image5 .link_btn a { color: #FFFFFF; width: 100%; font-size: 1.1em; display: block; }
-#wrapper #right_coler #image5 .link_btn a:hover { color: #000000; }
-#wrapper #right_coler #image2 { height: 290px; background-image: url("../images/car-rental-website-front-bg-3.png"); background-repeat: no-repeat; width: 93%; margin: 1% auto; /*Cars page Right Col Panel 2*/ }
+#wrapper #right_coler #image5 form input[type="submit"] { width: 54.379%; height: 35px; line-height: 2px; margin: 0 auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; border: 0; display: block; padding: 7%; background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #FFFFFF; }
+#wrapper #right_coler #image5 form input[type="submit"]:hover { line-height: 2px; color: #FFFFFF; background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; font-weight: bold; }
+#wrapper #right_coler #image2 { height: 290px; /*background-image: url("../images/car-rental-website-front-bg-3.png") ; 
+background-repeat:no-repeat; */ background-color: #ff7f13; background-image: -moz-linear-gradient(top, #ff7f13, #ffb260); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff7f13), color-stop(1, #ffb260)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #ff7f13, #ffb260); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; width: 100%; margin: 1% auto; /*Cars page Right Col Panel 2*/ }
 #wrapper #right_coler #image2 figure { width: 96%; margin: 0 auto; }
-#wrapper #right_coler #image2 p { font-size: 0.65em; color: #FFFFFF; width: 96%; margin: 10px auto; height: auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; letter-spacing: 0.1em; }
-#wrapper #right_coler #image2 h2 { font-size: 0.95em; color: #FFFFFF; height: 40px; margin: 5px auto; line-height: 40px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; text-align: center; }
+#wrapper #right_coler #image2 p { font-size: 0.65em; color: #FFFFFF; width: 90%; margin: 10px auto; height: auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; letter-spacing: 0.1em; line-height: 2em; font-weight: 100; letter-spacing: 0.05em; }
+#wrapper #right_coler #image2 h2 { font-size: 0.95em; color: #FFFFFF; height: 40px; margin: 5px auto; line-height: 40px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; text-align: center; font-weight: bold; }
 #wrapper #right_coler #image2 form input { width: 95%; }
-#wrapper #right_coler #image2 .link_btn { width: 55.37931%; height: 34px; margin: 5px auto; background-color: #EF3528; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; outline: none; border: 0; display: block; }
-#wrapper #right_coler #image2 .link_btn a { color: #FFFFFF; width: 100%; font-size: 1em; text-align: center; height: 34px; display: block; line-height: 34px; }
-#wrapper #right_coler #image2 .link_btn a:hover { color: #000000; }
-#wrapper #right_coler #image3 { background-image: url("../images/car-rental-website-front-bg-4.png"); background-repeat: no-repeat; width: 93%; height: 290px; margin: 1% auto; /*end of Cars page Right Col Panel 2*/ }
+#wrapper #right_coler #image2 .link_btn { width: 54.379%; height: 34px; margin: 5px auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; border: 0; display: block; }
+#wrapper #right_coler #image2 .link_btn a { background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ width: 100%; font-size: 1em; text-align: center; line-height: 17px; padding: 7%; height: 34px; display: block; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #FFFFFF; }
+#wrapper #right_coler #image2 .link_btn a:hover { background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ line-height: 17px; font-weight: bold; }
+#wrapper #right_coler #image3 {    /*background-image: url("../images/car-rental-website-front-bg-1.png"); 
+	background-repeat:no-repeat;*/ height: 290px; background-color: #0B4763; background-image: -moz-linear-gradient(top, #0B4763, #3E7D9A); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0B4763), color-stop(1, #3E7D9A)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #0B4763, #3E7D9A); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; width: 100%; height: 290px; margin: 1% auto; /*end of Cars page Right Col Panel 2*/ }
 #wrapper #right_coler #image3 figure { width: 96%; margin: 0 auto; }
-#wrapper #right_coler #image3 p { font-size: 0.65em; color: #FFFFFF; width: 90%; margin: 10px auto; height: auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; letter-spacing: 0.1em; }
-#wrapper #right_coler #image3 h2 { font-size: 1em; color: #FFFFFF; height: 40px; margin: 5px auto; line-height: 40px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; text-align: center; }
+#wrapper #right_coler #image3 p { font-size: 0.65em; color: #FFFFFF; width: 90%; margin: 10px auto; height: auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; letter-spacing: 0.1em; line-height: 2em; font-weight: 100; }
+#wrapper #right_coler #image3 h2 { font-size: 1em; color: #FFFFFF; height: 40px; margin: 5px auto; line-height: 40px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; text-align: center; font-weight: bold; letter-spacing: 0.05em; }
 #wrapper #right_coler #image3 form input { width: 95%; }
-#wrapper #right_coler #image3 .link_btn { width: 55.37931%; height: 34px; margin: 5px auto; background-color: #EF3528; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; border: 0; padding: 0; display: block; }
-#wrapper #right_coler #image3 .link_btn a { color: #FFFFFF; width: 100%; font-size: 1em; text-align: center; margin: auto; height: 34px; display: block; line-height: 34px; }
-#wrapper #right_coler #image3 .link_btn a:hover { color: #000000; }
+#wrapper #right_coler #image3 .link_btn { width: 54.379%; height: 34px; margin: 5px auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; border: 0; padding: 0; display: block; }
+#wrapper #right_coler #image3 .link_btn a { background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ width: 100%; font-size: 1em; text-align: center; height: 100%; display: block; line-height: 17px; padding: 7%; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; color: #FFFFFF; }
+#wrapper #right_coler #image3 .link_btn a:hover { background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ font-weight: bold; line-height: 17px; }
 #wrapper #inner_wrapper { width: 100%; margin: 0; padding: 0; display: block; }
 #wrapper #inner_wrapper .front_img { width: 100%; margin: 0; padding: 0; }
 #wrapper #inner_wrapper .panel { float: left; height: 290px; width: 23.9999%; margin: 0px 0px 15px 0.8%; padding: 5px; font-size: 90%; border: none; background-color: #FFFFFF; display: inline-block; }
-#wrapper #inner_wrapper .panel p { font-size: 0.80em; color: #FFFFFF; width: 96%; margin: 4% auto; height: auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; letter-spacing: 0.1em; display: block; line-height: 1.5em; }
-#wrapper #inner_wrapper .panel h2 { font-size: 1.1em; color: #FFFFFF; height: 30px; margin: 1% auto; line-height: 30px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; text-align: center; }
-#wrapper #inner_wrapper .panel .link_btn { width: 55.37931%; height: 34px; margin: 1% auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; background-color: #EF3528; }
-#wrapper #inner_wrapper .panel .link_btn:hover { background-color: #FFFFFF; }
-#wrapper #inner_wrapper .panel a { height: 34px; line-height: 34px; width: 100%; text-align: center; font-size: 1em; font-weight: bold; color: #FFFFFF; display: block; }
-#wrapper #inner_wrapper .panel a:hover { color: #fc773c; }
-#wrapper #inner_wrapper #image1 { background-image: url("../images/car-rental-website-front-bg-3.png"); background-repeat: no-repeat; }
-#wrapper #inner_wrapper #image2 { background-image: url("../images/car-rental-website-front-bg-4.png"); background-repeat: no-repeat; }
-#wrapper #inner_wrapper #image3 { background-image: url("../images/car-rental-website-front-bg-1.png"); background-repeat: no-repeat; }
-#wrapper #inner_wrapper #newsletter { background-image: url("../images/car-rental-website-front-bg-2.png"); background-repeat: no-repeat; }
+#wrapper #inner_wrapper .panel h2 { font-size: 1.1em; color: #FFFFFF; height: 30px; margin: 1% auto; line-height: 30px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; text-align: center; font-weight: bold; letter-spacing: 0.05em; }
+#wrapper #inner_wrapper .panel p { font-size: 0.80em; color: #FFFFFF; width: 96%; margin: 4% auto; height: auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; letter-spacing: 0.1em; display: block; line-height: 1.8em; font-weight: 100; }
+#wrapper #inner_wrapper .panel .link_btn { width: 55.37931%; height: 34px; margin: 1% auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; }
+#wrapper #inner_wrapper .panel a { height: 34px; line-height: 34px; width: 100%; text-align: center; font-size: 1em; line-height: 17px; padding: 7%; background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; display: block; color: #FFFFFF; }
+#wrapper #inner_wrapper .panel a:hover { background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ font-weight: bold; line-height: 17px; }
+#wrapper #inner_wrapper #image1 { background-color: #ff7f13; background-image: -moz-linear-gradient(top, #ff7f13, #ffb260); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff7f13), color-stop(1, #ffb260)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #ff7f13, #ffb260); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ }
+#wrapper #inner_wrapper #image2 { background-color: #8DC7E2; background-image: -moz-linear-gradient(top, #8DC7E2, #C6E2F0); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8DC7E2), color-stop(1, #C6E2F0)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #8DC7E2, #C6E2F0); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ }
+#wrapper #inner_wrapper #image3 { background-color: #0B4763; background-image: -moz-linear-gradient(top, #0B4763, #3E7D9A); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0B4763), color-stop(1, #3E7D9A)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #0B4763, #3E7D9A); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ }
+#wrapper #inner_wrapper #newsletter { /*background-image: url("../images/car-rental-website-front-bg-2.png");  
+background-repeat:no-repeat;*/ background-color: #747877; background-image: -moz-linear-gradient(top, #747877, #A2A5A5); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #747877), color-stop(1, #A2A5A5)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #747877, #A2A5A5); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ }
 #wrapper #inner_wrapper #newsletter .newsletter { width: 97%; margin: 0; padding: 0; }
 #wrapper #inner_wrapper #newsletter .newsletter input[type="text"] { width: 100%; height: 30px; }
 #wrapper #inner_wrapper #newsletter .newsletter input[type="email"] { width: 100%; height: 30px; }
-#wrapper #inner_wrapper #newsletter .newsletter input[type="submit"] { margin: 1% auto; display: block; width: 55.37931%; height: 34px; }
-#wrapper #inner_wrapper #newsletter .newsletter input[type="submit"]:hover { background-color: #FFFFFF; color: #fc773c; }
-#wrapper footer { background-color: #303836; height: 40px; width: 100%; clear: both; display: block; font-family: "Signika", Verdana, Geneva, arial, sans-serif; }
-#wrapper footer #footer_nav { height: 40px; width: 100%; margin: 0px auto; }
+#wrapper #inner_wrapper #newsletter .newsletter input[type="submit"] { margin: 1% auto; display: block; width: 55.37931%; line-height: 5px; padding: 7%; background-color: #FC7D3C; background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #FC7D3C, #EE2A26); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ color: #FFFFFF; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#wrapper #inner_wrapper #newsletter .newsletter input[type="submit"]:hover { background-color: #EE2A26; background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C); /* FF3.6 */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C)); /* Saf4+, Chrome */ background-image: linear-gradient(top, #EE2A26, #FC7D3C); filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6├ó´┐¢´┐¢IE9 */ line-height: 5px; font-weight: bold; }
+#wrapper footer { height: 40px; width: 100%; clear: both; display: block; font-family: "Signika", Verdana, Geneva, arial, sans-serif; }
+#wrapper footer #footer_nav { background-color: #303836; height: 40px; width: 100%; margin: 0px auto; }
 #wrapper footer #footer_nav ul { height: 40px; width: 75%; margin: 0px; margin: 0 auto; text-align: center; }
-#wrapper footer #footer_nav li { height: 40px; list-style: none; width: 16%; float: left; background-color: #303836; display: inline-block; text-align: center; font-size: 1em; }
+#wrapper footer #footer_nav li { height: 40px; list-style: none; width: 16.6682%; float: left; background-color: #303836; display: inline-block; text-align: center; font-size: 1em; }
 #wrapper footer #footer_nav li:hover { background-color: #fc773c; }
 #wrapper footer #footer_nav a { height: 40px; line-height: 40px; width: 100%; color: #FFFFFF; font-size: 0.85em; font-family: "Signika", Verdana, Geneva, arial, sans-serif; display: block; }
 #wrapper footer #footer_nav a:hover { color: #FFFFFF; background-color: #fc773c; }
@@ -225,24 +232,27 @@ html[xmlns] .clearfix { display: block; }
   #wrapper #apDiv1 #booking_form .pick_return select { margin: 1% 0 0 0; }
   #wrapper #apDiv1 #booking_form li .searchform_btn { width: 53%; font-size: 90%; }
   #wrapper #apDiv1 #booking_form li .query_btn { width: 51.99568%; }
-  #wrapper #index_form_btn { font-size: 2em; line-height: 50px; text-align: center; cursor: pointer; margin-right: 1.5%; }
+  #wrapper #index_form_btn { font-size: 2em; line-height: 63px; text-align: center; cursor: pointer; margin-right: 1.5%; height: 63px; }
   #wrapper #banner { height: 430px; width: 98%; float: none; }
   #wrapper #banner p { width: 49%; color: #FFFFFF; margin: 0px 0px 0px 20px; }
   #wrapper #banner figcaption { font-size: 1em; }
   #wrapper #banner #bannerimage { width: 45.2602%; height: 46.25531%; margin-top: 15px; }
   #wrapper #banner .big { font-size: 2.3em; color: #FFFFFF; font-family: "Signika", Verdana, Geneva, arial, sans-serif; }
-  #wrapper #right-coler .panel { height: 220px; width: 97%; }
-  #wrapper #right-coler .panel h2 { font-size: 80%; color: #FFFFFF; height: 30px; margin: 5px auto; line-height: 30px; font-family: "Signika", Verdana, Geneva, arial, sans-serif; }
-  #wrapper #right-coler .panel p { font-size: 0.65em; }
-  #wrapper #right-coler #image5 { margin: auto; }
-  #wrapper #right-coler #image5 h2 { font-size: 1.1em; margin: auto; }
-  #wrapper #right-coler #image5 form { padding: 5px; }
-  #wrapper #right-coler #image5 input { width: 100%; }
-  #wrapper #right-coler #image5 form input[type="submit"] { width: 59.37931%; font-size: 0.90em; }
+  #wrapper #right_coler #image5 { height: 300px; }
+  #wrapper #right_coler #image5 h2 { font-size: 0.95em; }
+  #wrapper #right_coler #image5 p { font-size: 0.65em; }
+  #wrapper #right_coler #image5 input { width: 100%; }
+  #wrapper #right_coler #image5 form input[type="submit"] { font-size: 0.90em; }
+  #wrapper #right_coler #image3 { height: 300px; }
+  #wrapper #right_coler #image3 h2 { font-size: 0.95em; margin: auto; }
+  #wrapper #right_coler #image3 p { font-size: 0.65em; }
+  #wrapper #right_coler #image2 { height: 300px; }
+  #wrapper #right_coler #image2 h2 { font-size: 0.95em; margin: auto; }
+  #wrapper #right_coler #image2 p { font-size: 0.65em; }
   #wrapper #left_column { /*end*/ /*Contact form*/ /*left column -cars page*/ }
-  #wrapper #left_column h1 { color: #000000; text-align: left; margin: 2% 0; width: 90%; font-size: 1.9em; height: 40px; line-height: 40px; }
-  #wrapper #left_column h3 { font-size: 1.2em; }
-  #wrapper #left_column p { font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #666; font-size: 80%; line-height: 1.5em; }
+  #wrapper #left_column h1 { color: #000000; text-align: left; margin: 2% 0; width: 90%; font-size: 1.85em; height: 40px; line-height: 40px; }
+  #wrapper #left_column h3 { font-size: 1.15em; }
+  #wrapper #left_column p { font-size: 0.9em; line-height: 1.8em; }
   #wrapper #left_column #contact_form { width: 90%; height: 500px; margin-left: 2%; }
   #wrapper #left_column #contact_form label { width: 20%; }
   #wrapper #left_column #contact_form input[type="submit"] { margin: 5px 0px 0px 20%; }
@@ -250,23 +260,23 @@ html[xmlns] .clearfix { display: block; }
   #wrapper #left_column .cars_box .cars_box_img { float: left; margin: 0; width: 50%; padding: 0%; height: 100%; }
   #wrapper #left_column .cars_box .cars_box_img img { margin: 0; width: 71.324174%; height: 80.454545%; display: block; }
   #wrapper #left_column .cars_box .cars_box_txt { width: 47.75602%; }
-  #wrapper #left_column .cars_box .cars_box_txt p { font-size: 0.85em; }
-  #wrapper #left_column .cars_box .cars_box_txt p:nth-of-type(1) { font-weight: bold; font-size: 0.85em; }
-  #wrapper #left_column .cars_box .cars_box_txt p:nth-of-type(2) { font-weight: bold; font-size: 0.85em; }
+  #wrapper #left_column .cars_box .cars_box_txt p { font-size: 0.90em; }
+  #wrapper #left_column .cars_box .cars_box_txt p:nth-of-type(1) { font-weight: bold; font-size: 1em; }
+  #wrapper #left_column .cars_box .cars_box_txt p:nth-of-type(2) { font-weight: bold; font-size: 0.9em; }
   #wrapper #left_column .cars_box .cars_box_txt p:nth-of-type(3) { font-weight: bold; font-size: 0.85em; }
   #wrapper .specials_box { float: left; display: inline-block; /*Specials*/ }
   #wrapper .specials_box .specials_box_txt { width: 70.7284%; height: 130px; padding: 10px; }
-  #wrapper .specials_box .specials_box_txt p { line-height: 1.5em; display: inline-block; font-size: 0.7em; margin: 0px; }
+  #wrapper .specials_box .specials_box_txt p { line-height: 1.5em; display: inline-block; font-size: 0.75em; margin: 0px; }
   #wrapper .specials_box .specials_btn_box { float: right; width: 27.2716%; height: 130px; }
   #wrapper .specials_box .specials_btn_box .cont_btn { width: 80%; }
   #wrapper .specials_box .specials_box_img p { font-size: 0.85em; }
   #wrapper .ui-tabs .ui-tabs-panel { padding: 0.5em 1.2em; }
-  #wrapper #worldsearchform h2 { font-size: 1.1em; }
+  #wrapper #worldsearchform h2 { font-size: 1.2em; }
   #wrapper .ui-tabs .ui-tabs-nav { margin: 0px; padding: 0.2em 0.2em 0px; font-size: 0.9em; }
   #wrapper #inner_wrapper .panel figure { margin: 0; }
-  #wrapper #inner_wrapper .panel { float: left; height: 290px; width: 24.1%; margin: 0px 0px 15px 5px; padding: 10px 5px; background-repeat: no-repeat; }
+  #wrapper #inner_wrapper .panel { float: left; height: 300px; width: 24.1%; padding: 5px; }
+  #wrapper #inner_wrapper .panel h2 { font-size: 1.1em; }
   #wrapper #inner_wrapper .panel p { font-size: 0.75em; margin: 4% auto; height: auto; font-family: "Signika", Verdana, Geneva, arial, sans-serif; letter-spacing: 0.1em; width: 96%; }
-  #wrapper #inner_wrapper .panel h2 { font-size: 1.2em; }
   #wrapper footer #footer_nav { width: 100%; margin: 0px auto; }
   #wrapper footer #footer_nav li { width: 16.6459%; }
   #wrapper footer #footer_nav a { font-size: 0.8em; } }
@@ -286,7 +296,9 @@ html[xmlns] .clearfix { display: block; }
   #wrapper #right_coler #image2 { height: 290px; width: 100%; }
   #wrapper #right_coler #image3 { height: 290px; width: 100%; }
   #wrapper #inner_wrapper .panel p { font-size: 0.85em; width: 100%; }
-  #wrapper .specials_box .specials_box_img p { font-size: 0.80em; }
+  #wrapper .specials_box .specials_btn_box .cont_btn a { line-height: 17px; height: 30px; }
+  #wrapper .specials_box .specials_btn_box .cont_btn a:hover { line-height: 17px; height: 30px; }
+  #wrapper .specials_box .specials_box_img p { font-size: 0.85em; }
   #wrapper .ui-tabs .ui-tabs-panel { padding: 0.5em 0.5em; } }
 @media (max-width: 800px) { [data-abide].error small.error { font-size: 0.75em; margin-bottom: 0.3rem; }
   #wrapper #header nav.top-bar .name h1 { font-size: 1.8em; }
@@ -356,6 +368,8 @@ html[xmlns] .clearfix { display: block; }
   #wrapper #inner_wrapper .panel figure { margin: 0; }
   #wrapper #inner_wrapper .panel .link_btn { font-size: 0.9em; }
   #wrapper #inner_wrapper #newsletter .newsletter { width: 98%; } }
+@media (max-width: 736px) { #wrapper #header #primary_nav a { font-size: 0.75em; }
+  #wrapper #left_column h3 { font-size: 1em; } }
 @media (max-width: 667px) { #wrapper h1 { font-size: 1.5em; }
   #wrapper .ui-tabs .ui-tabs-panel { padding: 1% 0; }
   #wrapper [data-abide].error small.error { font-size: 0.65rem; margin-bottom: 0.5rem; }
@@ -387,17 +401,17 @@ html[xmlns] .clearfix { display: block; }
   #wrapper .specials_box .specials_box_txt p { width: 100%; font-size: 0.7em; height: auto; margin: 0; }
   #wrapper #worldsearchform h2 { font-size: 1.2em; width: 70%; }
   #wrapper #right_coler { padding: 0px; font-size: 0.7em; }
-  #wrapper #right_coler #image5 { height: 230px; margin: 4% auto; }
+  #wrapper #right_coler #image5 { height: 245px; margin: 4% auto; }
   #wrapper #right_coler #image5 h2 { font-size: 1.1em; margin: 1% auto; }
   #wrapper #right_coler #image5 p { width: 96%; margin: 5% auto; font-size: 0.80em; }
   #wrapper #right_coler #image5 form { padding: 5px; }
   #wrapper #right_coler #image5 input[type="submit"] { width: 120px; height: 34px; margin: 5px auto; background-color: #EF3528; font-family: "Signika", Verdana, Geneva, arial, sans-serif; color: #FFFFFF; border: 0; }
-  #wrapper #right_coler #image3 { height: 230px; margin: 4% auto; }
+  #wrapper #right_coler #image3 { height: 245px; margin: 4% auto; }
   #wrapper #right_coler #image3 h2 { font-size: 1.1em; margin: 1% auto; }
   #wrapper #right_coler #image3 p { width: 96%; margin: 5% auto; font-size: 0.80em; }
   #wrapper #right_coler #image3 .link_btn { margin: 2% auto; text-align: center; }
   #wrapper #right_coler #image3 .link_btn a { color: #FFFFFF; width: 100%; font-size: 1.1em; text-align: center; margin: auto; height: 34px; }
-  #wrapper #right_coler #image2 { height: 230px; margin: 4% auto; }
+  #wrapper #right_coler #image2 { height: 245px; margin: 4% auto; }
   #wrapper #right_coler #image2 p { width: 96%; margin: 5% auto; font-size: 0.80em; }
   #wrapper #right_coler #image2 h2 { font-size: 1.1em; margin: 1% auto; }
   #wrapper #right_coler #image2 .link_btn { margin: 5px auto; text-align: center; }
