@@ -513,7 +513,7 @@ html[xmlns] .clearfix { display: block; }
 			width: 100%;
 			margin:0px auto;
 			ul{ height: 40px;width:75%; margin:0px;  margin:0 auto;text-align:center;   }
-			li{ height: 40px; list-style:none;width: 16.6682%;  float:left; background-color: $color8;display:inline-block; text-align:center; font-size:1em; }
+			li{ height: 40px; list-style:none;width: 16.66%;  float:left; background-color: $color8;display:inline-block; text-align:center; font-size:1em; }
 			li:hover{ background-color:$color11;}
 			a{  height:40px ;line-height:40px;  width:100%;  color:$color; font-size:0.85em;  font-family:($fontStyle) ; display:block;}
 			a:hover{color:$color; background-color:$color11; } 
@@ -813,7 +813,7 @@ html[xmlns] .clearfix { display: block; }
 			h2 { font-size: 0.90em; height:30px; line-height:30px;}
 			p {font-size: 0.60em; width:96%; margin:5px auto; }
 			form {  width: 96%;}
-			form input[type="submit"] { width: 59.37931%; font-size:0.80em;}
+			form input[type="submit"] { width: 59.37931%; font-size:0.90em;}
 		}
 	}
 
@@ -890,7 +890,7 @@ html[xmlns] .clearfix { display: block; }
 		font-size:0.7em;
 
 		#image5 { 
-			height: 230px;
+			height: 250px;
 			margin:4% auto;
 			h2 {    font-size: 1.1em; margin:1% auto;}
 			p { width:96%; margin: 5% auto; font-size:0.80em;}	
@@ -899,7 +899,7 @@ html[xmlns] .clearfix { display: block; }
 		}
 
 		#image3 { 
-			height: 230px;  
+			height: 250px;  
 			margin:4% auto;
 			h2 {  font-size: 1.1em; margin:1% auto;}
 			p { width:96%; margin: 5% auto; font-size:0.80em;}
@@ -908,7 +908,7 @@ html[xmlns] .clearfix { display: block; }
 		}
 
 		#image2 {   
-			height: 230px; 
+			height: 250px; 
 			margin:4% auto;
 			p { width:96%; margin:5% auto;font-size:0.80em; }
 			h2 {  font-size: 1.1em;margin:1% auto; }
@@ -921,8 +921,8 @@ html[xmlns] .clearfix { display: block; }
 
 		.panel {   
 			float: left; 
-			h2 {  font-size:1em; text-align:center; height:auto; margin: 0px;}
-			p {  font-size:0.66em; width:100%; margin: 10% auto;}
+			h2 {  font-size:1em; text-align:center; height:auto; margin: 0px; line-height: 25px;}
+			p {  font-size:0.63em; width:100%; margin: 10% auto;}
 			figure{margin:0;}
 			.link_btn {font-size:0.9em;}
 		}
@@ -938,8 +938,12 @@ html[xmlns] .clearfix { display: block; }
 	
 #wrapper #header #primary_nav a {font-size:0.75em;}	
 #wrapper #left_column h3 {  font-size: 1em;}
-
-
+#wrapper .specials_box .specials_btn_box .special_price{font-size:1.2em;}
+#wrapper .specials_box .specials_btn_box .cont_btn a{font-size:0.8em;}	
+#wrapper .specials_box .specials_box_txt p {    width: 231px;}
+#wrapper #left_column p {    font-size: 0.8em;}
+#wrapper #left_column #contact_form label{ font-size:1em;}
+#wrapper #banner figcaption {   font-size: 0.9em;}
 
 }
 
@@ -1117,13 +1121,13 @@ html[xmlns] .clearfix { display: block; }
 	#inner_wrapper{
 
 	.panel {
-		padding-top:20px ; 
+		
 		height:280px;
 		h2 {    font-size: 0.9em; height:40px; line-height: 1.5em; text-align:center;}
 		p {font-size: 0.65em; }
 		input[type="text"]{width:100%; margin:auto; }
-		
-		.link_btn, .newsletter a {  font-size:0.9em;   width: 65.379%;}
+		.link_btn { width: 72.37931%;}
+				
 	}
 
 	#newsletter .newsletter input[type="email"] {  margin-top:0.1rem;}
@@ -1288,11 +1292,11 @@ html[xmlns] .clearfix { display: block; }
 	#left_column{
 
 		h1 { margin: 1%;   width: 100%;  font-size:1.8em;}
-		.cars_box .cars_box_img img {   margin: 0;    width: 94.324%;}	
+		.cars_box .cars_box_img img {   margin: 0;    width: 100%;}	
 
 
 		.cars_box{
-			.cars_box_img {  float: left; width:50%;}
+			.cars_box_img {  float: left; width:51%;}
 			a img{width:50%;}
 		} 
 
@@ -1337,16 +1341,16 @@ html[xmlns] .clearfix { display: block; }
 		.panel {  
 
 			float: left;
-			height: 250px; 
+			height: 280px; 
 			width:48%; 
 			padding: 10px 5px; 
 			background-repeat: no-repeat; 
 			font-size:1.2em;
 
-			h2 { text-align:center; font-size: 90%; height:25px; line-height:25px; text-indent:0px;}
-			.front_img{width:60%; margin:auto;}
-			p {  font-size: 0.5em; width:96%; margin:0.5em auto  }
-			.link_btn, .newsletter a {    font-size: 0.8em; margin:auto;}
+			h2 { text-align:center; font-size: 90%;  text-indent:0px;}
+			.front_img{ margin:auto;}
+			p {  font-size: 0.55em; width:98%; margin:0.5em auto  }
+			.link_btn, .newsletter a {    font-size: 0.75em; margin:auto;}
 
 		}
 
@@ -1365,22 +1369,39 @@ html[xmlns] .clearfix { display: block; }
 
 @media (max-width: 414px){}
 
-@media (max-width: 375px){}
+@media (max-width: 375px){
+	#wrapper{
+	.title-bar {width: 15%;}
+	#apDiv1 {
+		
+		width: 95.949%;
+		height: 400px;
+		font-size: 0.80em;
+		left: 2%;
+		p .dropcap {   width: 15%;}
+		p.formnum .dropcap {   width: 22%;}
+		}
+	}
+
+
+}
 
 /* Mobiles in landscape mode */
 @media  (max-width: 360px){
 .tabs{height:auto;}
 
 #wrapper{
+	.title-bar {width: 15%;}
 
 	[data-abide].error small.error {  font-size: 0.75rem;  margin-bottom: 0.2rem;}
 
 	#header{
+		.title-area .name h1 { font-size: 2em;  }
 
 		nav.top-bar .name { height: 60px;    list-style: outside none none;}
 		nav.top-bar .name h1 {  width: 100%;   text-align:left;   font-family:($fontStyle);  color: $color;  height: 60px; line-height: 60px;  margin-top: 0px;}
 		nav.top-bar .name h1 span {  margin: 0px 0px 0px 10px ; text-align:left;}
-		nav.top-bar .title-area {    }
+		
 		nav.top-bar #primary_nav a { width: 100%; font-size: 0.8em; color: $color; line-height:20px;}
 	} 
 
