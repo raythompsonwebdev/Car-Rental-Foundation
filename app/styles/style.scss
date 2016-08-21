@@ -473,8 +473,8 @@ html[xmlns] .clearfix { display: block; }
 		p{font-size:0.80em; color:$color; width:96%; margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; display:block; line-height:1.8em; font-weight: 100;}
 		
 		.link_btn { width: 55.37931%; height:34px;  margin:1% auto;  font-family:($fontStyle) ; }
-		a{ height:34px; line-height:34px; width:100%; text-align:center; font-size:1em; line-height:17px; padding:7%; @include gradient(#FC7D3C, #EE2A26);@include rounded(); display:block; color:$color; }			
-		a:hover{ @include gradient(#EE2A26, #FC7D3C);font-weight:bold;line-height:17px; }
+		a{ height:34px; line-height:34px; width:100%; text-align:center; font-size:1em;  padding:0; @include gradient(#FC7D3C, #EE2A26);@include rounded(); display:block; color:$color; }			
+		a:hover{ @include gradient(#EE2A26, #FC7D3C);font-weight:bold;line-height:34px; }
 
 		}
 
@@ -1123,7 +1123,7 @@ html[xmlns] .clearfix { display: block; }
 	.panel {
 		
 		height:280px;
-		h2 {    font-size: 0.9em; height:40px; line-height: 1.5em; text-align:center;}
+		h2 {    font-size: 1em; height:40px; line-height: 40px; text-align:center;}
 		p {font-size: 0.65em; }
 		input[type="text"]{width:100%; margin:auto; }
 		.link_btn { width: 72.37931%;}
@@ -1205,7 +1205,7 @@ html[xmlns] .clearfix { display: block; }
 			padding: 0px;
 			float: right;
 			li {height: 60px;list-style: none; display:block; width: 100%;}
-			li a {  height: auto;	line-height: 30px;}
+			li a {  height: auto;	line-height: 40px;}
 			
 		}
 	}
@@ -1340,17 +1340,18 @@ html[xmlns] .clearfix { display: block; }
 
 		.panel {  
 
-			float: left;
-			height: 280px; 
-			width:48%; 
+			float: none;
+			display:block;
+			height: 360px; 
+			width:75%; 
 			padding: 10px 5px; 
-			background-repeat: no-repeat; 
+			margin:2% auto; 
 			font-size:1.2em;
 
 			h2 { text-align:center; font-size: 90%;  text-indent:0px;}
 			.front_img{ margin:auto;}
-			p {  font-size: 0.55em; width:98%; margin:0.5em auto  }
-			.link_btn, .newsletter a {    font-size: 0.75em; margin:auto;}
+			p {  font-size: 0.70em; width:98%; margin:1em auto  }
+			.link_btn a, .newsletter a { font-size: 1em;  margin:auto;}
 
 		}
 
@@ -1367,20 +1368,45 @@ html[xmlns] .clearfix { display: block; }
 
 }
 
-@media (max-width: 414px){}
+@media (max-width: 414px){
+	#wrapper{
+		.title-bar {width: 15%;}
+		#apDiv1 {
+
+			width: 95.949%;
+			height: 400px;
+			font-size: 0.80em;
+			left: 2%;
+			p .dropcap {   width: 15%;}
+			p.formnum .dropcap {   width: 22%;}
+		}
+		.ui-tabs .ui-tabs-nav a{padding: 0.50em;font-size: 0.81em; }
+		.specials_box .specials_btn_box .special_price {   font-size: 1.3em;}
+		#left_column .cars_box .cars_box_txt .car-icons {width: 23%;}
+		#left_column .cars_box .cars_box_img img {   margin: 0;   width: 97%;}
+	}
+	
+
+
+
+
+}
 
 @media (max-width: 375px){
 	#wrapper{
-	.title-bar {width: 15%;}
-	#apDiv1 {
-		
-		width: 95.949%;
-		height: 400px;
-		font-size: 0.80em;
-		left: 2%;
-		p .dropcap {   width: 15%;}
-		p.formnum .dropcap {   width: 22%;}
+		.title-bar {width: 16%;}
+		#apDiv1 {
+
+			width: 95.949%;
+			height: 400px;
+			font-size: 0.80em;
+			left: 2%;
+			p .dropcap {   width: 15%;}
+			p.formnum .dropcap {   width: 22%;}
 		}
+		#left_column .cars_box .cars_box_img { width: 52%;}
+		.specials_box .specials_box_img p {   font-size: 0.80em;}
+		.ui-tabs .ui-tabs-nav a {  padding: 0.50em; font-size: 0.725em;}
 	}
 
 
@@ -1450,8 +1476,8 @@ html[xmlns] .clearfix { display: block; }
 				width:100%; 
 				font-size: 1em;
 				.carsbutton {    width: 190px;}
-				.car-icons {  width: 13%;}
-				p {   margin: 5px 0px 5px 0px; font-size:0.75em;}
+				.car-icons {  width: 14%;}
+				p {   margin: 5px 0px 5px 0px; font-size:0.85em;}
 			}
 		
 		}
@@ -1510,12 +1536,12 @@ html[xmlns] .clearfix { display: block; }
 			height:292px ;
 			font-size: 0.9em;
 			width: 75.9994%;
-			margin: auto; 
+			margin: 4% auto; 
 			padding: 10px 5px;
 			background-repeat: no-repeat;
 			display: block;
 			p {  font-size: 0.75em;  width: 90%;   margin: 1em auto;}
-			h2 { text-align: center; font-size: 1.1em; height: 25px; line-height: 25px; text-indent: 0px;}
+			h2 { text-align: center; font-size: 1em;  text-indent: 0px;}
 			#panelImg {   margin-left:20%;}
 			.link_btn, .newsletter a {  font-size: 0.9em;  margin: auto;}
 			.front_img{width:80%; margin:auto;}
@@ -1632,9 +1658,9 @@ html[xmlns] .clearfix { display: block; }
 	#inner_wrapper { 
 
 		margin-top: 10px;
-		.panel {  float: none; height:292px ;width: 66.9994%; margin: 10px auto; background-repeat: no-repeat;font-size: 0.85em;}
+		.panel {  float: none; height:292px ;font-size: 0.85em;}
 		.panel p {font-size: 0.8em; width: 95%; }
-		.panel h2 {text-align: center; font-size: 110%; height: 25px;  line-height: 25px;text-indent: 0px;}
+		.panel h2 {text-align: center; font-size: 1em; text-indent: 0px;}
 		.panel #panelImg { width: 74.5148%; height: 38.636%; margin-left:10%;}
 	}
 
