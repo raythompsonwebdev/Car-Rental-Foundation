@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="Foundation-6/css/foundation.min.css" />
 <link rel="stylesheet" href="styles/normalize.css" />
 <link rel="stylesheet" href="styles/style.css" />
-<link href='http://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Signika:400,600,700,300" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
 <!--[if lt IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -26,10 +26,10 @@
 </head>
 
 <body >
-   
+
 <div class="row">
 <div id="wrapper">
- 
+
 <div class="row"><!--header section-->
 <div class="large-12 medium-12 small-12 columns">
 
@@ -41,7 +41,7 @@
 </div>
 
  <ul class="title-area"><li class="name"><h1><span >CAR</span> Rental</h1></li></ul>
-  
+
     <nav  id="primary_nav" class="top-bar-right" >
     <ul  class="vertical medium-horizontal menu" >
         <li class="active"><a href="index.html" >Home</a></li>
@@ -50,18 +50,18 @@
         <li><a href="location.html" >Locations</a></li>
         <li><a href="about.html" >About</a></li>
         <li><a href="contact.html" >Contact</a></li>
-    </ul>    
+    </ul>
 </nav>
- 
+
 </div>
 
 
 </header>
 
-</div>    
+</div>
 </div><!--header section end-->
- 
-   
+
+
 <div class="row" role="banner">
 <div class="large-12 medium-12 small-12  columns" >
 
@@ -69,8 +69,8 @@
 <section id="apDiv1">
 
 <p><span class="dropcap">1</span>Date, Time and Location</p>
-<p class="formnum"><span class="dropcap">2</span>Chose Vehicle</p>
-<p class="formnum"><span class="dropcap">3</span>Confirm Booking</p>
+<p class="formnum"><span class="dropcap-small">2</span>Chose Vehicle</p>
+<p class="formnum"><span class="dropcap-small">3</span>Confirm Booking</p>
 
 <h1>Get a Car Rental Quote</h1>
 
@@ -157,7 +157,7 @@
 </select>
 </li>
 
-<li></li>
+<li> </li>
 
 <li class="pick_return">
 <p>Can't find the location you are looking for?</p>
@@ -167,7 +167,7 @@
 <li><span class="query_btn" id="clearQuote" onclick="fadeOut();">Hide Form</span></li>
 <li><input name="Get Quote" type="submit" class="searchform_btn" value="Get Quote" /></li>
 </form><!--form end-->
-   
+
 </section><!---appDiv end-->
 
 <figure id="banner"><!--Banner Text-->
@@ -180,45 +180,54 @@
 </div><!--content end-->
 </div><!--row end-->
 
-<div class="row"><!--inner wrapper start-->  
-<div  class="large-12 medium-12 small-12 columns">
+<div class="row" data-equalizer="foo"><!--inner wrapper start-->
 
-<article id="inner_wrapper">
+<div  class="large-12 medium-12 small-12 columns" data-equalizer-watch="foo">
 
-<div class="panel" id="image1"><!--info box--> 
+<div class="panel callout" id="image1" data-equalizer-watch="bar"><!--info box-->
 
-<h2>Different Makes and Models</h2>
+ <figure class="front_img">
+    <h2>Different Makes and Models</h2>
+    <img src="images/car-rental-website-luxury-car-audi.png" alt="car-rental-website-luxury-car-audi"  />
+    <figcaption>
 
-<figure class="front_img"><img src="images/car-rental-website-luxury-car-audi.png" alt="car-rental-website-luxury-car-audi"  /></figure>
+            <p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
+        <div class="link_btn"><a href="specials.html" alt="car-rental-specials-page" >Learn More</a></div>
+    </figcaption>
+ </figure>
 
-<p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
+</div><!--info_box end-->
 
-<div class="link_btn"><a href="specials.html" alt="car-rental-specials-page" >Learn More</a></div>
+<div class="panel callout" data-equalizer-watch="bar" id="image2" ><!--info box-->
 
-</div><!--info_box end--> 
-<div class="panel" id="image2" ><!--info box--> 
+<figure class="front_img">
+    <h2>Weekend Car Rental Special</h2>
+    <img src="images/car-rental-website-weekend-car-rentals.png" alt="car-rental-website-weekend-car-rentals"  />
+    <figcaption>
 
-<h2>Weekend Car Rental Special</h2>
-
-<figure class="front_img"><img src="images/car-rental-website-weekend-car-rentals.png" alt="car-rental-website-weekend-car-rentals"  /></figure>
-
-<p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
-
-<div class="link_btn"><a href="cars.html"  alt="car-rental-cars-page">Learn More</a></div> 
+            <p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
+        <div class="link_btn"><a href="cars.html"  alt="car-rental-cars-page">Learn More</a></div>
+    </figcaption>
+</figure>
 
 </div><!--info_box2 end-->
-<div class="panel" id="image3"><!--info box-->
 
-<h2>Our Locations</h2>
 
-<figure class="front_img"><img src="images/car-rental-website-locations-map.png" alt="car-rental-website-locations-map"  /></figure>
+<div class="panel callout" data-equalizer-watch="bar" id="image3"><!--info box-->
 
-<p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
+<figure class="front_img">
+    <h2>Our Locations</h2>
+    <img src="images/car-rental-website-locations-map.png" alt="car-rental-website-locations-map"  />
+    <figcaption>
 
-<div class="link_btn"><a href="location.html"  alt="car-rental-locations-page" >All Locations</a></div>
+            <p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
+        <div class="link_btn"><a href="location.html"  alt="car-rental-locations-page" >All Locations</a></div>
+    </figcaption>
+</figure>
 
 </div><!--info_box3 end-->
-<div class="panel" id="newsletter"><!--info box--> 
+
+<div class="panel callout" data-equalizer-watch="bar" id="newsletter"><!--info box-->
 
 <h2>Subscribe to newsletter</h2>
 
@@ -230,19 +239,20 @@
 <!--<small class="error">Name must be letters.</small>-->
 <input name="EMAIL" type="email" placeholder="Email" required/>
 <!--<small class="error">A valid email address is required.</small>-->
-<input type="submit" class="link_btn" value="SUBSCRIBE"  /> 
+<input type="submit" class="link_btn" value="SUBSCRIBE"  />
 </form>
 
-</div><!--info_box4 end--> 
-</article>     
+</div><!--info_box4 end-->
+
 </div>
-</div><!--inner wrapper end--> 
+<div class="clearfix"></div>
+</div><!---->
 
 <div class="row"><!--footer-->
 <footer>
   <div class="large-12 medium-12 small-12 columns">
-       
-   
+
+
       <ul id="footer_nav">
         <li><a href="index.html" >Home</a></li>
         <li><a href="specials.html"  >Special Offers</a></li>
@@ -251,15 +261,15 @@
         <li><a href="about.html" >About</a></li>
         <li><a href="contact.html" >Contact</a></li>
       </ul>
-   
-      
-  </div> 
+
+
+  </div>
  </footer>
 </div><!--row end-->
 
 <p class="copy">Raymond Thompson 2013<br/>built from Photoshop template downloaded from www.phpjabber.com<br/>
 <script type="text/javascript">document.write("Page Last Updated: " + document.lastModified);</script>
-</p> 
+</p>
 
 </div><!--wrapper end-->
 </div><!--row end-->
@@ -270,24 +280,24 @@
 <!-- Fallback to local -->
 <script>
 $(init);
-  
+
 function init(){$("#index_form_btn").click(fadeIn);
 $("#clearQuote").click(fadeOut);}
-    
+
 function fadeIn(){  $("#apDiv1").fadeIn("slow");  }
-function fadeOut(){  $("#apDiv1").fadeOut("fast");  } 
+function fadeOut(){  $("#apDiv1").fadeOut("fast");  }
 </script>
 <script src="//cdn.jsdelivr.net/foundation/4.3.1/js/foundation.min.js"></script>
 <script src="foundation-6/js/vendor/foundation.min.js"></script>
 <script src="foundation-6/js/vendor/what-input.min.js"></script>
-    
+
 <script>
 
     $(document).foundation();
-    
-</script>   
 
-     
-    
+</script>
+
+
+
 </body>
 </html>
