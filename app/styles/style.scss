@@ -107,7 +107,7 @@ html[xmlns] .clearfix { display: block; }
 
     #apDiv1 {
         position:absolute;
-        width: 35.9485%;
+        width: 40.9485%;
         height:420px;
         z-index:1;
         left: 50%;
@@ -115,8 +115,28 @@ html[xmlns] .clearfix { display: block; }
         background-color:$color;
         list-style-type:none;
         display:none;
+        @include rounded();
+        -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2); 
 
-        h1{ color:$color; width:100%; text-align:center; height:50px; line-height:50px;margin:0; background-color:$color1; font-size:2em; clear:both;}
+        h1{ 
+            color:$color; 
+            width:100%; 
+            text-align:center; 
+            height:50px; 
+            line-height:50px;
+            margin:0; 
+            background-color:$color1; 
+            font-size:2.3em;
+            font-weight:normal;
+            clear:both;
+            -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2); 
+            
+        }
+        
         li {
             a{font-size:0.85em;}
         }
@@ -144,21 +164,14 @@ html[xmlns] .clearfix { display: block; }
         #booking_form {
             p {display:block; width:100%; line-height:25px; height:25px; font-size: 0.9em; margin: 0; padding: 0; }
             a {display:block; width:20%; line-height:20px; font-size: 0.9em; margin: 0; padding: 0; }
+            
+            label{ font-family:($fontStyle); font-size:0.85em; list-style:none; line-height:45px; color:$color5; display:block;font-weight:bold; text-align:left; text-indent:5%;}
+            
 
-            li{
-                width:38%;
-                height:45px;
-
-                display: inline-block;
-                list-style:none;
-
-                label{ font-family:($fontStyle); font-size:0.85em; list-style:none; line-height:45px; color:$color5; display:block;font-weight:bold; text-align:left; text-indent:5%;}
-            }
-
-            .query_btn{text-align:center; line-height:34px; font-family:($fontStyle) ; color:$color; font-weight:bold; cursor: pointer; background-color:$color11; width:90%; margin:1% auto; height:34px;  @include gradient(#FC7D3C, #EE2A26); border:0; display:block;}
+            .query_btn{text-align:center; line-height:34px; font-family:($fontStyle) ; color:$color; font-weight:bold; cursor: pointer; background-color:$color11; width:70%; margin:0 auto; height:34px;  @include gradient(#FC7D3C, #EE2A26); border:0; display:block;}
             .query_btn:hover{@include gradient(#EE2A26,#FC7D3C)}
-            .searchform_btn{width:90%; height: 34px;margin: 1% auto;@include gradient(#FC7D3C, #EE2A26);font-family:($fontStyle);color: $color; border:0; display:block; }
-            .searchform_btn:hover{@include gradient(#EE2A26,#FC7D3C)}
+            .searchform_btn{width:35%; height: 34px;margin: 0;@include gradient(#FC7D3C, #EE2A26);font-family:($fontStyle);color: $color; border:0; display:block; }
+            .searchform_btn:hover{@include gradient(#EE2A26,#FC7D3C); font-weight:bold;}
 
 
             .pick_return, .start_end {width: 59%; }
@@ -171,12 +184,12 @@ html[xmlns] .clearfix { display: block; }
                 list-style:none;
             }
 
-            li.start_end {
 
-                #date_quote{width:45%;}
-                select{ width: 25.007%; margin:1% 0 0 0; height:35px;line-height:1.5em; font-size: 0.8em; }
-
-            }
+            #date_quote{width:45%;}
+            
+            select{ width: 25.007%; margin:1% 0 0 0; height:35px;line-height:1.5em; font-size: 0.8em; }
+            select#pickup_location{width:97%;}
+           
         }
     }
 
@@ -225,7 +238,7 @@ html[xmlns] .clearfix { display: block; }
             /*primary nav*/
             #primary_nav{
                 height: 100%;
-                width: 65%;
+                width: 60%;
                 float:right;
                 margin:0 0;
                 padding:0px;
@@ -254,8 +267,8 @@ html[xmlns] .clearfix { display: block; }
                             text-decoration:none;
                             display:block;
                             font-family:($fontStyle) ;
-                            &:hover{ color:$color; background-color:$color11; }
-                            &:active{ background-color:$color9;}
+                            &:hover{ color:$color; background-color:$color11; font-weight:bold;}
+                            &:active{ background-color:$color9;font-weight:bold;}
                         }
 
                     }
@@ -280,13 +293,14 @@ html[xmlns] .clearfix { display: block; }
         color:$color;
         cursor:pointer;
         margin-right:1%;
+        text-shadow: 1px 1px 1px #999;
         &:hover{color:$color9;}
     }
     /*End Form button*/
 
     /*Banner*/
     #banner {
-        height:455px;
+        height: 485px;
         width: 100%;
         margin:1% auto;
         clear:both;
@@ -295,10 +309,14 @@ html[xmlns] .clearfix { display: block; }
         @include gradient(#35BEF2, #B6E6FC);
 
         float: left;
-
-        figure#bannerimage{ width:50.26016%; height:54.25531%; margin:0px;}
-        figcaption{ font-size:1.1em; width:50%;color:$color;margin:0; padding:1%; }
-        .big{font-size:2.8em; color:$color; font-family:($fontStyle) ; width:40%; display:block; height:auto; margin:0; padding:1%; line-height:1.2em;}
+        padding:1%;
+        figure#bannerimage{ width:50.26016%; height: auto; margin:0px;}
+        
+        figcaption.big {
+            p:first-of-type{font-size:3.5em; text-shadow: 1px 1px 1px #999; font-weight: bold; color:$color; font-family:($fontStyle); text-transform: none; width:40%; display:block; height:auto; margin:0; padding:0; line-height: 1.4em;text-transform: none;}
+            p{ font-size: 1.3em; text-shadow: 1px 1px 1px #999; width:40%;color:$color;margin:0; padding:0; text-transform: uppercase; }
+            
+        }
         /*banner end*/
     }
 
@@ -325,12 +343,15 @@ html[xmlns] .clearfix { display: block; }
             input[type="submit"]{width: 123px;height: 35px; margin: 5px 0px 0px 17%; color:$color;  font-family:($fontStyle) ; line-height:0; }
             textarea{ width:100%; font-size:1em; line-height:1.5em; }
             label{ font-family:($fontStyle) ; color:$color6; font-size:1.2em;  height:35px; line-height:35px;float:left; text-indent:1%;}
-            input[type="submit"]{width: 30%; height: 35px; margin: 0;  font-family:($fontStyle) ; line-height:0; font-size:1em; @include gradient(#FC7D3C, #EE2A26); color:$color; }
-            input[type="submit"]:hover{ @include gradient(#EE2A26, #FC7D3C); font-weight:bold;  }
+            input[type="submit"]{width: 20%; height: 35px; margin: 0;  font-family:($fontStyle) ; line-height:0; font-size:1em; @include gradient(#FC7D3C, #EE2A26); color:$color; }
+            input[type="submit"]:hover{ @include gradient(#EE2A26, #FC7D3C); font-weight:bold; width: 20%; }
         }
         /*end of contact form*/
-
         .media-object{
+            
+            p:nth-of-type(1){ font-weight:bold; font-size:1.1em;}
+            p:nth-of-type(2){color:#00CCFF;font-size:0.9em; }
+            p:nth-of-type(3){color:$color5; font-style:italic;font-size:0.85em; }
             p:nth-of-type(4){
                 margin:5px 0px 5px 0px;
                 width:100%;
@@ -341,25 +362,20 @@ html[xmlns] .clearfix { display: block; }
                 clear: both;
 
             }
-            p:nth-of-type(1){ font-weight:bold; font-size:1.1em;}
-            p:nth-of-type(2){color:#00CCFF;font-size:0.9em; }
-            p:nth-of-type(3){color:$color5; font-style:italic;font-size:0.85em; }
-
         }
-
+        
+        
         /*specials page */
         .spacer{width:3px; height:300px; float:left;}
 
     }
-   
-    
+
     .tabs{
         border:none;
 
         li.tabs-title{
 
             width:15%;
-            display:block;
             @include rounded();
 
 
@@ -368,6 +384,7 @@ html[xmlns] .clearfix { display: block; }
                 text-align:center;
                 font-size:0.9em;
                 padding: 0;
+                display: block;
                 height: 40px;
                 line-height: 40px;
 
@@ -388,11 +405,11 @@ html[xmlns] .clearfix { display: block; }
             .clearfix { display: inline-block; clear: both;}
 
             .specials_box{
-                width: 49.5%;
+                width: 48.5%;
                 height:300px;
                 float:none;
                 display:inline-block;
-                margin-left: 0;
+                margin-left: 8px;
 
                 .specials_btn_box {
                     float:right;
@@ -409,10 +426,10 @@ html[xmlns] .clearfix { display: block; }
                         padding:7%;
                         width: 50%;
                         color:$color;
-                        font-size: 1.5em;
+                        font-size: 1.7em;
                         line-height: 0.8em;
                         @include rounded();
-                        span{font-size:40%; display:block;}
+                        span{font-size:52%; display:block;}
                     }
                     .cont_btn{
                         float:right;
@@ -460,10 +477,10 @@ html[xmlns] .clearfix { display: block; }
                     padding:2%;
                     float: left;
                     display:block;
-                    li{color:$color5; font-size:0.75em; line-height:1.7em; margin:0; width:100%; height:auto; }
+                    li{color:$color5; font-size:0.8em; line-height:1.7em; margin:0; width:100%; height:auto; }
                 }
             }
-                        
+
             /*left Column*/
             .cars_box{
 
@@ -492,8 +509,20 @@ html[xmlns] .clearfix { display: block; }
                         padding:0;
                         .car-icons{width:12%; float:left; display:inline-block; margin:1%; height:auto; }
                     }
-                    
-                                        
+
+                    p:nth-of-type(4){
+                        margin:5px 0px 5px 0px;
+                        width:100%;
+                        font-size:0.9em;
+
+                        line-height:30px;
+                        text-align:left;
+                        clear: both;
+
+                    }
+                    p:nth-of-type(1){ font-weight:bold; font-size:1em;}
+                    p:nth-of-type(2){color:#00CCFF;font-size:0.9em; }
+                    p:nth-of-type(3){color:$color5; font-style:italic;font-size:0.85em; }
                     .carsbutton{
                         width:36.727236%;
                         display:block;
@@ -509,8 +538,6 @@ html[xmlns] .clearfix { display: block; }
 
 
     }
-    
-    
 
     /*right column*/
     #right_coler {
@@ -530,7 +557,8 @@ html[xmlns] .clearfix { display: block; }
             border:none;
             background-color:$color;
             display:inline-block;
-            h2{ font-size:1.15em; color:$color; height:auto; margin:1% auto; line-height:35px;font-family:($fontStyle) ;  text-align:left; font-weight: bold; letter-spacing: 0.05em; margin:0 0 0 4%;}
+            @include rounded();
+            h2{ font-size:1.3em; color:$color; height:auto; margin:0 1% 0 0; line-height:35px;font-family:($fontStyle) ;  text-align:left; font-weight: bold; letter-spacing: 0.05em;}
 
             .card-section{
                 padding: 0.5em 1rem;
@@ -542,12 +570,12 @@ html[xmlns] .clearfix { display: block; }
                 }
 
 
-                p{font-size:0.70em; color:$color; width:100%; margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.05em; display:block; line-height:1.8em; font-weight: 100;}
+                p{font-size:0.70em; color:$color; width:100%; margin:0 0 2% 0; height:auto;font-family:($fontStyle) ; letter-spacing: 0.05em; display:block; line-height:1.8em; font-weight: 100;}
 
                 .link_btn {
                     width: 60.37931%;
                     height:35px;
-                    margin:1% auto;
+                    margin:0;
                     font-family:($fontStyle) ;
                     line-height:35px;
                     text-align:center;
@@ -655,30 +683,32 @@ html[xmlns] .clearfix { display: block; }
         height: 340px;
         width: 23.9999%;
         margin: 0px 0px 0.5em 0.8%;
+        padding-top: 1%;
 
         border:none;
         background-color:$color;
         display:inline-block;
-        h2{ font-size:1.23em; color:$color; height:auto; margin:1% auto; line-height:30px;font-family:($fontStyle) ;  text-align:left; font-weight: bold; letter-spacing: 0.05em; padding: 0 0 0 4%;}
+        @include rounded();
+        h2{ font-size:1.25em;padding-left: 6%; color:$color; height:auto; margin:1% auto; line-height:30px;font-family:($fontStyle) ;  text-align:left; font-weight: bold; letter-spacing: 0.05em;}
 
         .card-section{
             padding: 0.5em 1rem;
             .front_img{
-                width:90%;
+                width:100%;
                 margin:1% auto;
                 padding:0;
                 display:block;
             }
 
 
-            p{font-size:0.8em; color:$color; width:100%; margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.05em; display:block; line-height:1.8em; font-weight: 100;}
+            p{font-size:0.8em; color:$color; width:100%; margin:0 0 2% 0; height:auto;font-family:($fontStyle) ; letter-spacing: 0.05em; display:block; line-height:1.5em; font-weight: normal;}
 
             .link_btn {
                 width: 55.37931%;
                 text-align:center;
                 font-size:1em;
                 line-height:35px;
-                margin:1% auto;
+                margin:0;
                 font-family:($fontStyle) ;
                 @include gradient(#FC7D3C, #EE2A26);
                 @include rounded();
@@ -720,23 +750,23 @@ html[xmlns] .clearfix { display: block; }
 
     }end of info boxes*/
 
-    #image1{@include gradient(#ff7f13, #ffb260);}
-    #image2{@include gradient(#8DC7E2, #C6E2F0);}
-    #image3{@include gradient(#0B4763, #3E7D9A);}
+    #image1{@include gradient(#0B4763, #3E7D9A);}
+    #image2{@include gradient(#ff7f13, #ffb260);}
+    #image3{@include gradient(#8DC7E2, #C6E2F0);}
 
     #newsletter{
-        h2{ font-size:1.25em; color:$color; height:auto; margin:1% auto; line-height:35px;font-family:($fontStyle) ;  text-align:left; font-weight: bold; letter-spacing: 0.05em; padding: 0 0 0 4%;}
-        p{font-size:0.8em; color:$color; width:100%; margin:0; height:auto;font-family:($fontStyle) ; letter-spacing: 0.05em; display:block; line-height:1.8em; font-weight: 100;}
+        h2{ font-size:1.25em; color:$color; height:auto; margin:1% auto; line-height:30px;font-family:($fontStyle) ;  text-align:left; font-weight: bold; letter-spacing: 0.05em;}
+        p{font-size:0.8em; color:$color; width:100%; margin:0 0 2% 0; height:auto;font-family:($fontStyle) ; letter-spacing: 0.05em; display:block; line-height:1.8em; font-weight: normal;}
 
         @include gradient(#747877, #A2A5A5);
         .newsletter {
-            width:96%;
+            width:88%;
             margin:0 auto;
             padding:0;
 
             input[type="text"]{width:100%; line-height:30px;}
             input[type="email"]{width:100%; line-height:30px;}
-            input[type="submit"]{margin:1% auto;display:block; width:55.37931%; line-height:35px; @include gradient(#FC7D3C, #EE2A26); color:$color; @include rounded(); }
+            input[type="submit"]{margin:0;display:block; width:55.37931%; line-height:35px; @include gradient(#FC7D3C, #EE2A26); color:$color; @include rounded(); }
             input[type="submit"]:hover{@include gradient(#EE2A26, #FC7D3C); font-weight:bold;}
         }
     }/*end of newsletter box*/
@@ -786,15 +816,12 @@ html[xmlns] .clearfix { display: block; }
                 }
 
                 #primary_nav {
-
+                    width: 65%;
                     ul {
                         text-align: center;
                         li {
 
-                            a{ 
-                                font-size: 0.8em;
-                                &:hover{font-size: 0.85em;}
-                            }
+                            a{ font-size: 0.85em; }
 
                         }
                     }
@@ -811,7 +838,7 @@ html[xmlns] .clearfix { display: block; }
             top: 70px;
 
 
-            h1{  height:50px; line-height:50px;font-size:1.8em; }
+            h1{  height:50px; line-height:50px;font-size:2em; }
             li {
                 a{font-size:0.80em;}
             }
@@ -836,17 +863,15 @@ html[xmlns] .clearfix { display: block; }
                 p {line-height:25px; height:25px; font-size: 0.8em;  }
                 a { width:20%; line-height:20px; font-size: 0.8em; }
 
-                li{
+                
 
-                    height:45px;
+                 label{  font-size:0.8em;  line-height:45px; text-indent:5%;}
+                
 
-                    label{  font-size:0.8em;  line-height:45px; text-indent:5%;}
-                }
-
-                .query_btn{ line-height:34px; width:90%; height:34px;  }
-                .query_btn:hover{}
-                .searchform_btn{width:90%; height: 34px;  }
-                .searchform_btn:hover{}
+                .query_btn{ line-height:35px; height:35px;  }
+                
+                .searchform_btn{width:35%; height: 34px;  }
+                
 
 
                 .pick_return, .start_end {width: 59%; }
@@ -858,28 +883,44 @@ html[xmlns] .clearfix { display: block; }
                 .pickup_return{
                     list-style:none;
                 }
+    
 
-                li.start_end {
+                #date_quote{width:45%;}
+                select{ width: 25.007%; font-size: 0.8em; }
 
-                    #date_quote{width:45%;}
-                    select{ width: 25.007%; margin:1% 0 0 0; height:35px;line-height:1.5em; font-size: 0.8em; }
-
-                }
+              
             }
         }
 
-        #index_form_btn { font-size: 1.6em; height: 45px;}
+        
+
+         /*Form button*/
+        #index_form_btn{
+        width: 47.42268%;
+        height:50px;
+        
+        font-size:1.9em;
+        line-height:1.5em;
+                
+        margin-right:1%;
+        
+        &:hover{color:$color9;}
+    }
+        /*End Form button*/
 
         /*Banner*/
         #banner {
-            height: 374px;
-
-            float: none;
-            p {   width: 49%;   color: $color;   margin: 0px 0px 0px 20px;}
-            figcaption {    font-size: 1em;}
-            #bannerimage{width: 45.2602%; height:46.25531%; margin-top:15px;}
-            .big {   font-size: 2.3em; }
+        height: 440px;
+                 
+        figure#bannerimage{ width:50.26016%; margin:0px;}
+        
+        figcaption.big {
+            p:first-of-type{font-size:3.4em; text-shadow: 1px 1px 1px #999;  width:40%; line-height: 1.4em;}
+            p{ font-size: 1.2em; width:40%; }
+            
         }
+        /*banner end*/
+    }
 
         #right_coler {
 
@@ -895,10 +936,10 @@ html[xmlns] .clearfix { display: block; }
                 border:none;
 
 
-                h2{ font-size:1.2em; letter-spacing: 0.05em; line-height:30px;padding: 0; }
+                h2{ font-size:0.95em; letter-spacing: 0.05em; line-height:30px;}
 
                 .card-section{
-                    padding: 0.5em 0.5rem;
+                    padding: 0.5em 1rem;
                     .front_img{
                         width:90%;
                         margin:1% auto;
@@ -999,10 +1040,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 49%;
+                    width: 48%;
                     height:300px;
 
-                    margin-left: 0;
+                    margin-left: 8px;
 
                     .specials_btn_box {
 
@@ -1160,7 +1201,7 @@ html[xmlns] .clearfix { display: block; }
             border:none;
 
             display:inline-block;
-            h2{ font-size:1.2em; margin:1% auto; line-height:30px; letter-spacing: 0.05em;}
+            h2{ font-size:1.1em; margin:1% auto; line-height:30px; letter-spacing: 0.05em;}
 
             .card-section{
                 padding: 0.5em 1rem;
@@ -1172,7 +1213,7 @@ html[xmlns] .clearfix { display: block; }
                 }
 
 
-                p{font-size:0.70em;  margin:4% auto; height:auto; letter-spacing: 0.05em;  line-height:1.8em; }
+                p{font-size:0.70em;  margin:0; height:auto; letter-spacing: 0.05em;  line-height:1.8em; }
 
                 .link_btn {
                     width: 66.379%;
@@ -1195,7 +1236,7 @@ html[xmlns] .clearfix { display: block; }
 
                 input[type="text"]{line-height:30px;}
                 input[type="email"]{line-height:30px;}
-                input[type="submit"]{margin:1% auto;width: 66.379%; line-height:5px; padding:7%;  }
+                input[type="submit"]{width: 66.379%; line-height:5px; padding:7%;  }
 
             }
         }
@@ -1243,7 +1284,7 @@ html[xmlns] .clearfix { display: block; }
             top: 70px;
 
 
-            h1{  font-size:1.6em; }
+            h1{  font-size: 1.95em; }
             li {
                 a{font-size:0.70em;}
             }
@@ -1267,17 +1308,11 @@ html[xmlns] .clearfix { display: block; }
             #booking_form {
                 p { font-size: 0.7em;  }
                 a { width:20%;  font-size: 0.7em; }
-
-                li{
-
-                    height:45px;
-
-                    label{  font-size:0.75em;  }
-                }
-
-                .query_btn{  }
-                .query_btn:hover{}
-                .searchform_btn{width:90%; height: 34px;  }
+            
+                label{  font-size:0.75em;  }
+                         
+                
+                .searchform_btn{width:35%; height: 34px;  }
                 .searchform_btn:hover{}
 
 
@@ -1290,15 +1325,42 @@ html[xmlns] .clearfix { display: block; }
                 .pickup_return{
                     list-style:none;
                 }
+              
+                #date_quote{width:45%;}
+                select{ line-height:1.5em; font-size: 0.8em; }
 
-                li.start_end {
-
-                    #date_quote{width:45%;}
-                    select{ line-height:1.5em; font-size: 0.8em; }
-
-                }
+               
             }
         }
+        
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:100px;
+
+            font-size:1.8em;
+            line-height:1.5em;
+
+            margin-right:1%;
+
+            &:hover{color:$color9;}
+        }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 440px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:3.4em; text-shadow: 1px 1px 1px #999;  width:40%; line-height: 1.4em;}
+                p{ font-size: 1.2em; width:40%; }
+
+            }
+        }
+      
+        /*banner end*/
 
         #left_column{
             h1{font-size: 1.6em; width:100%;}
@@ -1312,21 +1374,29 @@ html[xmlns] .clearfix { display: block; }
         }
 
         #right_coler {
+
             width: 100%;
             border:none;
 
             .card{
-                height: 310px;
+
+                height: 340px;
+
                 margin: 0px 0px 0.5em 0.8%;
+
                 border:none;
 
-                h2{ letter-spacing: 0.05em; font-size:1.1em;}
+
+                h2{ font-size:0.95em; letter-spacing: 0.05em;}
 
                 .card-section{
 
                     .front_img{
+
                         margin:1% auto;
+
                     }
+
 
                     p{font-size:0.70em;   margin:4% auto; }
 
@@ -1375,7 +1445,6 @@ html[xmlns] .clearfix { display: block; }
                 a{
                     width:100%;
                     text-align:center;
-                    font-size:0.8em;
 
                     &:hover{
                         border-top:solid #e6e6e6 0.5px;
@@ -1394,10 +1463,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 49%;
+                    width: 48%;
                     height:300px;
 
-                    margin-left: 0;
+                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -1519,14 +1588,14 @@ html[xmlns] .clearfix { display: block; }
 
         .card{
             float: left;
-            height: 315px;
+            height: 300px;
             width: 23.9999%;
             margin: 0px 0px 0.5em 0.8%;
 
-            h2{ font-size:1.1em;   margin:1% auto;  letter-spacing: 0.05em;}
+            h2{ font-size:0.95em;   margin:1% auto;  letter-spacing: 0.05em;}
 
             .card-section{
-                padding: 0.5em 0.5rem;
+                padding: 0.5em 1rem;
                 .front_img{
                     width:90%;
                     margin:1% auto;
@@ -1538,7 +1607,7 @@ html[xmlns] .clearfix { display: block; }
 
                 .link_btn {
 
-                    margin:1% auto;
+                    
 
                     font-size:0.9em;
                     &:hover{ font-weight:bold; }
@@ -1572,7 +1641,7 @@ html[xmlns] .clearfix { display: block; }
         }
 
         #newsletter{
-            h2{ font-size: 1.1em;}
+            h2{ font-size: 0.9em;}
             p {  font-size: 0.70em;}
 
             .newsletter {
@@ -1608,13 +1677,12 @@ html[xmlns] .clearfix { display: block; }
                 }
 
                 #primary_nav{
-                    width: 70%;
                     ul{
                         li{
                             a {
                                 padding:0;
                                 line-height:60px;
-                                font-size: 0.7em;
+                                font-size: 0.75em;
                                 &:hover {   font-size: 0.75em; }
 
                             }
@@ -1634,7 +1702,7 @@ html[xmlns] .clearfix { display: block; }
             top: 70px;
 
 
-            h1{  font-size:1.4em; }
+            h1{  font-size: 1.85em; }
             li {
                 a{font-size:0.70em;}
             }
@@ -1658,13 +1726,9 @@ html[xmlns] .clearfix { display: block; }
             #booking_form {
                 p { font-size: 0.7em;  }
                 a { width:20%;  font-size: 0.7em; }
-
-                li{
-
-                    height:45px;
-
-                    label{  font-size:0.75em;  }
-                }
+            
+                label{  font-size:0.75em;  }
+               
 
                 .query_btn{ font-size:0.7em;  }
                 .query_btn:hover{font-size:0.7em; }
@@ -1681,30 +1745,44 @@ html[xmlns] .clearfix { display: block; }
                 .pickup_return{
                     list-style:none;
                 }
+               
+                #date_quote{width:45%;}
+                select{ line-height:1.5em; font-size: 0.7em; }
 
-                li.start_end {
-
-                    #date_quote{width:45%;}
-                    select{ line-height:1.5em; font-size: 0.7em; }
-
-                }
+                
             }
         }
 
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
+
+            font-size:1.7em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
+        }
+        /*End Form button*/
+
         /*Banner*/
         #banner {
-            height: 344px;
+            height: 395px;
 
-            p {width: 49%; margin: 0px 0px 0px 20px;}
-            figcaption {font-size: 1em;}
-            #bannerimage{width: 45.2602%; height:46.25531%; margin-top:15px;}
-            .big {font-size: 2.2em; width:50%; }
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:3.3em; text-shadow: 1px 1px 1px #999;  width: 50%; line-height: 1.4em;}
+                p{ font-size: 1.1em; width: 50%; }
+
+            }
         }
+        /*banner end*/
 
         #left_column{
             h1{font-size: 1.5em; width:100%;}
             h3 {   font-size: 1.1em;}
-            p {  font-size: 0.75em;}
+            p {  font-size: 0.8em;}
 
         }
 
@@ -1715,12 +1793,12 @@ html[xmlns] .clearfix { display: block; }
 
             .card{
 
-                height: 300px;
+                height: 340px;
 
                 margin: 0px 0px 0.5em 0.8%;
 
 
-                h2{ letter-spacing: 0.05em; font-size: 1em;}
+                h2{ font-size:0.8em; letter-spacing: 0.05em;}
 
                 .card-section{
 
@@ -1731,10 +1809,10 @@ html[xmlns] .clearfix { display: block; }
                     }
 
 
-                    p{font-size: 0.65em;   margin:4% auto; }
+                    p{font-size:0.70em;   margin:4% auto; }
 
                     .link_btn {
-                        margin:1% auto;
+                        
                         width: 90.379%;
                         font-size:0.9em;
                         &:hover{width: 90.379%;}
@@ -1747,7 +1825,7 @@ html[xmlns] .clearfix { display: block; }
             #image5{
 
 
-                p{font-size: 0.59em; margin:0 auto;line-height:2em; }
+                p{font-size:0.65em; margin:0 auto;line-height:2em; }
 
                 form{
                     width:90%;
@@ -1786,7 +1864,6 @@ html[xmlns] .clearfix { display: block; }
                 a{
                     width:100%;
                     text-align:center;
-                    font-size:0.75em;
 
                     &:hover{
                         border-top:solid #e6e6e6 0.5px;
@@ -1805,7 +1882,7 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 49%;
+                    width: 48%;
                     height: 265px;
                     margin:0;
 
@@ -1888,7 +1965,7 @@ html[xmlns] .clearfix { display: block; }
                         width:50%;
                         padding: 0%;
                         height:100%;
-                        img{ margin:0 auto; width: 75%; display:block;}
+                        img{ margin:0 auto; width:60%; display:block;}
                     }
 
                     .cars_box_txt{
@@ -1986,7 +2063,7 @@ html[xmlns] .clearfix { display: block; }
                 p{font-size:0.65em;  margin:4% auto; line-height:1.8em; }
 
                 .link_btn {
-                    margin:1% auto;
+                    
                     width: 80.379%;
                     font-size:0.85em;
                     &:hover{font-weight:bold;width: 80.379%;}
@@ -1999,12 +2076,12 @@ html[xmlns] .clearfix { display: block; }
 
         #newsletter{
             h2{ font-size: 0.95em;}
-            p{font-size:0.6em; letter-spacing: 0.05em; }
+            p{font-size:0.65em; letter-spacing: 0.05em; }
             .newsletter {
 
-                input[type="text"]{line-height:30px;padding:0.2rem; height: 30px;}
-                input[type="email"]{line-height:30px;padding:0.2rem; height: 30px;}
-                input[type="submit"]{margin:1% auto;width: 80.379%; line-height:5px; padding: 10%;  }
+                input[type="text"]{line-height:30px;padding:0.3rem; margin: 0 0 0.5rem;  height: 30px;}
+                input[type="email"]{line-height:30px;padding:0.3rem; margin: 0 0 0.5rem;  height: 30px;}
+                input[type="submit"]{width: 80.379%; line-height:5px; padding: 10%;  }
                 input[type="submit"]:hover{width: 80.379%;}
             }
         }
@@ -2019,7 +2096,7 @@ html[xmlns] .clearfix { display: block; }
 
     #wrapper{
 
-        h1{ font-size:1.4em;}
+        h1{ font-size:1.8em;}
 
         #apDiv1 {
 
@@ -2030,7 +2107,7 @@ html[xmlns] .clearfix { display: block; }
             top: 70px;
 
 
-            h1{  font-size:1.4em; }
+            h1{  font-size:1.8em; }
             li {
                 a{font-size:0.70em;}
             }
@@ -2055,13 +2132,8 @@ html[xmlns] .clearfix { display: block; }
                 p { font-size: 0.7em;  }
                 a { width:20%;  font-size: 0.7em; }
 
-                li{
-
-                    height:45px;
-
-                    label{  font-size:0.75em;  }
-                }
-
+                label{  font-size:0.75em;  }
+               
                 .query_btn{ font-size:0.7em;  }
                 .query_btn:hover{font-size:0.7em; }
                 .searchform_btn{ font-size:0.7em;  }
@@ -2078,12 +2150,10 @@ html[xmlns] .clearfix { display: block; }
                     list-style:none;
                 }
 
-                li.start_end {
+                #date_quote{width:45%;}
+                select{ line-height:1.5em; font-size: 0.7em; }
 
-                    #date_quote{width:45%;}
-                    select{ line-height:1.5em; font-size: 0.7em; }
-
-                }
+                
             }
         }
 
@@ -2097,12 +2167,13 @@ html[xmlns] .clearfix { display: block; }
                 }
 
                 #primary_nav{
+                    width: 70%;
                     ul{
                         li{
                             a {
                                 padding:0;
                                 line-height:60px;
-                                font-size: 0.65em;
+                                font-size: 0.7em;
                                 &:hover {   font-size: 0.7em; }
 
                             }
@@ -2113,12 +2184,31 @@ html[xmlns] .clearfix { display: block; }
             }
         }
 
-        #banner {
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
 
-            height: 323px;
-            .big { width:50%; font-size:2em;}
-            figcaption { font-size: 1em;}
+            font-size:1.6em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
         }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 375px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:3.2em; text-shadow: 1px 1px 1px #999;  width: 50%; line-height: 1.4em;}
+                p{ font-size: 1em; width: 50%; }
+
+            }
+        }
+        /*banner end*/
 
         #left_column {
 
@@ -2141,14 +2231,14 @@ html[xmlns] .clearfix { display: block; }
 
             .card{
 
-                height: 290px;
+                height: 350px;
 
                 margin: 0px 0px 0.5em 0.8%;
 
                 border:none;
 
 
-                h2{ letter-spacing: 0.05em; font-size: 0.95em;}
+                h2{ font-size:0.75em; letter-spacing: 0.05em;}
 
                 .card-section{
 
@@ -2159,10 +2249,10 @@ html[xmlns] .clearfix { display: block; }
                     }
 
 
-                    p{font-size: 0.56em;   margin:4% auto; }
+                    p{font-size:0.65em;   margin:4% auto; }
 
                     .link_btn {
-                        margin:1% auto;
+                        
                         font-size:0.8em;
                         &:hover{font-size:0.8em;}
                     }
@@ -2173,7 +2263,7 @@ html[xmlns] .clearfix { display: block; }
             #image5{
 
 
-                p{font-size: 0.56em; margin:0 auto;line-height:2em; }
+                p{font-size:0.6em; margin:0 auto;line-height:2em; }
 
                 form{
                     width:90%;
@@ -2212,7 +2302,6 @@ html[xmlns] .clearfix { display: block; }
                 a{
                     width:100%;
                     text-align:center;
-                    font-size:0.7em;
 
                     &:hover{
                         border-top:solid #e6e6e6 0.5px;
@@ -2231,8 +2320,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 49%;
+                    width: 48%;
                     height: 265px;
+
+                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -2311,7 +2402,7 @@ html[xmlns] .clearfix { display: block; }
                         width:50%;
                         padding: 0%;
                         height:100%;
-                        img{ margin:0 auto; display:block;}
+                        img{ margin:0 auto; width:60%; display:block;}
                     }
 
                     .cars_box_txt{
@@ -2384,7 +2475,7 @@ html[xmlns] .clearfix { display: block; }
 
         .card{
             float: left;
-            height: 320px;
+            height: 290px;
             width: 23.9999%;
             margin: 0px 0px 0.5em 0.8%;
 
@@ -2399,13 +2490,13 @@ html[xmlns] .clearfix { display: block; }
                 }
 
 
-                p{font-size:0.65em;  margin:4% auto; line-height:1.6em; }
+                p{font-size:0.6em;  margin:4% auto; line-height:1.5em; }
 
                 .link_btn {
-                    margin:1% auto;
+                    
                     width: 90.379%;
                     font-size:0.9em;
-                    &:hover{ font-weight:bold;}
+                    &:hover{ font-weight:bold; width: 90.379%;}
 
                 }
 
@@ -2416,13 +2507,13 @@ html[xmlns] .clearfix { display: block; }
 
         #newsletter{
             h2{ font-size: 1em; }
-            p{font-size:0.7em; letter-spacing: 0.01em;}
+            p{font-size:0.6em; letter-spacing: 0.01em;}
             .newsletter {
-                width:96%;
+                width:90%;
 
-                input[type="text"]{height:30px;padding:0.2rem;}
-                input[type="email"]{height:30px;padding:0.2rem;}
-                input[type="submit"]{margin:1% auto;width:70.37931%; padding:7%; font-size:0.8em; }
+                input[type="text"]{height:30px;padding:0.3rem;}
+                input[type="email"]{height:30px;padding:0.3rem;}
+                input[type="submit"]{width:80.37931%; padding:10%; font-size:0.8em; }
                 input[type="submit"]:hover{}
             }
         }
@@ -2442,10 +2533,31 @@ html[xmlns] .clearfix { display: block; }
         }
 
 
-        #banner {
-            height: 313px;
-            figcaption {   font-size: 0.9em;}
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
+
+            font-size:1.5em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
         }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 365px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:3.1em;  width: 50%; line-height: 1.4em;}
+                p{ font-size: 0.95em; width: 50%; }
+
+            }
+        }
+        /*banner end*/
 
 
         #header {
@@ -2468,8 +2580,8 @@ html[xmlns] .clearfix { display: block; }
                     ul{
                         li{
                             a {
-                                font-size:0.65em;
-                                &:hover{font-size:0.65em;}
+                                font-size:0.75em;
+                                &:hover{font-size:0.75em;}
                             }
                         }
 
@@ -2481,7 +2593,7 @@ html[xmlns] .clearfix { display: block; }
 
         #left_column {
             h3 {  font-size: 1em;}
-            p {    font-size: 0.75em;}
+            p {    font-size: 0.8em;}
 
 
             #contact_form {
@@ -2500,14 +2612,14 @@ html[xmlns] .clearfix { display: block; }
 
             .card{
 
-                height: 270px;
+                height: 340px;
 
                 margin: 0px 0px 0.5em 0.8%;
 
                 border:none;
 
 
-                h2{ font-size:0.9em; letter-spacing: 0.05em; line-height:25px;}
+                h2{ font-size:0.9em; letter-spacing: 0.05em; line-height: 25px;}
 
                 .card-section{
 
@@ -2518,10 +2630,10 @@ html[xmlns] .clearfix { display: block; }
                     }
 
 
-                    p{ margin:4% auto; font-size: 0.5em; }
+                    p{font-size:0.70em;   margin:4% auto; }
 
                     .link_btn {
-                        margin:1% auto;
+                        
                         a{
 
                             font-size:0.8em;
@@ -2536,8 +2648,8 @@ html[xmlns] .clearfix { display: block; }
 
             #image5{
 
-
-                p{font-size:0.5em; margin:0;line-height:1.7em; }
+                h2{ line-height: 25px;}
+                p{font-size:0.6em; margin:0;line-height:1.5em; }
 
                 form{
                     width:90%;
@@ -2593,8 +2705,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 49%;
+                    width: 48%;
                     height:250px;
+
+                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -2673,7 +2787,7 @@ html[xmlns] .clearfix { display: block; }
                         width:50%;
                         padding: 0%;
                         height:100%;
-                        img{ margin:0 auto;  display:block;}
+                        img{ margin:0 auto; width:60%; display:block;}
                     }
 
                     .cars_box_txt{
@@ -2752,11 +2866,11 @@ html[xmlns] .clearfix { display: block; }
 
         .card{
             float: left;
-            height: 305px;
+            height: 270px;
             width: 23.9999%;
             margin: 0px 0px 0.5em 0.8%;
 
-            h2{ font-size:0.9em; line-height: 25px;  margin:1% auto; letter-spacing: 0.05em;}
+            h2{ font-size:0.9em; line-height:25px;  letter-spacing: 0.05em;}
 
             .card-section{
                 padding: 0.5em 0.5rem;
@@ -2767,13 +2881,13 @@ html[xmlns] .clearfix { display: block; }
                 }
 
 
-                p{font-size:0.6em;  margin:4% auto; line-height:1.8em; }
+                p{ margin:4% auto; font-size: 0.58em; }
 
                 .link_btn {
-                    margin:1% auto;
-                    font-size:0.9em;
+                    
+                    font-size:0.8em;
                     width:90%;
-                    &:hover{ font-weight:bold; font-size:0.95em;width:90%;}
+                    &:hover{ font-weight:bold; font-size:0.8em;width:90%;}
 
                 }
 
@@ -2784,14 +2898,14 @@ html[xmlns] .clearfix { display: block; }
 
         #newsletter{
             h2{ font-size: 0.95em; height: auto; line-height:25px; }
-            p{font-size:0.65em; letter-spacing: 0.01em;}
+            p{ letter-spacing: 0.01em;}
             .newsletter {
-                width:96%;
+                width:90%;
 
-                input[type="text"]{height:30px;}
-                input[type="email"]{height:30px;}
-                input[type="submit"]{margin:1% auto;width:75.37931%; padding:7%; font-size:0.9em; }
-                input[type="submit"]:hover{width:75.37931%;}
+                input[type="text"]{height:30px;padding:0.3rem;}
+                input[type="email"]{height:30px;padding:0.3rem;}
+                input[type="submit"]{width:55.37931%;  font-size:0.85em; }
+                input[type="submit"]:hover{width:55.37931%;}
             }
         }
 
@@ -2816,13 +2930,13 @@ html[xmlns] .clearfix { display: block; }
             .top-bar{
 
                 #primary_nav {
-                    width: 70%;
+                    width: 75%;
                     ul{
 
                         li {  list-style: none;}
                         a {
-                            font-size:0.55em;
-                            &:hover{font-size:0.55em;}
+                            font-size:0.5em;
+                            &:hover{font-size:0.5em;}
                         }
 
                     }
@@ -2840,7 +2954,7 @@ html[xmlns] .clearfix { display: block; }
             top: 70px;
 
 
-            h1{  font-size:1.4em; }
+            h1{  font-size:1.7em; }
             li {
                 a{font-size:0.60em;}
             }
@@ -2864,14 +2978,9 @@ html[xmlns] .clearfix { display: block; }
             #booking_form {
                 p { font-size: 0.7em;  }
                 a { width:20%;  font-size: 0.6em; }
-
-                li{
-
-                    height:45px;
-
-                    label{  font-size:0.65em;  }
-                }
-
+            
+                label{  font-size:0.75em; font-weight:bold;  }
+                 
                 .query_btn{ font-size:0.8em;  }
                 .query_btn:hover{font-size:0.8em; }
                 .searchform_btn{ font-size:0.8em;  }
@@ -2887,25 +2996,40 @@ html[xmlns] .clearfix { display: block; }
                 .pickup_return{
                     list-style:none;
                 }
+                
+                #date_quote{width:45%;}
+                select{ line-height:1.5em; font-size: 0.7em; }
 
-                li.start_end {
-
-                    #date_quote{width:45%;}
-                    select{ line-height:1.5em; font-size: 0.7em; }
-
-                }
+               
             }
         }
 
 
-        #index_form_btn {   font-size: 1.5em;}
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
 
-        #banner {
+            font-size:1.4em;
+            line-height:1.5em;
 
-            height:286px;
-            .big { width:50%; font-size:1.9em;}
-            figcaption { font-size: 0.9em;}
+            &:hover{color:$color9;}
         }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 340px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:3em; width: 50%; line-height: 1.4em;}
+                p{ font-size: 0.95em; width: 50%; }
+
+            }
+        }
+        /*banner end*/
 
         #left_column {
 
@@ -2914,14 +3038,16 @@ html[xmlns] .clearfix { display: block; }
             padding: 5px;
 
             #contact_form {
-                .button_contact {   width: 123px;   height: 35px;   margin: 5px 0px 0px 20%;}
+                .button_contact {   width: 123px;  height: 35px;   margin: 5px 0px 0px 20%;}
             }
-            
+            .cars_box {
+                .cars_box_txt {  display: inline-block;   float: left;  font-size:0.9em;}
+            }
         }
 
         .specials_box {
 
-            width: 49%;
+            width: 48%;
             height:250px;
 
             .specials_box_img {
@@ -2982,11 +3108,15 @@ html[xmlns] .clearfix { display: block; }
             border:none;
 
             .card{
-                height: 260px;
+
+                height: 340px;
+
                 margin: 0px 0px 0.5em 0.8%;
+
                 border:none;
 
-                h2{ font-size:0.9em; letter-spacing: 0.05em; line-height:25px;}
+
+                h2{ font-size:0.9em; letter-spacing: 0.05em;}
 
                 .card-section{
 
@@ -2997,7 +3127,7 @@ html[xmlns] .clearfix { display: block; }
                     }
 
 
-                    p{font-size:0.5em;  margin:4% auto; }
+                    p{font-size:0.70em;   margin:4% auto; }
 
                     .link_btn {  margin:1% auto;   }
                     a{ line-height:34px; font-size:0.9em;   }
@@ -3008,23 +3138,29 @@ html[xmlns] .clearfix { display: block; }
 
             #image5{
 
-                p{font-size:0.45em;  margin:0 auto;line-height:1.7em; }
+
+                p{font-size:0.65em; width:90%; margin:0 auto;line-height:2em; }
 
                 form{
                     width:90%;
                     margin:4% auto;
-                    input[type="text"]{width:100%; height:25px;}
-                    input[type="email"]{width:100%; height:25px;}
-                    input[type="submit"]{ width: 74.379%; height: 35px;  line-height:2px; margin: 0 auto; font-family:($fontStyle) ;border:0; display:block; padding:7%; font-size:0.8em; }
-                    input[type="submit"]:hover{width: 74.379%;  line-height:2px; font-weight:bold; font-size:0.8em;}
+                    input[type="text"]{width:100%; height:30px;}
+                    input[type="email"]{width:100%; height:30px;}
+                    input[type="submit"]{ width: 54.379%; height: 35px;  line-height:2px; margin: 0 auto; font-family:($fontStyle) ;border:0; display:block; padding:7%; }
+                    input[type="submit"]:hover{  line-height:2px; font-weight:bold;}
                 }
             }
 
             #image2{
+
+
                 margin-top: 22%;
+
             }
 
             #image3{
+
+
 
             }
 
@@ -3059,8 +3195,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 49%;
+                    width: 48%;
                     height:250px;
+
+                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -3068,9 +3206,12 @@ html[xmlns] .clearfix { display: block; }
                         height:150px;
 
                         .special_price {
+
                             margin:10px 0px 30px 0px;
+
                             padding:7%;
                             width: 50%;
+
                             font-size: 1em;
                             line-height: 0.8em;
 
@@ -3078,16 +3219,20 @@ html[xmlns] .clearfix { display: block; }
                         }
                         .cont_btn{
 
+
+
                             margin:0;
                             a{ line-height:35px; font-size:0.9em;}
                             a:hover{ font-weight:bold;font-size:0.9em;}
                         }
+
                     }
 
                     .specials_box_img{
                         width:100%;
                         height:110px;
                         padding:2%;
+
                     }
 
                     .media-object-section{
@@ -3096,10 +3241,14 @@ html[xmlns] .clearfix { display: block; }
                         h4{   font-size:0.8em;}
 
                         p.special1{
+
                             width:94.44444%;
+
                             margin:3px 0px 0px 3px;
                             font-size:0.7em;
+
                             display:inline-block;
+
                         }
                     }
 
@@ -3107,7 +3256,7 @@ html[xmlns] .clearfix { display: block; }
                         width:185px;
                         height:150px;
                         padding:2%;
-                        li{font-size:0.65em; line-height:1.7em;  }
+                        li{font-size:0.7em; line-height:1.7em;  }
                     }
                 }
 
@@ -3120,14 +3269,14 @@ html[xmlns] .clearfix { display: block; }
 
                     .cars_box_img{
 
+
                         width:50%;
 
-                        img{ margin:0 auto; width: 80%; }
+                        img{ margin:0 auto; width:60%; }
                     }
 
                     .cars_box_txt{
                         width:47.75602%;
-                        font-size:0.9em;
 
                         padding: 0;
                         .car-icons-box{
@@ -3157,18 +3306,23 @@ html[xmlns] .clearfix { display: block; }
                             a{display:block;  text-align:center;padding:7%;}
                             a:hover{ font-weight:bold;}
                         }
+
                     }
                 }
+
             }
+
+
         }
+
 
         .card{
             float: left;
-            height: 325px;
-            width: 41%;
-            margin: 0px 0px 1em 5.5%;
+            height: 340px;
+            width: 49%;
+            margin: 0px 0px 0.5em 0.8%;
 
-            h2{ font-size:1.1em; margin:1% auto; letter-spacing: 0.05em;}
+            h2{ font-size:1.1em; margin:1% auto; line-height:40px; letter-spacing: 0.05em;}
 
             .card-section{
                 padding: 0.5em 0.5rem;
@@ -3179,10 +3333,10 @@ html[xmlns] .clearfix { display: block; }
                 }
 
 
-                p{font-size:0.7em;  margin:4% auto; line-height:1.8em; }
+                p{font-size:0.7em;  margin:4% auto; line-height:1.6em; }
 
                 .link_btn {
-                    margin:1% auto;
+                    
                     line-height:34px;
                     width:50%;
                     font-size:0.8em;
@@ -3193,15 +3347,16 @@ html[xmlns] .clearfix { display: block; }
 
         }
 
+
         #newsletter{
-            h2 { font-size: 1.2em;line-height:35px;   }
+            h2 { font-size: 1.2em;line-height:40px;   }
             p {font-size: 0.75em; }
 
             .newsletter {
                 input[type="email"] {  margin-top:0.1rem;}
                 input[type="text"] {  margin-top:0.3rem;}
-                input[type="submit"] { width: 65.379%; font-size:0.85em;}
-                input[type="submit"]:hover{width:65.379%;}
+                input[type="submit"] { width: 50.379%; font-size:0.85em; padding: 9%;}
+                input[type="submit"]:hover{width:50.379%; padding: 9%;}
             }
 
         }
@@ -3239,17 +3394,17 @@ html[xmlns] .clearfix { display: block; }
 
             .top-bar{
                 .top-bar-left {
-                    width: 35%;
+                    width: 25%;
                 }
 
                 #primary_nav {
-                    width: 65%;                    
+                    width: 75%;                    
                     ul{
 
                         li {  list-style: none; }
                         a {
-                            font-size:0.55em;
-                            &:hover{font-size:0.55em;}
+                            font-size:0.5em;
+                            &:hover{font-size:0.5em;}
                         }
                     }
                 }
@@ -3274,7 +3429,7 @@ html[xmlns] .clearfix { display: block; }
 
             }
             #booking_form {
-                li {  }
+                
 
                 .start_end {
                     select {    font-size: 0.65em;}
@@ -3285,25 +3440,44 @@ html[xmlns] .clearfix { display: block; }
 
         }
 
-        #banner {
-            height: 275px;
-            .big {   font-size: 1.8em;}
-            figcaption { font-size: 0.85em;}
-        }
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
 
-        #index_form_btn {   font-size: 1.5em;}
+            font-size:1.3em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
+        }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 310px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:2.9em; width: 50%; line-height: 1.25em;}
+                p{ font-size: 0.9em; width: 50%; }
+
+            }
+        }
+        /*banner end*/
 
 
 
         .card{
             float: left;
-            height: 340px;
-           
+            height: 360px;
+            width: 48%;
+            margin: 0.8%;
 
-            h2{ font-size:1.2em;   margin:1% auto;  letter-spacing: 0.05em;}
+            h2{ font-size:1.1em;   margin:1% auto; line-height:40px;  letter-spacing: 0.05em;}
 
             .card-section{
-                padding: 0.5em 0.5rem;
+                padding: 0.5em 1rem;
                 .front_img{
                     width:90%;
                     margin:1% auto;
@@ -3313,7 +3487,7 @@ html[xmlns] .clearfix { display: block; }
 
                 p{font-size:0.75em;  margin:4% auto; line-height:1.8em; }
 
-                .link_btn {    margin:1% auto;   }
+                .link_btn {       }
                 a{ line-height:34px; width:100%;  font-size:0.9em; }
                 a:hover{ font-weight:bold;line-height:34px; }
             }
@@ -3326,7 +3500,7 @@ html[xmlns] .clearfix { display: block; }
             .newsletter {
                 input[type="email"] {  margin-top:0.1rem;}
                 input[type="text"] {  margin-top:0.3rem;}
-                input[type="submit"] { width: 65.379%; font-size:0.85em;}
+                input[type="submit"] { font-size:0.85em;}
             }
 
         }
@@ -3340,14 +3514,14 @@ html[xmlns] .clearfix { display: block; }
             padding: 0px;
             width:98%;
 
-            h1 { font-size:1.4em;   margin:0;}
-            p {   line-height: 1.5em; }
+            h1 { font-size:1.5em;   width: 70%; margin:0;}
+            p {     font-size: 0.9em;    line-height: 1.5em; }
 
 
 
             #contact_form{
-                label { font-size: 0.8em; width:100%;}
-                .button_contact {   margin: 0;}
+                label { font-size: 0.9em; width:100%;}
+                .button_contact {   margin: 5px 0px 0px 23%;}
             }
 
         }
@@ -3381,8 +3555,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 49%;
+                    width: 48%;
                     height:250px;
+
+                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -3456,7 +3632,7 @@ html[xmlns] .clearfix { display: block; }
 
                         width:50%;
 
-                        img{ margin:0 auto;  }
+                        img{ margin:0 auto; width:60%; }
                     }
 
                     .cars_box_txt{
@@ -3490,9 +3666,13 @@ html[xmlns] .clearfix { display: block; }
                             a{display:block;  text-align:center;padding:7%;}
                             a:hover{ font-weight:bold;}
                         }
+
                     }
                 }
+
             }
+
+
         }
 
 
@@ -3503,14 +3683,16 @@ html[xmlns] .clearfix { display: block; }
 
             .card{
 
-                height: 275px;
+                height: 340px;
+
                 margin: 0px 0px 0.5em 0.8%;
+
                 border:none;
+
 
                 h2{ font-size:0.9em; letter-spacing: 0.05em;}
 
                 .card-section{
-                    padding: 0.5em 0.3rem;
 
                     .front_img{
 
@@ -3518,36 +3700,42 @@ html[xmlns] .clearfix { display: block; }
 
                     }
 
-                    p{  margin:4% auto; font-size: 0.55em;}
 
-                    .link_btn {  margin:1% auto;   }
+                    p{font-size:0.70em;   margin:4% auto; }
+
+                    .link_btn {     }
                     a{ line-height:34px; font-size:0.9em;   }
                     a:hover{ line-height:34px; }
                 }
             }
 
 
+
             #image5{
 
-                p{font-size:0.45em; margin:0 auto;line-height:2em; }
+
+                p{font-size:0.65em; width:90%; margin:0 auto;line-height:2em; }
 
                 form{
                     width:90%;
                     margin:4% auto;
-                    input[type="text"]{width:100%; }
-                    input[type="email"]{width:100%; }
-                    input[type="submit"]{ width: 94.379%; height: 35px;  line-height:2px; margin: 0 auto; font-family:($fontStyle) ;border:0; display:block; padding:7%; }
-                    input[type="submit"]:hover{ width: 94.379%; line-height:2px; font-weight:bold;}
+                    input[type="text"]{width:100%; height:30px;}
+                    input[type="email"]{width:100%; height:30px;}
+                    input[type="submit"]{ width: 54.379%; height: 35px;  line-height:2px; margin: 0 auto; font-family:($fontStyle) ;border:0; display:block; padding:7%; }
+                    input[type="submit"]:hover{  line-height:2px; font-weight:bold;}
                 }
             }
 
             #image2{
+
 
                 margin-top: 22%;
 
             }
 
             #image3{
+
+
 
             }
 
@@ -3612,7 +3800,31 @@ html[xmlns] .clearfix { display: block; }
             }
         }
 
-        #index_form_btn {   font-size: 1.4em;}
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
+
+            font-size:1.25em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
+        }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 290px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:2.6em; width: 50%; line-height: 1.25em;}
+                p{ font-size: 0.8em; width: 50%; }
+
+            }
+        }
+        /*banner end*/
 
         #apDiv1 {
 
@@ -3622,10 +3834,10 @@ html[xmlns] .clearfix { display: block; }
                 }
             }
 
-            width: 79.052%;
-            left: 18%;
+            width: 73.052%;
+            left: 23%;
             #booking_form{
-                li{width: 39%;}
+                
             }
         }
 
@@ -3640,14 +3852,13 @@ html[xmlns] .clearfix { display: block; }
             .card{
 
                 height: 340px;
-                display:block;
-                margin: 4% auto;
+
+                margin: 0px 0px 0.5em 0.8%;
+
                 border:none;
-                width:40%;
-                float:none;
 
 
-                h2{ font-size:1.3em; letter-spacing: 0.05em; line-height: 30px;}
+                h2{ font-size:0.9em; letter-spacing: 0.05em;}
 
                 .card-section{
 
@@ -3660,7 +3871,7 @@ html[xmlns] .clearfix { display: block; }
 
                     p{font-size:0.70em;   margin:4% auto; }
 
-                    .link_btn {  margin:1% auto;   }
+                    .link_btn {     }
                     a{ line-height:34px; font-size:0.9em;   }
                     a:hover{ line-height:34px; }
                 }
@@ -3670,13 +3881,13 @@ html[xmlns] .clearfix { display: block; }
             #image5{
 
 
-                p{font-size:0.65em;  margin:0 auto;line-height:2em; }
+                p{font-size:0.65em; width:90%; margin:0 auto;line-height:2em; }
 
                 form{
                     width:90%;
                     margin:4% auto;
-                    input[type="text"]{width:100%; }
-                    input[type="email"]{width:100%; }
+                    input[type="text"]{width:100%; height:30px;}
+                    input[type="email"]{width:100%; height:30px;}
                     input[type="submit"]{ width: 54.379%; height: 35px;  line-height:2px; margin: 0 auto; font-family:($fontStyle) ;border:0; display:block; padding:7%; }
                     input[type="submit"]:hover{  line-height:2px; font-weight:bold;}
                 }
@@ -3685,7 +3896,7 @@ html[xmlns] .clearfix { display: block; }
             #image2{
 
 
-                margin-top: 0%;
+                margin-top: 22%;
 
             }
 
@@ -3728,6 +3939,8 @@ html[xmlns] .clearfix { display: block; }
                 .specials_box{
                     width: 48%;
                     height:250px;
+
+                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -3910,7 +4123,7 @@ html[xmlns] .clearfix { display: block; }
             h2{ font-size: 1.15em;   margin:1% auto; line-height:40px;  letter-spacing: 0.05em;}
 
             .card-section{
-                padding: 0.5em 0.3rem;
+                padding: 0.5em 1rem;
                 .front_img{
                     width:90%;
                     margin:1% auto;
@@ -3920,7 +4133,7 @@ html[xmlns] .clearfix { display: block; }
 
                 p{font-size:0.8em;  margin:4% auto; line-height:1.8em; }
 
-                .link_btn {    margin:1% auto;   }
+                .link_btn {     }
                 a{ line-height:34px; width:100%;  font-size:0.9em; }
                 a:hover{ font-weight:bold;line-height:34px; }
             }
@@ -3929,16 +4142,17 @@ html[xmlns] .clearfix { display: block; }
 
 
         #newsletter{
+            h2 {font-size: 1.25em;  line-height: 35px;}
             p {font-size: 0.8em; }
 
             .newsletter {
                 input[type="email"] {  margin-top:0.1rem;}
                 input[type="text"] {  margin-top:0.3rem;}
                 input[type="submit"] {
-                    padding:7%; 
-                    width: 46.379%; 
+                     
+                    width: 60.379%; 
                     font-size:0.9em;
-                    &:hover{width: 46.379%; }
+                    &:hover{width: 60.379%; }
                 }
             }
 
@@ -3950,9 +4164,7 @@ html[xmlns] .clearfix { display: block; }
 
     #wrapper {
 
-
-        #index_form_btn {   font-size: 1.25em;}
-
+        
         #header {
 
             .top-bar{
@@ -3962,7 +4174,7 @@ html[xmlns] .clearfix { display: block; }
                     button{display:block;height: 40px; line-height:40px; font-size:0.9em;}
                 }
 
-                .title-area { float: left; }
+                .title-area { width:100%;}
 
                 #primary_nav {
                     height: auto;
@@ -3985,19 +4197,38 @@ html[xmlns] .clearfix { display: block; }
             width: 82.052%;
             left: 14%;
             #booking_form{
-                li{width: 39%;}
+                
             }
 
 
         }
         
         
-        #banner {
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
 
-            height:248px;
-            .big { width:50%; font-size:1.85em;}
-            figcaption { font-size: 0.85em;}
+            font-size:1.15em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
         }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 260px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:2.3em; width: 50%; line-height: 1.25em;}
+                p{ font-size: 0.8em; width: 50%; }
+
+            }
+        }
+        /*banner end*/
 
         #left_column {
             #contact_form input[type="submit"] {   margin: 0;}
@@ -4013,7 +4244,9 @@ html[xmlns] .clearfix { display: block; }
             .card{
 
                 height: 340px;
-                width:100%;
+
+                margin: 0px 0px 0.5em 0.8%;
+
                 border:none;
 
 
@@ -4030,7 +4263,7 @@ html[xmlns] .clearfix { display: block; }
 
                     p{font-size:0.70em;   margin:4% auto; }
 
-                    .link_btn {  margin:1% auto;   }
+                    .link_btn {   }
                     a{ line-height:34px; font-size:0.9em;   }
                     a:hover{ line-height:34px; }
                 }
@@ -4040,13 +4273,13 @@ html[xmlns] .clearfix { display: block; }
             #image5{
 
                 
-                p{font-size:0.65em; margin:0 auto;line-height:2em; }
+                p{font-size:0.65em; width:90%; margin:0 auto;line-height:2em; }
 
                 form{
                     width:90%;
                     margin:4% auto;
-                    input[type="text"]{width:100%; }
-                    input[type="email"]{width:100%; }
+                    input[type="text"]{width:100%; height:30px;}
+                    input[type="email"]{width:100%; height:30px;}
                     input[type="submit"]{ width: 54.379%; height: 35px;  line-height:2px; margin: 0 auto; font-family:($fontStyle) ;border:0; display:block; padding:7%; }
                     input[type="submit"]:hover{  line-height:2px; font-weight:bold;}
                 }
@@ -4055,7 +4288,7 @@ html[xmlns] .clearfix { display: block; }
             #image2{
 
 
-                margin-top: 0;
+                margin-top: 22%;
 
             }
 
@@ -4098,6 +4331,8 @@ html[xmlns] .clearfix { display: block; }
                 .specials_box{
                     width: 47%;
                     height:250px;
+
+                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -4279,14 +4514,14 @@ html[xmlns] .clearfix { display: block; }
 
         .card{
             float: left;
-            height: 340px;
+            height: 320px;
             
             margin: 0px 0px 0.5em 0.8%;
 
             h2{ font-size:1.05em;   margin:1% auto; line-height:40px;  letter-spacing: 0.05em;}
 
             .card-section{
-                padding: 0.5em 0.3rem;
+                padding: 0.5em 1rem;
                 .front_img{
                     width:90%;
                     margin:1% auto;
@@ -4296,7 +4531,7 @@ html[xmlns] .clearfix { display: block; }
 
                 p{font-size:0.75em;  margin:4% auto; line-height:1.8em; }
 
-                .link_btn {    margin:1% auto;   }
+                .link_btn {      }
                 a{ line-height:34px; width:100%;  font-size:0.9em; }
                 a:hover{ font-weight:bold;line-height:34px; }
             }
@@ -4305,8 +4540,8 @@ html[xmlns] .clearfix { display: block; }
 
 
         #newsletter {
-            h2 {  font-size: 1.1em; }
-            p {  font-size: 0.65em;}
+            h2 {  font-size: 1.1em; text-indent:0px;}
+            p {  font-size: 0.65em;width:96%;}
 
             .newsletter {
                 a { font-size: 1em;  margin:auto;}
@@ -4322,20 +4557,20 @@ html[xmlns] .clearfix { display: block; }
     }
 }
 
-@media  (max-width: 480px){
+@media (max-width: 480px){
 
     #wrapper{
 
-        h1 { width: 98%; font-size:1.2em;}
+        h1 { width: 100%; font-size:1.2em;}
 
 
 
         #header{
 
             .top-bar{
-                .title-bar {   width: 11%;}
+                .title-bar {   width: 15%;}
 
-                .title-area { float: left;  width:100%;}
+                .title-area { width:100%;}
 
                 #primary_nav {
                     height: auto;
@@ -4364,13 +4599,10 @@ html[xmlns] .clearfix { display: block; }
             left: 6%;
 
             #booking_form {
-
-                li{width: 38%;}
-
-                .start_end {
-                    select { width: 49px;}
-                    #date_quote {   width: 40%;    font-size: 0.75em;}
-                }
+    
+                select { width: 49px;}
+                #date_quote {    font-size: 0.75em;}
+                
                 .pick_return {
                     select {  margin: 0; height: 35px;}
                 }
@@ -4380,61 +4612,59 @@ html[xmlns] .clearfix { display: block; }
 
         }
 
-        #index_form_btn {height: 50px;  float: right;  font-size: 1.1em;  line-height: 50px;   text-align: center;   margin-right:10px; width:40%;}
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
 
-        #banner {
-            height: 210px;
-            margin-top:5px;
-            #bannerimage {    width: 99.2602%;    height: 54.2553%;}
-            .big {font-size: 1.3em; width:45%;  }
-            figcaption {   font-size: 0.7em; margin:0;}
-            p { font-size: 0.9em; }
+            font-size:1em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
         }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 235px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:2.1em; width: 50%; line-height: 1.25em;}
+                p{ font-size: 0.7em; width: 50%; }
+
+            }
+        }
+        /*banner end*/
 
         #left_column{
 
-            h1 { margin: 1% 0;   width: 100%;  font-size:1.35em;}
-            
+            h1 { margin: 1%;   width: 100%;  font-size:1.8em;}
+            .cars_box {
+
+                .cars_box_img {
+                    float: left;
+                    width:51%;
+
+                    img {   margin: 0;    width: 100%;}
+                }
+            }
+
             #contact_form {
                 width: 90%;
                 height: auto;
                 margin-left: 2%;
-                label { width: 100%; }
+                label { width: 23%; }
                 input[type="submit"] {
-                    margin: 0;
+                    margin: 5px 0px 0px 23%;
                 }
             }
 
 
         }
 
-        .specials_box {
-
-            width: 100%;
-            height: 290px;
-            float: none;
-            display: block;
-            margin: 2% auto;
-
-            .specials_btn_box {
-                .special_price { width: 45%; }
-            }
-
-            .specials_box_img {
-
-                width: 100%;
-                height: 150px;
-                padding: 5px;
-                color: $color;
-                p { font-size: 0.85em;}
-
-            }
-
-            .specials_box_txt {
-                p { font-size: 0.70em;}
-            }
-        }
-
+        
         /*destination Links*/
         .destinations{
 
@@ -4500,8 +4730,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 100%;
+                    width: 96%;
                     height:270px;
+
+                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -4559,7 +4791,7 @@ html[xmlns] .clearfix { display: block; }
                         width: 190px;
                         height:150px;
                         padding:2%;
-                        li{font-size:0.7em; line-height:1.8em;  }
+                        li{font-size:0.75em; line-height:1.8em;  }
                     }
                 }
 
@@ -4575,7 +4807,7 @@ html[xmlns] .clearfix { display: block; }
 
                         width:50%;
 
-                        img{ margin:0 auto; width:85%; }
+                        img{ margin:0 auto; width:80%; }
                     }
 
                     .cars_box_txt{
@@ -4620,37 +4852,40 @@ html[xmlns] .clearfix { display: block; }
 
         .card{
             float: left;
-            height: 315px;
+            height: 340px;
             
             margin: 0px 0px 0.5em 0.8%;
 
-            h2{ font-size:1.05em;   margin:1% auto; line-height:30px;  letter-spacing: 0.05em;}
+            h2{ font-size:1.1em;   margin:1% auto; line-height:35px;  letter-spacing: 0.05em;}
 
             .card-section{
-                padding: 0.5em 0.3rem;
+                padding: 0.5em 0.5rem;
                 .front_img{
-                    width:90%;
+                    
                     margin:1% auto;
 
                 }
 
 
-                p{font-size:0.75em;  margin:4% auto; line-height:1.8em; }
+                p{font-size:0.7em;  margin:4% auto; line-height:1.8em; }
 
-                .link_btn {    margin:1% auto;   }
+                .link_btn {      }
                 a{ line-height:34px; width:100%;  font-size:0.9em; }
                 a:hover{ font-weight:bold;line-height:34px; }
             }
 
         }
 
-        #newsletter {
-            h2 {  font-size: 1.05em;  line-height:30px;}
-            p {  font-size: 0.65em;}
 
+        #newsletter {
+            p {
+                font-size: 0.75em;
+
+            }
             .newsletter {
+                
                 a { font-size: 1em;  margin:auto;}
-                input[type="submit"]{}
+                
                 input[type="email"] {  margin-top:0.5rem;}
                 input[type="text"] {  margin-top:0.3rem;}
             }
@@ -4674,13 +4909,11 @@ html[xmlns] .clearfix { display: block; }
 @media (max-width: 414px){
 
     #wrapper{
-
-        #index_form_btn {font-size: 0.9em;}
-
+       
         #header{
 
             .topbar{
-                .title-bar {   width: 13%;}
+                .title-bar {   width: 15%;}
 
                 #primary_nav {
                     height: auto;
@@ -4697,64 +4930,34 @@ html[xmlns] .clearfix { display: block; }
                 }
             }
         }
+        
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
+
+            font-size:0.95em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
+        }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 210px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:1.9em; width: 50%; line-height: 1.25em;}
+                p{ font-size: 0.65em; width: 50%; }
+
+            }
+        }
+        /*banner end*/
 
         #right_coler  {  display:none;}
-
-        #apDiv1 {
-
-            width: 95.949%;
-            
-            left: 2%;
-            p {
-                font-size:0.5em;
-                .dropcap {   width: 15%;}
-
-            }
-            p.formnum {
-                .dropcap-small {   width: 22%;}
-            }
-
-            #booking_form{
-                li {  
-                    width: 32%;
-                    label{font-size:0.65em;}
-                
-                }
-                .start_end {   width: 65%;}
-
-            }
-        }
-        
-        #banner {
-            height: 190px;
-            
-        }
-                
-        #left_column {
-            
-             p {
-                font-size: 0.75em;
-                line-height: 1.5em;
-            }
-
-            
-        }/*END OF LEFT COL*/
-        
-        #newsletter {
-            h2 {  font-size: 0.95em; }
-            p {  font-size: 0.65em;}
-
-            .newsletter {
-                a { font-size: 1em;  margin:auto;}
-                input[type="submit"]{
-                    width: 52.379%;
-                    &:hover{width: 52.379%;}
-                }
-                input[type="email"] {  margin-top:0.5rem;}
-                input[type="text"] {  margin-top:0.3rem;}
-            }
-
-        }
         
         .tabs{
             border:none;
@@ -4766,7 +4969,7 @@ html[xmlns] .clearfix { display: block; }
 
                 a{
                     width:100%;
-                    font-size:0.65em;
+                    font-size:0.8em;
 
 
                     &:hover{
@@ -4786,8 +4989,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 100%;
+                    width: 96%;
                     height:270px;
+
+                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -4845,7 +5050,7 @@ html[xmlns] .clearfix { display: block; }
                         width: 190px;
                         height:150px;
                         padding:2%;
-                        li{font-size:0.7em; line-height:1.8em;  }
+                        li{font-size:0.75em; line-height:1.8em;  }
                     }
                 }
 
@@ -4872,7 +5077,7 @@ html[xmlns] .clearfix { display: block; }
                             height:35px;
 
                             padding:0;
-                            .car-icons{width: 22%;  margin:1%; }
+                            .car-icons{width:17%;  margin:1%; }
                         }
 
                         p:nth-of-type(4){
@@ -4906,28 +5111,93 @@ html[xmlns] .clearfix { display: block; }
 
         .card{
             float: left;
-            height: 285px;
+            height: 310px;
             
             margin: 0px 0px 0.5em 0.8%;
 
-            h2{ font-size:1em;   margin:1% auto; line-height:25px;  letter-spacing: 0.05em;}
+            h2{ font-size:1em;}
 
             .card-section{
-                padding: 0.5em 0.3rem;
+                padding: 0.5em 0.5rem;
                 .front_img{
-                    width:90%;
+                    
                     margin:1% auto;
 
                 }
 
 
-                p{font-size:0.65em;  margin:4% auto; line-height:1.8em; }
+                p{font-size:0.65em; line-height:1.6em; }
 
-                .link_btn {    margin:1% auto;   }
-                a{ line-height:34px; width:100%;  font-size:0.9em; }
+                .link_btn {      }
+                a{ line-height:34px;  font-size:0.9em; }
                 a:hover{ font-weight:bold;line-height:34px; }
             }
 
+        }
+
+        #apDiv1 {
+
+            width: 95.949%;
+            height: 400px;
+            font-size: 0.80em;
+            left: 2%;
+            p {
+                .dropcap {   width: 15%;}
+
+            }
+            p.formnum {
+                .dropcap-small {   width: 22%;}
+            }
+
+            #booking_form{
+               
+
+            }
+        }
+   
+        #left_column{
+
+            h1 { margin: 1%;   width: 100%;  font-size:1.8em;}
+            .cars_box {
+
+                .cars_box_img {
+                    float: left;
+                    width:51%;
+
+                    img {   margin: 0;    width: 100%;}
+                }
+            }
+
+            #contact_form {
+                width: 90%;
+                height: auto;
+                margin-left: 2%;
+                label { width: 23%; }
+                input[type="submit"] {
+                    margin: 5px 0px 0px 23%;
+                }
+            }
+
+
+        }
+        
+        #newsletter {
+            p{font-size:0.65em;}
+
+            .newsletter {
+                a { font-size: 1em;  margin:auto;}
+                input[type="submit"]{margin:0px 20%;}
+                input[type="email"] {  margin-top:0.5rem;}
+                input[type="text"] {  margin-top:0.3rem;}
+            }
+
+        }
+        
+        footer {
+            height:70px;
+            #footer_nav {
+                li { width: 16.3459%;  }
+            }
         }
 
 
@@ -4940,7 +5210,8 @@ html[xmlns] .clearfix { display: block; }
 
     #wrapper{
 
-        .title-bar {   width: 13%;}
+        .title-bar {   width: 15%;}
+
 
         #header{
 
@@ -4952,8 +5223,10 @@ html[xmlns] .clearfix { display: block; }
         #apDiv1 {
 
             width: 95.949%;
-          
-            p { color: #3b3b3b; }
+            height: 400px;
+            font-size: 0.90em;
+            left: 2%;
+            p {font-size:0.5em;  }
             h1 { font-size: 1.3em;}
             p {
                 .dropcap {   width: 15%;}
@@ -4963,61 +5236,67 @@ html[xmlns] .clearfix { display: block; }
                 .dropcap {   width: 22%;}
             }
             #booking_form {
-                font-size: 0.65em;
                 .pick_return {
                     p {font-size:0.7em;}
                 }
+                
+               .query_btn {  font-size: 0.8em; width:85%;}
+               .searchform_btn{width: 45%;}
 
             }
         }
-        
-        #banner{
-            height: 178px;
-            
-            figcaption {
-                font-size: 0.65em;
-                margin: 0;
-            }
-            
+
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
+
+            font-size:0.9em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
         }
-        
-                                 
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 185px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:1.7em; width: 50%; line-height: 1.25em;}
+                p{ font-size: 0.60em; width: 50%; }
+
+            }
+        }
+        /*banner end*/
+
         #right_coler  {  display:none;}
 
-        #left_column {
-            
+        #left_column{
+
+            h1 { margin: 1%;   width: 100%;  font-size:1.8em;}
+            .cars_box {
+
+                .cars_box_img {
+                    float: left;
+                    width:51%;
+
+                    img {   margin: 0;    width: 100%;}
+                }
+            }
+
             #contact_form {
                 width: 90%;
                 height: auto;
                 margin-left: 2%;
-                label { width: 100%; }
+                label { width: 23%; }
                 input[type="submit"] {
-                    margin: 0;
-                    width: 45%;
+                    margin: 5px 0px 0px 23%;
                 }
             }
-            
-            p {
-                font-size: 0.7em;
-                line-height: 1.5em;
-            }
 
-            
-        }/*END OF LEFT COL*/
-        
-        #newsletter {
-            h2 {  font-size: 0.95em; }
-            p {  font-size: 0.65em;}
-
-            .newsletter {
-                a { font-size: 1em;  margin:auto;}
-                input[type="submit"]{
-                    width: 82.379%;
-                    &:hover{width: 82.379%;}
-                }
-                input[type="email"] {  margin-top:0.5rem;}
-                input[type="text"] {  margin-top:0.3rem;}
-            }
 
         }
         
@@ -5031,7 +5310,7 @@ html[xmlns] .clearfix { display: block; }
 
                 a{
                     width:100%;
-                    font-size:0.65em;
+                    font-size:0.8em;
 
 
                     &:hover{
@@ -5051,8 +5330,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 100%;
+                    width: 96%;
                     height:270px;
+
+                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -5110,278 +5391,7 @@ html[xmlns] .clearfix { display: block; }
                         width: 190px;
                         height:150px;
                         padding:2%;
-                        li{font-size:0.65em;  }
-                    }
-                }
-
-                .cars_box{
-
-
-                    height: 180px;
-                    margin-bottom:1.5%;
-
-
-                    .cars_box_img{
-
-
-                        width:50%;
-
-                        img{ margin:0 auto; width:85%; }
-                    }
-
-                    .cars_box_txt{
-                        width:47.75602%;
-
-                        padding: 0;
-                        .car-icons-box{
-                            height:35px;
-
-                            padding:0;
-                            .car-icons{width:23%;  margin:1%; }
-                        }
-
-                        p:nth-of-type(4){
-                            
-                            font-size:0.9em;
-
-                            line-height:30px;
-                            text-align:left;
-                            clear: both;
-
-                        }
-                        p:nth-of-type(1){  font-size:0.9em;}
-                        p:nth-of-type(2){font-size:0.8em; }
-                        p:nth-of-type(3){ font-size:0.8em; }
-                        .carsbutton{
-                            width:50.727236%;
-                            display:block;
-                            
-                            a{ font-size:0.8em; padding:7%;}
-                            a:hover{  font-size:0.8em; }
-                        }
-
-                    }
-                }
-
-            }
-
-
-        }
-        
-        .card{
-            float: none;
-            height: 285px;
-            width: 58%;
-            display: block;
-            margin: 5% auto;
-            
-
-            h2{ font-size:1em;   margin:1% auto; line-height:25px;  letter-spacing: 0.05em;}
-
-            .card-section{
-                padding: 0.5em 0.3rem;
-                .front_img{
-                    width:90%;
-                    margin:1% auto;
-
-                }
-
-
-                p{font-size:0.65em;  margin:4% auto; line-height:1.8em; }
-
-                .link_btn {    margin:1% auto;   }
-                a{ line-height:34px; width:100%;  font-size:0.9em; }
-                a:hover{ font-weight:bold;line-height:34px; }
-            }
-
-        }
-
-        
-
-    }
-}
-
-/* Mobiles in landscape mode */
-@media  (max-width: 360px){
-
-    
-    [data-abide].error small.error {  font-size: 0.75rem;  margin-bottom: 0.2rem;}
-
-    #wrapper{
-
-        .title-bar {   width: 13%;}
-
-        #header{
-
-            .top-bar{
-
-            }
-        }
-
-        #apDiv1 {
-
-            width: 95.949%;
-          
-            p { }
-            h1 { font-size: 1.3em;}
-            p {
-                .dropcap {   width: 15%;}
-            }
-            p.formnum {
-                font-size:0.55em;
-                .dropcap {   width: 22%;}
-            }
-            #booking_form {
-                .pick_return {
-                    p {font-size:0.7em;}
-                }
-
-            }
-        }
-        
-        #banner{
-            height: 172px;
-            
-            figcaption {
-                font-size: 0.6em;
-                margin: 0;
-            }
-            
-        }
-        
-        #index_form_btn {
-            font-size: 0.8em;
-        }
-                                 
-        #right_coler  {  display:none;}
-
-        #left_column {
-            
-            #contact_form {
-                width: 90%;
-                height: auto;
-                margin-left: 2%;
-                label { width: 100%; }
-                input[type="submit"] {
-                    margin: 0;
-                    width: 45%;
-                }
-            }
-            
-            p {
-                font-size: 0.7em;
-                line-height: 1.5em;
-            }
-
-            
-        }/*END OF LEFT COL*/
-        
-        #newsletter {
-            h2 {  font-size: 0.95em;}
-            p {  font-size: 0.65em;}
-
-            .newsletter {
-                a { font-size: 1em;  margin:auto;}
-                input[type="submit"]{
-                    width: 82.379%;
-                    &:hover{width: 82.379%;}
-                }
-                input[type="email"] {  margin-top:0.5rem;}
-                input[type="text"] {  margin-top:0.3rem;}
-            }
-
-        }
-        
-        .tabs{
-            border:none;
-
-            li.tabs-title{
-
-                width:20%;
-
-
-                a{
-                    width:100%;
-                    font-size:0.65em;
-
-
-                    &:hover{
-                        border-top:solid #e6e6e6 0.5px;
-                        border-right:solid #e6e6e6 0.5px;
-                        border-left:solid #e6e6e6 0.5px;
-                    }
-
-                }
-            }
-        }
-
-        .tabs-content {
-            transition: all 0.5s ease;
-            .tabs-panel{
-
-                .clearfix { display: inline-block; clear: both;}
-
-                .specials_box{
-                    width: 100%;
-                    height:270px;
-
-                    .specials_btn_box {
-                        float:right;
-                        width: 35.272%;
-                        height:150px;
-
-                        .special_price {
-
-                            margin:10px 0px 35px 0px;
-
-                            padding:7%;
-                            width: 50%;
-
-                            font-size: 1.2em;
-                            line-height: 0.8em;
-
-                            span{font-size:42%; display:block;}
-                        }
-                        .cont_btn{
-
-
-
-                            margin:0;
-                            a{ line-height:35px; font-size:0.85em;}
-                            a:hover{ font-weight:bold;font-size:0.85em;}
-                        }
-
-                    }
-
-                    .specials_box_img{
-                        width:100%;
-                        height:120px;
-                        padding:2%;
-
-                    }
-
-                    .media-object-section{
-
-                        .car{ width:100%; margin:0; padding:0;}
-                        h4{   font-size:0.9em;}
-
-                        p.special1{
-
-                            width:94.44444%;
-
-                            margin:2px 0px 0px 2px;
-                            font-size:0.75em;
-
-                            display:inline-block;
-
-                        }
-                    }
-
-                    ul.specials_box_txt{
-                        width: 190px;
-                        height:150px;
-                        padding:2%;
-                        li{font-size:0.65em;  }
+                        li{font-size:0.75em; line-height:1.8em;  }
                     }
                 }
 
@@ -5408,11 +5418,12 @@ html[xmlns] .clearfix { display: block; }
                             height:35px;
 
                             padding:0;
-                            .car-icons{width:23%;  margin:1%; }
+                            .car-icons{width:17%;  margin:1%; }
                         }
 
                         p:nth-of-type(4){
-                            
+                            margin:5px 0px 5px 0px;
+
                             font-size:0.9em;
 
                             line-height:30px;
@@ -5420,15 +5431,15 @@ html[xmlns] .clearfix { display: block; }
                             clear: both;
 
                         }
-                        p:nth-of-type(1){  font-size:0.9em;}
-                        p:nth-of-type(2){font-size:0.8em; }
-                        p:nth-of-type(3){ font-size:0.8em; }
+                        p:nth-of-type(1){ font-weight:bold; font-size:1em;}
+                        p:nth-of-type(2){color:#00CCFF;font-size:0.9em; }
+                        p:nth-of-type(3){color:$color5; font-style:italic;font-size:0.85em; }
                         .carsbutton{
                             width:50.727236%;
                             display:block;
-                            
-                            a{ font-size:0.8em; padding:7%;}
-                            a:hover{  font-size:0.8em; }
+                            margin:0;
+                            a{display:block;  text-align:center;padding:7%;}
+                            a:hover{ font-weight:bold;}
                         }
 
                     }
@@ -5438,19 +5449,19 @@ html[xmlns] .clearfix { display: block; }
 
 
         }
+
         
         .card{
             float: none;
-            height: 285px;
-            width: 58%;
-            display: block;
-            margin: 5% auto;
-            
+            display:block;
+            height: 320px;
+            width: 69%;
+            margin: 4% auto;
 
-            h2{ font-size:1em;   margin:1% auto; line-height:25px;  letter-spacing: 0.05em;}
+            h2{ font-size:1em;   margin:1% auto; line-height:40px;  letter-spacing: 0.05em;}
 
             .card-section{
-                padding: 0.5em 0.3rem;
+                padding: 0.5em 1rem;
                 .front_img{
                     width:90%;
                     margin:1% auto;
@@ -5458,17 +5469,364 @@ html[xmlns] .clearfix { display: block; }
                 }
 
 
-                p{font-size:0.65em;  margin:4% auto; line-height:1.8em; }
+                p{font-size:0.75em;  margin:4% auto; line-height:1.8em; }
 
-                .link_btn {    margin:1% auto;   }
+                .link_btn {    margin:0;   }
                 a{ line-height:34px; width:100%;  font-size:0.9em; }
                 a:hover{ font-weight:bold;line-height:34px; }
             }
 
         }
 
-        
 
+        #newsletter {
+            p {    font-size: 0.75em;}
+
+            .newsletter {
+                a { font-size: 1em;  margin:auto;}
+                input[type="submit"]{margin:0px 20%;}
+                input[type="email"] {  margin-top:0.5rem;}
+                input[type="text"] {  margin-top:0.3rem;}
+            }
+
+        }
+
+
+    }
+
+
+}
+
+/* Mobiles in landscape mode */
+@media  (max-width: 360px){
+
+    .tabs{height:auto;}
+
+    [data-abide].error small.error {  font-size: 0.75rem;  margin-bottom: 0.2rem;}
+
+    #wrapper{
+
+
+
+        #header{
+
+            .top-bar {
+                .title-bar {width: 15%;}
+                .title-area{
+                    .name {
+                        height: 60px;
+                        list-style: outside none none;
+                        h1 {
+                            font-size: 1.4em;
+                            text-align:left;
+                            height: 60px;
+                            line-height: 60px;
+                            margin-top: 0px;
+                            span { text-align:left;}
+                        }
+                    }
+                }
+
+
+                #primary_nav {
+
+                    li{
+
+                        a { font-size:1.1em; }
+                        a:hover { font-size:1.2em; }
+                    }
+                }
+            }
+        }
+
+        #apDiv1 {
+            width: 98%;
+            left: 0%;
+            #booking_form {
+                .pick_return {
+                    p {font-size: 0.65em;}
+
+                }
+                
+
+            }
+        }
+
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
+
+            font-size:0.8em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
+        }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 170px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:1.5em; width: 50%; line-height: 1.25em;}
+                p{ font-size: 0.50em; width: 50%; }
+
+            }
+        }
+        /*banner end*/
+
+        #right_coler { display:none;}
+       
+        #left_column {
+
+            h1 {  text-align: left;  margin: 1%;  width: 100%;   font-size: 1.5em;   height: 40px;  line-height: 40px;}
+
+
+            .cars_box {
+                width: 100%;
+                height: 210px;
+                margin-bottom: 10px;
+
+                .cars_box_img {
+                    width: 100%;
+                    margin: 0;
+                    height: 82.7692%;
+                    img {   margin: 5% auto; display:block;    width: 59.324%;}
+                }
+
+                .cars_box_txt {
+                    margin-left:0;
+                    width:100%;
+                    font-size: 1em;
+                    text-align:center;
+                    .car-icons-box {
+                        width:60%;
+                        margin:auto;
+                        .car-icons {   width: 23%;}
+                    }
+                    .carsbutton { margin:auto;}
+
+                    p {   margin: 5px 0px 5px 0px; font-size:0.85em;}
+                }
+
+            }
+
+            #contact_form {
+                width: 96%;
+                height: auto;
+                margin: auto;
+                .button_contact {    margin: 5px 0px 0px 23%;}
+            }
+
+        }
+
+        /*destination Links*/
+        .destinations{
+
+
+            ul {
+                list-style:none;
+                li{
+
+                    height:30px;
+                    line-height:30px;
+                    a { font-size:0.8em; }
+                    a:hover{  font-size:0.8em;  }
+                }
+                li:nth-of-type(1){ font-size:1.1em; height:40px; line-height:40px;}
+
+            }
+            /*end*/
+        }
+
+        #worldsearchform { width: 100%;}
+
+        .tabs{
+            border:none;
+
+            li.tabs-title{
+
+                width:20%;
+
+
+                a{
+                    width:100%;
+                    font-size:0.8em;
+
+
+                    &:hover{
+                        border-top:solid #e6e6e6 0.5px;
+                        border-right:solid #e6e6e6 0.5px;
+                        border-left:solid #e6e6e6 0.5px;
+                    }
+
+                }
+            }
+        }
+
+        .tabs-content {
+            transition: all 0.5s ease;
+            .tabs-panel{
+
+                .clearfix { display: inline-block; clear: both;}
+
+                .specials_box{
+                    width: 96%;
+                    height:270px;
+
+                    margin-left: 8px;
+
+                    .specials_btn_box {
+                        float:right;
+                        width: 35.272%;
+                        height:150px;
+
+                        .special_price {
+
+                            margin:10px 0px 35px 0px;
+
+                            padding:7%;
+                            width: 50%;
+
+                            font-size: 1.2em;
+                            line-height: 0.8em;
+
+                            span{font-size:42%; display:block;}
+                        }
+                        .cont_btn{
+
+
+
+                            margin:0;
+                            a{ line-height:35px; font-size:0.85em;}
+                            a:hover{ font-weight:bold;font-size:0.85em;}
+                        }
+
+                    }
+
+                    .specials_box_img{
+                        width:100%;
+                        height:120px;
+                        padding:2%;
+
+                    }
+
+                    .media-object-section{
+
+                        .car{ width:100%; margin:0; padding:0;}
+                        h4{   font-size:0.9em;}
+
+                        p.special1{
+
+                            width:94.44444%;
+
+                            margin:2px 0px 0px 2px;
+                            font-size:0.75em;
+
+                            display:inline-block;
+
+                        }
+                    }
+
+                    ul.specials_box_txt{
+                        width: 190px;
+                        height:150px;
+                        padding:2%;
+                        li{font-size:0.7em; line-height:1.7em;  }
+                    }
+                }
+
+                .cars_box{
+
+
+                    height: 180px;
+                    margin-bottom:1.5%;
+
+
+                    .cars_box_img{
+
+
+                        width:50%;
+
+                        img{ margin:0 auto; width:80%; }
+                    }
+
+                    .cars_box_txt{
+                        width:47.75602%;
+
+                        padding: 0;
+                        .car-icons-box{
+                            height:35px;
+
+                            padding:0;
+                            .car-icons{width:17%;  margin:1%; }
+                        }
+
+                        p:nth-of-type(4){
+                            margin:5px 0px 5px 0px;
+
+                            font-size:0.9em;
+
+                            line-height:30px;
+                            text-align:left;
+                            clear: both;
+
+                        }
+                        p:nth-of-type(1){ font-weight:bold; font-size:1em;}
+                        p:nth-of-type(2){color:#00CCFF;font-size:0.9em; }
+                        p:nth-of-type(3){color:$color5; font-style:italic;font-size:0.85em; }
+                        .carsbutton{
+                            width:50.727236%;
+                            display:block;
+                            margin:0;
+                            a{display:block;  text-align:center;padding:7%;}
+                            a:hover{ font-weight:bold;}
+                        }
+
+                    }
+                }
+
+            }
+
+
+        }
+
+        .card{
+            
+            height: 325px;
+                    
+
+            h2{ font-size:1.05em;  line-height:30px;  letter-spacing: 0.05em;}
+
+            .card-section{
+                padding: 0.5em 1rem;
+                .front_img{
+                    margin:1% auto;
+
+                }
+
+
+                p{font-size:0.75em;  margin:4% auto; line-height:1.8em; }
+
+                .link_btn {       }
+                a{ line-height:34px; width:100%;  font-size:0.9em; }
+                a:hover{ font-weight:bold;line-height:34px; }
+            }
+
+        }
+
+
+        footer{
+
+            #footer_nav {
+                a {   height: 40px;   line-height: 40px;   font-size: 0.75em;   }
+
+            }
+
+        }
     }
 
 }
@@ -5478,100 +5836,134 @@ html[xmlns] .clearfix { display: block; }
 
     #wrapper{
 
-        .title-bar {   width: 13%;}
-
         #header{
 
-            .top-bar{
+            .top-bar {
 
+                .title-bar {   width: 16%;}
+
+                .title-area{
+                    .name {
+                        height: 60px;
+                        list-style: outside none none;
+                        h1 {  width: 100%;   text-align:left; font-size:1.4em;  font-family:($fontStyle);  color: $color;  height: 60px; line-height: 60px;   margin-top: 0px;}
+                        h1 span { text-align:left; }
+                    }
+                }
+
+                #primary_nav {
+
+                    li {
+
+                        a { width: 100%;  }
+                    }
+
+                }
             }
         }
 
         #apDiv1 {
 
-            width: 95.949%;
-          
-            p {font-size: 0.4em; }
-            h1 { font-size: 1.3em;}
             p {
-                .dropcap {   width: 15%;}
+                width: 41.091%;
+                .dropcap {   width: 16%;}
             }
             p.formnum {
-                font-size:0.5em;
-                .dropcap {   width: 22%;}
+                width: 28.682%;
+                .dropcap-small {  width: 25%;}
+
             }
-            #booking_form {
-                .pick_return {
-                    p {font-size:0.9em;}
-                    select{font-size:0.9em;}
-                }
-                
-                li label {
-                    font-size: 0.9em;
-                }
-                
-                li.start_end #date_quote {
-                    font-size:0.9em;
-                }
-                
-                li.start_end select {
-                    
-                    font-size: 0.9em;
-                }
+
+        }
+
+        /*Form button*/
+        #index_form_btn{
+            width: 47.42268%;
+            height:50px;
+
+            font-size:0.8em;
+            line-height:1.5em;
+
+            &:hover{color:$color9;}
+        }
+        /*End Form button*/
+
+        /*Banner*/
+        #banner {
+            height: 150px;
+
+            figure#bannerimage{ width:50.26016%; margin:0px;}
+
+            figcaption.big {
+                p:first-of-type{font-size:1.3em; width: 50%; line-height: 1.25em;}
+                p{ font-size: 0.40em; width: 50%; }
 
             }
         }
+        /*banner end*/
         
-        #banner{
-            height: 172px;
-            
-            figcaption {
-                font-size: 0.6em;
-                margin: 0;
-            }
-            
-        }
-        
-        #index_form_btn {
-            font-size: 0.7em;
-        }
-                                 
-        #right_coler  {  display:none;}
+        #right_column { display:none;}
 
         #left_column {
-            
+
+            h1 {  color: $color7;  text-align: left;  margin: 1%;   font-size: 1em; }
+            p {   line-height: 1.5em;}
+
             #contact_form {
-                                
-                margin-left: 2%;
-                label { width: 100%; font-size:0.7em; }
+                width: 100%;
+                height: auto;
+                margin-left: 1%;
+                label { font-size: 0.8em; width:22%;}
                 input[type="submit"] {
-                    margin: 0;
-                    width: 45%;
+                    margin: 5px 0px 0px 22%;
                 }
-            }
-            
-            p {
-                font-size: 0.7em;
-                line-height: 1.5em;
+                /*end*/
             }
 
-            
-        }/*END OF LEFT COL*/
+            .cars_box {
+
+                height: 210px;
+
+
+                .cars_box_img {
+
+
+                    height: 82.7692%;
+                    img {     width: 59.324%;}
+                }
+
+                .cars_box_txt {
+
+                    font-size: 0.9em;
+
+                    .car-icons-box {
+                        width:60%;
+
+                        .car-icons {   width: 23%;}
+                    }
+                    .carsbutton { }
+
+                    p {  font-size:0.80em;}
+                }
+
+            }
+
+        }
+
         
-        #newsletter {
-            h2 {  font-size: 0.95em; }
-            p {  font-size: 0.65em;}
-
-            .newsletter {
-                a { font-size: 1em; }
-                input[type="submit"]{
-                    width: 82.379%;
-                    &:hover{width: 82.379%;}
-                }
-                input[type="email"] {  margin-top:0.5rem;}
-                input[type="text"] {  margin-top:0.3rem;}
+        #worldsearchform{
+            .searchform {
+                .searchform_btn {  width: 125px;  height: 40px;  margin: 5px 0px 0px 10px;   font-size: 100%;  color: $color;}
             }
+        }
 
+        .destinations {
+            color: $color13;
+            height: auto;
+            margin: 10px 0px 0px 10px;
+            display: inline-block;
+            float: none;
+            width: 100%;
         }
         
         .tabs{
@@ -5584,10 +5976,13 @@ html[xmlns] .clearfix { display: block; }
 
                 a{
                     width:100%;
-                    font-size:0.65em;
+                    font-size:0.8em;
+
 
                     &:hover{
-                        
+                        border-top:solid #e6e6e6 0.5px;
+                        border-right:solid #e6e6e6 0.5px;
+                        border-left:solid #e6e6e6 0.5px;
                     }
 
                 }
@@ -5601,11 +5996,13 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    
+                    width: 96%;
                     height:270px;
 
+                    margin-left: 8px;
+
                     .specials_btn_box {
-                        
+                        float:right;
                         width: 35.272%;
                         height:150px;
 
@@ -5626,40 +6023,41 @@ html[xmlns] .clearfix { display: block; }
 
 
                             margin:0;
-                            a{  font-size:0.85em;}
-                            a:hover{ font-size:0.85em;}
+                            a{ line-height:35px; font-size:0.85em;}
+                            a:hover{ font-weight:bold;font-size:0.85em;}
                         }
 
                     }
 
                     .specials_box_img{
                         width:100%;
-                        height: 107px;
+                        height:120px;
                         padding:2%;
 
                     }
 
                     .media-object-section{
 
-                        .car{ width:100%; }
-                        h4{   font-size:0.8em;}
+                        .car{ width:100%; margin:0; padding:0;}
+                        h4{   font-size:0.9em;}
 
                         p.special1{
 
                             width:94.44444%;
 
                             margin:2px 0px 0px 2px;
-                            font-size:0.7em;
+                            font-size:0.75em;
 
+                            display:inline-block;
 
                         }
                     }
 
                     ul.specials_box_txt{
-                        width: 175px;
+                        width: 190px;
                         height:150px;
                         padding:2%;
-                        li{font-size:0.65em;  }
+                        li{font-size:0.75em; line-height:1.8em;  }
                     }
                 }
 
@@ -5686,26 +6084,28 @@ html[xmlns] .clearfix { display: block; }
                             height:35px;
 
                             padding:0;
-                            .car-icons{width:23%;  margin:1%; }
+                            .car-icons{width:17%;  margin:1%; }
                         }
 
                         p:nth-of-type(4){
-                            
+                            margin:5px 0px 5px 0px;
+
                             font-size:0.9em;
 
                             line-height:30px;
-                            
+                            text-align:left;
+                            clear: both;
 
                         }
-                        p:nth-of-type(1){  font-size:0.9em;}
-                        p:nth-of-type(2){font-size:0.8em; }
-                        p:nth-of-type(3){ font-size:0.8em; }
+                        p:nth-of-type(1){ font-weight:bold; font-size:1em;}
+                        p:nth-of-type(2){color:#00CCFF;font-size:0.9em; }
+                        p:nth-of-type(3){color:$color5; font-style:italic;font-size:0.85em; }
                         .carsbutton{
                             width:50.727236%;
                             display:block;
-                            
-                            a{ font-size:0.8em; padding:7%;}
-                            a:hover{  font-size:0.8em; }
+                            margin:0;
+                            a{display:block;  text-align:center;padding:7%;}
+                            a:hover{ font-weight:bold;}
                         }
 
                     }
@@ -5715,35 +6115,40 @@ html[xmlns] .clearfix { display: block; }
 
 
         }
-        
+
         .card{
             
-            height: 285px;
-            width: 65%;
-            
-            
+            height: 325px;
+            width: 75%;
+                    
 
-            h2{  margin:3% auto; font-size: 1.05em; }
+            h2{ font-size:1.05em;  line-height:30px;  letter-spacing: 0.05em;}
 
             .card-section{
-                padding: 0.5em 0.3rem;
+                padding: 0.5em 0.5rem;
                 .front_img{
-                    width:90%;
                     margin:1% auto;
 
                 }
 
 
-                p{font-size:0.65em;  margin:4% auto; line-height:1.8em; }
+                p{font-size:0.75em;  line-height:1.8em; }
 
-                .link_btn {    margin:1% auto;   }
+                .link_btn {       }
                 a{ line-height:34px;  font-size:0.9em; }
                 a:hover{ line-height:34px; }
             }
 
         }
 
-        
+
+        footer{
+            #footer_nav {
+
+                a {  height: 40px;   line-height: 40px;  font-size: 0.7em;  }
+            }
+
+        }
 
     }
 

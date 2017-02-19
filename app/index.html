@@ -7,11 +7,13 @@
         <meta name="viewport" content="user-scalable=yes">
         <meta name="viewport" content="target-densitydpi=device-dpi">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="&copy;raymondthompson" />
+        <meta name="robots" content="noindex,nofollow">
 
         <title>Car-Rental-Home-Page</title>
 
-
-        <link rel="stylesheet" href="foundation-sites/dist/css/foundation.css" />
+        <link rel="stylesheet" href="../bower_components/foundation-sites/dist/css/foundation.css" />
         <link rel="stylesheet" href="normalize-min.css" />
         <link rel="stylesheet" href="style-min.css" />
         <link href="http://fonts.googleapis.com/css?family=Signika:400,600,700,300" rel="stylesheet" type="text/css">
@@ -107,86 +109,90 @@
 
                                 <div class="row">
 
-                                    <div class="large-12 medium-12 small-12 columns">
-                                        <li><label>Rental Start Date/Time</label></li>
+                                    <div class="large-5 medium-5 small-5 columns">
+                                        <label for="rental_start_date">Rental Start Date/Time</label>
+                                    </div>  
 
-                                        <li class="start_end">
-                                            <select name="rental_start_date" size="1" id="date_quote">
-                                                <option value="Date">22/10/2013</option>
-                                                <option value="Date">24/10/2013</option>
-                                            </select>
-                                            <select name="rental_start_time_hr" size="1">
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                            </select>
-                                            <select name="rental_start_time_min" size="1">
-                                                <option value="05">05</option>
-                                                <option value="10">10</option>
-                                                <option value="15">15</option>
-                                                <option value="20">20</option>
-                                                <option value="25">25</option>
-                                                <option value="30">30</option>
-                                                <option value="35">35</option>
-                                                <option value="40">40</option>
-                                                <option value="45">45</option>
-                                                <option value="50">50</option>
-                                                <option value="55">55</option>
-                                                <option value="00">00</option>
-                                            </select>
-                                        </li>
+                                    <div class="large-7 medium-7 small-7 columns">
+
+                                        <select name="rental_start_date" size="1" id="date_quote">
+                                            <option value="Date">22/10/2013</option>
+                                            <option value="Date">24/10/2013</option>
+                                        </select>
+                                        <select name="rental_start_time_hr" size="1">
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                        </select>
+                                        <select name="rental_start_time_min" size="1">
+                                            <option value="05">05</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                            <option value="25">25</option>
+                                            <option value="30">30</option>
+                                            <option value="35">35</option>
+                                            <option value="40">40</option>
+                                            <option value="45">45</option>
+                                            <option value="50">50</option>
+                                            <option value="55">55</option>
+                                            <option value="00">00</option>
+                                        </select>
+
                                     </div>
                                 </div>
 
                                 <div class="row">
 
-                                    <div class="large-12 medium-12 small-12 columns">
+                                    <div class="large-5 medium-5 small-5 columns">
 
-                                        <li><label>Rental End Date/Time</label></li>
+                                        <label for="rental_end_date">Rental End Date/Time</label>
+                                    </div>
+                                    <div class="large-7 medium-7 small-7 columns">
 
-                                        <li class="start_end">
-                                            <select name="rental_end_date" size="1" id="date_quote">
-                                                <option value="Date">22/10/2013</option>
-                                                <option value="Date">24/10/2013</option>
-                                            </select>
+                                        <select name="rental_end_date" size="1" id="date_quote">
+                                            <option value="Date">22/10/2013</option>
+                                            <option value="Date">24/10/2013</option>
+                                        </select>
 
-                                            <select name="rental_end_time_hr" size="1">
-                                                <option value="8">8</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                            </select>
+                                        <select name="rental_end_time_hr" size="1">
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                        </select>
 
-                                            <select name="rental_end_time_min" size="1">
-                                                <option value="05">05</option>
-                                                <option value="10">10</option>
-                                                <option value="15">15</option>
-                                                <option value="20">20</option>
-                                                <option value="25">25</option>
-                                                <option value="30">30</option>
-                                                <option value="35">35</option>
-                                                <option value="40">40</option>
-                                                <option value="45">45</option>
-                                                <option value="50">50</option>
-                                                <option value="55">55</option>
-                                                <option value="00">00</option>
-                                            </select>
-                                        </li>
+                                        <select name="rental_end_time_min" size="1">
+                                            <option value="05">05</option>
+                                            <option value="10">10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                            <option value="25">25</option>
+                                            <option value="30">30</option>
+                                            <option value="35">35</option>
+                                            <option value="40">40</option>
+                                            <option value="45">45</option>
+                                            <option value="50">50</option>
+                                            <option value="55">55</option>
+                                            <option value="00">00</option>
+                                        </select>
+
                                     </div>
                                 </div>
                                 <div class="row">
 
-                                    <div class="large-12 medium-12 small-12 columns">
-                                        <li><label>Pick Up Location</label></li>
+                                    <div class="large-5 medium-5 small-5 columns">
+                                        <label for="pickup_location">Pick Up Location</label>
+                                    </div>
+                                    <div class="large-7 medium-7 small-7 columns">
 
-                                        <li class="pick_return">
-                                            <select name="pickup_location" size="1">
-                                                <option value="Home">Home</option>
-                                                <option value="Office">Office</option>
-                                                <option value="Specified Location">Specified Location</option>
-                                            </select>
-                                        </li>
+                                        <select name="pickup_location" size="1" id="pickup_location">
+                                            <option value="Home">Home</option>
+                                            <option value="Office">Office</option>
+                                            <option value="Specified Location">Specified Location</option>
+                                        </select>
+
 
                                     </div>
                                 </div>
@@ -194,25 +200,26 @@
 
                                 <div class="row">
 
-                                    <div class="large-12 medium-12 small-12 columns">
-                                        <li><label>Returning to</label></li>
+                                    <div class="large-5 medium-5 small-5 columns">
+                                        <label for="returning_to">Returning to</label>
+                                    </div>
+                                    <div class="large-7 medium-7 small-7 columns">
 
-                                        <li class="pick_return">
-                                            <select name="returning_to">
-                                                <option value="Home">Home</option>
-                                                <option value="Office">Office</option>
-                                                <option value="Specified Location">Specified Location</option>
-                                            </select>
-                                        </li>
+                                        <select name="returning_to" id="pickup_location">
+                                            <option value="Home">Home</option>
+                                            <option value="Office">Office</option>
+                                            <option value="Specified Location">Specified Location</option>
+                                        </select>
+
                                     </div>
                                 </div>
                                 <br/>
                                 <div class="row">
 
                                     <div class="large-4 medium-4 small-4 columns">
+                                        <span class="query_btn" id="clearQuote" onclick="fadeOut();">Hide Form</span>
 
 
-                                        <input name="Get Quote" type="submit" class="searchform_btn" value="Get Quote" />
                                     </div>
                                     <div class="large-8 medium-8 small-8 columns">
                                         <span>
@@ -225,13 +232,13 @@
                                 </div>
                                 <br/>
                                 <div class="row">
-                                    <div class="large-8 medium-8 small-8 columns">
-
-                                    </div>
                                     <div class="large-4 medium-4 small-4 columns">
-                                        <span class="query_btn" id="clearQuote" onclick="fadeOut();">Hide Form</span>
-                                    </div>
 
+                                    </div>
+                                    <div class="large-8 medium-8 small-8 columns">
+                                        <input name="Get Quote" type="submit" class="searchform_btn" value="Get Quote" />
+                                    </div>
+                                </div>
                             </form>
                             <!--form end-->
 
@@ -240,10 +247,14 @@
 
                         <figure id="banner">
                             <!--Banner Text-->
-                            <figcaption class="big"> Lorem ipsum dolor sit amet,</figcaption>
+                            <figcaption class="big"> 
+                                <p>Lorem ipsum dolor sit amet, </p> 
+                                <p>Consectetur adipiscing elit.<br> Nulla cursus dolor in enim sagittis</p> 
+                            </figcaption>
+
                             <div id="index_form_btn" onclick="fadeIn();">Click here to get Quote</div>
                             <!--SeeQuote_button-->
-                            <figcaption>Consectetur adipiscing elit. Nulla cursus dolor in enim sagittis </figcaption>
+                            <figcaption class="smll"> </figcaption>
                             <!--Banner Text-->
                             <figure id="bannerimage"><img src="images/car-rental-website-4x4-car.png" alt="car-rental-website-4x4-car" /></figure>
                         </figure>
@@ -253,7 +264,7 @@
                     <!--content end-->
                 </div>
                 <!--row end-->
-
+                <div class="clearfix"></div>
                 <div class="row" data-equalizer="foo">
                     <!--inner wrapper start-->
 
@@ -263,7 +274,7 @@
                             <h2>Different Makes and Models</h2>
                             <div class="card-section">
 
-                                <img class="front_img" src="images/car-rental-website-weekend-car-rentals.png">
+                                <img class="front_img" src="images/car-rental-website-luxury-car-audi.png">
                             </div>
                             <div class="card-section">
                                 <p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
@@ -276,7 +287,7 @@
                             <h2>Weekend Car Rental Special</h2>
                             <div class="card-section">
 
-                                <img class="front_img" src="images/car-rental-website-luxury-car-audi.png" alt="car-rental-website-weekend-car-rentals" />
+                                <img class="front_img" src="images/car-rental-website-weekend-car-rentals.png" alt="car-rental-website-weekend-car-rentals" />
                             </div>
                             <div class="card-section">
                                 <p>Nulla cursus dolor in enim sagittis fringilla. Aenean consequat tellus eu nisl bibendum facilisis.</p>
@@ -301,7 +312,7 @@
                         <!--info_box3 end-->
 
                         <div class="card" id="newsletter">
-                            <h2>Subscribe To Our newsletter</h2>
+                            <h2>Subscribe to Our Newsletter</h2>
                             <div class="card-section">
 
 
@@ -359,22 +370,22 @@
         <!-- jsDelivr CDN -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>
-                        window.jQuery || document.write('<script src="scripts/jquery/dist/jquery.min.js"><\/script>');
+                        window.jQuery || document.write('<script src="../bower_components/jquery/dist/jquery.min.js"><\/script>');
         </script>
 
         <!-- Fallback to local -->
         <script src="//cdn.jsdelivr.net/foundation/4.3.1/js/foundation.min.js"></script>
-        <script src="foundation-sites/dist/js/foundation.js"></script>
-        <script src="foundation-sites/dist/js/app.js"></script>
-        <script src="foundation-sites/js/foundation.core.js"></script>
-        <script src="foundation-sites/js/foundation.util.triggers.js"></script>
-        <script src="foundation-sites/js/foundation.util.mediaQuery.js"></script>
-        <script src="foundation-sites/js/foundation.accordionMenu.js"></script>
-        <script src="foundation-sites/js/foundation.drilldown.js"></script>
-        <script src="foundation-sites/js/foundation.dropdownMenu.js"></script>
-        <script src="foundation-sites/js/foundation.util.keyboard.js"></script>
-        <script src="foundation-sites/js/foundation.responsiveMenu.js"></script>
-        <script src="foundation-sites/js/foundation.responsiveToggle.js"></script>
+        <script src="../bower_components/foundation-sites/dist/js/foundation.js"></script>
+        <script src="../bower_components/foundation-sites/dist/js/app.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.core.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.util.triggers.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.util.mediaQuery.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.accordionMenu.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.drilldown.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.dropdownMenu.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.util.keyboard.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.responsiveMenu.js"></script>
+        <script src="../bower_components/foundation-sites/js/foundation.responsiveToggle.js"></script>
 
         <!-- Fallback to local -->
         <script>
