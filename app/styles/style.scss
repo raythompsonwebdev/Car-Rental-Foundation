@@ -37,11 +37,6 @@ $fontStyle:'Signika', Geneva, arial, sans-serif;
 }
 
 
-
-
-
-
-
 /*CSS RESET*/
 
 html, body, div, span, h1, h2, h3, h4, h5, h6,  blockquote, pre, a, abbr, acronym, address, big, cite, code,img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {  	margin: 0;  padding: 0;  border: 0;  outline: 0;  font-size: 100%;  vertical-align: baseline;  	background: transparent;  }
@@ -165,7 +160,7 @@ html[xmlns] .clearfix { display: block; }
             p {display:block; width:100%; line-height:25px; height:25px; font-size: 0.9em; margin: 0; padding: 0; }
             a {display:block; width:20%; line-height:20px; font-size: 0.9em; margin: 0; padding: 0; }
             
-            label{ font-family:($fontStyle); font-size:0.85em; list-style:none; line-height:45px; color:$color5; display:block;font-weight:bold; text-align:left; text-indent:5%;}
+            label{ font-family:($fontStyle); font-size:0.85em; list-style:none; line-height:45px; color:$color5; display:block;font-weight:normal; text-align:left; text-indent:5%; letter-spacing:0.02em;}
             
 
             .query_btn{text-align:center; line-height:34px; font-family:($fontStyle) ; color:$color; font-weight:bold; cursor: pointer; background-color:$color11; width:70%; margin:0 auto; height:34px;  @include gradient(#FC7D3C, #EE2A26); border:0; display:block;}
@@ -305,7 +300,7 @@ html[xmlns] .clearfix { display: block; }
         margin:1% auto;
         clear:both;
         @include rounded();
-        /*background-image: url("../images/car-rental-website-banner-bg.jpg") ;  background-repeat:no-repeat;*/
+        
         @include gradient(#35BEF2, #B6E6FC);
 
         float: left;
@@ -405,11 +400,11 @@ html[xmlns] .clearfix { display: block; }
             .clearfix { display: inline-block; clear: both;}
 
             .specials_box{
-                width: 48.5%;
+                width: 49%;
                 height:300px;
                 float:none;
                 display:inline-block;
-                margin-left: 8px;
+                margin-left: 0;
 
                 .specials_btn_box {
                     float:right;
@@ -426,10 +421,10 @@ html[xmlns] .clearfix { display: block; }
                         padding:7%;
                         width: 50%;
                         color:$color;
-                        font-size: 1.7em;
+                        font-size: 1.5em;
                         line-height: 0.8em;
                         @include rounded();
-                        span{font-size:52%; display:block;}
+                        span{font-size:45%; display:block;}
                     }
                     .cont_btn{
                         float:right;
@@ -845,7 +840,7 @@ html[xmlns] .clearfix { display: block; }
 
         #apDiv1 {
 
-            width: 44.949%;
+            width: 46.949%;
             height:420px;
 
             left: 50%;
@@ -929,8 +924,8 @@ html[xmlns] .clearfix { display: block; }
         figure#bannerimage{ width:50.26016%; margin:0px;}
         
         figcaption.big {
-            p:first-of-type{font-size:3.4em; text-shadow: 1px 1px 1px #999;  width:40%; line-height: 1.4em;}
-            p{ font-size: 1.2em; width:40%; }
+            p:first-of-type{font-size:3.4em; text-shadow: 1px 1px 1px #999;  width:49%; line-height: 1.4em;}
+            p{ font-size: 1.2em; width:49%; }
             
         }
         /*banner end*/
@@ -950,7 +945,7 @@ html[xmlns] .clearfix { display: block; }
                 border:none;
 
 
-                h2{ font-size:0.95em; letter-spacing: 0.05em; line-height:30px;}
+                h2{ font-size: 1.05em;letter-spacing: 0.05em; line-height:30px;}
 
                 .card-section{
                     padding: 0.5em 1rem;
@@ -979,7 +974,7 @@ html[xmlns] .clearfix { display: block; }
             #image5{
 
 
-                p{font-size:0.65em; line-height:2em; }
+                p{font-size:0.6em; line-height:2em; }
 
                 form{
                     width:90%;
@@ -1054,10 +1049,9 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 48%;
+                    width: 49%;
                     height:300px;
-
-                    margin-left: 8px;
+                    margin-left: 0;
 
                     .specials_btn_box {
 
@@ -1073,10 +1067,10 @@ html[xmlns] .clearfix { display: block; }
                             padding:7%;
                             width: 50%;
 
-                            font-size: 1.3em;
+                            font-size: 1.4em;
                             line-height: 0.8em;
 
-                            span{font-size:37%; display:block;}
+                            span{font-size:38%; display:block;}
                         }
                         .cont_btn{
                             float:right;
@@ -1103,14 +1097,14 @@ html[xmlns] .clearfix { display: block; }
                     .media-object-section{
 
                         .car{ width:90%; margin:0 auto; padding:0;}
-                        h4{ color:$color9; font-weight:bold; font-size:0.9em;}
+                        h4{ color:$color9; font-weight:bold; font-size:0.95em;}
 
                         p.special1{
 
                             width:94.44444%;
 
                             margin:0;
-                            font-size:0.75em;
+                            font-size:0.8em;
 
                             display:inline-block;
 
@@ -1118,10 +1112,10 @@ html[xmlns] .clearfix { display: block; }
                     }
 
                     ul.specials_box_txt{
-                        width:305px;
+                        width:285px;
                         height:150px;
                         padding:2%;
-                        li{ font-size:0.7em; line-height:1.7em; margin:0px 0px 0px 5px;  }
+                        li{ font-size:0.75em; line-height:1.7em; margin:0px 0px 0px 5px;  }
                     }
                 }
 
@@ -1271,7 +1265,7 @@ html[xmlns] .clearfix { display: block; }
 @media (max-width: 980px){
 
     #wrapper{
-        width:96%;
+        width:94%;
 
         h1{  font-size:1.5em;}
 
@@ -1394,14 +1388,14 @@ html[xmlns] .clearfix { display: block; }
 
             .card{
 
-                height: 340px;
+                height: 301px;
 
                 margin: 0px 0px 0.5em 0.8%;
 
                 border:none;
 
 
-                h2{ font-size:0.95em; letter-spacing: 0.05em;}
+                h2{ font-size: 1.15em; letter-spacing: 0.05em;}
 
                 .card-section{
 
@@ -1412,7 +1406,7 @@ html[xmlns] .clearfix { display: block; }
                     }
 
 
-                    p{font-size:0.70em;   margin:4% auto; }
+                    p{font-size:0.65em;   margin:4% auto; }
 
                     .link_btn {  margin:1% auto;   }
                     a{ line-height:34px; font-size:0.9em;   }
@@ -1534,7 +1528,7 @@ html[xmlns] .clearfix { display: block; }
                             width:94.44444%;
 
                             margin:3px 0px 0px 3px;
-                            font-size:0.7em;
+                            font-size:0.75em;
 
                             display:inline-block;
 
@@ -1560,7 +1554,7 @@ html[xmlns] .clearfix { display: block; }
 
                         width:50%;
 
-                        img{ margin:0 auto; width:60%; display:block;}
+                        img{ margin:0 auto; width:75%; display:block;}
                     }
 
                     .cars_box_txt{
@@ -1796,7 +1790,7 @@ html[xmlns] .clearfix { display: block; }
         #left_column{
             h1{font-size: 1.5em; width:100%;}
             h3 {   font-size: 1.1em;}
-            p {  font-size: 0.8em;}
+            p {  font-size: 0.75em;}
 
         }
 
@@ -1807,14 +1801,15 @@ html[xmlns] .clearfix { display: block; }
 
             .card{
 
-                height: 340px;
+                height: 290px;
 
                 margin: 0px 0px 0.5em 0.8%;
 
 
-                h2{ font-size:0.8em; letter-spacing: 0.05em;}
+                h2{ font-size:1.05em; letter-spacing: 0.05em;}
 
                 .card-section{
+                    padding: 0.5em 0.5rem;
 
                     .front_img{
 
@@ -1823,7 +1818,7 @@ html[xmlns] .clearfix { display: block; }
                     }
 
 
-                    p{font-size:0.70em;   margin:4% auto; }
+                    p{font-size:0.55em;   margin:5% auto; }
 
                     .link_btn {
                         
@@ -1839,7 +1834,7 @@ html[xmlns] .clearfix { display: block; }
             #image5{
 
 
-                p{font-size:0.65em; margin:0 auto;line-height:2em; }
+                p{font-size:0.55em; margin:0 auto;line-height:2em; }
 
                 form{
                     width:90%;
@@ -1896,7 +1891,7 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 48%;
+                    width: 49%;
                     height: 265px;
                     margin:0;
 
@@ -1913,16 +1908,16 @@ html[xmlns] .clearfix { display: block; }
                             padding:7%;
                             width: 50%;
 
-                            font-size: 1.1em;
+                            font-size: 1.3em;
                             line-height: 0.8em;
 
-                            span{font-size:37%; display:block;}
+                            span{font-size:38%; display:block;}
                         }
                         .cont_btn{
 
                             width:90%;
 
-                            a{height: 35px;  line-height:35px; margin: 0 auto; text-align:center;}
+                            a{height: 35px;  line-height:35px; margin: 0 auto; text-align:center; font-size: 0.95em;}
                             a:hover{font-weight:bold;}
                         }
 
@@ -1979,7 +1974,7 @@ html[xmlns] .clearfix { display: block; }
                         width:50%;
                         padding: 0%;
                         height:100%;
-                        img{ margin:0 auto; width:60%; display:block;}
+                        img{ margin:0 auto; width:80%; display:block;}
                     }
 
                     .cars_box_txt{
@@ -2121,7 +2116,7 @@ html[xmlns] .clearfix { display: block; }
             top: 70px;
 
 
-            h1{  font-size:1.8em; }
+            h1{  font-size:1.75em; }
             li {
                 a{font-size:0.70em;}
             }
@@ -2146,7 +2141,7 @@ html[xmlns] .clearfix { display: block; }
                 p { font-size: 0.7em;  }
                 a { width:20%;  font-size: 0.7em; }
 
-                label{  font-size:0.75em;  }
+                label{  font-size:0.7em;  }
                
                 .query_btn{ font-size:0.7em;  }
                 .query_btn:hover{font-size:0.7em; }
@@ -2164,8 +2159,8 @@ html[xmlns] .clearfix { display: block; }
                     list-style:none;
                 }
 
-                #date_quote{width:45%;}
-                select{ line-height:1.5em; font-size: 0.7em; }
+                #date_quote{width: 44%;}
+                select{ line-height:1.5em; font-size: 0.65em; }
 
                 
             }
@@ -2245,14 +2240,14 @@ html[xmlns] .clearfix { display: block; }
 
             .card{
 
-                height: 350px;
+                height: 285px;
 
                 margin: 0px 0px 0.5em 0.8%;
 
                 border:none;
 
 
-                h2{ font-size:0.75em; letter-spacing: 0.05em;}
+                h2{ font-size:0.9em; letter-spacing: 0.05em;}
 
                 .card-section{
 
@@ -2263,7 +2258,7 @@ html[xmlns] .clearfix { display: block; }
                     }
 
 
-                    p{font-size:0.65em;   margin:4% auto; }
+                    p{font-size:0.55em;   margin:5% auto; }
 
                     .link_btn {
                         
@@ -2334,10 +2329,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 48%;
+                    width: 49%;
                     height: 265px;
 
-                    margin-left: 8px;
+                    
 
                     .specials_btn_box {
                         float:right;
@@ -2351,10 +2346,10 @@ html[xmlns] .clearfix { display: block; }
                             padding:7%;
                             width: 50%;
 
-                            font-size: 1.2em;
+                            font-size: 1.35em;
                             line-height: 0.8em;
 
-                            span{font-size:37%; display:block;}
+                            span{font-size:38%; display:block;}
                         }
                         .cont_btn{
                             float:right;
@@ -2397,9 +2392,9 @@ html[xmlns] .clearfix { display: block; }
 
                     ul.specials_box_txt{
                         width:205px;
-                        height:150px;
+                        height:145px;
                         padding:2%;
-                        li{font-size:0.65em; line-height:1.7em; margin:0px 0px 0px 5px;  height:auto; }
+                        li{font-size:0.7em; line-height:1.8em; margin:0px 0px 0px 5px;  height:auto; }
                     }
                 }
 
@@ -2416,7 +2411,7 @@ html[xmlns] .clearfix { display: block; }
                         width:50%;
                         padding: 0%;
                         height:100%;
-                        img{ margin:0 auto; width:60%; display:block;}
+                        img{ margin:0 auto; width:80%; display:block;}
                     }
 
                     .cars_box_txt{
@@ -2607,13 +2602,13 @@ html[xmlns] .clearfix { display: block; }
 
         #left_column {
             h3 {  font-size: 1em;}
-            p {    font-size: 0.8em;}
+            p {    font-size: 0.75em;}
 
 
             #contact_form {
-                label{ font-size:1em;}
-                input[type="submit"]{width: 25%;  }
-                input[type="submit"]:hover{ width: 25%; font-weight:bold;  }
+                label{ font-size:0.9em;}
+                input[type="submit"]{width: 30%;  }
+                input[type="submit"]:hover{ width: 30%; font-weight:bold;  }
 
             }
 
@@ -2626,14 +2621,14 @@ html[xmlns] .clearfix { display: block; }
 
             .card{
 
-                height: 340px;
+                height: 255px;
 
                 margin: 0px 0px 0.5em 0.8%;
 
                 border:none;
 
 
-                h2{ font-size:0.9em; letter-spacing: 0.05em; line-height: 25px;}
+                h2{ font-size:0.85em; letter-spacing: 0.05em; line-height: 25px;}
 
                 .card-section{
 
@@ -2644,7 +2639,7 @@ html[xmlns] .clearfix { display: block; }
                     }
 
 
-                    p{font-size:0.70em;   margin:4% auto; }
+                    p{font-size:0.5em;   margin:5% auto; }
 
                     .link_btn {
                         
@@ -2663,12 +2658,12 @@ html[xmlns] .clearfix { display: block; }
             #image5{
 
                 h2{ line-height: 25px;}
-                p{font-size:0.6em; margin:0;line-height:1.5em; }
+                p{font-size:0.5em; margin:0;line-height:1.5em; }
 
                 form{
                     width:90%;
                     margin:4% auto;
-                    input[type="text"]{width:100%; }
+                    input[type="text"]{width:100%; margin: 0 0 0.5rem; }
                     input[type="email"]{width:100%;}
                     input[type="submit"]{ width: 85.379%;  margin: 0 auto; padding:7%; }
                     input[type="submit"]:hover{ font-weight:bold; width:85.379%;}
@@ -2719,10 +2714,9 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 48%;
+                    width: 49%;
                     height:250px;
 
-                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -2801,7 +2795,7 @@ html[xmlns] .clearfix { display: block; }
                         width:50%;
                         padding: 0%;
                         height:100%;
-                        img{ margin:0 auto; width:60%; display:block;}
+                        img{ margin:0 auto; width:80%; display:block;}
                     }
 
                     .cars_box_txt{
@@ -2990,15 +2984,15 @@ html[xmlns] .clearfix { display: block; }
             }
 
             #booking_form {
-                p { font-size: 0.7em;  }
-                a { width:20%;  font-size: 0.6em; }
+                p { font-size: 0.8em;  }
+                a { width:20%;  font-size: 0.8em; }
             
-                label{  font-size:0.75em; font-weight:bold;  }
+                label{  font-size:0.8em; font-weight:normal;  }
                  
-                .query_btn{ font-size:0.8em;  }
-                .query_btn:hover{font-size:0.8em; }
-                .searchform_btn{ font-size:0.8em;  }
-                .searchform_btn:hover{font-size:0.8em; }
+                .query_btn{ font-size:0.85em;  }
+                .query_btn:hover{font-size:0.9em; }
+                .searchform_btn{ font-size:0.85em;  }
+                .searchform_btn:hover{font-size:0.9em; }
 
 
                 .pick_return, .start_end {width: 59%; }
@@ -3011,8 +3005,8 @@ html[xmlns] .clearfix { display: block; }
                     list-style:none;
                 }
                 
-                #date_quote{width:45%;}
-                select{ line-height:1.5em; font-size: 0.7em; }
+                #date_quote{width:44%;}
+                select{ line-height:1.5em; font-size: 0.65em; }
 
                
             }
@@ -3061,7 +3055,7 @@ html[xmlns] .clearfix { display: block; }
 
         .specials_box {
 
-            width: 48%;
+            width: 49%;
             height:250px;
 
             .specials_box_img {
@@ -3123,7 +3117,7 @@ html[xmlns] .clearfix { display: block; }
 
             .card{
 
-                height: 340px;
+                height: 255px;
 
                 margin: 0px 0px 0.5em 0.8%;
 
@@ -3141,7 +3135,7 @@ html[xmlns] .clearfix { display: block; }
                     }
 
 
-                    p{font-size:0.70em;   margin:4% auto; }
+                    p{font-size:0.45em;   margin:5% auto; }
 
                     .link_btn {  margin:1% auto;   }
                     a{ line-height:34px; font-size:0.9em;   }
@@ -3153,14 +3147,14 @@ html[xmlns] .clearfix { display: block; }
             #image5{
 
 
-                p{font-size:0.65em; width:90%; margin:0 auto;line-height:2em; }
+                p{font-size:0.45em;  margin:0 auto;line-height:2em; }
 
                 form{
                     width:90%;
                     margin:4% auto;
                     input[type="text"]{width:100%; height:30px;}
                     input[type="email"]{width:100%; height:30px;}
-                    input[type="submit"]{ width: 54.379%; height: 35px;  line-height:2px; margin: 0 auto; font-family:($fontStyle) ;border:0; display:block; padding:7%; }
+                    input[type="submit"]{ height: 35px;  line-height:2px; margin: 0 auto; font-family:($fontStyle) ;border:0; display:block; padding:7%; }
                     input[type="submit"]:hover{  line-height:2px; font-weight:bold;}
                 }
             }
@@ -3209,10 +3203,8 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 48%;
+                    width: 49%;
                     height:250px;
-
-                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -3286,7 +3278,7 @@ html[xmlns] .clearfix { display: block; }
 
                         width:50%;
 
-                        img{ margin:0 auto; width:60%; }
+                        img{ margin:0 auto; width:80%; }
                     }
 
                     .cars_box_txt{
@@ -3427,7 +3419,7 @@ html[xmlns] .clearfix { display: block; }
 
         #apDiv1 {
 
-            width: 72.052%;
+            width: 74.052%;
             left: 24%;
             height:420px;
 
@@ -3569,10 +3561,9 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 48%;
+                    width: 49%;
                     height:250px;
 
-                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -3841,15 +3832,15 @@ html[xmlns] .clearfix { display: block; }
         /*banner end*/
 
         #apDiv1 {
-
+            width: 75.052%;
+            left: 23%;
             p.formnum {
                 .dropcap-small {
                     width: 18%;
                 }
             }
 
-            width: 73.052%;
-            left: 23%;
+            
             #booking_form{
                 
             }
@@ -3954,8 +3945,7 @@ html[xmlns] .clearfix { display: block; }
                     width: 48%;
                     height:250px;
 
-                    margin-left: 8px;
-
+                  
                     .specials_btn_box {
                         float:right;
                         width: 35.272%;
@@ -4174,7 +4164,7 @@ html[xmlns] .clearfix { display: block; }
     }
 }
 
-@media (max-width: 536px){
+@media (min-width: 536px) and (max-width: 600px){
 
     #wrapper {
 
@@ -4208,8 +4198,8 @@ html[xmlns] .clearfix { display: block; }
         }
 
         #apDiv1 {
-            width: 82.052%;
-            left: 14%;
+            width: 83.052%;
+            left: 15%;
             #booking_form{
                 
             }
@@ -4250,7 +4240,7 @@ html[xmlns] .clearfix { display: block; }
         
         #right_coler {
 
-            width: 50%;
+            width: 40%;
             border:none;
             margin:auto;
             display:block;
@@ -4343,10 +4333,9 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 47%;
+                    width: 48.5%;
                     height:250px;
 
-                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -4355,12 +4344,12 @@ html[xmlns] .clearfix { display: block; }
 
                         .special_price {
 
-                            margin:10px 0px 30px 0px;
+                            margin:10px 0px 25px 0px;
 
                             padding:7%;
                             width: 50%;
 
-                            font-size: 1.1em;
+                            font-size: 1.3em;
                             line-height: 0.8em;
 
                             span{font-size:42%; display:block;}
@@ -4378,7 +4367,7 @@ html[xmlns] .clearfix { display: block; }
 
                     .specials_box_img{
                         width:100%;
-                        height:110px;
+                        height:105px;
                         padding:2%;
 
                     }
@@ -4386,14 +4375,14 @@ html[xmlns] .clearfix { display: block; }
                     .media-object-section{
 
                         .car{ width:100%; margin:0; padding:0;}
-                        h4{   font-size:0.7em;}
+                        h4{   font-size:0.75em;}
 
                         p.special1{
 
                             width:94.44444%;
 
                             margin:2px 0px 0px 2px;
-                            font-size:0.65em;
+                            font-size:0.6em;
 
                             display:inline-block;
 
@@ -4401,10 +4390,10 @@ html[xmlns] .clearfix { display: block; }
                     }
 
                     ul.specials_box_txt{
-                        width: 144px;
-                        height:150px;
+                        width: 160px;
+                        height:130px;
                         padding:2%;
-                        li{font-size:0.6em; line-height:1.6em;  }
+                        li{font-size:0.65em; line-height:1.75em;  }
                     }
                 }
 
@@ -4420,7 +4409,7 @@ html[xmlns] .clearfix { display: block; }
 
                         width:50%;
 
-                        img{ margin:0 auto; width:80%; }
+                        img{ margin:0 auto; width:71%; }
                     }
 
                     .cars_box_txt{
@@ -4610,12 +4599,12 @@ html[xmlns] .clearfix { display: block; }
 
             width: 88.949%;
             font-size: 0.95em;
-            left: 6%;
+            left: 9%;
 
             #booking_form {
     
                 select { width: 49px;}
-                #date_quote {    font-size: 0.75em;}
+                #date_quote {  width: 53%;  font-size: 0.75em;}
                 
                 .pick_return {
                     select {  margin: 0; height: 35px;}
@@ -4747,7 +4736,6 @@ html[xmlns] .clearfix { display: block; }
                     width: 96%;
                     height:270px;
 
-                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -4756,12 +4744,12 @@ html[xmlns] .clearfix { display: block; }
 
                         .special_price {
 
-                            margin:10px 0px 35px 0px;
+                            margin:10px 0px 30px 0px;
 
                             padding:7%;
                             width: 50%;
 
-                            font-size: 1.2em;
+                            font-size: 1.4em;
                             line-height: 0.8em;
 
                             span{font-size:42%; display:block;}
@@ -4803,9 +4791,9 @@ html[xmlns] .clearfix { display: block; }
 
                     ul.specials_box_txt{
                         width: 190px;
-                        height:150px;
+                        height:145px;
                         padding:2%;
-                        li{font-size:0.75em; line-height:1.8em;  }
+                        li{font-size:0.7em; line-height:1.8em;  }
                     }
                 }
 
@@ -5006,7 +4994,6 @@ html[xmlns] .clearfix { display: block; }
                     width: 96%;
                     height:270px;
 
-                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -5020,7 +5007,7 @@ html[xmlns] .clearfix { display: block; }
                             padding:7%;
                             width: 50%;
 
-                            font-size: 1.2em;
+                            font-size: 1.35em;
                             line-height: 0.8em;
 
                             span{font-size:42%; display:block;}
@@ -5046,7 +5033,7 @@ html[xmlns] .clearfix { display: block; }
                     .media-object-section{
 
                         .car{ width:100%; margin:0; padding:0;}
-                        h4{   font-size:0.9em;}
+                        h4{   font-size:0.8em;}
 
                         p.special1{
 
@@ -5064,7 +5051,7 @@ html[xmlns] .clearfix { display: block; }
                         width: 190px;
                         height:150px;
                         padding:2%;
-                        li{font-size:0.75em; line-height:1.8em;  }
+                        li{font-size:0.7em; line-height:1.8em;  }
                     }
                 }
 
@@ -5164,6 +5151,10 @@ html[xmlns] .clearfix { display: block; }
             }
 
             #booking_form{
+                #date_quote {    width: 50%;}
+                label {   font-size: 0.85em;}
+                select {    font-size: 0.75em;}
+                select#pickup_location { font-size: 0.75em;}
                
 
             }
@@ -5253,9 +5244,12 @@ html[xmlns] .clearfix { display: block; }
                 .pick_return {
                     p {font-size:0.7em;}
                 }
-                
-               .query_btn {  font-size: 0.8em; width:85%;}
-               .searchform_btn{width: 45%;}
+                label {    font-size: 0.8em;}
+                a {    width: 25%;    font-size: 0.75em;}
+                p {    font-size: 0.75em;}
+                #date_quote {    width: 45%;}
+                .query_btn {  font-size: 0.8em; width:85%;}
+                .searchform_btn{width: 45%;}
 
             }
         }
@@ -5344,10 +5338,9 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 96%;
+                    width: 100%;
                     height:270px;
 
-                    margin-left: 8px;
 
                     .specials_btn_box {
                         float:right;
@@ -5356,12 +5349,12 @@ html[xmlns] .clearfix { display: block; }
 
                         .special_price {
 
-                            margin:10px 0px 35px 0px;
+                            margin:10px 0px 25px 0px;
 
                             padding:7%;
                             width: 50%;
 
-                            font-size: 1.2em;
+                            font-size: 1.3em;
                             line-height: 0.8em;
 
                             span{font-size:42%; display:block;}
@@ -5387,7 +5380,7 @@ html[xmlns] .clearfix { display: block; }
                     .media-object-section{
 
                         .car{ width:100%; margin:0; padding:0;}
-                        h4{   font-size:0.9em;}
+                        h4{   font-size:0.75em;}
 
                         p.special1{
 
@@ -5405,7 +5398,7 @@ html[xmlns] .clearfix { display: block; }
                         width: 190px;
                         height:150px;
                         padding:2%;
-                        li{font-size:0.75em; line-height:1.8em;  }
+                        li{font-size:0.7em; line-height:1.8em;  }
                     }
                 }
 
@@ -5531,7 +5524,7 @@ html[xmlns] .clearfix { display: block; }
                         height: 60px;
                         list-style: outside none none;
                         h1 {
-                            font-size: 1.4em;
+                            font-size: 1.7em;
                             text-align:left;
                             height: 60px;
                             line-height: 60px;
@@ -5555,12 +5548,14 @@ html[xmlns] .clearfix { display: block; }
 
         #apDiv1 {
             width: 98%;
-            left: 0%;
+            left: 1%;
             #booking_form {
+                 p {font-size: 0.7em;}
                 .pick_return {
-                    p {font-size: 0.65em;}
+                   
 
                 }
+                #date_quote {    width: 44%;}
                 
 
             }
@@ -5688,10 +5683,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 96%;
+                    width: 100%;
                     height:270px;
 
-                    margin-left: 8px;
+                   
 
                     .specials_btn_box {
                         float:right;
@@ -5700,12 +5695,12 @@ html[xmlns] .clearfix { display: block; }
 
                         .special_price {
 
-                            margin:10px 0px 35px 0px;
+                            margin:10px 0px 25px 0px;
 
                             padding:7%;
                             width: 50%;
 
-                            font-size: 1.2em;
+                            font-size: 1.3em;
                             line-height: 0.8em;
 
                             span{font-size:42%; display:block;}
@@ -5731,7 +5726,7 @@ html[xmlns] .clearfix { display: block; }
                     .media-object-section{
 
                         .car{ width:100%; margin:0; padding:0;}
-                        h4{   font-size:0.9em;}
+                        h4{   font-size:0.7em;}
 
                         p.special1{
 
@@ -5832,7 +5827,12 @@ html[xmlns] .clearfix { display: block; }
 
         }
 
-
+        #newsletter {
+            h2 {
+                font-size: 1.2em;
+                line-height: 30px;
+            }
+        }
         footer{
 
             #footer_nav {
@@ -5860,7 +5860,7 @@ html[xmlns] .clearfix { display: block; }
                     .name {
                         height: 60px;
                         list-style: outside none none;
-                        h1 {  width: 100%;   text-align:left; font-size:1.4em;  font-family:($fontStyle);  color: $color;  height: 60px; line-height: 60px;   margin-top: 0px;}
+                        h1 {  width: 100%;  font-size:1.7em;    height: 60px; line-height: 60px;   margin-top: 0px;}
                         h1 span { text-align:left; }
                     }
                 }
@@ -5877,13 +5877,21 @@ html[xmlns] .clearfix { display: block; }
         }
 
         #apDiv1 {
+            left: 0.5%;
+            #booking_form {
+                label {    font-size: 0.7em;}
+                p {    font-size: 0.65em;}
+                #date_quote {
+                    width: 37%;
+                }
+            }
 
             p {
-                width: 41.091%;
+                font-size: 0.45em;
                 .dropcap {   width: 16%;}
             }
             p.formnum {
-                width: 28.682%;
+                width: 99.682%;
                 .dropcap-small {  width: 25%;}
 
             }
@@ -6010,10 +6018,10 @@ html[xmlns] .clearfix { display: block; }
                 .clearfix { display: inline-block; clear: both;}
 
                 .specials_box{
-                    width: 96%;
+                    width: 100%;
                     height:270px;
 
-                    margin-left: 8px;
+              
 
                     .specials_btn_box {
                         float:right;
@@ -6053,7 +6061,7 @@ html[xmlns] .clearfix { display: block; }
                     .media-object-section{
 
                         .car{ width:100%; margin:0; padding:0;}
-                        h4{   font-size:0.9em;}
+                        h4{   font-size:0.7em;}
 
                         p.special1{
 
@@ -6068,10 +6076,10 @@ html[xmlns] .clearfix { display: block; }
                     }
 
                     ul.specials_box_txt{
-                        width: 190px;
-                        height:150px;
+                        width: 175px;
+                        height:145px;
                         padding:2%;
-                        li{font-size:0.75em; line-height:1.8em;  }
+                        li{font-size:0.7em; line-height:1.8em;  }
                     }
                 }
 
