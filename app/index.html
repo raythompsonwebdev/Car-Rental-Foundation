@@ -42,7 +42,7 @@
 <header id="header">
     <div class="title-bar" data-responsive-toggle="primary_nav" data-hide-for="medium">
         <button type="button" data-toggle >Menu</button>
-    </div>          
+    </div>
 
     <div class="top-bar">
         <div class="top-bar-left">
@@ -106,11 +106,11 @@
 
             <div class="row">
 
-                <div class="large-3 medium-3 small-3 xsmall-4 columns">
+                <div class="large-3 medium-3 small-4 columns">
                     <label for="rental_start">Rental Start Date/Time</label>
-                </div>  
+                </div>
 
-                <div class="large-9 medium-9 small-9 columns">
+                <div class="large-9 medium-9 small-8 columns">
 
                     <select name="rental_start" size="1" id="rental_start">
                         <option value="Date">22/10/2013</option>
@@ -142,11 +142,11 @@
 
             <div class="row">
 
-                <div class="large-3 medium-3 small-3 columns">
+                <div class="large-3 medium-3 small-4 columns">
 
                     <label for="rental_end">Rental End Date/Time</label>
                 </div>
-                <div class="large-9 medium-9 small-9 columns">
+                <div class="large-9 medium-9 small-8 columns">
 
                     <select name="rental_end" size="1" id="rental_end">
                         <option value="Date">22/10/2013</option>
@@ -179,10 +179,10 @@
             </div>
             <div class="row">
 
-                <div class="large-3 medium-3 small-3 columns">
+                <div class="large-3 medium-3 small-4 columns">
                     <label for="pickup_location">Pick Up Location</label>
                 </div>
-                <div class="large-9 medium-9 small-9 columns">
+                <div class="large-9 medium-9 small-8 columns">
 
                     <select name="pickup_location" size="1" id="pickup_location">
                         <option value="Home">Home</option>
@@ -197,10 +197,10 @@
 
             <div class="row">
 
-                <div class="large-3 medium-3 small-3 columns">
+                <div class="large-3 medium-3 small-4 columns">
                     <label for="pickup_return">Returning to</label>
                 </div>
-                <div class="large-9 medium-9 small-9 columns">
+                <div class="large-9 medium-9 small-8 columns">
 
                     <select name="pickup_return" id="pickup_return">
                         <option value="Home">Home</option>
@@ -213,10 +213,10 @@
             <br/>
             <div class="row">
 
-                <div class="large-3 medium-3 small-3 columns">
-                    
+                <div class="large-3 medium-3 small-4 columns">
+
                 </div>
-                <div class="large-9 medium-9 small-9 columns">
+                <div class="large-9 medium-9 small-8 columns">
                     <span>
                         <p>Can't find the location you are looking for?</p>
 
@@ -227,10 +227,10 @@
             </div>
             <br/>
             <div class="row">
-                <div class="large-3 medium-3 small-3 columns">
+                <div class="large-3 medium-3 small-4 columns">
 <span class="query_btn" id="clearQuote" onclick="fadeOut();">Hide Form</span>
                 </div>
-                <div class="large-9 medium-9 small-9 columns">
+                <div class="large-9 medium-9 small-8 columns">
                     <input name="Get Quote" type="submit" class="searchform_btn" value="Get Quote" />
                 </div>
             </div>
@@ -242,9 +242,9 @@
 
     <figure id="banner">
         <!--Banner Text-->
-        <figcaption class="big"> 
-            <p>Lorem ipsum dolor sit amet, </p> 
-            <p>Consectetur adipiscing elit.<br> Nulla cursus dolor in enim sagittis</p> 
+        <figcaption class="big">
+            <p>Lorem ipsum dolor sit amet, </p>
+            <p>Consectetur adipiscing elit.<br> Nulla cursus dolor in enim sagittis</p>
         </figcaption>
 
         <div id="index_form_btn" onclick="fadeIn();">Click here to get Quote</div>
@@ -374,13 +374,15 @@
 <script src="foundation-sites/js/foundation.core.js"></script>
 <script src="foundation-sites/js/foundation.util.triggers.js"></script>
 <script src="foundation-sites/js/foundation.util.mediaQuery.js"></script>
-<script src="foundation-sites/js/foundation.accordionMenu.js"></script>
-<script src="foundation-sites/js/foundation.drilldown.js"></script>
-<script src="foundation-sites/js/foundation.dropdownMenu.js"></script>
-<script src="foundation-sites/js/foundation.util.keyboard.js"></script>
 <script src="foundation-sites/js/foundation.responsiveMenu.js"></script>
 <script src="foundation-sites/js/foundation.responsiveToggle.js"></script>
 
+
+<script>
+
+$('#primary_nav').foundation('toggleMenu');
+
+</script>
 <!-- Fallback to local -->
 <script>
     $(init);
