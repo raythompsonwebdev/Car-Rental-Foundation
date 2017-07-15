@@ -19,9 +19,9 @@ $RECYCLE.BIN/
 
 .sass-cache
 .tmp
-bower_components
+bower_components/
 dist
-node_modules
+node_modules/
 package.json
 bower.json
 .jshintrc
@@ -31,18 +31,10 @@ bower.json
 Gruntfile.js
 docs
 
-app/Foundation-5/
-app/Foundation-5/css/
-app/Foundation-5/img/
-app/Foundation-5/js/
-app/Foundation-5/js/foundation/
-app/Foundation-5/js/vendor/
-app/Foundation-6/
-app/Foundation-6/css/
-app/Foundation-6/img/
-app/Foundation-6/js/
-app/Foundation-6/js/foundation/
-app/Foundation-6/js/vendor/
+app/foundation-sites/
+app/foundation-icons/
+app/fonts/
+
 app/images/
 app/test.html/
 app/page1_images/
@@ -52,17 +44,12 @@ app/scripts/jquery.validate.min.js
 app/scripts/selectivizr-min.js
 app/scripts/selectivizr.js
 
-app/scripts/jquery-ui-1.11.2.custom/
-app/scripts/jquery-ui-1.11.2.custom/external/
-app/scripts/jquery-ui-1.11.2.custom/external/jquery/
-app/scripts/jquery-ui-1.11.2.custom/images/
 app/scripts/Respond-master/
 app/scripts/vendor/
-
+app/scripts/jquery/
 app/styles/redmond/
 app/styles/redmond/images/
 
-
 app/text files/
-app/.htaccess
-Tester2/
+
+nbproject/
