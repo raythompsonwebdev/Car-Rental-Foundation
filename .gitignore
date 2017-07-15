@@ -47,9 +47,14 @@ app/scripts/selectivizr.js
 app/scripts/Respond-master/
 app/scripts/vendor/
 app/scripts/jquery/
+app/styles/.sass-cache/
 app/styles/redmond/
 app/styles/redmond/images/
+app/styles/partials/
+app/styles/scss/
 
 app/text files/
+
+app/page1_images/
 
 nbproject/
