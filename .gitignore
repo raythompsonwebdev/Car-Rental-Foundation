@@ -28,29 +28,25 @@ bower.json
 .editorconfig
 .bowerrc
 .gitignore
-Gruntfile.js
+gulpfile.js
 docs
+index.html
+CHANGELOG.md
+.bowerrc
 
-app/Foundation-5/
-app/Foundation-5/css/
-app/Foundation-5/img/
-app/Foundation-5/js/
-app/Foundation-5/js/foundation/
-app/Foundation-5/js/vendor/
-app/Foundation-6/
-app/Foundation-6/css/
-app/Foundation-6/img/
-app/Foundation-6/js/
-app/Foundation-6/js/foundation/
-app/Foundation-6/js/vendor/
+app/foundation-sites/
 app/images/
 app/test.html/
 app/page1_images/
+app/scripts/jquery/
+app/motion-ui/
 app/scripts/html5shiv.min.js
 app/scripts/jquery-1.11.2.js
 app/scripts/jquery.validate.min.js
 app/scripts/selectivizr-min.js
 app/scripts/selectivizr.js
+
+app/fonts/
 
 app/scripts/jquery-ui-1.11.2.custom/
 app/scripts/jquery-ui-1.11.2.custom/external/
@@ -62,7 +58,13 @@ app/scripts/vendor/
 app/styles/redmond/
 app/styles/redmond/images/
 
+app/foundation-icons/
+
+dist/
+docs/
+
 
 app/text files/
 app/.htaccess
-Tester2/
+
+nbproject/
