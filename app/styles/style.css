@@ -1,0 +1,4471 @@
+@charset "UTF-8";
+/*CSS RESET*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1;
+  height: auto;
+  padding: 0; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*css reset end*/
+/*add to CSS.*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+/*Global CSS*/
+a {
+  text-decoration: none;
+  font-family: "Signika", Geneva, arial, sans-serif;
+  font-size: 1em; }
+
+p {
+  font-family: "Signika", Geneva, arial, sans-serif;
+  color: #cccccc;
+  font-size: 1em;
+  width: 100%;
+  margin: 0px;
+  line-height: 1.5em;
+  padding: 0; }
+
+h1 {
+  color: #000000;
+  text-align: left;
+  width: 100%;
+  font-size: 1em;
+  font-family: "Signika", Geneva, arial, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font-family: "Signika", Geneva, arial, sans-serif;
+  color: #FFFFFF;
+  margin: 0px;
+  font-size: 100%;
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font-family: "Signika", Geneva, arial, sans-serif; }
+
+select {
+  font-family: "Signika", Geneva, arial, sans-serif;
+  font-size: 0.85em; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+.button {
+  background-color: #EF3528; }
+
+.button, .link_btn, .button_contact {
+  border: 0;
+  outline-style: none; }
+
+.copy {
+  color: #000000;
+  font-size: 0.55em;
+  width: 100%;
+  margin: 2% 0;
+  letter-spacing: 0.1em;
+  line-height: 1.5em; }
+
+figure {
+  margin: 0;
+  padding: 0; }
+
+.group:before, .group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+/*end of global css*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.clearfix {
+  display: inline-block;
+  clear: both; }
+
+html[xmlns] .clearfix {
+  display: block; }
+
+* html .clearfix {
+  height: 1%; }
+
+[data-abide].error small.error {
+  padding: 0.1rem;
+  margin-bottom: 0.5rem;
+  text-indent: 1%; }
+
+/*main wrapper*/
+#wrapper {
+  height: auto;
+  width: 90%;
+  padding-top: 1%;
+  font-family: "Signika", Geneva, arial, sans-serif;
+  margin: 0 auto;
+  min-height: 900px;
+  /*Form button*/
+  /*End Form button*/
+  /*Banner*/
+  /* left Column*/
+  /*right column*/
+  /*Search_box form*/
+  /*destination Links*/
+  /*end*/
+    /*.panel{
+        float: left;
+        height: 320px;
+        width: 23.9999%;
+        margin: 0px 0px 2% 0.8%;
+        padding:1%;
+        border:none;
+        background-color:$color;
+        display:inline-block;
+        h2{ font-size:1.1em; color:$color; height:auto; margin:1% auto; line-height:25px;font-family:($fontStyle) ;  text-align:center; font-weight: bold; letter-spacing: 0.05em;}
+
+        figure.front_img{
+            width:100%;
+            margin:0;
+            padding:0;
+            figcaption, .card-section{
+                padding:0;
+                margin:0;
+                p{font-size:0.75em; color:$color; width:98%; margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; display:block; line-height:1.8em; font-weight: 100;}
+
+                .link_btn { width: 55.37931%; height:34px;  margin:1% auto;  font-family:($fontStyle) ; }
+                a{ height:34px; line-height:34px; width:100%; text-align:center; font-size:1em;  padding:0; @include gradient(#FC7D3C, #EE2A26);@include rounded(); display:block; color:$color; }
+                a:hover{ @include gradient(#EE2A26, #FC7D3C);font-weight:bold;line-height:34px; }
+            }
+        }
+
+    }end of info boxes*/
+  /*end of newsletter box*/
+  /*footer*/ }
+  #wrapper h1 {
+    color: #000000;
+    text-align: left;
+    margin: 1% auto;
+    width: 100%;
+    font-size: 1.7em;
+    line-height: 40px;
+    display: block;
+    font-weight: bold;
+    font-family: "Signika", Geneva, arial, sans-serif; }
+  #wrapper #apDiv1 {
+    position: absolute;
+    width: 35.9485%;
+    height: 420px;
+    z-index: 1;
+    left: 50%;
+    top: 70px;
+    background-color: #FFFFFF;
+    list-style-type: none;
+    display: none; }
+    #wrapper #apDiv1 h1 {
+      color: #FFFFFF;
+      width: 100%;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      margin: 0;
+      background-color: #33CCFF;
+      font-size: 2em;
+      clear: both; }
+    #wrapper #apDiv1 li a {
+      font-size: 0.85em; }
+    #wrapper #apDiv1 p {
+      font-size: 0.7em;
+      height: 40px;
+      line-height: 40px;
+      margin: 0;
+      float: left;
+      display: inline-block;
+      font-weight: bold;
+      padding-left: 0; }
+      #wrapper #apDiv1 p .dropcap {
+        margin: 3%;
+        display: inline-block;
+        width: 11%;
+        height: 60%;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-align: center; }
+    #wrapper #apDiv1 p.formnum {
+      margin: 0 0 0 0;
+      font-size: 0.8em; }
+      #wrapper #apDiv1 p.formnum .dropcap-small {
+        margin: 3%;
+        width: 15%;
+        display: inline-block;
+        height: 60%;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-align: center; }
+    #wrapper #apDiv1 #booking_form p {
+      display: block;
+      width: 100%;
+      line-height: 25px;
+      height: 25px;
+      font-size: 0.9em;
+      margin: 0;
+      padding: 0; }
+    #wrapper #apDiv1 #booking_form a {
+      display: block;
+      width: 20%;
+      line-height: 20px;
+      font-size: 0.9em;
+      margin: 0;
+      padding: 0; }
+    #wrapper #apDiv1 #booking_form li {
+      width: 38%;
+      height: 45px;
+      display: inline-block;
+      list-style: none; }
+      #wrapper #apDiv1 #booking_form li label {
+        font-family: "Signika", Geneva, arial, sans-serif;
+        font-size: 0.85em;
+        list-style: none;
+        line-height: 45px;
+        color: #999999;
+        display: block;
+        font-weight: bold;
+        text-align: left;
+        text-indent: 5%; }
+    #wrapper #apDiv1 #booking_form .query_btn {
+      text-align: center;
+      line-height: 34px;
+      font-family: "Signika", Geneva, arial, sans-serif;
+      color: #FFFFFF;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #fc773c;
+      width: 90%;
+      margin: 1% auto;
+      height: 34px;
+      background-color: #FC7D3C;
+      background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+      /* FF3.6 */
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+      /* Saf4+, Chrome */
+      background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+      /* IE6├ó´┐¢´┐¢IE9 */
+      border: 0;
+      display: block; }
+    #wrapper #apDiv1 #booking_form .query_btn:hover {
+      background-color: #EE2A26;
+      background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+      /* FF3.6 */
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+      /* Saf4+, Chrome */
+      background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+      /* IE6├ó´┐¢´┐¢IE9 */ }
+    #wrapper #apDiv1 #booking_form .searchform_btn {
+      width: 90%;
+      height: 34px;
+      margin: 1% auto;
+      background-color: #FC7D3C;
+      background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+      /* FF3.6 */
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+      /* Saf4+, Chrome */
+      background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+      /* IE6├ó´┐¢´┐¢IE9 */
+      font-family: "Signika", Geneva, arial, sans-serif;
+      color: #FFFFFF;
+      border: 0;
+      display: block; }
+    #wrapper #apDiv1 #booking_form .searchform_btn:hover {
+      background-color: #EE2A26;
+      background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+      /* FF3.6 */
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+      /* Saf4+, Chrome */
+      background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+      /* IE6├ó´┐¢´┐¢IE9 */ }
+    #wrapper #apDiv1 #booking_form .pick_return, #wrapper #apDiv1 #booking_form .start_end {
+      width: 59%; }
+    #wrapper #apDiv1 #booking_form .pick_return select {
+      width: 100%;
+      margin: 0;
+      height: 35px;
+      font-size: 0.85em; }
+    #wrapper #apDiv1 #booking_form .pickup_return {
+      list-style: none; }
+    #wrapper #apDiv1 #booking_form li.start_end #date_quote {
+      width: 45%; }
+    #wrapper #apDiv1 #booking_form li.start_end select {
+      width: 25.007%;
+      margin: 1% 0 0 0;
+      height: 35px;
+      line-height: 1.5em;
+      font-size: 0.8em; }
+  #wrapper #header {
+    background-color: #303836;
+    height: 60px;
+    width: 100%;
+    margin: 0; }
+    #wrapper #header .title-bar {
+      display: none;
+      float: right;
+      height: 100%; }
+    #wrapper #header .top-bar {
+      background-color: #333;
+      height: 60px;
+      margin: 0;
+      padding: 0;
+      /*primary nav*/
+      /*end of primary nav*/ }
+      #wrapper #header .top-bar .top-bar-left {
+        width: 40%; }
+      #wrapper #header .top-bar .title-area {
+        width: 100%;
+        float: left; }
+        #wrapper #header .top-bar .title-area .name {
+          background-color: #333;
+          padding-left: 1%;
+          height: 60px;
+          list-style: none;
+          width: 100%; }
+          #wrapper #header .top-bar .title-area .name h1 {
+            width: 100%;
+            text-align: left;
+            font-family: "Signika", Geneva, arial, sans-serif;
+            color: #FFFFFF;
+            height: 60px;
+            line-height: 60px;
+            font-size: 2.2em;
+            margin: 0;
+            font-weight: bold;
+            margin-left: 1%; }
+            #wrapper #header .top-bar .title-area .name h1 span {
+              color: #6ccff7;
+              font-size: 1em;
+              margin: 0 0 0 1%;
+              width: 50px;
+              line-height: 60px;
+              height: 60px; }
+      #wrapper #header .top-bar #primary_nav {
+        height: 100%;
+        width: 60%;
+        float: right;
+        margin: 0 0;
+        padding: 0px; }
+        #wrapper #header .top-bar #primary_nav ul {
+          height: 60px;
+          width: 100%;
+          margin: 0px;
+          text-align: center;
+          list-style: none; }
+          #wrapper #header .top-bar #primary_nav ul li {
+            height: 60px;
+            list-style: none;
+            width: 16.66%;
+            float: left;
+            background-color: #303836;
+            display: inline-block;
+            text-align: center; }
+            #wrapper #header .top-bar #primary_nav ul li a {
+              height: 100%;
+              line-height: 20px;
+              width: 100%;
+              color: #FFFFFF;
+              font-size: 0.9em;
+              text-decoration: none;
+              display: block;
+              font-family: "Signika", Geneva, arial, sans-serif; }
+              #wrapper #header .top-bar #primary_nav ul li a:hover {
+                color: #FFFFFF;
+                background-color: #fc773c; }
+              #wrapper #header .top-bar #primary_nav ul li a:active {
+                background-color: #FFCC33; }
+  #wrapper #index_form_btn {
+    width: 47.42268%;
+    height: 100px;
+    float: right;
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: center;
+    font-family: "Signika", Geneva, arial, sans-serif;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-right: 1%; }
+    #wrapper #index_form_btn:hover {
+      color: #FFCC33; }
+  #wrapper #banner {
+    height: 455px;
+    width: 100%;
+    margin: 1% auto;
+    clear: both;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    /*background-image: url("../images/car-rental-website-banner-bg.jpg") ;  background-repeat:no-repeat;*/
+    background-color: #35BEF2;
+    background-image: -moz-linear-gradient(top, #35BEF2, #B6E6FC);
+    /* FF3.6 */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #35BEF2), color-stop(1, #B6E6FC));
+    /* Saf4+, Chrome */
+    background-image: linear-gradient(top, #35BEF2, #B6E6FC);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+    /* IE6├ó´┐¢´┐¢IE9 */
+    float: left;
+    /*banner end*/ }
+    #wrapper #banner figure#bannerimage {
+      width: 50.26016%;
+      height: 54.25531%;
+      margin: 0px; }
+    #wrapper #banner figcaption {
+      font-size: 1.1em;
+      width: 50%;
+      color: #FFFFFF;
+      margin: 0;
+      padding: 1%; }
+    #wrapper #banner .big {
+      font-size: 2.8em;
+      color: #FFFFFF;
+      font-family: "Signika", Geneva, arial, sans-serif;
+      width: 40%;
+      display: block;
+      height: auto;
+      margin: 0;
+      padding: 1%;
+      line-height: 1.2em; }
+  #wrapper #left_column {
+    font-size: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*Contact form*/
+    /*end of contact form*/
+    /*specials page */ }
+    #wrapper #left_column p {
+      font-family: "Signika", Geneva, arial, sans-serif;
+      color: #666;
+      font-size: 0.85em;
+      line-height: 1.8em;
+      display: block; }
+    #wrapper #left_column h1 {
+      color: #000000;
+      text-align: left;
+      margin: 1% 0;
+      width: 100%;
+      font-size: 1.7em;
+      display: block;
+      line-height: 40px;
+      font-weight: bold; }
+    #wrapper #left_column h3 {
+      color: #06F;
+      margin: 1% 0;
+      display: block;
+      line-height: 30px;
+      font-size: 1.3em; }
+    #wrapper #left_column #contact_form {
+      width: 80%;
+      height: 500px;
+      margin-left: 2%; }
+      #wrapper #left_column #contact_form input {
+        width: 100%;
+        height: 35px;
+        font-size: 1em; }
+      #wrapper #left_column #contact_form input[type="submit"] {
+        width: 123px;
+        height: 35px;
+        margin: 5px 0px 0px 17%;
+        color: #FFFFFF;
+        font-family: "Signika", Geneva, arial, sans-serif;
+        line-height: 0; }
+      #wrapper #left_column #contact_form textarea {
+        width: 100%;
+        font-size: 1em;
+        line-height: 1.5em; }
+      #wrapper #left_column #contact_form label {
+        font-family: "Signika", Geneva, arial, sans-serif;
+        color: #666;
+        font-size: 1.2em;
+        height: 35px;
+        line-height: 35px;
+        float: left;
+        text-indent: 1%; }
+      #wrapper #left_column #contact_form input[type="submit"] {
+        width: 30%;
+        height: 35px;
+        margin: 0;
+        font-family: "Signika", Geneva, arial, sans-serif;
+        line-height: 0;
+        font-size: 1em;
+        background-color: #FC7D3C;
+        background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+        /* FF3.6 */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+        /* Saf4+, Chrome */
+        background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+        /* IE6├ó´┐¢´┐¢IE9 */
+        color: #FFFFFF; }
+      #wrapper #left_column #contact_form input[type="submit"]:hover {
+        background-color: #EE2A26;
+        background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+        /* FF3.6 */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+        /* Saf4+, Chrome */
+        background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+        /* IE6├ó´┐¢´┐¢IE9 */
+        font-weight: bold; }
+    #wrapper #left_column .spacer {
+      width: 3px;
+      height: 300px;
+      float: left; }
+  #wrapper .tabs {
+    border: none; }
+    #wrapper .tabs li.tabs-title {
+      width: 15%;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px; }
+      #wrapper .tabs li.tabs-title a {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9em; }
+        #wrapper .tabs li.tabs-title a:hover {
+          border-top: solid #e6e6e6 0.5px;
+          border-right: solid #e6e6e6 0.5px;
+          border-left: solid #e6e6e6 0.5px; }
+  #wrapper .tabs-content {
+    transition: all 0.5s ease; }
+    #wrapper .tabs-content .tabs-panel {
+      /*left Column*/ }
+      #wrapper .tabs-content .tabs-panel .clearfix {
+        display: inline-block;
+        clear: both; }
+      #wrapper .tabs-content .tabs-panel .specials_box {
+        width: 48.5%;
+        height: 300px;
+        float: none;
+        display: inline-block;
+        margin-left: 8px; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box {
+          float: right;
+          width: 27.2716%;
+          height: 150px;
+          clear: both; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
+            font-family: "Signika", Geneva, arial, sans-serif;
+            float: right;
+            margin: 10px 0px 30px 0px;
+            display: block;
+            text-align: center;
+            background-color: #38BFF3;
+            background-image: -moz-linear-gradient(top, #38BFF3, #AFE5FC);
+            /* FF3.6 */
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #38BFF3), color-stop(1, #AFE5FC));
+            /* Saf4+, Chrome */
+            background-image: linear-gradient(top, #38BFF3, #AFE5FC);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+            /* IE6├ó´┐¢´┐¢IE9 */
+            padding: 7%;
+            width: 50%;
+            color: #FFFFFF;
+            font-size: 1.5em;
+            line-height: 0.8em;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
+              font-size: 37%;
+              display: block; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn {
+            float: right;
+            width: 90%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a {
+              font-family: "Signika", Geneva, arial, sans-serif;
+              height: 35px;
+              line-height: 35px;
+              margin: 0 auto;
+              font-family: "Signika", Geneva, arial, sans-serif;
+              border: 0;
+              display: block;
+              background-color: #FC7D3C;
+              background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+              /* FF3.6 */
+              background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+              /* Saf4+, Chrome */
+              background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+              /* IE6├ó´┐¢´┐¢IE9 */
+              border-radius: 5px;
+              -moz-border-radius: 5px;
+              -webkit-border-radius: 5px;
+              color: #FFFFFF;
+              text-align: center; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a:hover {
+              background-color: #EE2A26;
+              background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+              /* FF3.6 */
+              background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+              /* Saf4+, Chrome */
+              background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+              /* IE6├ó´┐¢´┐¢IE9 */
+              font-weight: bold; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_box_img {
+          width: 100%;
+          height: 140px;
+          padding: 2%;
+          color: #FFFFFF;
+          background-color: #185F79;
+          margin-bottom: 0;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section .car {
+          width: 100%;
+          margin: 0;
+          padding: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section h4 {
+          color: #FFCC33;
+          font-weight: bold;
+          font-size: 1em; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
+          color: #FFFFFF;
+          height: auto;
+          width: 94.44444%;
+          float: left;
+          margin: 0;
+          font-size: 0.85em;
+          line-height: 1.5em;
+          display: inline-block; }
+        #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
+          width: 320px;
+          height: 150px;
+          padding: 2%;
+          float: left;
+          display: block; }
+          #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt li {
+            color: #999999;
+            font-size: 0.75em;
+            line-height: 1.7em;
+            margin: 0;
+            width: 100%;
+            height: auto; }
+      #wrapper .tabs-content .tabs-panel .cars_box {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 1.5%;
+        display: block; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img {
+          float: left;
+          margin: 0;
+          width: 50%;
+          padding: 0%;
+          height: 100%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img img {
+            margin: 0 auto;
+            width: 60%;
+            display: block; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt {
+          width: 47.75602%;
+          display: inline-block;
+          float: left;
+          padding: 0; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box {
+            height: 35px;
+            display: block;
+            padding: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box .car-icons {
+              width: 12%;
+              float: left;
+              display: inline-block;
+              margin: 1%;
+              height: auto; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(4) {
+            margin: 5px 0px 5px 0px;
+            width: 100%;
+            font-size: 0.9em;
+            line-height: 30px;
+            text-align: left;
+            clear: both; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 1em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(2) {
+            color: #00CCFF;
+            font-size: 0.9em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(3) {
+            color: #999999;
+            font-style: italic;
+            font-size: 0.85em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton {
+            width: 36.727236%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a {
+              display: block;
+              background-color: #FC7D3C;
+              background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+              /* FF3.6 */
+              background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+              /* Saf4+, Chrome */
+              background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+              /* IE6├ó´┐¢´┐¢IE9 */
+              color: #FFFFFF;
+              height: 100%;
+              width: 100%;
+              border-radius: 5px;
+              -moz-border-radius: 5px;
+              -webkit-border-radius: 5px;
+              text-align: center;
+              padding: 7%; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a:hover {
+              background-color: #EE2A26;
+              background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+              /* FF3.6 */
+              background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+              /* Saf4+, Chrome */
+              background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+              /* IE6├ó´┐¢´┐¢IE9 */
+              font-weight: bold; }
+  #wrapper #right_coler {
+    height: 900px;
+    width: 100%;
+    margin: 0px;
+    border: none; }
+    #wrapper #right_coler .card {
+      height: 340px;
+      width: 100%;
+      margin: 0px 0px 0.5em 0.8%;
+      border: none;
+      background-color: #FFFFFF;
+      display: inline-block; }
+      #wrapper #right_coler .card h2 {
+        font-size: 1.1em;
+        color: #FFFFFF;
+        height: auto;
+        margin: 1% auto;
+        line-height: 35px;
+        font-family: "Signika", Geneva, arial, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 0.05em; }
+      #wrapper #right_coler .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper #right_coler .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto;
+          padding: 0;
+          display: block; }
+        #wrapper #right_coler .card .card-section p {
+          font-size: 0.70em;
+          color: #FFFFFF;
+          width: 100%;
+          margin: 4% auto;
+          height: auto;
+          font-family: "Signika", Geneva, arial, sans-serif;
+          letter-spacing: 0.05em;
+          display: block;
+          line-height: 1.8em;
+          font-weight: 100; }
+        #wrapper #right_coler .card .card-section .link_btn {
+          width: 60.37931%;
+          height: 35px;
+          margin: 1% auto;
+          font-family: "Signika", Geneva, arial, sans-serif;
+          line-height: 35px;
+          text-align: center;
+          font-size: 1em;
+          padding: 0;
+          background-color: #FC7D3C;
+          background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+          /* FF3.6 */
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+          /* Saf4+, Chrome */
+          background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+          /* IE6├ó´┐¢´┐¢IE9 */
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          display: block;
+          color: #FFFFFF; }
+          #wrapper #right_coler .card .card-section .link_btn:hover {
+            background-color: #EE2A26;
+            background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+            /* FF3.6 */
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+            /* Saf4+, Chrome */
+            background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+            /* IE6├ó´┐¢´┐¢IE9 */
+            font-weight: bold;
+            width: 60.37931%; }
+    #wrapper #right_coler #image5 {
+      background-color: #747877;
+      background-image: -moz-linear-gradient(top, #747877, #A2A5A5);
+      /* FF3.6 */
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #747877), color-stop(1, #A2A5A5));
+      /* Saf4+, Chrome */
+      background-image: linear-gradient(top, #747877, #A2A5A5);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+      /* IE6├ó´┐¢´┐¢IE9 */ }
+      #wrapper #right_coler #image5 p {
+        font-size: 0.65em;
+        color: #FFFFFF;
+        width: 100%;
+        margin: 0;
+        height: auto;
+        font-family: "Signika", Geneva, arial, sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 2em;
+        font-weight: 100;
+        letter-spacing: 0.05em; }
+      #wrapper #right_coler #image5 form {
+        width: 90%;
+        margin: 4% auto; }
+        #wrapper #right_coler #image5 form input[type="text"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="email"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="submit"] {
+          width: 60.379%;
+          height: 35px;
+          line-height: 2px;
+          margin: 0 auto;
+          font-family: "Signika", Geneva, arial, sans-serif;
+          border: 0;
+          display: block;
+          padding: 7%;
+          background-color: #FC7D3C;
+          background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+          /* FF3.6 */
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+          /* Saf4+, Chrome */
+          background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+          /* IE6├ó´┐¢´┐¢IE9 */
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          color: #FFFFFF; }
+        #wrapper #right_coler #image5 form input[type="submit"]:hover {
+          line-height: 2px;
+          color: #FFFFFF;
+          background-color: #EE2A26;
+          background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+          /* FF3.6 */
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+          /* Saf4+, Chrome */
+          background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+          /* IE6├ó´┐¢´┐¢IE9 */
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          font-weight: bold; }
+    #wrapper #right_coler #image2 {
+      background-color: #ff7f13;
+      background-image: -moz-linear-gradient(top, #ff7f13, #ffb260);
+      /* FF3.6 */
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff7f13), color-stop(1, #ffb260));
+      /* Saf4+, Chrome */
+      background-image: linear-gradient(top, #ff7f13, #ffb260);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+      /* IE6├ó´┐¢´┐¢IE9 */
+      margin-top: 22%; }
+    #wrapper #right_coler #image3 {
+      background-color: #0B4763;
+      background-image: -moz-linear-gradient(top, #0B4763, #3E7D9A);
+      /* FF3.6 */
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0B4763), color-stop(1, #3E7D9A));
+      /* Saf4+, Chrome */
+      background-image: linear-gradient(top, #0B4763, #3E7D9A);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+      /* IE6├ó´┐¢´┐¢IE9 */ }
+  #wrapper #worldsearchform {
+    background-color: #3399CC;
+    padding: 1%;
+    margin: 0px;
+    width: 55%;
+    display: block;
+    height: auto; }
+    #wrapper #worldsearchform h2 {
+      font-size: 1.3em;
+      margin: 0px 0px 2% 0;
+      line-height: 30px;
+      font-family: "Signika", Geneva, arial, sans-serif;
+      font-weight: bold;
+      width: 70%;
+      color: #FFFFFF; }
+    #wrapper #worldsearchform .searchform {
+      width: 80%;
+      height: 40px;
+      display: block;
+      /*end of searchform*/ }
+      #wrapper #worldsearchform .searchform ul {
+        width: 100%;
+        margin: 0;
+        height: 100%; }
+      #wrapper #worldsearchform .searchform ul li {
+        width: 50%;
+        display: inline-block;
+        float: left; }
+      #wrapper #worldsearchform .searchform ul li input {
+        margin: 0;
+        width: 100%;
+        height: 35px;
+        display: block; }
+      #wrapper #worldsearchform .searchform ul li input[type="submit"] {
+        font-size: 1.5em;
+        margin: 0 0 0 5%;
+        padding: 0;
+        display: block; }
+      #wrapper #worldsearchform .searchform .searchform_btn {
+        width: 120px;
+        height: 34px;
+        font-size: 1em;
+        color: #FFFFFF;
+        font-family: "Signika", Geneva, arial, sans-serif;
+        border: none;
+        line-height: 35px;
+        background-color: #EF3528;
+        background-color: #FC7D3C;
+        background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+        /* FF3.6 */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+        /* Saf4+, Chrome */
+        background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+        /* IE6├ó´┐¢´┐¢IE9 */
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        color: #FFFFFF; }
+      #wrapper #worldsearchform .searchform .searchform_btn:hover {
+        background-color: #EE2A26;
+        background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+        /* FF3.6 */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+        /* Saf4+, Chrome */
+        background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+        /* IE6├ó´┐¢´┐¢IE9 */
+        font-weight: bold; }
+  #wrapper .destinations {
+    color: #EF3528;
+    height: auto;
+    margin: 10px 0px 0px 10px;
+    display: inline-block;
+    float: left;
+    width: 15.094333%; }
+    #wrapper .destinations ul {
+      list-style: none; }
+      #wrapper .destinations ul li {
+        list-style: none;
+        display: block;
+        margin: 0px;
+        font-family: "Signika", Geneva, arial, sans-serif;
+        height: 30px;
+        line-height: 30px; }
+        #wrapper .destinations ul li a {
+          width: 100%;
+          text-decoration: none;
+          height: 100%;
+          line-height: 30px;
+          display: block;
+          font-size: 0.9em; }
+        #wrapper .destinations ul li a:hover {
+          text-decoration: none;
+          color: #EF3528; }
+      #wrapper .destinations ul li:nth-of-type(1) {
+        font-size: 1.2em;
+        color: #EF3528;
+        height: 40px;
+        line-height: 40px; }
+  #wrapper .card {
+    float: left;
+    height: 340px;
+    width: 23.9999%;
+    margin: 0px 0px 0.5em 0.8%;
+    border: none;
+    background-color: #FFFFFF;
+    display: inline-block; }
+    #wrapper .card h2 {
+      font-size: 1.3em;
+      color: #FFFFFF;
+      height: auto;
+      margin: 1% auto;
+      line-height: 35px;
+      font-family: "Signika", Geneva, arial, sans-serif;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 0.05em; }
+    #wrapper .card .card-section {
+      padding: 0.5em 1rem; }
+      #wrapper .card .card-section .front_img {
+        width: 90%;
+        margin: 1% auto;
+        padding: 0;
+        display: block; }
+      #wrapper .card .card-section p {
+        font-size: 0.75em;
+        color: #FFFFFF;
+        width: 100%;
+        margin: 4% auto;
+        height: auto;
+        font-family: "Signika", Geneva, arial, sans-serif;
+        letter-spacing: 0.05em;
+        display: block;
+        line-height: 1.8em;
+        font-weight: 100; }
+      #wrapper .card .card-section .link_btn {
+        width: 55.37931%;
+        text-align: center;
+        font-size: 1em;
+        line-height: 35px;
+        margin: 1% auto;
+        font-family: "Signika", Geneva, arial, sans-serif;
+        background-color: #FC7D3C;
+        background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+        /* FF3.6 */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+        /* Saf4+, Chrome */
+        background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+        /* IE6├ó´┐¢´┐¢IE9 */
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        display: block;
+        color: #FFFFFF;
+        padding: 0; }
+        #wrapper .card .card-section .link_btn:hover {
+          background-color: #EE2A26;
+          background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+          /* FF3.6 */
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+          /* Saf4+, Chrome */
+          background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+          /* IE6├ó´┐¢´┐¢IE9 */
+          font-weight: bold;
+          width: 55.37931%; }
+  #wrapper #image1 {
+    background-color: #ff7f13;
+    background-image: -moz-linear-gradient(top, #ff7f13, #ffb260);
+    /* FF3.6 */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff7f13), color-stop(1, #ffb260));
+    /* Saf4+, Chrome */
+    background-image: linear-gradient(top, #ff7f13, #ffb260);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+    /* IE6├ó´┐¢´┐¢IE9 */ }
+  #wrapper #image2 {
+    background-color: #8DC7E2;
+    background-image: -moz-linear-gradient(top, #8DC7E2, #C6E2F0);
+    /* FF3.6 */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8DC7E2), color-stop(1, #C6E2F0));
+    /* Saf4+, Chrome */
+    background-image: linear-gradient(top, #8DC7E2, #C6E2F0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+    /* IE6├ó´┐¢´┐¢IE9 */ }
+  #wrapper #image3 {
+    background-color: #0B4763;
+    background-image: -moz-linear-gradient(top, #0B4763, #3E7D9A);
+    /* FF3.6 */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0B4763), color-stop(1, #3E7D9A));
+    /* Saf4+, Chrome */
+    background-image: linear-gradient(top, #0B4763, #3E7D9A);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+    /* IE6├ó´┐¢´┐¢IE9 */ }
+  #wrapper #newsletter {
+    background-color: #747877;
+    background-image: -moz-linear-gradient(top, #747877, #A2A5A5);
+    /* FF3.6 */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #747877), color-stop(1, #A2A5A5));
+    /* Saf4+, Chrome */
+    background-image: linear-gradient(top, #747877, #A2A5A5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+    /* IE6├ó´┐¢´┐¢IE9 */ }
+    #wrapper #newsletter h2 {
+      font-size: 1.5em;
+      color: #FFFFFF;
+      height: auto;
+      margin: 1% auto;
+      line-height: 35px;
+      font-family: "Signika", Geneva, arial, sans-serif;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 0.05em; }
+    #wrapper #newsletter p {
+      font-size: 0.75em;
+      color: #FFFFFF;
+      width: 100%;
+      margin: 4% auto;
+      height: auto;
+      font-family: "Signika", Geneva, arial, sans-serif;
+      letter-spacing: 0.05em;
+      display: block;
+      line-height: 1.8em;
+      font-weight: 100; }
+    #wrapper #newsletter .newsletter {
+      width: 96%;
+      margin: 0 auto;
+      padding: 0; }
+      #wrapper #newsletter .newsletter input[type="text"] {
+        width: 100%;
+        line-height: 30px; }
+      #wrapper #newsletter .newsletter input[type="email"] {
+        width: 100%;
+        line-height: 30px; }
+      #wrapper #newsletter .newsletter input[type="submit"] {
+        margin: 1% auto;
+        display: block;
+        width: 55.37931%;
+        line-height: 35px;
+        background-color: #FC7D3C;
+        background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+        /* FF3.6 */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+        /* Saf4+, Chrome */
+        background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+        /* IE6├ó´┐¢´┐¢IE9 */
+        color: #FFFFFF;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px; }
+      #wrapper #newsletter .newsletter input[type="submit"]:hover {
+        background-color: #EE2A26;
+        background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+        /* FF3.6 */
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+        /* Saf4+, Chrome */
+        background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+        /* IE6├ó´┐¢´┐¢IE9 */
+        font-weight: bold; }
+  #wrapper footer {
+    height: 40px;
+    width: 100%;
+    clear: both;
+    display: block;
+    font-family: "Signika", Geneva, arial, sans-serif; }
+    #wrapper footer #footer_nav {
+      background-color: #303836;
+      height: 40px;
+      width: 100%;
+      margin: 0px auto; }
+      #wrapper footer #footer_nav ul {
+        height: 40px;
+        width: 75%;
+        margin: 0px;
+        margin: 0 auto;
+        text-align: center; }
+      #wrapper footer #footer_nav li {
+        height: 40px;
+        list-style: none;
+        width: 16.66%;
+        float: left;
+        background-color: #303836;
+        display: inline-block;
+        text-align: center;
+        font-size: 1em; }
+      #wrapper footer #footer_nav li:hover {
+        background-color: #fc773c; }
+      #wrapper footer #footer_nav a {
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        color: #FFFFFF;
+        font-size: 0.85em;
+        font-family: "Signika", Geneva, arial, sans-serif;
+        display: block; }
+      #wrapper footer #footer_nav a:hover {
+        color: #FFFFFF;
+        background-color: #fc773c; }
+      #wrapper footer #footer_nav a:active {
+        background-color: #FFCC33; }
+
+/*end of wrapper*/
+/* Tablets */
+@media (max-width: 1024px) {
+  #wrapper {
+    /*header*/
+    /*Banner*/
+    /* left Column*/
+    /*end*/
+    /*destination Links*/
+    /*footer*/ }
+    #wrapper h1 {
+      font-size: 1.6em; }
+    #wrapper .copy {
+      width: 96%; }
+    #wrapper #header .top-bar .title-area {
+      /*end*/ }
+      #wrapper #header .top-bar .title-area .name h1 {
+        font-size: 2em; }
+    #wrapper #header .top-bar #primary_nav ul {
+      text-align: center; }
+      #wrapper #header .top-bar #primary_nav ul li a {
+        font-size: 0.75em; }
+    #wrapper #apDiv1 {
+      width: 44.949%;
+      height: 420px;
+      left: 50%;
+      top: 70px; }
+      #wrapper #apDiv1 h1 {
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.8em; }
+      #wrapper #apDiv1 li a {
+        font-size: 0.80em; }
+      #wrapper #apDiv1 p {
+        font-size: 0.55em;
+        height: 40px;
+        line-height: 40px; }
+        #wrapper #apDiv1 p .dropcap {
+          width: 11%;
+          height: 60%;
+          line-height: 24px; }
+      #wrapper #apDiv1 p.formnum {
+        margin: 0 0 0 0;
+        font-size: 0.7em; }
+        #wrapper #apDiv1 p.formnum .dropcap-small {
+          margin: 3%;
+          width: 15%;
+          height: 60%;
+          line-height: 24px; }
+      #wrapper #apDiv1 #booking_form p {
+        line-height: 25px;
+        height: 25px;
+        font-size: 0.8em; }
+      #wrapper #apDiv1 #booking_form a {
+        width: 20%;
+        line-height: 20px;
+        font-size: 0.8em; }
+      #wrapper #apDiv1 #booking_form li {
+        height: 45px; }
+        #wrapper #apDiv1 #booking_form li label {
+          font-size: 0.8em;
+          line-height: 45px;
+          text-indent: 5%; }
+      #wrapper #apDiv1 #booking_form .query_btn {
+        line-height: 34px;
+        width: 90%;
+        height: 34px; }
+      #wrapper #apDiv1 #booking_form .searchform_btn {
+        width: 90%;
+        height: 34px; }
+      #wrapper #apDiv1 #booking_form .pick_return, #wrapper #apDiv1 #booking_form .start_end {
+        width: 59%; }
+      #wrapper #apDiv1 #booking_form .pick_return select {
+        font-size: 0.8em; }
+      #wrapper #apDiv1 #booking_form .pickup_return {
+        list-style: none; }
+      #wrapper #apDiv1 #booking_form li.start_end #date_quote {
+        width: 45%; }
+      #wrapper #apDiv1 #booking_form li.start_end select {
+        width: 25.007%;
+        margin: 1% 0 0 0;
+        height: 35px;
+        line-height: 1.5em;
+        font-size: 0.8em; }
+    #wrapper #index_form_btn {
+      font-size: 1.6em;
+      height: 45px; }
+    #wrapper #banner {
+      height: 390px;
+      float: none; }
+      #wrapper #banner p {
+        width: 49%;
+        color: #FFFFFF;
+        margin: 0px 0px 0px 20px; }
+      #wrapper #banner figcaption {
+        font-size: 1em; }
+      #wrapper #banner #bannerimage {
+        width: 45.2602%;
+        height: 46.25531%;
+        margin-top: 15px; }
+      #wrapper #banner .big {
+        font-size: 2.3em; }
+    #wrapper #right_coler {
+      width: 100%;
+      border: none; }
+      #wrapper #right_coler .card {
+        height: 285px;
+        margin: 0px 0px 0.5em 0.8%;
+        border: none; }
+        #wrapper #right_coler .card h2 {
+          font-size: 0.95em;
+          letter-spacing: 0.05em;
+          line-height: 30px; }
+        #wrapper #right_coler .card .card-section {
+          padding: 0.5em 1rem; }
+          #wrapper #right_coler .card .card-section .front_img {
+            width: 90%;
+            margin: 1% auto; }
+          #wrapper #right_coler .card .card-section p {
+            font-size: 0.60em;
+            margin: 4% auto; }
+          #wrapper #right_coler .card .card-section .link_btn {
+            width: 55.37931%;
+            margin: 1% auto;
+            text-align: center;
+            font-size: 0.9em; }
+            #wrapper #right_coler .card .card-section .link_btn:hover {
+              font-size: 0.9em; }
+      #wrapper #right_coler #image5 p {
+        font-size: 0.65em;
+        line-height: 2em; }
+      #wrapper #right_coler #image5 form {
+        width: 90%;
+        margin: 4% auto; }
+        #wrapper #right_coler #image5 form input[type="text"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="email"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="submit"] {
+          width: 64.379%;
+          height: 35px;
+          line-height: 2px;
+          margin: 0 auto;
+          font-family: "Signika", Geneva, arial, sans-serif;
+          border: 0;
+          display: block;
+          padding: 7%; }
+        #wrapper #right_coler #image5 form input[type="submit"]:hover {
+          line-height: 2px;
+          font-weight: bold; }
+      #wrapper #right_coler #image2 {
+        margin-top: 22%; }
+    #wrapper #left_column {
+      /*end*/
+      /*Contact form*/ }
+      #wrapper #left_column h1 {
+        color: #000000;
+        text-align: left;
+        margin: 2% 0;
+        width: 90%;
+        font-size: 1.6em;
+        height: 40px;
+        line-height: 40px; }
+      #wrapper #left_column h3 {
+        font-size: 1.15em; }
+      #wrapper #left_column p {
+        font-size: 0.8em;
+        line-height: 1.8em; }
+      #wrapper #left_column #contact_form {
+        width: 90%;
+        height: 500px;
+        margin-left: 2%; }
+        #wrapper #left_column #contact_form label {
+          width: 20%;
+          font-size: 1em; }
+        #wrapper #left_column #contact_form input[type="submit"] {
+          margin: 5px 0px 0px 20%; }
+    #wrapper .tabs {
+      border: none; }
+      #wrapper .tabs li.tabs-title {
+        width: 15%;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px; }
+        #wrapper .tabs li.tabs-title a {
+          width: 100%;
+          text-align: center; }
+          #wrapper .tabs li.tabs-title a:hover {
+            border-top: solid #e6e6e6 0.5px;
+            border-right: solid #e6e6e6 0.5px;
+            border-left: solid #e6e6e6 0.5px; }
+    #wrapper .tabs-content {
+      transition: all 0.5s ease; }
+      #wrapper .tabs-content .tabs-panel .clearfix {
+        display: inline-block;
+        clear: both; }
+      #wrapper .tabs-content .tabs-panel .specials_box {
+        width: 48%;
+        height: 300px;
+        margin-left: 8px; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box {
+          width: 27.2716%;
+          height: 150px; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
+            display: block;
+            text-align: center;
+            padding: 7%;
+            width: 50%;
+            font-size: 1.3em;
+            line-height: 0.8em; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
+              font-size: 37%;
+              display: block; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn {
+            float: right;
+            width: 90%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a {
+              height: 35px;
+              line-height: 35px;
+              margin: 0 auto; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a:hover {
+              font-weight: bold; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_box_img {
+          width: 100%;
+          height: 140px;
+          padding: 2%;
+          background-color: #185F79;
+          margin-bottom: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section .car {
+          width: 90%;
+          margin: 0 auto;
+          padding: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section h4 {
+          color: #FFCC33;
+          font-weight: bold;
+          font-size: 0.9em; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
+          width: 94.44444%;
+          margin: 0;
+          font-size: 0.75em;
+          display: inline-block; }
+        #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
+          width: 305px;
+          height: 150px;
+          padding: 2%; }
+          #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt li {
+            font-size: 0.7em;
+            line-height: 1.7em;
+            margin: 0px 0px 0px 5px; }
+      #wrapper .tabs-content .tabs-panel .cars_box {
+        height: 220px;
+        margin-bottom: 1.5%; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img {
+          width: 50%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img img {
+            margin: 0 auto;
+            width: 60%;
+            display: block; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt {
+          width: 47.75602%;
+          display: inline-block; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box {
+            height: 35px; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box .car-icons {
+              width: 12%;
+              margin: 1%;
+              height: auto; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(4) {
+            margin: 5px 0px 5px 0px;
+            width: 100%;
+            font-size: 0.9em;
+            line-height: 30px;
+            text-align: left;
+            clear: both; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(1) {
+            font-size: 1em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(2) {
+            font-size: 0.9em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(3) {
+            font-size: 0.85em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton {
+            width: 36.727236%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a {
+              color: #FFFFFF;
+              height: 100%;
+              text-align: center;
+              padding: 7%; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a:hover {
+              font-weight: bold; }
+    #wrapper .destinations {
+      width: 15.094333%;
+      /*end*/ }
+      #wrapper .destinations ul {
+        list-style: none; }
+        #wrapper .destinations ul li {
+          height: 30px;
+          line-height: 30px; }
+          #wrapper .destinations ul li a {
+            font-size: 0.9em; }
+          #wrapper .destinations ul li a:hover {
+            font-size: 0.9em; }
+        #wrapper .destinations ul li:nth-of-type(1) {
+          font-size: 1.2em;
+          height: 40px;
+          line-height: 40px; }
+    #wrapper #worldsearchform {
+      width: 55%; }
+      #wrapper #worldsearchform h2 {
+        font-size: 1.1em; }
+    #wrapper .card {
+      float: left;
+      height: 340px;
+      width: 23.9999%;
+      margin: 0px 0px 0.5em 0.8%;
+      border: none;
+      display: inline-block; }
+      #wrapper .card h2 {
+        font-size: 1.1em;
+        margin: 1% auto;
+        line-height: 30px;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto;
+          padding: 0;
+          display: block; }
+        #wrapper .card .card-section p {
+          font-size: 0.70em;
+          margin: 4% auto;
+          height: auto;
+          letter-spacing: 0.05em;
+          line-height: 1.8em; }
+        #wrapper .card .card-section .link_btn {
+          width: 66.379%;
+          font-size: 0.9em; }
+          #wrapper .card .card-section .link_btn:hover {
+            font-weight: bold;
+            font-size: 0.9em;
+            width: 66.379%; }
+    #wrapper #newsletter h2 {
+      font-size: 1.1em;
+      line-height: 30px; }
+    #wrapper #newsletter p {
+      font-size: 0.65em;
+      margin: 4% auto; }
+    #wrapper #newsletter .newsletter {
+      width: 90%; }
+      #wrapper #newsletter .newsletter input[type="text"] {
+        line-height: 30px; }
+      #wrapper #newsletter .newsletter input[type="email"] {
+        line-height: 30px; }
+      #wrapper #newsletter .newsletter input[type="submit"] {
+        margin: 1% auto;
+        width: 66.379%;
+        line-height: 5px;
+        padding: 7%; }
+    #wrapper footer #footer_nav {
+      width: 100%;
+      margin: 0px auto; }
+      #wrapper footer #footer_nav li {
+        width: 16.6459%; }
+      #wrapper footer #footer_nav a {
+        font-size: 0.7em; } }
+@media (max-width: 980px) {
+  #wrapper {
+    width: 96%;
+    /*destination Links*/
+    /*end of info boxes*/ }
+    #wrapper h1 {
+      font-size: 1.5em; }
+    #wrapper #header .top-bar .title-area .name h1 {
+      font-size: 1.9em; }
+    #wrapper #apDiv1 {
+      width: 47.949%;
+      height: 420px;
+      left: 50%;
+      top: 70px; }
+      #wrapper #apDiv1 h1 {
+        font-size: 1.6em; }
+      #wrapper #apDiv1 li a {
+        font-size: 0.70em; }
+      #wrapper #apDiv1 p {
+        font-size: 0.55em;
+        height: 40px;
+        line-height: 40px; }
+        #wrapper #apDiv1 p .dropcap {
+          width: 11%;
+          height: 60%;
+          line-height: 24px; }
+      #wrapper #apDiv1 p.formnum {
+        margin: 0 0 0 0;
+        font-size: 0.7em; }
+        #wrapper #apDiv1 p.formnum .dropcap-small {
+          margin: 3%;
+          width: 15%;
+          line-height: 24px; }
+      #wrapper #apDiv1 #booking_form p {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form a {
+        width: 20%;
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form li {
+        height: 45px; }
+        #wrapper #apDiv1 #booking_form li label {
+          font-size: 0.75em; }
+      #wrapper #apDiv1 #booking_form .searchform_btn {
+        width: 90%;
+        height: 34px; }
+      #wrapper #apDiv1 #booking_form .pick_return, #wrapper #apDiv1 #booking_form .start_end {
+        width: 59%; }
+      #wrapper #apDiv1 #booking_form .pick_return select {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .pickup_return {
+        list-style: none; }
+      #wrapper #apDiv1 #booking_form li.start_end #date_quote {
+        width: 45%; }
+      #wrapper #apDiv1 #booking_form li.start_end select {
+        line-height: 1.5em;
+        font-size: 0.8em; }
+    #wrapper #left_column h1 {
+      font-size: 1.6em;
+      width: 100%; }
+    #wrapper #left_column h3 {
+      font-size: 1.2em; }
+    #wrapper #left_column p {
+      font-size: 0.75em; }
+    #wrapper #left_column #contact_form label {
+      width: 20%;
+      font-size: 0.9em; }
+    #wrapper #right_coler {
+      width: 100%;
+      border: none; }
+      #wrapper #right_coler .card {
+        height: 340px;
+        margin: 0px 0px 0.5em 0.8%;
+        border: none; }
+        #wrapper #right_coler .card h2 {
+          font-size: 0.95em;
+          letter-spacing: 0.05em; }
+        #wrapper #right_coler .card .card-section .front_img {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section p {
+          font-size: 0.70em;
+          margin: 4% auto; }
+        #wrapper #right_coler .card .card-section .link_btn {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section a {
+          line-height: 34px;
+          font-size: 0.9em; }
+        #wrapper #right_coler .card .card-section a:hover {
+          line-height: 34px; }
+      #wrapper #right_coler #image5 p {
+        font-size: 0.60em;
+        margin: 0 auto;
+        line-height: 2em; }
+      #wrapper #right_coler #image5 form {
+        width: 90%;
+        margin: 4% auto; }
+        #wrapper #right_coler #image5 form input[type="text"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="email"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="submit"] {
+          width: 64.379%;
+          height: 35px;
+          line-height: 2px;
+          margin: 0 auto;
+          font-family: "Signika", Geneva, arial, sans-serif;
+          border: 0;
+          display: block;
+          padding: 7%; }
+        #wrapper #right_coler #image5 form input[type="submit"]:hover {
+          line-height: 2px;
+          font-weight: bold; }
+      #wrapper #right_coler #image2 {
+        margin-top: 22%; }
+    #wrapper .tabs {
+      border: none; }
+      #wrapper .tabs li.tabs-title {
+        width: 15%;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px; }
+        #wrapper .tabs li.tabs-title a {
+          width: 100%;
+          text-align: center; }
+          #wrapper .tabs li.tabs-title a:hover {
+            border-top: solid #e6e6e6 0.5px;
+            border-right: solid #e6e6e6 0.5px;
+            border-left: solid #e6e6e6 0.5px; }
+    #wrapper .tabs-content {
+      transition: all 0.5s ease; }
+      #wrapper .tabs-content .tabs-panel .clearfix {
+        display: inline-block;
+        clear: both; }
+      #wrapper .tabs-content .tabs-panel .specials_box {
+        width: 48%;
+        height: 300px;
+        margin-left: 8px; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box {
+          float: right;
+          width: 27.2716%;
+          height: 150px;
+          clear: both; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
+            font-family: "Signika", Geneva, arial, sans-serif;
+            float: right;
+            margin: 10px 0px 30px 0px;
+            display: block;
+            text-align: center;
+            background-color: #38BFF3;
+            background-image: -moz-linear-gradient(top, #38BFF3, #AFE5FC);
+            /* FF3.6 */
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #38BFF3), color-stop(1, #AFE5FC));
+            /* Saf4+, Chrome */
+            background-image: linear-gradient(top, #38BFF3, #AFE5FC);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+            /* IE6├ó´┐¢´┐¢IE9 */
+            padding: 7%;
+            width: 50%;
+            color: #FFFFFF;
+            font-size: 1.5em;
+            line-height: 0.8em;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
+              font-size: 37%;
+              display: block; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn {
+            float: right;
+            width: 90%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a {
+              font-family: "Signika", Geneva, arial, sans-serif;
+              height: 35px;
+              line-height: 35px;
+              margin: 0 auto;
+              font-family: "Signika", Geneva, arial, sans-serif;
+              border: 0;
+              display: block;
+              background-color: #FC7D3C;
+              background-image: -moz-linear-gradient(top, #FC7D3C, #EE2A26);
+              /* FF3.6 */
+              background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FC7D3C), color-stop(1, #EE2A26));
+              /* Saf4+, Chrome */
+              background-image: linear-gradient(top, #FC7D3C, #EE2A26);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+              /* IE6├ó´┐¢´┐¢IE9 */
+              border-radius: 5px;
+              -moz-border-radius: 5px;
+              -webkit-border-radius: 5px;
+              color: #FFFFFF;
+              text-align: center; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a:hover {
+              background-color: #EE2A26;
+              background-image: -moz-linear-gradient(top, #EE2A26, #FC7D3C);
+              /* FF3.6 */
+              background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EE2A26), color-stop(1, #FC7D3C));
+              /* Saf4+, Chrome */
+              background-image: linear-gradient(top, #EE2A26, #FC7D3C);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
+              /* IE6├ó´┐¢´┐¢IE9 */
+              font-weight: bold; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_box_img {
+          width: 100%;
+          height: 140px;
+          padding: 2%;
+          color: #FFFFFF;
+          background-color: #185F79;
+          margin-bottom: 0;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section .car {
+          width: 100%;
+          margin: 0;
+          padding: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section h4 {
+          color: #FFCC33;
+          font-weight: bold;
+          font-size: 0.85em; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
+          width: 94.44444%;
+          margin: 3px 0px 0px 3px;
+          font-size: 0.7em;
+          display: inline-block; }
+        #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
+          width: 310px;
+          height: 150px;
+          padding: 2%; }
+          #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt li {
+            font-size: 0.75em;
+            line-height: 1.7em;
+            margin: 0px 0px 0px 5px;
+            height: auto; }
+      #wrapper .tabs-content .tabs-panel .cars_box {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 1.5%; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img {
+          width: 50%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img img {
+            margin: 0 auto;
+            width: 60%;
+            display: block; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt {
+          width: 47.75602%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box {
+            height: 35px; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box .car-icons {
+              width: 15%;
+              float: left;
+              display: inline-block;
+              margin: 1%;
+              height: auto; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(4) {
+            margin: 5px 0px 5px 0px;
+            font-size: 0.9em;
+            line-height: 30px; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 1em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(2) {
+            color: #00CCFF;
+            font-size: 0.9em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(3) {
+            color: #999999;
+            font-style: italic;
+            font-size: 0.85em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton {
+            width: 36.727236%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a {
+              text-align: center;
+              padding: 7%; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a:hover {
+              font-weight: bold; }
+    #wrapper .card {
+      float: left;
+      height: 300px;
+      width: 23.9999%;
+      margin: 0px 0px 0.5em 0.8%; }
+      #wrapper .card h2 {
+        font-size: 0.95em;
+        margin: 1% auto;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto; }
+        #wrapper .card .card-section p {
+          font-size: 0.7em;
+          margin: 4% auto;
+          line-height: 1.8em; }
+        #wrapper .card .card-section .link_btn {
+          margin: 1% auto;
+          font-size: 0.9em; }
+          #wrapper .card .card-section .link_btn:hover {
+            font-weight: bold; }
+    #wrapper .destinations {
+      /*end*/ }
+      #wrapper .destinations ul {
+        list-style: none; }
+        #wrapper .destinations ul li a {
+          font-size: 0.8em; }
+        #wrapper .destinations ul li a:hover {
+          font-size: 0.8em; }
+        #wrapper .destinations ul li:nth-of-type(1) {
+          font-size: 1.1em; }
+    #wrapper #worldsearchform {
+      width: 55%; }
+      #wrapper #worldsearchform h2 {
+        font-size: 1.1em; }
+    #wrapper #newsletter h2 {
+      font-size: 0.9em; }
+    #wrapper #newsletter p {
+      font-size: 0.70em; }
+    #wrapper #newsletter .newsletter input[type="text"] {
+      line-height: 30px; }
+    #wrapper #newsletter .newsletter input[type="email"] {
+      line-height: 30px; }
+    #wrapper #newsletter .newsletter input[type="submit"] {
+      width: 65.37931%; } }
+@media (max-width: 800px) {
+  [data-abide].error small.error {
+    font-size: 0.75em;
+    margin-bottom: 0.3rem; }
+
+  #wrapper {
+    /*Banner*/
+    /*destination Links*/ }
+    #wrapper h1 {
+      font-size: 1.4em; }
+    #wrapper #header .top-bar .title-area .name h1 {
+      font-size: 1.8em; }
+    #wrapper #header .top-bar #primary_nav ul li a {
+      padding: 0;
+      line-height: 60px;
+      font-size: 0.7em; }
+      #wrapper #header .top-bar #primary_nav ul li a:hover {
+        font-size: 0.75em; }
+    #wrapper #apDiv1 {
+      width: 51.949%;
+      height: 420px;
+      left: 47%;
+      top: 70px; }
+      #wrapper #apDiv1 h1 {
+        font-size: 1.4em; }
+      #wrapper #apDiv1 li a {
+        font-size: 0.70em; }
+      #wrapper #apDiv1 p {
+        font-size: 0.5em;
+        height: 40px;
+        line-height: 40px; }
+        #wrapper #apDiv1 p .dropcap {
+          width: 11%;
+          height: 60%;
+          line-height: 24px; }
+      #wrapper #apDiv1 p.formnum {
+        margin: 0 0 0 0;
+        font-size: 0.6em; }
+        #wrapper #apDiv1 p.formnum .dropcap-small {
+          margin: 3%;
+          width: 15%;
+          line-height: 24px; }
+      #wrapper #apDiv1 #booking_form p {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form a {
+        width: 20%;
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form li {
+        height: 45px; }
+        #wrapper #apDiv1 #booking_form li label {
+          font-size: 0.75em; }
+      #wrapper #apDiv1 #booking_form .query_btn {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .query_btn:hover {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .searchform_btn {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .searchform_btn:hover {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .pick_return, #wrapper #apDiv1 #booking_form .start_end {
+        width: 59%; }
+      #wrapper #apDiv1 #booking_form .pick_return select {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .pickup_return {
+        list-style: none; }
+      #wrapper #apDiv1 #booking_form li.start_end #date_quote {
+        width: 45%; }
+      #wrapper #apDiv1 #booking_form li.start_end select {
+        line-height: 1.5em;
+        font-size: 0.7em; }
+    #wrapper #banner {
+      height: 344px; }
+      #wrapper #banner p {
+        width: 49%;
+        margin: 0px 0px 0px 20px; }
+      #wrapper #banner figcaption {
+        font-size: 1em; }
+      #wrapper #banner #bannerimage {
+        width: 45.2602%;
+        height: 46.25531%;
+        margin-top: 15px; }
+      #wrapper #banner .big {
+        font-size: 2.2em;
+        width: 50%; }
+    #wrapper #left_column h1 {
+      font-size: 1.5em;
+      width: 100%; }
+    #wrapper #left_column h3 {
+      font-size: 1.1em; }
+    #wrapper #left_column p {
+      font-size: 0.8em; }
+    #wrapper #right_coler {
+      width: 100%;
+      border: none; }
+      #wrapper #right_coler .card {
+        height: 340px;
+        margin: 0px 0px 0.5em 0.8%; }
+        #wrapper #right_coler .card h2 {
+          font-size: 0.8em;
+          letter-spacing: 0.05em; }
+        #wrapper #right_coler .card .card-section .front_img {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section p {
+          font-size: 0.70em;
+          margin: 4% auto; }
+        #wrapper #right_coler .card .card-section .link_btn {
+          margin: 1% auto;
+          width: 90.379%;
+          font-size: 0.9em; }
+          #wrapper #right_coler .card .card-section .link_btn:hover {
+            width: 90.379%; }
+      #wrapper #right_coler #image5 p {
+        font-size: 0.65em;
+        margin: 0 auto;
+        line-height: 2em; }
+      #wrapper #right_coler #image5 form {
+        width: 90%;
+        margin: 4% auto; }
+        #wrapper #right_coler #image5 form input[type="text"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="email"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="submit"] {
+          width: 80.379%;
+          height: 35px;
+          margin: 0 auto;
+          padding: 7%; }
+        #wrapper #right_coler #image5 form input[type="submit"]:hover {
+          line-height: 2px;
+          font-weight: bold; }
+      #wrapper #right_coler #image2 {
+        margin-top: 22%; }
+    #wrapper .tabs {
+      border: none; }
+      #wrapper .tabs li.tabs-title {
+        width: 20%;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px; }
+        #wrapper .tabs li.tabs-title a {
+          width: 100%;
+          text-align: center; }
+          #wrapper .tabs li.tabs-title a:hover {
+            border-top: solid #e6e6e6 0.5px;
+            border-right: solid #e6e6e6 0.5px;
+            border-left: solid #e6e6e6 0.5px; }
+    #wrapper .tabs-content {
+      transition: all 0.5s ease; }
+      #wrapper .tabs-content .tabs-panel .clearfix {
+        display: inline-block;
+        clear: both; }
+      #wrapper .tabs-content .tabs-panel .specials_box {
+        width: 48%;
+        height: 265px;
+        margin: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box {
+          width: 27.2716%;
+          height: 150px; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
+            margin: 10px 0px 30px 0px;
+            padding: 7%;
+            width: 50%;
+            font-size: 1.1em;
+            line-height: 0.8em; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
+              font-size: 37%;
+              display: block; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn {
+            width: 90%; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a {
+              height: 35px;
+              line-height: 35px;
+              margin: 0 auto;
+              text-align: center; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a:hover {
+              font-weight: bold; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_box_img {
+          height: 115px;
+          padding: 2%;
+          float: right;
+          background-color: #185F79; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section {
+          width: 50%;
+          padding: 0; }
+          #wrapper .tabs-content .tabs-panel .specials_box .media-object-section .car {
+            width: 100%;
+            margin: 0;
+            padding: 0; }
+          #wrapper .tabs-content .tabs-panel .specials_box .media-object-section h4 {
+            color: #FFCC33;
+            font-weight: bold;
+            font-size: 0.85em; }
+          #wrapper .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
+            width: 94.44444%;
+            margin: 3px 0px 0px 3px;
+            font-size: 0.7em;
+            display: inline-block; }
+        #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
+          width: 240px;
+          height: 150px;
+          padding: 2%; }
+          #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt li {
+            font-size: 0.70em;
+            line-height: 1.7em;
+            margin: 0px 0px 0px 5px;
+            height: auto; }
+      #wrapper .tabs-content .tabs-panel .cars_box {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 1.5%;
+        display: block; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img {
+          float: left;
+          margin: 0;
+          width: 50%;
+          padding: 0%;
+          height: 100%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img img {
+            margin: 0 auto;
+            width: 60%;
+            display: block; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt {
+          width: 47.75602%;
+          display: inline-block;
+          float: left;
+          padding: 0; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box {
+            height: 35px;
+            display: block;
+            padding: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box .car-icons {
+              width: 15%;
+              float: left;
+              display: inline-block;
+              margin: 1%;
+              height: auto; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(4) {
+            margin: 5px 0px 5px 0px;
+            width: 100%;
+            font-size: 0.9em;
+            line-height: 30px;
+            text-align: left;
+            clear: both; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 1em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(2) {
+            color: #00CCFF;
+            font-size: 0.9em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(3) {
+            color: #999999;
+            font-style: italic;
+            font-size: 0.85em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton {
+            width: 41.727%; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a {
+              color: #FFFFFF;
+              height: 100%;
+              width: 100%;
+              text-align: center;
+              padding: 7%; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a:hover {
+              font-weight: bold; }
+    #wrapper .destinations {
+      width: 15.094333%;
+      /*end*/ }
+      #wrapper .destinations ul {
+        list-style: none; }
+        #wrapper .destinations ul li {
+          height: 30px;
+          line-height: 30px; }
+          #wrapper .destinations ul li a {
+            font-size: 0.8em; }
+          #wrapper .destinations ul li a:hover {
+            font-size: 0.8em; }
+        #wrapper .destinations ul li:nth-of-type(1) {
+          font-size: 1.2em; }
+    #wrapper #worldsearchform {
+      width: 55%; }
+      #wrapper #worldsearchform h2 {
+        font-size: 1.1em; }
+      #wrapper #worldsearchform .searchform ul li input[type="submit"] {
+        font-size: 1.2em; }
+    #wrapper .card {
+      height: 315px;
+      width: 23.9999%;
+      margin: 0px 0px 0.5em 0.8%; }
+      #wrapper .card h2 {
+        font-size: 0.95em;
+        margin: 1% auto;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto; }
+        #wrapper .card .card-section p {
+          font-size: 0.65em;
+          margin: 4% auto;
+          line-height: 1.8em; }
+        #wrapper .card .card-section .link_btn {
+          margin: 1% auto;
+          width: 80.379%;
+          font-size: 0.85em; }
+          #wrapper .card .card-section .link_btn:hover {
+            font-weight: bold;
+            width: 80.379%; }
+    #wrapper #newsletter h2 {
+      font-size: 0.95em; }
+    #wrapper #newsletter p {
+      font-size: 0.7em;
+      letter-spacing: 0.05em; }
+    #wrapper #newsletter .newsletter input[type="text"] {
+      line-height: 30px;
+      padding: 0.3rem; }
+    #wrapper #newsletter .newsletter input[type="email"] {
+      line-height: 30px;
+      padding: 0.3rem; }
+    #wrapper #newsletter .newsletter input[type="submit"] {
+      margin: 1% auto;
+      width: 80.379%;
+      line-height: 5px;
+      padding: 10%; }
+    #wrapper #newsletter .newsletter input[type="submit"]:hover {
+      width: 80.379%; } }
+@media (max-width: 768px) {
+  [data-abide].error small.error {
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem; }
+
+  #wrapper {
+    /*destination Links*/ }
+    #wrapper h1 {
+      font-size: 1.4em; }
+    #wrapper #apDiv1 {
+      width: 53.949%;
+      height: 420px;
+      left: 45%;
+      top: 70px; }
+      #wrapper #apDiv1 h1 {
+        font-size: 1.4em; }
+      #wrapper #apDiv1 li a {
+        font-size: 0.70em; }
+      #wrapper #apDiv1 p {
+        font-size: 0.5em;
+        height: 40px;
+        line-height: 40px; }
+        #wrapper #apDiv1 p .dropcap {
+          width: 11%;
+          height: 60%;
+          line-height: 24px; }
+      #wrapper #apDiv1 p.formnum {
+        margin: 0 0 0 0;
+        font-size: 0.6em; }
+        #wrapper #apDiv1 p.formnum .dropcap-small {
+          margin: 3%;
+          width: 15%;
+          line-height: 24px; }
+      #wrapper #apDiv1 #booking_form p {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form a {
+        width: 20%;
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form li {
+        height: 45px; }
+        #wrapper #apDiv1 #booking_form li label {
+          font-size: 0.75em; }
+      #wrapper #apDiv1 #booking_form .query_btn {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .query_btn:hover {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .searchform_btn {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .searchform_btn:hover {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .pick_return, #wrapper #apDiv1 #booking_form .start_end {
+        width: 59%; }
+      #wrapper #apDiv1 #booking_form .pick_return select {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .pickup_return {
+        list-style: none; }
+      #wrapper #apDiv1 #booking_form li.start_end #date_quote {
+        width: 45%; }
+      #wrapper #apDiv1 #booking_form li.start_end select {
+        line-height: 1.5em;
+        font-size: 0.7em; }
+    #wrapper #header .top-bar .title-area .name h1 {
+      font-size: 1.75em; }
+    #wrapper #header .top-bar #primary_nav ul li a {
+      padding: 0;
+      line-height: 60px;
+      font-size: 0.65em; }
+      #wrapper #header .top-bar #primary_nav ul li a:hover {
+        font-size: 0.7em; }
+    #wrapper #banner {
+      height: 323px; }
+      #wrapper #banner .big {
+        width: 50%;
+        font-size: 2em; }
+      #wrapper #banner figcaption {
+        font-size: 1em; }
+    #wrapper #left_column {
+      float: left;
+      margin: 0px;
+      padding: 5px; }
+      #wrapper #left_column h1 {
+        font-size: 1.4em; }
+      #wrapper #left_column p {
+        font-size: 0.75em; }
+      #wrapper #left_column #contact_form .button_contact {
+        height: 35px;
+        margin: 5px 0px 0px 20%; }
+    #wrapper #right_coler {
+      width: 100%;
+      border: none; }
+      #wrapper #right_coler .card {
+        height: 350px;
+        margin: 0px 0px 0.5em 0.8%;
+        border: none; }
+        #wrapper #right_coler .card h2 {
+          font-size: 0.75em;
+          letter-spacing: 0.05em; }
+        #wrapper #right_coler .card .card-section .front_img {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section p {
+          font-size: 0.65em;
+          margin: 4% auto; }
+        #wrapper #right_coler .card .card-section .link_btn {
+          margin: 1% auto;
+          font-size: 0.8em; }
+          #wrapper #right_coler .card .card-section .link_btn:hover {
+            font-size: 0.8em; }
+      #wrapper #right_coler #image5 p {
+        font-size: 0.6em;
+        margin: 0 auto;
+        line-height: 2em; }
+      #wrapper #right_coler #image5 form {
+        width: 90%;
+        margin: 4% auto; }
+        #wrapper #right_coler #image5 form input[type="text"] {
+          width: 100%;
+          line-height: 30px; }
+        #wrapper #right_coler #image5 form input[type="email"] {
+          width: 100%;
+          line-height: 30px; }
+        #wrapper #right_coler #image5 form input[type="submit"] {
+          width: 90%;
+          padding: 10%; }
+        #wrapper #right_coler #image5 form input[type="submit"]:hover {
+          line-height: 2px;
+          font-weight: bold;
+          width: 90%; }
+      #wrapper #right_coler #image2 {
+        margin-top: 22%; }
+    #wrapper .tabs {
+      border: none; }
+      #wrapper .tabs li.tabs-title {
+        width: 20%;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px; }
+        #wrapper .tabs li.tabs-title a {
+          width: 100%;
+          text-align: center; }
+          #wrapper .tabs li.tabs-title a:hover {
+            border-top: solid #e6e6e6 0.5px;
+            border-right: solid #e6e6e6 0.5px;
+            border-left: solid #e6e6e6 0.5px; }
+    #wrapper .tabs-content {
+      transition: all 0.5s ease; }
+      #wrapper .tabs-content .tabs-panel .clearfix {
+        display: inline-block;
+        clear: both; }
+      #wrapper .tabs-content .tabs-panel .specials_box {
+        width: 48%;
+        height: 265px;
+        margin-left: 8px; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box {
+          float: right;
+          width: 37.2716%;
+          height: 150px;
+          clear: both; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
+            margin: 10px 0px 30px 0px;
+            padding: 7%;
+            width: 50%;
+            font-size: 1.2em;
+            line-height: 0.8em; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
+              font-size: 37%;
+              display: block; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn {
+            float: right;
+            width: 90%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a {
+              line-height: 35px;
+              margin: 0 auto;
+              text-align: center; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a:hover {
+              font-weight: bold; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_box_img {
+          width: 100%;
+          height: 115px;
+          padding: 2%;
+          background-color: #185F79;
+          margin-bottom: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section .car {
+          width: 100%;
+          margin: 0;
+          padding: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section h4 {
+          color: #FFCC33;
+          font-weight: bold;
+          font-size: 0.9em; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
+          width: 94.44444%;
+          margin: 3px 0px 0px 3px;
+          font-size: 0.7em;
+          display: inline-block; }
+        #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
+          width: 205px;
+          height: 150px;
+          padding: 2%; }
+          #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt li {
+            font-size: 0.65em;
+            line-height: 1.7em;
+            margin: 0px 0px 0px 5px;
+            height: auto; }
+      #wrapper .tabs-content .tabs-panel .cars_box {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 1.5%;
+        display: block; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img {
+          float: left;
+          margin: 0;
+          width: 50%;
+          padding: 0%;
+          height: 100%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img img {
+            margin: 0 auto;
+            width: 60%;
+            display: block; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt {
+          width: 47.75602%;
+          display: inline-block;
+          float: left;
+          padding: 0; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box {
+            height: 35px;
+            display: block;
+            padding: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box .car-icons {
+              width: 15%;
+              float: left;
+              display: inline-block;
+              margin: 1%;
+              height: auto; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(4) {
+            margin: 5px 0px 5px 0px;
+            width: 100%;
+            font-size: 0.9em;
+            line-height: 30px;
+            text-align: left;
+            clear: both; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 1em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(2) {
+            color: #00CCFF;
+            font-size: 0.9em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(3) {
+            color: #999999;
+            font-style: italic;
+            font-size: 0.85em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton {
+            width: 56.727236%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a {
+              text-align: center;
+              padding: 7%; }
+              #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a:hover {
+                font-weight: bold; }
+    #wrapper .destinations {
+      /*end*/ }
+      #wrapper .destinations ul {
+        list-style: none; }
+        #wrapper .destinations ul li a {
+          font-size: 0.8em; }
+        #wrapper .destinations ul li a:hover {
+          font-size: 0.8em; }
+        #wrapper .destinations ul li:nth-of-type(1) {
+          font-size: 1.1em; }
+    #wrapper #worldsearchform {
+      width: 55%; }
+      #wrapper #worldsearchform h2 {
+        font-size: 1.1em; }
+    #wrapper .card {
+      float: left;
+      height: 320px;
+      width: 23.9999%;
+      margin: 0px 0px 0.5em 0.8%; }
+      #wrapper .card h2 {
+        font-size: 0.95em;
+        margin: 1% auto;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto; }
+        #wrapper .card .card-section p {
+          font-size: 0.65em;
+          margin: 4% auto;
+          line-height: 1.6em; }
+        #wrapper .card .card-section .link_btn {
+          margin: 1% auto;
+          width: 90.379%;
+          font-size: 0.9em; }
+          #wrapper .card .card-section .link_btn:hover {
+            font-weight: bold; }
+    #wrapper #newsletter h2 {
+      font-size: 1em; }
+    #wrapper #newsletter p {
+      font-size: 0.7em;
+      letter-spacing: 0.01em; }
+    #wrapper #newsletter .newsletter {
+      width: 96%; }
+      #wrapper #newsletter .newsletter input[type="text"] {
+        height: 30px;
+        padding: 0.3rem; }
+      #wrapper #newsletter .newsletter input[type="email"] {
+        height: 30px;
+        padding: 0.3rem; }
+      #wrapper #newsletter .newsletter input[type="submit"] {
+        margin: 1% auto;
+        width: 70.37931%;
+        padding: 7%;
+        font-size: 0.8em; } }
+@media (max-width: 736px) {
+  #wrapper {
+    /*destination Links*/ }
+    #wrapper #apDiv1 {
+      width: 64.949%;
+      left: 32%; }
+    #wrapper #banner {
+      height: 313px; }
+      #wrapper #banner figcaption {
+        font-size: 0.9em; }
+    #wrapper #header .title-bar {
+      display: none;
+      float: right;
+      height: 100%; }
+    #wrapper #header .top-bar .title-area .name h1 {
+      font-size: 1.7em; }
+    #wrapper #header .top-bar #primary_nav ul li a {
+      font-size: 0.55em; }
+      #wrapper #header .top-bar #primary_nav ul li a:hover {
+        font-size: 0.55em; }
+    #wrapper #left_column h3 {
+      font-size: 1em; }
+    #wrapper #left_column p {
+      font-size: 0.8em; }
+    #wrapper #left_column #contact_form label {
+      font-size: 1em; }
+    #wrapper #left_column #contact_form input[type="submit"] {
+      width: 25%; }
+    #wrapper #left_column #contact_form input[type="submit"]:hover {
+      width: 25%;
+      font-weight: bold; }
+    #wrapper #right_coler {
+      width: 100%;
+      border: none; }
+      #wrapper #right_coler .card {
+        height: 340px;
+        margin: 0px 0px 0.5em 0.8%;
+        border: none; }
+        #wrapper #right_coler .card h2 {
+          font-size: 0.9em;
+          letter-spacing: 0.05em; }
+        #wrapper #right_coler .card .card-section .front_img {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section p {
+          font-size: 0.70em;
+          margin: 4% auto; }
+        #wrapper #right_coler .card .card-section .link_btn {
+          margin: 1% auto; }
+          #wrapper #right_coler .card .card-section .link_btn a {
+            font-size: 0.8em; }
+            #wrapper #right_coler .card .card-section .link_btn a:hover {
+              font-size: 0.8em; }
+      #wrapper #right_coler #image5 p {
+        font-size: 0.65em;
+        margin: 0;
+        line-height: 1.7em; }
+      #wrapper #right_coler #image5 form {
+        width: 90%;
+        margin: 4% auto; }
+        #wrapper #right_coler #image5 form input[type="text"] {
+          width: 100%; }
+        #wrapper #right_coler #image5 form input[type="email"] {
+          width: 100%; }
+        #wrapper #right_coler #image5 form input[type="submit"] {
+          width: 85.379%;
+          margin: 0 auto;
+          padding: 7%; }
+        #wrapper #right_coler #image5 form input[type="submit"]:hover {
+          font-weight: bold;
+          width: 85.379%; }
+      #wrapper #right_coler #image2 {
+        margin-top: 22%; }
+    #wrapper .tabs {
+      border: none; }
+      #wrapper .tabs li.tabs-title {
+        width: 20%; }
+        #wrapper .tabs li.tabs-title a {
+          width: 100%; }
+          #wrapper .tabs li.tabs-title a:hover {
+            border-top: solid #e6e6e6 0.5px;
+            border-right: solid #e6e6e6 0.5px;
+            border-left: solid #e6e6e6 0.5px; }
+    #wrapper .tabs-content {
+      transition: all 0.5s ease; }
+      #wrapper .tabs-content .tabs-panel .clearfix {
+        display: inline-block;
+        clear: both; }
+      #wrapper .tabs-content .tabs-panel .specials_box {
+        width: 48%;
+        height: 250px;
+        margin-left: 8px; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box {
+          float: right;
+          width: 35.272%;
+          height: 150px;
+          clear: both; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
+            margin: 10px 0px 30px 0px;
+            padding: 7%;
+            width: 50%;
+            font-size: 1em;
+            line-height: 0.8em; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
+              font-size: 42%;
+              display: block; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn {
+            float: right;
+            width: 100%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a {
+              line-height: 35px;
+              margin: 0 auto;
+              text-align: center;
+              font-size: 0.9em; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a:hover {
+              font-weight: bold;
+              font-size: 0.9em; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_box_img {
+          width: 100%;
+          height: 115px;
+          padding: 2%;
+          background-color: #185F79;
+          margin-bottom: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section .car {
+          width: 100%;
+          margin: 0;
+          padding: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section h4 {
+          color: #FFCC33;
+          font-weight: bold;
+          font-size: 0.85em; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
+          width: 94.44444%;
+          margin: 3px 0px 0px 3px;
+          font-size: 0.7em;
+          display: inline-block; }
+        #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
+          width: 190px;
+          height: 150px;
+          padding: 2%; }
+          #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt li {
+            font-size: 0.7em;
+            line-height: 1.7em;
+            margin: 0;
+            height: auto; }
+      #wrapper .tabs-content .tabs-panel .cars_box {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 1.5%;
+        display: block; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img {
+          float: left;
+          margin: 0;
+          width: 50%;
+          padding: 0%;
+          height: 100%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img img {
+            margin: 0 auto;
+            width: 60%;
+            display: block; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt {
+          width: 47.75602%;
+          padding: 0; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box {
+            height: 35px;
+            padding: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box .car-icons {
+              width: 17%;
+              margin: 1%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(4) {
+            margin: 5px 0px 5px 0px;
+            width: 100%;
+            font-size: 0.9em;
+            line-height: 30px;
+            text-align: left;
+            clear: both; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 1em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(2) {
+            color: #00CCFF;
+            font-size: 0.9em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(3) {
+            color: #999999;
+            font-style: italic;
+            font-size: 0.85em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton {
+            width: 50.727236%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a {
+              display: block;
+              text-align: center;
+              padding: 7%; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a:hover {
+              font-weight: bold; }
+    #wrapper .destinations {
+      width: 18.094333%;
+      /*end*/ }
+      #wrapper .destinations ul {
+        list-style: none; }
+        #wrapper .destinations ul li a {
+          font-size: 0.8em; }
+        #wrapper .destinations ul li a:hover {
+          font-size: 0.8em; }
+        #wrapper .destinations ul li:nth-of-type(1) {
+          font-size: 1.1em; }
+    #wrapper #worldsearchform {
+      width: 75%; }
+      #wrapper #worldsearchform h2 {
+        font-size: 1.1em; }
+      #wrapper #worldsearchform .searchform ul li input[type="submit"] {
+        font-size: 1.1em; }
+    #wrapper .card {
+      float: left;
+      height: 305px;
+      width: 23.9999%;
+      margin: 0px 0px 0.5em 0.8%; }
+      #wrapper .card h2 {
+        font-size: 0.9em;
+        margin: 1% auto;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto; }
+        #wrapper .card .card-section p {
+          font-size: 0.7em;
+          margin: 4% auto;
+          line-height: 1.8em; }
+        #wrapper .card .card-section .link_btn {
+          margin: 1% auto;
+          font-size: 0.8em;
+          width: 90%; }
+          #wrapper .card .card-section .link_btn:hover {
+            font-weight: bold;
+            font-size: 0.8em;
+            width: 90%; }
+    #wrapper #newsletter h2 {
+      font-size: 0.95em;
+      height: auto; }
+    #wrapper #newsletter p {
+      font-size: 0.7em;
+      letter-spacing: 0.01em; }
+    #wrapper #newsletter .newsletter {
+      width: 96%; }
+      #wrapper #newsletter .newsletter input[type="text"] {
+        height: 30px;
+        padding: 0.3rem; }
+      #wrapper #newsletter .newsletter input[type="email"] {
+        height: 30px;
+        padding: 0.3rem; }
+      #wrapper #newsletter .newsletter input[type="submit"] {
+        margin: 1% auto;
+        width: 75.37931%;
+        padding: 7%;
+        font-size: 0.9em; }
+      #wrapper #newsletter .newsletter input[type="submit"]:hover {
+        width: 75.37931%; } }
+@media (max-width: 667px) {
+  [data-abide].error small.error {
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem; }
+
+  #wrapper {
+    width: 96%;
+    margin: 0 auto;
+    /*destination Links*/ }
+    #wrapper h1 {
+      font-size: 1.4em; }
+    #wrapper #header .title-bar {
+      display: none;
+      float: right;
+      height: 100%; }
+    #wrapper #header .top-bar #primary_nav ul li {
+      list-style: none; }
+    #wrapper #header .top-bar #primary_nav ul a {
+      font-size: 0.55em; }
+      #wrapper #header .top-bar #primary_nav ul a:hover {
+        font-size: 0.55em; }
+    #wrapper #apDiv1 {
+      width: 70.949%;
+      height: 420px;
+      left: 27%;
+      top: 70px; }
+      #wrapper #apDiv1 h1 {
+        font-size: 1.2em; }
+      #wrapper #apDiv1 li a {
+        font-size: 0.60em; }
+      #wrapper #apDiv1 p {
+        font-size: 0.5em;
+        height: 40px;
+        line-height: 40px; }
+        #wrapper #apDiv1 p .dropcap {
+          width: 11%;
+          height: 60%;
+          line-height: 24px; }
+      #wrapper #apDiv1 p.formnum {
+        margin: 0 0 0 0;
+        font-size: 0.6em; }
+        #wrapper #apDiv1 p.formnum .dropcap-small {
+          margin: 3%;
+          width: 15%;
+          line-height: 24px; }
+      #wrapper #apDiv1 #booking_form p {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form a {
+        width: 20%;
+        font-size: 0.6em; }
+      #wrapper #apDiv1 #booking_form li {
+        height: 45px; }
+        #wrapper #apDiv1 #booking_form li label {
+          font-size: 0.65em; }
+      #wrapper #apDiv1 #booking_form .query_btn {
+        font-size: 0.8em; }
+      #wrapper #apDiv1 #booking_form .query_btn:hover {
+        font-size: 0.8em; }
+      #wrapper #apDiv1 #booking_form .searchform_btn {
+        font-size: 0.8em; }
+      #wrapper #apDiv1 #booking_form .searchform_btn:hover {
+        font-size: 0.8em; }
+      #wrapper #apDiv1 #booking_form .pick_return, #wrapper #apDiv1 #booking_form .start_end {
+        width: 59%; }
+      #wrapper #apDiv1 #booking_form .pick_return select {
+        font-size: 0.7em; }
+      #wrapper #apDiv1 #booking_form .pickup_return {
+        list-style: none; }
+      #wrapper #apDiv1 #booking_form li.start_end #date_quote {
+        width: 45%; }
+      #wrapper #apDiv1 #booking_form li.start_end select {
+        line-height: 1.5em;
+        font-size: 0.7em; }
+    #wrapper #index_form_btn {
+      font-size: 1.5em; }
+    #wrapper #banner {
+      height: 286px; }
+      #wrapper #banner .big {
+        width: 50%;
+        font-size: 1.9em; }
+      #wrapper #banner figcaption {
+        font-size: 0.9em; }
+    #wrapper #left_column {
+      float: left;
+      margin: 0px;
+      padding: 5px; }
+      #wrapper #left_column #contact_form .button_contact {
+        width: 123px;
+        height: 35px;
+        margin: 5px 0px 0px 20%; }
+      #wrapper #left_column .cars_box .cars_box_txt {
+        display: inline-block;
+        float: left;
+        font-size: 0.9em; }
+    #wrapper .specials_box {
+      width: 48%;
+      height: 250px; }
+      #wrapper .specials_box .specials_box_img {
+        height: 110px; }
+        #wrapper .specials_box .specials_box_img p {
+          font-size: 0.65em;
+          margin: 0; }
+      #wrapper .specials_box .specials_btn_box .special_price {
+        font-size: 1.1em;
+        margin: 10px 0px 20px 0px; }
+      #wrapper .specials_box .specials_btn_box .cont_btn {
+        float: right;
+        width: 100%; }
+      #wrapper .specials_box .specials_box_txt {
+        padding: 5px;
+        color: #cccccc; }
+        #wrapper .specials_box .specials_box_txt p {
+          width: 100%;
+          font-size: 0.7em;
+          height: auto;
+          margin: 0; }
+    #wrapper .destinations {
+      width: 30%;
+      /*end*/ }
+      #wrapper .destinations ul {
+        list-style: none; }
+        #wrapper .destinations ul li {
+          height: 30px;
+          line-height: 30px; }
+          #wrapper .destinations ul li a {
+            font-size: 0.90em; }
+          #wrapper .destinations ul li a:hover {
+            font-size: 0.95em; }
+        #wrapper .destinations ul li:nth-of-type(1) {
+          font-size: 1.2em;
+          height: 40px;
+          line-height: 40px; }
+    #wrapper #worldsearchform {
+      width: 80%; }
+      #wrapper #worldsearchform h2 {
+        font-size: 1.1em; }
+      #wrapper #worldsearchform .searchform ul li input[type="submit"] {
+        font-size: 1.1em; }
+    #wrapper #right_coler {
+      width: 100%;
+      border: none; }
+      #wrapper #right_coler .card {
+        height: 340px;
+        margin: 0px 0px 0.5em 0.8%;
+        border: none; }
+        #wrapper #right_coler .card h2 {
+          font-size: 0.9em;
+          letter-spacing: 0.05em; }
+        #wrapper #right_coler .card .card-section .front_img {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section p {
+          font-size: 0.70em;
+          margin: 4% auto; }
+        #wrapper #right_coler .card .card-section .link_btn {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section a {
+          line-height: 34px;
+          font-size: 0.9em; }
+        #wrapper #right_coler .card .card-section a:hover {
+          line-height: 34px; }
+      #wrapper #right_coler #image5 p {
+        font-size: 0.65em;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 2em; }
+      #wrapper #right_coler #image5 form {
+        width: 90%;
+        margin: 4% auto; }
+        #wrapper #right_coler #image5 form input[type="text"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="email"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="submit"] {
+          width: 54.379%;
+          height: 35px;
+          line-height: 2px;
+          margin: 0 auto;
+          font-family: "Signika", Geneva, arial, sans-serif;
+          border: 0;
+          display: block;
+          padding: 7%; }
+        #wrapper #right_coler #image5 form input[type="submit"]:hover {
+          line-height: 2px;
+          font-weight: bold; }
+      #wrapper #right_coler #image2 {
+        margin-top: 22%; }
+    #wrapper .tabs {
+      border: none; }
+      #wrapper .tabs li.tabs-title {
+        width: 20%; }
+        #wrapper .tabs li.tabs-title a {
+          width: 100%; }
+          #wrapper .tabs li.tabs-title a:hover {
+            border-top: solid #e6e6e6 0.5px;
+            border-right: solid #e6e6e6 0.5px;
+            border-left: solid #e6e6e6 0.5px; }
+    #wrapper .tabs-content {
+      transition: all 0.5s ease; }
+      #wrapper .tabs-content .tabs-panel .clearfix {
+        display: inline-block;
+        clear: both; }
+      #wrapper .tabs-content .tabs-panel .specials_box {
+        width: 48%;
+        height: 250px;
+        margin-left: 8px; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box {
+          float: right;
+          width: 35.272%;
+          height: 150px; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
+            margin: 10px 0px 30px 0px;
+            padding: 7%;
+            width: 50%;
+            font-size: 1em;
+            line-height: 0.8em; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
+              font-size: 42%;
+              display: block; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn {
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a {
+              line-height: 35px;
+              font-size: 0.9em; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a:hover {
+              font-weight: bold;
+              font-size: 0.9em; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_box_img {
+          width: 100%;
+          height: 110px;
+          padding: 2%; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section .car {
+          width: 100%;
+          margin: 0;
+          padding: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section h4 {
+          font-size: 0.8em; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
+          width: 94.44444%;
+          margin: 3px 0px 0px 3px;
+          font-size: 0.7em;
+          display: inline-block; }
+        #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
+          width: 185px;
+          height: 150px;
+          padding: 2%; }
+          #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt li {
+            font-size: 0.7em;
+            line-height: 1.7em; }
+      #wrapper .tabs-content .tabs-panel .cars_box {
+        height: 220px;
+        margin-bottom: 1.5%; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img {
+          width: 50%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img img {
+            margin: 0 auto;
+            width: 60%; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt {
+          width: 47.75602%;
+          padding: 0; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box {
+            height: 35px;
+            padding: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box .car-icons {
+              width: 17%;
+              margin: 1%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(4) {
+            margin: 5px 0px 5px 0px;
+            font-size: 0.9em;
+            line-height: 30px;
+            text-align: left;
+            clear: both; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 1em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(2) {
+            color: #00CCFF;
+            font-size: 0.9em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(3) {
+            color: #999999;
+            font-style: italic;
+            font-size: 0.85em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton {
+            width: 50.727236%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a {
+              display: block;
+              text-align: center;
+              padding: 7%; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a:hover {
+              font-weight: bold; }
+    #wrapper .card {
+      float: left;
+      height: 325px;
+      width: 49%;
+      margin: 0px 0px 0.5em 0.8%; }
+      #wrapper .card h2 {
+        font-size: 1.1em;
+        margin: 1% auto;
+        line-height: 40px;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto; }
+        #wrapper .card .card-section p {
+          font-size: 0.7em;
+          margin: 4% auto;
+          line-height: 1.8em; }
+        #wrapper .card .card-section .link_btn {
+          margin: 1% auto;
+          line-height: 34px;
+          width: 50%;
+          font-size: 0.8em; }
+          #wrapper .card .card-section .link_btn:hover {
+            font-weight: bold;
+            line-height: 34px;
+            width: 50%; }
+    #wrapper #newsletter h2 {
+      font-size: 1.2em;
+      line-height: 40px; }
+    #wrapper #newsletter p {
+      font-size: 0.75em; }
+    #wrapper #newsletter .newsletter input[type="email"] {
+      margin-top: 0.1rem; }
+    #wrapper #newsletter .newsletter input[type="text"] {
+      margin-top: 0.3rem; }
+    #wrapper #newsletter .newsletter input[type="submit"] {
+      width: 65.379%;
+      font-size: 0.85em; }
+    #wrapper #newsletter .newsletter input[type="submit"]:hover {
+      width: 65.379%; } }
+@media (max-width: 640px) {
+  .error[data-abide] small.error {
+    font-size: 0.55rem;
+    margin-bottom: 0.2rem; }
+
+  #wrapper {
+    width: 96%;
+    margin: 0 auto; }
+    #wrapper h1 {
+      width: 100%; }
+    #wrapper #header {
+      margin: 0;
+      padding: 0; }
+      #wrapper #header .top-bar .title-bar button {
+        display: block;
+        height: 40px;
+        line-height: 40px; }
+      #wrapper #header .top-bar .title-area .name h1 {
+        font-size: 1.7em; }
+      #wrapper #header .top-bar #primary_nav {
+        width: 100%;
+        height: auto; }
+        #wrapper #header .top-bar #primary_nav ul {
+          height: auto; }
+          #wrapper #header .top-bar #primary_nav ul li {
+            width: 100%; }
+            #wrapper #header .top-bar #primary_nav ul li a {
+              width: 100%; }
+    #wrapper #apDiv1 {
+      width: 72.052%;
+      left: 24%;
+      height: 420px; }
+      #wrapper #apDiv1 p {
+        font-size: 0.6em; }
+      #wrapper #apDiv1 p.formnum {
+        margin: 0px; }
+        #wrapper #apDiv1 p.formnum .dropcap-small {
+          width: 16%; }
+      #wrapper #apDiv1 #booking_form .start_end select {
+        font-size: 0.65em; }
+      #wrapper #apDiv1 #booking_form .start_end #date_quote {
+        font-size: 0.6em; }
+    #wrapper #banner {
+      height: 275spx; }
+      #wrapper #banner .big {
+        font-size: 1.8em; }
+      #wrapper #banner figcaption {
+        font-size: 0.85em; }
+    #wrapper #index_form_btn {
+      font-size: 1.5em; }
+    #wrapper .card {
+      float: left;
+      height: 340px;
+      width: 48%;
+      margin: 0.8%; }
+      #wrapper .card h2 {
+        font-size: 1em;
+        margin: 1% auto;
+        line-height: 40px;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto; }
+        #wrapper .card .card-section p {
+          font-size: 0.75em;
+          margin: 4% auto;
+          line-height: 1.8em; }
+        #wrapper .card .card-section .link_btn {
+          margin: 1% auto; }
+        #wrapper .card .card-section a {
+          line-height: 34px;
+          width: 100%;
+          font-size: 0.9em; }
+        #wrapper .card .card-section a:hover {
+          font-weight: bold;
+          line-height: 34px; }
+    #wrapper #newsletter .newsletter input[type="email"] {
+      margin-top: 0.1rem; }
+    #wrapper #newsletter .newsletter input[type="text"] {
+      margin-top: 0.3rem; }
+    #wrapper #newsletter .newsletter input[type="submit"] {
+      width: 65.379%;
+      font-size: 0.85em; }
+    #wrapper #left_column {
+      float: none;
+      margin: 0px auto;
+      padding: 0px;
+      width: 98%; }
+      #wrapper #left_column h1 {
+        font-size: 1.5em;
+        width: 70%;
+        margin: 2% 0 2% 2%; }
+      #wrapper #left_column p {
+        font-size: 0.7em;
+        line-height: 1.5em; }
+      #wrapper #left_column #contact_form label {
+        font-size: 1em;
+        width: 24%; }
+      #wrapper #left_column #contact_form .button_contact {
+        margin: 5px 0px 0px 23%; }
+    #wrapper .tabs {
+      border: none; }
+      #wrapper .tabs li.tabs-title {
+        width: 20%; }
+        #wrapper .tabs li.tabs-title a {
+          width: 100%; }
+          #wrapper .tabs li.tabs-title a:hover {
+            border-top: solid #e6e6e6 0.5px;
+            border-right: solid #e6e6e6 0.5px;
+            border-left: solid #e6e6e6 0.5px; }
+    #wrapper .tabs-content {
+      transition: all 0.5s ease; }
+      #wrapper .tabs-content .tabs-panel .clearfix {
+        display: inline-block;
+        clear: both; }
+      #wrapper .tabs-content .tabs-panel .specials_box {
+        width: 48%;
+        height: 250px;
+        margin-left: 8px; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box {
+          float: right;
+          width: 35.272%;
+          height: 150px; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
+            margin: 10px 0px 30px 0px;
+            padding: 7%;
+            width: 50%;
+            font-size: 1em;
+            line-height: 0.8em; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
+              font-size: 42%;
+              display: block; }
+          #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn {
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a {
+              line-height: 35px;
+              font-size: 0.9em; }
+            #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a:hover {
+              font-weight: bold;
+              font-size: 0.9em; }
+        #wrapper .tabs-content .tabs-panel .specials_box .specials_box_img {
+          width: 100%;
+          height: 110px;
+          padding: 2%; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section .car {
+          width: 100%;
+          margin: 0;
+          padding: 0; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section h4 {
+          font-size: 0.8em; }
+        #wrapper .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
+          width: 94.44444%;
+          margin: 3px 0px 0px 3px;
+          font-size: 0.7em;
+          display: inline-block; }
+        #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
+          width: 180px;
+          height: 150px;
+          padding: 2%; }
+          #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt li {
+            font-size: 0.65em;
+            line-height: 1.7em; }
+      #wrapper .tabs-content .tabs-panel .cars_box {
+        height: 220px;
+        margin-bottom: 1.5%; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img {
+          width: 50%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img img {
+            margin: 0 auto;
+            width: 60%; }
+        #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt {
+          width: 47.75602%;
+          padding: 0; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box {
+            height: 35px;
+            padding: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box .car-icons {
+              width: 17%;
+              margin: 1%; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(4) {
+            margin: 5px 0px 5px 0px;
+            font-size: 0.9em;
+            line-height: 30px;
+            text-align: left;
+            clear: both; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 1em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(2) {
+            color: #00CCFF;
+            font-size: 0.9em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(3) {
+            color: #999999;
+            font-style: italic;
+            font-size: 0.85em; }
+          #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton {
+            width: 50.727236%;
+            display: block;
+            margin: 0; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a {
+              display: block;
+              text-align: center;
+              padding: 7%; }
+            #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a:hover {
+              font-weight: bold; }
+    #wrapper #right_coler {
+      width: 100%;
+      border: none; }
+      #wrapper #right_coler .card {
+        height: 340px;
+        margin: 0px 0px 0.5em 0.8%;
+        border: none; }
+        #wrapper #right_coler .card h2 {
+          font-size: 0.9em;
+          letter-spacing: 0.05em; }
+        #wrapper #right_coler .card .card-section .front_img {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section p {
+          font-size: 0.70em;
+          margin: 4% auto; }
+        #wrapper #right_coler .card .card-section .link_btn {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section a {
+          line-height: 34px;
+          font-size: 0.9em; }
+        #wrapper #right_coler .card .card-section a:hover {
+          line-height: 34px; }
+      #wrapper #right_coler #image5 p {
+        font-size: 0.65em;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 2em; }
+      #wrapper #right_coler #image5 form {
+        width: 90%;
+        margin: 4% auto; }
+        #wrapper #right_coler #image5 form input[type="text"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="email"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="submit"] {
+          width: 54.379%;
+          height: 35px;
+          line-height: 2px;
+          margin: 0 auto;
+          font-family: "Signika", Geneva, arial, sans-serif;
+          border: 0;
+          display: block;
+          padding: 7%; }
+        #wrapper #right_coler #image5 form input[type="submit"]:hover {
+          line-height: 2px;
+          font-weight: bold; }
+      #wrapper #right_coler #image2 {
+        margin-top: 22%; }
+    #wrapper footer {
+      height: 40px; }
+      #wrapper footer #footer_nav li a {
+        font-size: 0.75em; } }
+@media (max-width: 600px) {
+  #wrapper {
+    /*destination Links*/ }
+    #wrapper #header .top-bar .title-bar {
+      height: 100%; }
+      #wrapper #header .top-bar .title-bar button {
+        display: block;
+        height: 40px;
+        line-height: 40px; }
+    #wrapper #header .top-bar .title-area {
+      float: left;
+      width: 40%; }
+    #wrapper #header .top-bar .top-bar-left {
+      width: 80%; }
+    #wrapper #header .top-bar #primary_nav {
+      height: auto;
+      width: 100%;
+      display: block; }
+      #wrapper #header .top-bar #primary_nav li {
+        height: 60px;
+        list-style: none;
+        display: block;
+        width: 100%; }
+        #wrapper #header .top-bar #primary_nav li a {
+          font-size: 1.2em;
+          line-height: 40px; }
+        #wrapper #header .top-bar #primary_nav li a:hover {
+          font-size: 1.3em;
+          line-height: 40px; }
+    #wrapper #index_form_btn {
+      font-size: 1.4em; }
+    #wrapper #apDiv1 {
+      width: 73.052%;
+      left: 23%; }
+      #wrapper #apDiv1 p.formnum .dropcap-small {
+        width: 18%; }
+      #wrapper #apDiv1 #booking_form li {
+        width: 39%; }
+    #wrapper #left_column #contact_form input[type="submit"] {
+      margin: 5px 0px 0px 24%; }
+    #wrapper #right_coler {
+      width: 100%;
+      border: none; }
+      #wrapper #right_coler .card {
+        height: 340px;
+        margin: 0px 0px 0.5em 0.8%;
+        border: none; }
+        #wrapper #right_coler .card h2 {
+          font-size: 0.9em;
+          letter-spacing: 0.05em; }
+        #wrapper #right_coler .card .card-section .front_img {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section p {
+          font-size: 0.70em;
+          margin: 4% auto; }
+        #wrapper #right_coler .card .card-section .link_btn {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section a {
+          line-height: 34px;
+          font-size: 0.9em; }
+        #wrapper #right_coler .card .card-section a:hover {
+          line-height: 34px; }
+      #wrapper #right_coler #image5 p {
+        font-size: 0.65em;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 2em; }
+      #wrapper #right_coler #image5 form {
+        width: 90%;
+        margin: 4% auto; }
+        #wrapper #right_coler #image5 form input[type="text"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="email"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="submit"] {
+          width: 54.379%;
+          height: 35px;
+          line-height: 2px;
+          margin: 0 auto;
+          font-family: "Signika", Geneva, arial, sans-serif;
+          border: 0;
+          display: block;
+          padding: 7%; }
+        #wrapper #right_coler #image5 form input[type="submit"]:hover {
+          line-height: 2px;
+          font-weight: bold; }
+      #wrapper #right_coler #image2 {
+        margin-top: 22%; }
+    #wrapper .destinations {
+      width: 30%;
+      /*end*/ }
+      #wrapper .destinations ul {
+        list-style: none; }
+        #wrapper .destinations ul li a {
+          font-size: 0.90em; }
+        #wrapper .destinations ul li a:hover {
+          font-size: 0.95em; }
+        #wrapper .destinations ul li:nth-of-type(1) {
+          font-size: 1.1em; }
+    #wrapper #worldsearchform {
+      width: 85%; }
+      #wrapper #worldsearchform h2 {
+        font-size: 1.1em; }
+      #wrapper #worldsearchform .searchform ul li input[type="submit"] {
+        font-size: 1.1em; }
+    #wrapper .specials_box {
+      width: 48%;
+      height: 250px; }
+      #wrapper .specials_box .specials_box_img {
+        height: 110px; }
+        #wrapper .specials_box .specials_box_img p {
+          font-size: 0.65em;
+          margin: 0;
+          width: 51.444%; }
+      #wrapper .specials_box .specials_btn_box .special_price {
+        float: right;
+        margin: 10px 0px 20px; }
+      #wrapper .specials_box .specials_btn_box .cont_btn {
+        width: 100%; }
+      #wrapper .specials_box .specials_box_txt {
+        padding: 5px;
+        color: #cccccc; }
+        #wrapper .specials_box .specials_box_txt p {
+          width: 100%;
+          font-size: 0.65em;
+          height: auto;
+          margin: 0; }
+    #wrapper .card {
+      float: left;
+      height: 340px;
+      width: 40%;
+      margin: 0px 0px 0.5em 0.8%; }
+      #wrapper .card h2 {
+        font-size: 1em;
+        margin: 1% auto;
+        line-height: 40px;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto; }
+        #wrapper .card .card-section p {
+          font-size: 0.75em;
+          margin: 4% auto;
+          line-height: 1.8em; }
+        #wrapper .card .card-section .link_btn {
+          margin: 1% auto; }
+        #wrapper .card .card-section a {
+          line-height: 34px;
+          width: 100%;
+          font-size: 0.9em; }
+        #wrapper .card .card-section a:hover {
+          font-weight: bold;
+          line-height: 34px; }
+    #wrapper #newsletter p {
+      font-size: 0.70em; }
+    #wrapper #newsletter .newsletter input[type="email"] {
+      margin-top: 0.1rem; }
+    #wrapper #newsletter .newsletter input[type="text"] {
+      margin-top: 0.3rem; }
+    #wrapper #newsletter .newsletter input[type="submit"] {
+      width: 65.379%;
+      font-size: 0.85em; } }
+@media (max-width: 536px) {
+  #wrapper {
+    /*destination Links*/ }
+    #wrapper #index_form_btn {
+      font-size: 1.3em; }
+    #wrapper #header .top-bar .title-bar {
+      width: 11%; }
+      #wrapper #header .top-bar .title-bar button {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-size: 0.9em; }
+    #wrapper #header .top-bar .title-area {
+      float: left;
+      width: 40%; }
+    #wrapper #header .top-bar #primary_nav {
+      height: auto;
+      margin: 0 0; }
+      #wrapper #header .top-bar #primary_nav li {
+        height: 60px;
+        list-style: none;
+        display: block;
+        width: 100%; }
+        #wrapper #header .top-bar #primary_nav li a {
+          font-size: 1.2em; }
+        #wrapper #header .top-bar #primary_nav li a:hover {
+          font-size: 1.3em; }
+    #wrapper #apDiv1 {
+      width: 82.052%;
+      left: 14%; }
+      #wrapper #apDiv1 #booking_form li {
+        width: 39%; }
+    #wrapper #left_column #contact_form input[type="submit"] {
+      margin: 5px 0px 0px 24%; }
+    #wrapper #right_coler {
+      width: 100%;
+      border: none; }
+      #wrapper #right_coler .card {
+        height: 340px;
+        margin: 0px 0px 0.5em 0.8%;
+        border: none; }
+        #wrapper #right_coler .card h2 {
+          font-size: 0.9em;
+          letter-spacing: 0.05em; }
+        #wrapper #right_coler .card .card-section .front_img {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section p {
+          font-size: 0.70em;
+          margin: 4% auto; }
+        #wrapper #right_coler .card .card-section .link_btn {
+          margin: 1% auto; }
+        #wrapper #right_coler .card .card-section a {
+          line-height: 34px;
+          font-size: 0.9em; }
+        #wrapper #right_coler .card .card-section a:hover {
+          line-height: 34px; }
+      #wrapper #right_coler #image5 p {
+        font-size: 0.65em;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 2em; }
+      #wrapper #right_coler #image5 form {
+        width: 90%;
+        margin: 4% auto; }
+        #wrapper #right_coler #image5 form input[type="text"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="email"] {
+          width: 100%;
+          height: 30px; }
+        #wrapper #right_coler #image5 form input[type="submit"] {
+          width: 54.379%;
+          height: 35px;
+          line-height: 2px;
+          margin: 0 auto;
+          font-family: "Signika", Geneva, arial, sans-serif;
+          border: 0;
+          display: block;
+          padding: 7%; }
+        #wrapper #right_coler #image5 form input[type="submit"]:hover {
+          line-height: 2px;
+          font-weight: bold; }
+      #wrapper #right_coler #image2 {
+        margin-top: 22%; }
+    #wrapper .destinations {
+      width: 30%;
+      /*end*/ }
+      #wrapper .destinations ul {
+        list-style: none; }
+        #wrapper .destinations ul li {
+          height: 30px;
+          line-height: 30px; }
+          #wrapper .destinations ul li a {
+            font-size: 0.90em; }
+          #wrapper .destinations ul li a:hover {
+            font-size: 0.95em; }
+        #wrapper .destinations ul li:nth-of-type(1) {
+          font-size: 1.1em;
+          height: 40px;
+          line-height: 40px; }
+    #wrapper #worldsearchform {
+      width: 95%; }
+      #wrapper #worldsearchform h2 {
+        font-size: 1.1em; }
+      #wrapper #worldsearchform .searchform ul li input[type="submit"] {
+        font-size: 1.1em; }
+    #wrapper .specials_box {
+      width: 48%;
+      height: 250px; }
+      #wrapper .specials_box .specials_box_img {
+        height: 110px; }
+        #wrapper .specials_box .specials_box_img p {
+          margin: 0;
+          width: 51.444%;
+          font-size: 0.60em; }
+      #wrapper .specials_box .specials_btn_box .special_price {
+        font-size: 0.95em; }
+      #wrapper .specials_box .specials_btn_box .cont_btn {
+        width: 100%; }
+        #wrapper .specials_box .specials_btn_box .cont_btn a {
+          font-size: 0.8em; }
+      #wrapper .specials_box .specials_box_txt {
+        padding: 5px;
+        color: #cccccc; }
+        #wrapper .specials_box .specials_box_txt p {
+          width: 100%;
+          font-size: 0.60em;
+          height: auto;
+          margin: 0; }
+    #wrapper .card {
+      float: left;
+      height: 340px;
+      width: 40%;
+      margin: 0px 0px 0.5em 0.8%; }
+      #wrapper .card h2 {
+        font-size: 1em;
+        margin: 1% auto;
+        line-height: 40px;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto; }
+        #wrapper .card .card-section p {
+          font-size: 0.75em;
+          margin: 4% auto;
+          line-height: 1.8em; }
+        #wrapper .card .card-section .link_btn {
+          margin: 1% auto; }
+        #wrapper .card .card-section a {
+          line-height: 34px;
+          width: 100%;
+          font-size: 0.9em; }
+        #wrapper .card .card-section a:hover {
+          font-weight: bold;
+          line-height: 34px; }
+    #wrapper #newsletter h2 {
+      font-size: 1.1em;
+      text-indent: 0px; }
+    #wrapper #newsletter p {
+      font-size: 0.65em;
+      width: 96%; }
+    #wrapper #newsletter .newsletter a {
+      font-size: 1em;
+      margin: auto; }
+    #wrapper #newsletter .newsletter input[type="submit"] {
+      margin: 0px 20%; }
+    #wrapper #newsletter .newsletter input[type="email"] {
+      margin-top: 0.5rem; }
+    #wrapper #newsletter .newsletter input[type="text"] {
+      margin-top: 0.3rem; } }
+@media (max-width: 480px) {
+  #wrapper {
+    /*destination Links*/
+    /*Specials*/ }
+    #wrapper h1 {
+      width: 98%;
+      font-size: 1.2em; }
+    #wrapper #header .top-bar .title-bar {
+      width: 11%; }
+    #wrapper #header .top-bar .title-area {
+      float: left;
+      width: 70%; }
+    #wrapper #header .top-bar #primary_nav {
+      height: auto;
+      margin: 0 0; }
+      #wrapper #header .top-bar #primary_nav li {
+        height: 60px;
+        list-style: none;
+        display: block;
+        width: 100%; }
+    #wrapper #apDiv1 {
+      width: 88.949%;
+      font-size: 0.95em;
+      left: 6%; }
+      #wrapper #apDiv1 #booking_form li {
+        width: 38%; }
+      #wrapper #apDiv1 #booking_form .start_end select {
+        width: 49px; }
+      #wrapper #apDiv1 #booking_form .start_end #date_quote {
+        width: 40%;
+        font-size: 0.75em; }
+      #wrapper #apDiv1 #booking_form .pick_return select {
+        margin: 0;
+        height: 35px; }
+    #wrapper #index_form_btn {
+      height: 50px;
+      float: right;
+      font-size: 1.1em;
+      line-height: 50px;
+      text-align: center;
+      margin-right: 10px;
+      width: 40%; }
+    #wrapper #banner {
+      height: 220px;
+      margin-top: 5px; }
+      #wrapper #banner #bannerimage {
+        width: 99.2602%;
+        height: 54.2553%; }
+      #wrapper #banner .big {
+        font-size: 1.3em;
+        width: 45%; }
+      #wrapper #banner figcaption {
+        font-size: 0.7em;
+        margin: 0; }
+      #wrapper #banner p {
+        font-size: 1em; }
+    #wrapper #left_column h1 {
+      margin: 1%;
+      width: 100%;
+      font-size: 1.8em; }
+    #wrapper #left_column .cars_box .cars_box_img {
+      float: left;
+      width: 51%; }
+      #wrapper #left_column .cars_box .cars_box_img img {
+        margin: 0;
+        width: 100%; }
+    #wrapper #left_column #contact_form {
+      width: 90%;
+      height: auto;
+      margin-left: 2%; }
+      #wrapper #left_column #contact_form label {
+        width: 23%; }
+      #wrapper #left_column #contact_form input[type="submit"] {
+        margin: 5px 0px 0px 23%; }
+    #wrapper .specials_box {
+      width: 98%;
+      height: 290px;
+      float: none;
+      display: block;
+      margin: 2% auto; }
+      #wrapper .specials_box .specials_btn_box .special_price {
+        width: 45%; }
+      #wrapper .specials_box .specials_box_img {
+        width: 100%;
+        height: 150px;
+        padding: 5px;
+        color: #FFFFFF; }
+        #wrapper .specials_box .specials_box_img p {
+          font-size: 0.85em; }
+      #wrapper .specials_box .specials_box_txt p {
+        font-size: 0.70em; }
+    #wrapper .destinations {
+      width: 43%;
+      /*end*/ }
+      #wrapper .destinations ul {
+        list-style: none; }
+        #wrapper .destinations ul li a {
+          font-size: 0.90em; }
+        #wrapper .destinations ul li a:hover {
+          font-size: 0.95em; }
+        #wrapper .destinations ul li:nth-of-type(1) {
+          font-size: 1.1em; }
+    #wrapper #worldsearchform {
+      width: 85%; }
+      #wrapper #worldsearchform h2 {
+        font-size: 1.1em; }
+      #wrapper #worldsearchform .searchform ul li input[type="submit"] {
+        font-size: 1.1em; }
+    #wrapper #right_coler {
+      display: none; }
+    #wrapper .ui-tabs .ui-tabs-panel {
+      padding: 1% 0; }
+    #wrapper .ui-tabs .ui-tabs-nav {
+      margin: 0px; }
+      #wrapper .ui-tabs .ui-tabs-nav li {
+        width: 15.5%;
+        margin: 1px 0.1em 0 0; }
+        #wrapper .ui-tabs .ui-tabs-nav li a {
+          font-size: 0.70em; }
+        #wrapper .ui-tabs .ui-tabs-nav li #ui-id-5 {
+          font-size: 0.6em;
+          padding: 0.65em 1em; }
+    #wrapper .card {
+      float: left;
+      height: 340px;
+      width: 40%;
+      margin: 0px 0px 0.5em 0.8%; }
+      #wrapper .card h2 {
+        font-size: 1em;
+        margin: 1% auto;
+        line-height: 40px;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto; }
+        #wrapper .card .card-section p {
+          font-size: 0.75em;
+          margin: 4% auto;
+          line-height: 1.8em; }
+        #wrapper .card .card-section .link_btn {
+          margin: 1% auto; }
+        #wrapper .card .card-section a {
+          line-height: 34px;
+          width: 100%;
+          font-size: 0.9em; }
+        #wrapper .card .card-section a:hover {
+          font-weight: bold;
+          line-height: 34px; }
+    #wrapper #newsletter .newsletter a {
+      font-size: 1em;
+      margin: auto; }
+    #wrapper #newsletter .newsletter input[type="submit"] {
+      margin: 0px 20%; }
+    #wrapper #newsletter .newsletter input[type="email"] {
+      margin-top: 0.5rem; }
+    #wrapper #newsletter .newsletter input[type="text"] {
+      margin-top: 0.3rem; }
+    #wrapper footer {
+      height: 70px; }
+      #wrapper footer #footer_nav li {
+        width: 16.3459%; } }
+@media (max-width: 414px) {
+  #wrapper {
+    /*END OF LEFT COL*/ }
+    #wrapper #index_form_btn {
+      font-size: 0.9em; }
+    #wrapper #header .topbar .title-bar {
+      width: 13%; }
+    #wrapper #header .topbar #primary_nav {
+      height: auto;
+      margin: 0 0; }
+      #wrapper #header .topbar #primary_nav li {
+        height: 60px; }
+        #wrapper #header .topbar #primary_nav li a {
+          font-size: 1em; }
+        #wrapper #header .topbar #primary_nav li a:hover {
+          font-size: 1.1em; }
+    #wrapper #right_coler {
+      display: none; }
+    #wrapper #apDiv1 {
+      width: 95.949%;
+      height: 400px;
+      font-size: 0.80em;
+      left: 2%; }
+      #wrapper #apDiv1 p .dropcap {
+        width: 15%; }
+      #wrapper #apDiv1 p.formnum .dropcap-small {
+        width: 22%; }
+      #wrapper #apDiv1 #booking_form li {
+        width: 40%; }
+      #wrapper #apDiv1 #booking_form .start_end {
+        width: 60%; }
+    #wrapper .ui-tabs .ui-tabs-panel {
+      padding: 1% 0; }
+    #wrapper .ui-tabs .ui-tabs-nav {
+      margin: 0px; }
+      #wrapper .ui-tabs .ui-tabs-nav li {
+        width: 16%; }
+        #wrapper .ui-tabs .ui-tabs-nav li a {
+          font-size: 0.60em; }
+        #wrapper .ui-tabs .ui-tabs-nav li #ui-id-5 {
+          font-size: 0.55em;
+          padding: 0.6em 1em; }
+        #wrapper .ui-tabs .ui-tabs-nav li #ui-id-2 {
+          font-size: 0.55em;
+          padding: 0.6em 1em; }
+        #wrapper .ui-tabs .ui-tabs-nav li #ui-id-4 {
+          font-size: 0.55em;
+          padding: 0.6em 1em; }
+    #wrapper .specials_box .specials_btn_box .special_price {
+      font-size: 1.3em;
+      width: 60%; }
+    #wrapper #left_column .cars_box .cars_box_txt .car-icons {
+      width: 23%; }
+    #wrapper #left_column .cars_box .cars_box_img img {
+      margin: 0;
+      width: 97%; }
+    #wrapper .panel {
+      height: 325px;
+      width: 60%; }
+      #wrapper .panel h2 {
+        text-indent: 0px; }
+      #wrapper .panel figure.front_img {
+        margin: auto; }
+        #wrapper .panel figure.front_img figcaption p {
+          font-size: 0.70em;
+          width: 98%;
+          margin: 1em auto; }
+        #wrapper .panel figure.front_img figcaption .link_btn a {
+          font-size: 0.9em;
+          margin: auto; }
+    #wrapper #newsletter .newsletter a {
+      font-size: 1em;
+      margin: auto; }
+    #wrapper #newsletter .newsletter input[type="submit"] {
+      margin: 0px 20%; }
+    #wrapper #newsletter .newsletter input[type="email"] {
+      margin-top: 0.5rem; }
+    #wrapper #newsletter .newsletter input[type="text"] {
+      margin-top: 0.3rem; } }
+@media (max-width: 375px) {
+  #wrapper .title-bar {
+    width: 13%; }
+  #wrapper #apDiv1 {
+    width: 95.949%;
+    height: 400px;
+    font-size: 0.90em;
+    left: 2%; }
+    #wrapper #apDiv1 p {
+      width: 36.091%; }
+    #wrapper #apDiv1 h1 {
+      font-size: 1.3em; }
+    #wrapper #apDiv1 p .dropcap {
+      width: 15%; }
+    #wrapper #apDiv1 p.formnum {
+      font-size: 0.55em; }
+      #wrapper #apDiv1 p.formnum .dropcap {
+        width: 22%; }
+    #wrapper #apDiv1 #booking_form .pick_return p {
+      font-size: 0.7em; }
+  #wrapper .ui-tabs .ui-tabs-panel {
+    padding: 1% 0; }
+  #wrapper .ui-tabs .ui-tabs-nav {
+    margin: 0px; }
+    #wrapper .ui-tabs .ui-tabs-nav li {
+      width: 16%; }
+      #wrapper .ui-tabs .ui-tabs-nav li a {
+        font-size: 0.6em; }
+      #wrapper .ui-tabs .ui-tabs-nav li #ui-id-5 {
+        font-size: 0.50em;
+        padding: 0.7em 0.5em; }
+      #wrapper .ui-tabs .ui-tabs-nav li #ui-id-2 {
+        font-size: 0.50em;
+        padding: 0.7em 0.5em; }
+      #wrapper .ui-tabs .ui-tabs-nav li #ui-id-4 {
+        font-size: 0.50em;
+        padding: 0.7em 0.5em; }
+      #wrapper .ui-tabs .ui-tabs-nav li #ui-id-1 {
+        font-size: 0.50em;
+        padding: 0.7em 0.5em; }
+  #wrapper #right_coler {
+    display: none; }
+  #wrapper #left_column .cars_box .cars_box_img {
+    width: 52%; }
+  #wrapper .specials_box .specials_btn_box .special_price {
+    font-size: 1.2em; }
+  #wrapper .specials_box .specials_box_img p {
+    font-size: 0.80em; }
+  #wrapper .card {
+    float: left;
+    height: 340px;
+    width: 40%;
+    margin: 0px 0px 0.5em 0.8%; }
+    #wrapper .card h2 {
+      font-size: 1em;
+      margin: 1% auto;
+      line-height: 40px;
+      letter-spacing: 0.05em; }
+    #wrapper .card .card-section {
+      padding: 0.5em 1rem; }
+      #wrapper .card .card-section .front_img {
+        width: 90%;
+        margin: 1% auto; }
+      #wrapper .card .card-section p {
+        font-size: 0.75em;
+        margin: 4% auto;
+        line-height: 1.8em; }
+      #wrapper .card .card-section .link_btn {
+        margin: 1% auto; }
+      #wrapper .card .card-section a {
+        line-height: 34px;
+        width: 100%;
+        font-size: 0.9em; }
+      #wrapper .card .card-section a:hover {
+        font-weight: bold;
+        line-height: 34px; }
+  #wrapper #newsletter .newsletter a {
+    font-size: 1em;
+    margin: auto; }
+  #wrapper #newsletter .newsletter input[type="submit"] {
+    margin: 0px 20%; }
+  #wrapper #newsletter .newsletter input[type="email"] {
+    margin-top: 0.5rem; }
+  #wrapper #newsletter .newsletter input[type="text"] {
+    margin-top: 0.3rem; } }
+/* Mobiles in landscape mode */
+@media (max-width: 360px) {
+  .tabs {
+    height: auto; }
+
+  [data-abide].error small.error {
+    font-size: 0.75rem;
+    margin-bottom: 0.2rem; }
+
+  #wrapper {
+    /*destination Links*/ }
+    #wrapper #header .top-bar .title-bar {
+      width: 15%; }
+    #wrapper #header .top-bar .title-area .name {
+      height: 60px;
+      list-style: outside none none; }
+      #wrapper #header .top-bar .title-area .name h1 {
+        font-size: 1.4em;
+        text-align: left;
+        height: 60px;
+        line-height: 60px;
+        margin-top: 0px; }
+        #wrapper #header .top-bar .title-area .name h1 span {
+          margin: 0px 0px 0px 10px;
+          text-align: left; }
+    #wrapper #header .top-bar #primary_nav li a {
+      font-size: 1.1em; }
+    #wrapper #header .top-bar #primary_nav li a:hover {
+      font-size: 1.2em; }
+    #wrapper #apDiv1 {
+      width: 98%;
+      left: 0%; }
+      #wrapper #apDiv1 #booking_form .pick_return p {
+        font-size: 0.65em; }
+    #wrapper #banner {
+      height: 180px;
+      margin-bottom: 5px;
+      clear: both;
+      float: none; }
+      #wrapper #banner .big {
+        font-size: 1.1em;
+        width: 45%; }
+      #wrapper #banner #bannerimage {
+        width: 99.2602%;
+        height: auto; }
+      #wrapper #banner p {
+        font-size: 95%;
+        width: 90%;
+        color: #FFFFFF;
+        margin: 0px 0px 10px 20px; }
+      #wrapper #banner figcaption {
+        font-size: 0.6em; }
+    #wrapper #index_form_btn {
+      font-size: 0.8em;
+      text-align: center;
+      margin-right: 10px;
+      width: 40%; }
+    #wrapper #right_coler {
+      display: none; }
+    #wrapper .ui-tabs .ui-tabs-panel {
+      padding: 1% 0; }
+    #wrapper .ui-tabs .ui-tabs-nav {
+      margin: 0px; }
+      #wrapper .ui-tabs .ui-tabs-nav li {
+        width: 16%; }
+        #wrapper .ui-tabs .ui-tabs-nav li a {
+          font-size: 0.58em; }
+        #wrapper .ui-tabs .ui-tabs-nav li #ui-id-5 {
+          font-size: 0.50em;
+          padding: 0.7em 0.5em; }
+        #wrapper .ui-tabs .ui-tabs-nav li #ui-id-2 {
+          font-size: 0.50em;
+          padding: 0.7em 0.5em; }
+        #wrapper .ui-tabs .ui-tabs-nav li #ui-id-4 {
+          font-size: 0.50em;
+          padding: 0.7em 0.5em; }
+    #wrapper #left_column h1 {
+      color: #000000;
+      text-align: left;
+      margin: 1%;
+      width: 100%;
+      font-size: 1.5em;
+      height: 40px;
+      line-height: 40px; }
+    #wrapper #left_column .cars_box {
+      width: 100%;
+      height: 210px;
+      margin-bottom: 10px; }
+      #wrapper #left_column .cars_box .cars_box_img {
+        width: 100%;
+        margin: 0;
+        height: 82.7692%; }
+        #wrapper #left_column .cars_box .cars_box_img img {
+          margin: 5% auto;
+          display: block;
+          width: 59.324%; }
+      #wrapper #left_column .cars_box .cars_box_txt {
+        margin-left: 0;
+        width: 100%;
+        font-size: 1em;
+        text-align: center; }
+        #wrapper #left_column .cars_box .cars_box_txt .car-icons-box {
+          width: 60%;
+          margin: auto; }
+          #wrapper #left_column .cars_box .cars_box_txt .car-icons-box .car-icons {
+            width: 23%; }
+        #wrapper #left_column .cars_box .cars_box_txt .carsbutton {
+          margin: auto; }
+        #wrapper #left_column .cars_box .cars_box_txt p {
+          margin: 5px 0px 5px 0px;
+          font-size: 0.85em; }
+    #wrapper #left_column #contact_form {
+      width: 96%;
+      height: auto;
+      margin: auto; }
+      #wrapper #left_column #contact_form .button_contact {
+        margin: 5px 0px 0px 23%; }
+    #wrapper .specials_box {
+      width: 100%;
+      height: 260px;
+      float: none;
+      display: block;
+      margin: 0px; }
+      #wrapper .specials_box .specials_box_img {
+        width: 100%;
+        height: 120px;
+        padding: 10px; }
+        #wrapper .specials_box .specials_box_img p {
+          width: 47.2%;
+          font-size: 0.70em;
+          margin: 0; }
+        #wrapper .specials_box .specials_box_img .car {
+          width: 51.1513%;
+          height: 99.2908%; }
+      #wrapper .specials_box .specials_box_txt {
+        width: 70.7284%;
+        height: 120px;
+        padding: 5px; }
+        #wrapper .specials_box .specials_box_txt p {
+          color: #333;
+          height: auto;
+          width: 100%;
+          margin: 5px 0px 0px 5px;
+          font-size: 0.70em;
+          line-height: 1.5em;
+          display: inline-block; }
+      #wrapper .specials_box .specials_btn_box {
+        float: right;
+        width: 27.2716%;
+        height: 120px; }
+        #wrapper .specials_box .specials_btn_box .special_price {
+          float: right;
+          margin: 10px 0px 20px;
+          width: 60%; }
+    #wrapper .destinations {
+      /*end*/ }
+      #wrapper .destinations ul {
+        list-style: none; }
+        #wrapper .destinations ul li {
+          height: 30px;
+          line-height: 30px; }
+          #wrapper .destinations ul li a {
+            font-size: 0.8em; }
+          #wrapper .destinations ul li a:hover {
+            font-size: 0.8em; }
+        #wrapper .destinations ul li:nth-of-type(1) {
+          font-size: 1.1em;
+          height: 40px;
+          line-height: 40px; }
+    #wrapper #worldsearchform {
+      width: 100%; }
+    #wrapper .card {
+      float: left;
+      height: 340px;
+      width: 40%;
+      margin: 0px 0px 0.5em 0.8%; }
+      #wrapper .card h2 {
+        font-size: 1em;
+        margin: 1% auto;
+        line-height: 40px;
+        letter-spacing: 0.05em; }
+      #wrapper .card .card-section {
+        padding: 0.5em 1rem; }
+        #wrapper .card .card-section .front_img {
+          width: 90%;
+          margin: 1% auto; }
+        #wrapper .card .card-section p {
+          font-size: 0.75em;
+          margin: 4% auto;
+          line-height: 1.8em; }
+        #wrapper .card .card-section .link_btn {
+          margin: 1% auto; }
+        #wrapper .card .card-section a {
+          line-height: 34px;
+          width: 100%;
+          font-size: 0.9em; }
+        #wrapper .card .card-section a:hover {
+          font-weight: bold;
+          line-height: 34px; }
+    #wrapper footer #footer_nav a {
+      height: 40px;
+      line-height: 40px;
+      font-size: 0.75em; } }
+/* Mobiles in Potrait mode */
+@media (max-width: 320px) {
+  #wrapper #header .top-bar .title-bar {
+    width: 16%; }
+  #wrapper #header .top-bar .title-area .name {
+    height: 60px;
+    list-style: outside none none; }
+    #wrapper #header .top-bar .title-area .name h1 {
+      width: 100%;
+      text-align: left;
+      font-size: 1.2em;
+      font-family: "Signika", Geneva, arial, sans-serif;
+      color: #FFFFFF;
+      height: 60px;
+      line-height: 60px;
+      margin-top: 0px; }
+    #wrapper #header .top-bar .title-area .name h1 span {
+      margin: 0px 0px 0px 10px;
+      text-align: left; }
+  #wrapper #header .top-bar #primary_nav li a {
+    width: 100%; }
+  #wrapper #apDiv1 p {
+    width: 41.091%; }
+    #wrapper #apDiv1 p .dropcap {
+      width: 16%; }
+  #wrapper #apDiv1 p.formnum {
+    width: 28.682%; }
+    #wrapper #apDiv1 p.formnum .dropcap-small {
+      width: 25%; }
+  #wrapper #banner p {
+    font-size: 0.9em;
+    width: 90%;
+    color: #FFFFFF;
+    margin: 0px 0px 0px 20px; }
+  #wrapper #banner .big {
+    font-size: 1.125em;
+    font-family: "Signika", Geneva, arial, sans-serif; }
+  #wrapper #banner #bannerimage {
+    width: 99.2602%;
+    height: 54.2553%; }
+  #wrapper #index_form_btn {
+    font-size: 0.7em; }
+  #wrapper #right_column {
+    display: none; }
+  #wrapper #left_column h1 {
+    color: #000000;
+    text-align: left;
+    margin: 1%;
+    width: 100%;
+    font-size: 1em;
+    height: 40px;
+    line-height: 40px; }
+  #wrapper #left_column p {
+    font-family: "Signika", Geneva, arial, sans-serif;
+    color: #666;
+    line-height: 1.5em; }
+  #wrapper #left_column #contact_form {
+    width: 100%;
+    height: auto;
+    margin-left: 1%;
+    /*end*/ }
+    #wrapper #left_column #contact_form label {
+      font-size: 0.8em;
+      width: 22%; }
+    #wrapper #left_column #contact_form input[type="submit"] {
+      margin: 5px 0px 0px 22%; }
+  #wrapper #left_column .cars_box {
+    height: 210px; }
+    #wrapper #left_column .cars_box .cars_box_img {
+      height: 82.7692%; }
+      #wrapper #left_column .cars_box .cars_box_img img {
+        width: 59.324%; }
+    #wrapper #left_column .cars_box .cars_box_txt {
+      font-size: 0.9em; }
+      #wrapper #left_column .cars_box .cars_box_txt .car-icons-box {
+        width: 60%; }
+        #wrapper #left_column .cars_box .cars_box_txt .car-icons-box .car-icons {
+          width: 23%; }
+      #wrapper #left_column .cars_box .cars_box_txt p {
+        font-size: 0.80em; }
+  #wrapper .specials_box {
+    width: 100%;
+    height: 250px;
+    float: none;
+    display: block;
+    margin: 0px; }
+    #wrapper .specials_box .specials_btn_box {
+      float: right;
+      width: 32.2716%;
+      height: 130px; }
+      #wrapper .specials_box .specials_btn_box .special_price {
+        width: 50%; }
+    #wrapper .specials_box .specials_box_img {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      color: #FFFFFF; }
+      #wrapper .specials_box .specials_box_img .car {
+        width: 52.1513%;
+        height: 89.2908%; }
+      #wrapper .specials_box .specials_box_img p {
+        color: #FFFFFF;
+        height: auto;
+        width: 53.4444%;
+        float: left;
+        margin: 0;
+        font-size: 0.69em;
+        line-height: 1.5em;
+        display: inline-block; }
+    #wrapper .specials_box .specials_box_txt {
+      width: 62.7284%;
+      height: 130px;
+      padding: 5px; }
+      #wrapper .specials_box .specials_box_txt p {
+        color: #3b3b3b;
+        height: auto;
+        width: 100%;
+        margin: 0px;
+        font-size: 0.65em;
+        line-height: 1.5em;
+        display: inline-block; }
+  #wrapper #worldsearchform .searchform .searchform_btn {
+    width: 125px;
+    height: 40px;
+    margin: 5px 0px 0px 10px;
+    font-size: 100%;
+    color: #FFFFFF; }
+  #wrapper .destinations {
+    color: #EF3528;
+    height: auto;
+    margin: 10px 0px 0px 10px;
+    display: inline-block;
+    float: none;
+    width: 100%; }
+  #wrapper .card {
+    float: left;
+    height: 340px;
+    width: 40%;
+    margin: 0px 0px 0.5em 0.8%; }
+    #wrapper .card h2 {
+      font-size: 1em;
+      margin: 1% auto;
+      line-height: 40px;
+      letter-spacing: 0.05em; }
+    #wrapper .card .card-section {
+      padding: 0.5em 1rem; }
+      #wrapper .card .card-section .front_img {
+        width: 90%;
+        margin: 1% auto; }
+      #wrapper .card .card-section p {
+        font-size: 0.75em;
+        margin: 4% auto;
+        line-height: 1.8em; }
+      #wrapper .card .card-section .link_btn {
+        margin: 1% auto; }
+      #wrapper .card .card-section a {
+        line-height: 34px;
+        width: 100%;
+        font-size: 0.9em; }
+      #wrapper .card .card-section a:hover {
+        font-weight: bold;
+        line-height: 34px; }
+  #wrapper footer #footer_nav a {
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 0.7em;
+    color: #FFFFFF; } }
+
+/*# sourceMappingURL=style.css.map */

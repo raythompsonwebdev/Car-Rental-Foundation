@@ -19,9 +19,9 @@ $RECYCLE.BIN/
 
 .sass-cache
 .tmp
-bower_components
+bower_components/
 dist
-node_modules
+node_modules/
 package.json
 bower.json
 .jshintrc
@@ -33,21 +33,68 @@ docs
 index.html
 CHANGELOG.md
 .bowerrc
+<<<<<<< HEAD
 
 app/foundation-sites/
+=======
+
+<<<<<<< HEAD
+app/foundation-sites/
+app/foundation-icons/
+app/fonts/
+
+=======
+app/foundation-icons/
+app/foundation-sites/
+app/motion-ui/
+>>>>>>> 28a40abc2e77f817eea7d7aa6899b0d8747a15d5
+>>>>>>> origin/master
 app/images/
 app/test.html/
 app/page1_images/
 app/scripts/jquery/
 app/motion-ui/
 app/scripts/html5shiv.min.js
-app/scripts/jquery-1.11.2.js
+app/scripts/jquery/
 app/scripts/jquery.validate.min.js
 app/scripts/selectivizr-min.js
 app/scripts/selectivizr.js
 
+<<<<<<< HEAD
 app/fonts/
 
+=======
+<<<<<<< HEAD
+app/scripts/Respond-master/
+app/scripts/vendor/
+app/scripts/jquery/
+app/styles/.sass-cache/
+app/styles/redmond/
+app/styles/redmond/images/
+app/styles/partials/
+app/styles/scss/
+
+app/text files/
+
+app/page1_images/
+=======
+app/fonts/
+
+app/car-original.html
+app/specials-original.html
+
+app/style-min.css.map
+app/style.css.map
+app/style.css
+
+app/ie8.css
+app/ie8-min.css.map
+app/ie8.css.map
+app/normalize.css.map
+app/normalize.css
+
+
+>>>>>>> origin/master
 app/scripts/jquery-ui-1.11.2.custom/
 app/scripts/jquery-ui-1.11.2.custom/external/
 app/scripts/jquery-ui-1.11.2.custom/external/jquery/
@@ -55,8 +102,20 @@ app/scripts/jquery-ui-1.11.2.custom/images/
 app/scripts/Respond-master/
 app/scripts/vendor/
 
+app/styles/
 app/styles/redmond/
 app/styles/redmond/images/
+app/styles/style.css
+app/styles/style.scss
+app/styles/style.css.map
+app/styles/main.css
+app/styles/main.scss
+app/styles/main.css.map
+app/normalize.css.map
+app/normalize-min.css.map
+
+dist/
+docs/
 
 app/foundation-icons/
 
@@ -66,5 +125,9 @@ docs/
 
 app/text files/
 app/.htaccess
+<<<<<<< HEAD
+=======
+>>>>>>> 28a40abc2e77f817eea7d7aa6899b0d8747a15d5
+>>>>>>> origin/master
 
 nbproject/
