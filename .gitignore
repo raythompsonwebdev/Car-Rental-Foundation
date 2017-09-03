@@ -33,22 +33,16 @@ docs
 index.html
 CHANGELOG.md
 .bowerrc
-<<<<<<< HEAD
 
 app/foundation-sites/
-=======
 
-<<<<<<< HEAD
 app/foundation-sites/
 app/foundation-icons/
 app/fonts/
 
-=======
 app/foundation-icons/
 app/foundation-sites/
 app/motion-ui/
->>>>>>> 28a40abc2e77f817eea7d7aa6899b0d8747a15d5
->>>>>>> origin/master
 app/images/
 app/test.html/
 app/page1_images/
@@ -60,11 +54,9 @@ app/scripts/jquery.validate.min.js
 app/scripts/selectivizr-min.js
 app/scripts/selectivizr.js
 
-<<<<<<< HEAD
+
 app/fonts/
 
-=======
-<<<<<<< HEAD
 app/scripts/Respond-master/
 app/scripts/vendor/
 app/scripts/jquery/
@@ -77,7 +69,7 @@ app/styles/scss/
 app/text files/
 
 app/page1_images/
-=======
+
 app/fonts/
 
 app/car-original.html
@@ -94,7 +86,7 @@ app/normalize.css.map
 app/normalize.css
 
 
->>>>>>> origin/master
+
 app/scripts/jquery-ui-1.11.2.custom/
 app/scripts/jquery-ui-1.11.2.custom/external/
 app/scripts/jquery-ui-1.11.2.custom/external/jquery/
@@ -125,9 +117,5 @@ docs/
 
 app/text files/
 app/.htaccess
-<<<<<<< HEAD
-=======
->>>>>>> 28a40abc2e77f817eea7d7aa6899b0d8747a15d5
->>>>>>> origin/master
 
 nbproject/
