@@ -602,14 +602,6 @@ html[xmlns] .clearfix {
     height: 35px;
     font-size: 1em;
   }
-  #wrapper #left_column #contact_form input[type="submit"] {
-    width: 123px;
-    height: 35px;
-    margin: 5px 0px 0px 17%;
-    color: #FFFFFF;
-    font-family: "Signika", arial, helvetica, sans-serif;
-    line-height: 0;
-  }
   #wrapper #left_column #contact_form textarea {
     width: 100%;
     font-size: 1em;
@@ -625,7 +617,7 @@ html[xmlns] .clearfix {
     text-indent: 1%;
   }
   #wrapper #left_column #contact_form input[type="submit"] {
-    width: 20%;
+    width: 25%;
     height: 35px;
     margin: 0;
     font-family: "Signika", arial, helvetica, sans-serif;
@@ -640,6 +632,9 @@ html[xmlns] .clearfix {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
     /* IE6├ó´┐¢´┐¢IE9 */
     color: #FFFFFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
   }
   #wrapper #left_column #contact_form input[type="submit"]:hover {
     background-color: #EE2A26;
@@ -5798,8 +5793,8 @@ html[xmlns] .clearfix {
     line-height: 40px;
   }
   #wrapper section#apDiv1 {
-    width: 87.949%;
-    left: 10%;
+    width: 93.949%;
+    left: 5%;
   }
   #wrapper section#apDiv1 h1 {
     height: 50px;
@@ -5901,7 +5896,7 @@ html[xmlns] .clearfix {
     height: 60px;
   }
   #wrapper #header .top-bar .title-area .name h1 {
-    font-size: 1.8em;
+    font-size: 1.7em;
     margin-left: 1%;
   }
   #wrapper #header .top-bar .title-area .name h1 span {
@@ -6078,7 +6073,7 @@ html[xmlns] .clearfix {
   #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
     padding: 7%;
     width: 50%;
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
     font-size: 45%;
@@ -6109,7 +6104,7 @@ html[xmlns] .clearfix {
   }
   #wrapper .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
     width: 94.44444%;
-    font-size: 0.7em;
+    font-size: 0.65em;
     line-height: 1.5em;
   }
   #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
@@ -6782,7 +6777,7 @@ html[xmlns] .clearfix {
   #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
     padding: 7%;
     width: 55%;
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
     font-size: 45%;
@@ -7478,7 +7473,7 @@ html[xmlns] .clearfix {
   #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
     padding: 7%;
     width: 55%;
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
     font-size: 45%;
@@ -8183,7 +8178,7 @@ html[xmlns] .clearfix {
   #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
     padding: 7%;
     width: 55%;
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
     font-size: 45%;
@@ -8685,12 +8680,13 @@ html[xmlns] .clearfix {
   #wrapper #header .title-bar button[type="button"] {
     display: block;
     color: #FFFFFF;
+    background-color: #000000;
     height: 100%;
   }
   #wrapper #header .title-bar button[type="button"]:hover {
-    background-color: #FFFFFF;
-    color: #000000;
-    font-size: 90%;
+    background-color: #303836;
+    color: #FFFFFF;
+    font-size: 0.9em;
   }
   #wrapper #header .top-bar {
     height: 60px;

@@ -17,105 +17,54 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-.sass-cache
-.tmp
-bower_components/
-dist
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
 node_modules/
-package.json
-bower.json
-.jshintrc
-.editorconfig
-.bowerrc
-.gitignore
-gulpfile.js
-docs
-index.html
+test/
+bower_components/
+.sass-cache/
+dist/
+docs/
+foundation-icons/
+ie8-min.css.map
 CHANGELOG.md
-.bowerrc
+normalize-min.css.map
+style-min.css.map
+style.css.map
+normalize.css.map
+ie8.css.map
+images/
+fonts/
 
-app/foundation-sites/
-
-app/foundation-sites/
-app/foundation-icons/
-app/fonts/
-
-app/foundation-icons/
-app/foundation-sites/
-app/motion-ui/
-app/images/
-app/test.html/
-app/page1_images/
-app/scripts/jquery/
-app/motion-ui/
-app/scripts/html5shiv.min.js
-app/scripts/jquery/
-app/scripts/jquery.validate.min.js
-app/scripts/selectivizr-min.js
-app/scripts/selectivizr.js
-
-
-app/fonts/
-
-app/scripts/Respond-master/
-app/scripts/vendor/
-app/scripts/jquery/
-app/styles/.sass-cache/
-app/styles/redmond/
-app/styles/redmond/images/
-app/styles/partials/
-app/styles/scss/
-
-app/text files/
-
-app/page1_images/
-
-app/fonts/
-
-app/car-original.html
-app/specials-original.html
-
-app/style-min.css.map
-app/style.css.map
-app/style.css
-
-app/ie8.css
-app/ie8-min.css.map
-app/ie8.css.map
-app/normalize.css.map
-app/normalize.css
-
-
-
-app/scripts/jquery-ui-1.11.2.custom/
-app/scripts/jquery-ui-1.11.2.custom/external/
-app/scripts/jquery-ui-1.11.2.custom/external/jquery/
-app/scripts/jquery-ui-1.11.2.custom/images/
-app/scripts/Respond-master/
-app/scripts/vendor/
-
-app/styles/
-app/styles/redmond/
-app/styles/redmond/images/
-app/styles/style.css
-app/styles/style.scss
-app/styles/style.css.map
-app/styles/main.css
-app/styles/main.scss
-app/styles/main.css.map
-app/normalize.css.map
-app/normalize-min.css.map
-
-dist/
-docs/
-
-app/foundation-icons/
-
-dist/
-docs/
-
-
-app/text files/
-app/.htaccess
-
-nbproject/
+scripts/Respond-master/
+scripts/html5shiv.min.js
+scripts/selectivizr.js
+scripts/selectivizr-min.js
+scripts/jquery.validate.min.js
