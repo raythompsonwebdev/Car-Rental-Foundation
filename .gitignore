@@ -46,25 +46,29 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+dist/
+.git/
+FILES/
 node_modules/
 test/
-bower_components/
 .sass-cache/
-dist/
-docs/
-foundation-icons/
-ie8-min.css.map
-CHANGELOG.md
-normalize-min.css.map
-style-min.css.map
-style.css.map
-normalize.css.map
-ie8.css.map
-images/
-fonts/
+car-rental-foundation/foundation-icons/
+car-rental-foundation/ie8-min.css.map
+car-rental-foundation/CHANGELOG.md
+car-rental-foundation/normalize-min.css.map
+car-rental-foundation/style-min.css.map
+car-rental-foundation/style.css.map
+car-rental-foundation/normalize.css.map
+car-rental-foundation/ie8.css.map
+car-rental-foundation/images/
+car-rental-foundation/fonts/
+car-rental-foundation/styles/scss/
 
-scripts/Respond-master/
-scripts/html5shiv.min.js
-scripts/selectivizr.js
-scripts/selectivizr-min.js
-scripts/jquery.validate.min.js
+car-rental-foundation/scripts/dist-motion-ui/
+car-rental-foundation/scripts/dist-what-input/
+car-rental-foundation/scripts/jquery/
+car-rental-foundation/scripts/Respond-master/
+car-rental-foundation/scripts/html5shiv.min.js
+car-rental-foundation/scripts/selectivizr.js
+car-rental-foundation/scripts/selectivizr-min.js
+car-rental-foundation/scripts/jquery.validate.min.js
