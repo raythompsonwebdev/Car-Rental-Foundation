@@ -17,97 +17,58 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-.sass-cache
-.tmp
-bower_components/
-dist
-node_modules/
-package.json
-bower.json
-.jshintrc
-.editorconfig
-.bowerrc
-.gitignore
-gulpfile.js
-docs
-index.html
-CHANGELOG.md
-.bowerrc
+# =========================
+# Operating System Files
+# =========================
 
-<<<<<<< HEAD
-app/foundation-sites/
-app/foundation-icons/
-app/fonts/
+# OSX
+# =========================
 
-=======
-app/foundation-icons/
-app/foundation-sites/
-app/motion-ui/
->>>>>>> 28a40abc2e77f817eea7d7aa6899b0d8747a15d5
-app/images/
-app/test.html/
-app/page1_images/
-app/scripts/html5shiv.min.js
-app/scripts/jquery/
-app/scripts/jquery.validate.min.js
-app/scripts/selectivizr-min.js
-app/scripts/selectivizr.js
+.DS_Store
+.AppleDouble
+.LSOverride
 
-<<<<<<< HEAD
-app/scripts/Respond-master/
-app/scripts/vendor/
-app/scripts/jquery/
-app/styles/.sass-cache/
-app/styles/redmond/
-app/styles/redmond/images/
-app/styles/partials/
-app/styles/scss/
+# Thumbnails
+._*
 
-app/text files/
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
 
-app/page1_images/
-=======
-app/fonts/
-
-app/car-original.html
-app/specials-original.html
-
-app/style-min.css.map
-app/style.css.map
-app/style.css
-
-app/ie8.css
-app/ie8-min.css.map
-app/ie8.css.map
-app/normalize.css.map
-app/normalize.css
-
-
-app/scripts/jquery-ui-1.11.2.custom/
-app/scripts/jquery-ui-1.11.2.custom/external/
-app/scripts/jquery-ui-1.11.2.custom/external/jquery/
-app/scripts/jquery-ui-1.11.2.custom/images/
-app/scripts/Respond-master/
-app/scripts/vendor/
-
-app/styles/
-app/styles/redmond/
-app/styles/redmond/images/
-app/styles/style.css
-app/styles/style.scss
-app/styles/style.css.map
-app/styles/main.css
-app/styles/main.scss
-app/styles/main.css.map
-app/normalize.css.map
-app/normalize-min.css.map
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 dist/
-docs/
+.git/
+FILES/
+node_modules/
+test/
+.sass-cache/
+car-rental-foundation/foundation-icons/
+car-rental-foundation/ie8-min.css.map
+car-rental-foundation/CHANGELOG.md
+car-rental-foundation/normalize-min.css.map
+car-rental-foundation/style-min.css.map
+car-rental-foundation/style.css.map
+car-rental-foundation/normalize.css.map
+car-rental-foundation/ie8.css.map
+car-rental-foundation/images/
+car-rental-foundation/fonts/
+car-rental-foundation/styles/scss/
 
-
-app/text files/
-app/.htaccess
->>>>>>> 28a40abc2e77f817eea7d7aa6899b0d8747a15d5
-
-nbproject/
+car-rental-foundation/scripts/dist-motion-ui/
+car-rental-foundation/scripts/dist-what-input/
+car-rental-foundation/scripts/jquery/
+car-rental-foundation/scripts/Respond-master/
+car-rental-foundation/scripts/html5shiv.min.js
+car-rental-foundation/scripts/selectivizr.js
+car-rental-foundation/scripts/selectivizr-min.js
+car-rental-foundation/scripts/jquery.validate.min.js
