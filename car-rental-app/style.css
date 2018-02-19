@@ -137,7 +137,6 @@ html[xmlns] .clearfix {
   display: none;
 }
 
-/*main wrapper*/
 @media only screen and (max-width: 1920px) {
   #wrapper {
     height: auto;
@@ -154,33 +153,6 @@ html[xmlns] .clearfix {
     /*Search_box form*/
     /*destination Links*/
     /*end*/
-        /*.panel{
-            float: left;
-            height: 320px;
-            width: 23.9999%;
-            margin: 0px 0px 2% 0.8%;
-            padding:1%;
-            border:none;
-            background-color:$color;
-            display:inline-block;
-            h2{ font-size:1.1em; color:$color; height:auto; margin:1% auto; line-height:25px;font-family:($fontStyle) ;  text-align:center; font-weight: bold; letter-spacing: 0.05em;}
-
-            figure.front_img{
-                width:100%;
-                margin:0;
-                padding:0;
-                figcaption, .card-section{
-                    padding:0;
-                    margin:0;
-                    p{font-size:0.75em; color:$color; width:98%; margin:4% auto; height:auto;font-family:($fontStyle) ; letter-spacing: 0.1em; display:block; line-height:1.8em; font-weight: 100;}
-
-                    .link_btn { width: 55.37931%; height:34px;  margin:1% auto;  font-family:($fontStyle) ; }
-                    a{ height:34px; line-height:34px; width:100%; text-align:center; font-size:1em;  padding:0; @include gradient(#FC7D3C, #EE2A26);@include rounded(5px); display:block; color:$color; }
-                    a:hover{ @include gradient(#EE2A26, #FC7D3C);font-weight:bold;line-height:34px; }
-                }
-            }
-
-        }end of info boxes*/
     /*end of newsletter box*/
     /*footer*/
   }
@@ -378,7 +350,7 @@ html[xmlns] .clearfix {
   }
   #wrapper section#apDiv1 #booking_form select#rental_start,
   #wrapper section#apDiv1 #booking_form select#rental_end {
-    width: 45%;
+    width: 35%;
   }
   #wrapper section#apDiv1 #booking_form select#pickup_location {
     width: 97%;
@@ -456,13 +428,20 @@ html[xmlns] .clearfix {
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 20px;
+    line-height: 60px;
     font-size: 0.9em;
+    display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
+    background-color: #fc773c;
     font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:active {
+    font-weight: bold;
+    background-color: #6ccff7;
+  }
+  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:focus {
+    background-color: #185F79;
     font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li {
@@ -476,7 +455,8 @@ html[xmlns] .clearfix {
   }
   #wrapper #header .top-bar #primary_nav ul li a {
     height: 100%;
-    line-height: 30px;
+    padding: 0;
+    line-height: 60px;
     width: 100%;
     color: #FFFFFF;
     font-size: 0.9em;
@@ -490,7 +470,11 @@ html[xmlns] .clearfix {
     font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li a:active {
-    background-color: #FFCC33;
+    font-weight: bold;
+    background-color: #6ccff7;
+  }
+  #wrapper #header .top-bar #primary_nav ul li a:focus {
+    background-color: #185F79;
     font-weight: bold;
   }
   #wrapper #index_form_btn {
@@ -1473,7 +1457,6 @@ html[xmlns] .clearfix {
     background-color: #FFCC33;
   }
 }
-/*end of wrapper*/
 @media only screen and (max-width: 1440px) {
   .media-object-section {
     margin-right: -4%;
@@ -1638,21 +1621,13 @@ html[xmlns] .clearfix {
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 20px;
     font-size: 0.9em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:active {
-    font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li {
     height: 60px;
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 0.9em;
   }
   #wrapper #header .top-bar #primary_nav ul li a:hover {
@@ -2376,21 +2351,13 @@ html[xmlns] .clearfix {
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 20px;
     font-size: 0.9em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:active {
-    font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li {
     height: 60px;
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 0.9em;
   }
   #wrapper #header .top-bar #primary_nav ul li a:hover {
@@ -3100,28 +3067,14 @@ html[xmlns] .clearfix {
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 20px;
     font-size: 0.8em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:active {
-    font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li {
     height: 60px;
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 0.9em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:active {
-    font-weight: bold;
   }
   #wrapper #index_form_btn {
     width: 47.42268%;
@@ -3807,28 +3760,14 @@ html[xmlns] .clearfix {
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 20px;
     font-size: 0.75em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:active {
-    font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li {
     height: 60px;
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
-    font-size: 0.9em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:active {
-    font-weight: bold;
+    font-size: 0.8em;
   }
   #wrapper #index_form_btn {
     width: 47.42268%;
@@ -4520,28 +4459,14 @@ html[xmlns] .clearfix {
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 20px;
     font-size: 0.7em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:active {
-    font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li {
     height: 60px;
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 0.8em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:active {
-    font-weight: bold;
   }
   #wrapper #index_form_btn {
     width: 47.42268%;
@@ -5082,16 +5007,6 @@ html[xmlns] .clearfix {
   #wrapper {
     width: 90%;
     padding-top: 1%;
-    /*Form button*/
-    /*End Form button*/
-    /*Banner*/
-    /* left Column*/
-    /*right column*/
-    /*Search_box form*/
-    /*destination Links*/
-    /*end*/
-    /*end of newsletter box*/
-    /*footer*/
   }
   #wrapper h1 {
     margin: 1% auto;
@@ -5180,6 +5095,7 @@ html[xmlns] .clearfix {
   }
   #wrapper #header {
     height: 60px;
+    /*end of primary nav*/
   }
   #wrapper #header .title-bar {
     display: none;
@@ -5188,7 +5104,6 @@ html[xmlns] .clearfix {
   #wrapper #header .top-bar {
     height: 60px;
     /*primary nav*/
-    /*end of primary nav*/
   }
   #wrapper #header .top-bar .top-bar-left {
     width: 25%;
@@ -5222,292 +5137,289 @@ html[xmlns] .clearfix {
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 20px;
     font-size: 0.7em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:active {
-    font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li {
     height: 60px;
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 0.8em;
   }
-  #wrapper #header .top-bar #primary_nav ul li a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:active {
-    font-weight: bold;
-  }
-  #wrapper #index_form_btn {
+
+  /*Form button*/
+  #index_form_btn {
     width: 47.42268%;
     font-size: 1.5em;
     height: 50px;
   }
-  #wrapper #index_form_btn:hover {
+  #index_form_btn:hover {
     color: #FFCC33;
   }
-  #wrapper figure#banner {
+
+  /*End Form button*/
+  /*Banner*/
+  figure#banner {
     height: 320px;
     margin: 1% auto;
     /*banner end*/
   }
-  #wrapper figure#banner figure#bannerimage {
+  figure#banner figure#bannerimage {
     width: 50.26016%;
   }
-  #wrapper figure#banner figcaption.big p:first-of-type {
+  figure#banner figcaption.big p:first-of-type {
     font-size: 2.9em;
     width: 60%;
     line-height: 1.1em;
   }
-  #wrapper figure#banner figcaption.big p {
+  figure#banner figcaption.big p {
     font-size: 0.85em;
     width: 50%;
   }
-  #wrapper #left_column {
+
+  /* left Column*/
+  #left_column {
     float: left;
     /*Contact form*/
     /*end of contact form*/
     /*specials page */
   }
-  #wrapper #left_column p {
+  #left_column p {
     font-size: 0.8em;
     line-height: 1.8em;
   }
-  #wrapper #left_column h1 {
+  #left_column h1 {
     margin: 1% 0;
     font-size: 1.5em;
   }
-  #wrapper #left_column h3 {
+  #left_column h3 {
     margin: 1% 0;
     font-size: 1.1em;
   }
-  #wrapper #left_column #contact_form {
+  #left_column #contact_form {
     width: 80%;
     height: 500px;
     margin-left: 2%;
   }
-  #wrapper #left_column #contact_form input {
+  #left_column #contact_form input {
     width: 100%;
     height: 35px;
     font-size: 0.9em;
   }
-  #wrapper #left_column #contact_form input[type="submit"] {
+  #left_column #contact_form input[type="submit"] {
     width: 123px;
     height: 35px;
   }
-  #wrapper #left_column #contact_form textarea {
+  #left_column #contact_form textarea {
     width: 100%;
     font-size: 0.9em;
     line-height: 1.5em;
   }
-  #wrapper #left_column #contact_form label {
+  #left_column #contact_form label {
     font-size: 0.85em;
     height: 35px;
     line-height: 35px;
     text-indent: 1%;
   }
-  #wrapper #left_column #contact_form input[type="submit"] {
+  #left_column #contact_form input[type="submit"] {
     width: 20%;
     font-size: 1em;
   }
-  #wrapper #left_column #contact_form input[type="submit"]:hover {
+  #left_column #contact_form input[type="submit"]:hover {
     font-weight: bold;
     width: 20%;
   }
-  #wrapper #left_column .media-object p:nth-of-type(1) {
+  #left_column .media-object p:nth-of-type(1) {
     font-weight: bold;
     font-size: 1em;
   }
-  #wrapper #left_column .media-object p:nth-of-type(2) {
+  #left_column .media-object p:nth-of-type(2) {
     color: #00CCFF;
     font-size: 0.8em;
   }
-  #wrapper #left_column .media-object p:nth-of-type(3) {
+  #left_column .media-object p:nth-of-type(3) {
     font-size: 0.75em;
   }
-  #wrapper #left_column .media-object p:nth-of-type(4) {
+  #left_column .media-object p:nth-of-type(4) {
     font-size: 0.85em;
     line-height: 30px;
   }
-  #wrapper #left_column .spacer {
+  #left_column .spacer {
     width: 3px;
     height: 300px;
   }
-  #wrapper .tabs {
+
+  .tabs {
     border: none;
   }
-  #wrapper .tabs li.tabs-title {
+  .tabs li.tabs-title {
     width: 15%;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
   }
-  #wrapper .tabs li.tabs-title a {
+  .tabs li.tabs-title a {
     font-size: 0.8em;
   }
-  #wrapper .tabs li.tabs-title a:hover {
+  .tabs li.tabs-title a:hover {
     border-top: solid #e6e6e6 0.5px;
     border-right: solid #e6e6e6 0.5px;
     border-left: solid #e6e6e6 0.5px;
   }
-  #wrapper .tabs-content {
+
+  .tabs-content {
     transition: all 0.5s ease;
   }
-  #wrapper .tabs-content .tabs-panel {
+  .tabs-content .tabs-panel {
     /*left Column*/
   }
-  #wrapper .tabs-content .tabs-panel .clearfix {
+  .tabs-content .tabs-panel .clearfix {
     display: inline-block;
     clear: both;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box {
+  .tabs-content .tabs-panel .specials_box {
     width: 49.5%;
     height: 270px;
     margin-left: 0;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box {
+  .tabs-content .tabs-panel .specials_box .specials_btn_box {
     width: 37%;
     padding-right: 2%;
     display: inline-block;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
+  .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price {
     padding: 7%;
     width: 50%;
     font-size: 1.5em;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
+  .tabs-content .tabs-panel .specials_box .specials_btn_box .special_price span {
     font-size: 45%;
     display: block;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn {
+  .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn {
     width: 90%;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a {
+  .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a {
     margin: 0 auto;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a:hover {
+  .tabs-content .tabs-panel .specials_box .specials_btn_box .cont_btn a:hover {
     font-weight: bold;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .specials_box_img {
+  .tabs-content .tabs-panel .specials_box .specials_box_img {
     height: 105px;
     padding: 2%;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .media-object-section {
+  .tabs-content .tabs-panel .specials_box .media-object-section {
     margin-right: -26%;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .media-object-section div.car {
+  .tabs-content .tabs-panel .specials_box .media-object-section div.car {
     width: 70%;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .media-object-section h4 {
+  .tabs-content .tabs-panel .specials_box .media-object-section h4 {
     font-weight: bold;
     font-size: 0.75em;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
+  .tabs-content .tabs-panel .specials_box .media-object-section p.special1 {
     width: 94.44444%;
     font-size: 0.7em;
     line-height: 1.5em;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
+  .tabs-content .tabs-panel .specials_box ul.specials_box_txt {
     width: 62.5%;
     padding: 2%;
   }
-  #wrapper .tabs-content .tabs-panel .specials_box ul.specials_box_txt li {
+  .tabs-content .tabs-panel .specials_box ul.specials_box_txt li {
     font-size: 0.7em;
     line-height: 1.7em;
     text-indent: 2%;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box {
+  .tabs-content .tabs-panel .cars_box {
     height: 220px;
     margin-bottom: 1.5%;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img {
+  .tabs-content .tabs-panel .cars_box .cars_box_img {
     float: left;
     width: 50%;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_img img {
+  .tabs-content .tabs-panel .cars_box .cars_box_img img {
     margin: 0 auto;
     width: 80%;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt {
+  .tabs-content .tabs-panel .cars_box .cars_box_txt {
     width: 47.75602%;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box {
+  .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box {
     height: 35px;
     display: block;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box .car-icons {
+  .tabs-content .tabs-panel .cars_box .cars_box_txt .car-icons-box .car-icons {
     width: 16%;
     margin: 1%;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(4) {
+  .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(4) {
     margin: 5px 0px 5px 0px;
     font-size: 0.9em;
     line-height: 30px;
     clear: both;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(1) {
+  .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(1) {
     font-weight: bold;
     font-size: 1em;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(2) {
+  .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(2) {
     font-size: 0.9em;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(3) {
+  .tabs-content .tabs-panel .cars_box .cars_box_txt p:nth-of-type(3) {
     color: #999999;
     font-size: 0.85em;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton {
+  .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton {
     width: 46.727%;
     margin: 0;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a {
+  .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a {
     color: #FFFFFF;
     padding: 7%;
   }
-  #wrapper .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a:hover {
+  .tabs-content .tabs-panel .cars_box .cars_box_txt .carsbutton a:hover {
     font-weight: bold;
   }
-  #wrapper #right_coler {
+
+  /*right column*/
+  #right_coler {
     height: 900px;
     border: none;
   }
-  #wrapper #right_coler .card {
+  #right_coler .card {
     height: 300px;
     width: 100%;
     margin: 0px 0px 0.5em 0.8%;
   }
-  #wrapper #right_coler .card h2 {
+  #right_coler .card h2 {
     font-size: 1em;
     line-height: 30px;
   }
-  #wrapper #right_coler .card .card-section {
+  #right_coler .card .card-section {
     padding: 0.5em 0.5rem;
   }
-  #wrapper #right_coler .card .card-section .front_img {
+  #right_coler .card .card-section .front_img {
     width: 90%;
     margin: 1% auto;
   }
-  #wrapper #right_coler .card .card-section p {
+  #right_coler .card .card-section p {
     font-size: 0.65em;
     margin: 0 0 5% 0;
     line-height: 1.8em;
   }
-  #wrapper #right_coler .card .card-section .link_btn {
+  #right_coler .card .card-section .link_btn {
     width: 80.379%;
     font-size: 0.9em;
   }
-  #wrapper #right_coler .card .card-section .link_btn:hover {
+  #right_coler .card .card-section .link_btn:hover {
     font-weight: bold;
     width: 80.379%;
   }
-  #wrapper #right_coler #image5 {
+  #right_coler #image5 {
     background-color: #747877;
     background-image: -moz-linear-gradient(top, #747877, #A2A5A5);
     /* FF3.6 */
@@ -5517,41 +5429,41 @@ html[xmlns] .clearfix {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
     /* IE6├ó´┐¢´┐¢IE9 */
   }
-  #wrapper #right_coler #image5 h2 {
+  #right_coler #image5 h2 {
     font-size: 1em;
     line-height: 25px;
   }
-  #wrapper #right_coler #image5 p {
+  #right_coler #image5 p {
     font-size: 0.6em;
     letter-spacing: 0.2em;
     line-height: 1.8em;
     letter-spacing: 0.05em;
   }
-  #wrapper #right_coler #image5 form {
+  #right_coler #image5 form {
     width: 90%;
     margin: 4% auto;
   }
-  #wrapper #right_coler #image5 form input[type="text"] {
+  #right_coler #image5 form input[type="text"] {
     width: 100%;
     height: 30px;
   }
-  #wrapper #right_coler #image5 form input[type="email"] {
+  #right_coler #image5 form input[type="email"] {
     width: 100%;
     height: 30px;
   }
-  #wrapper #right_coler #image5 form input[type="submit"] {
+  #right_coler #image5 form input[type="submit"] {
     width: 76.379%;
     line-height: 2px;
     padding: 7%;
   }
-  #wrapper #right_coler #image5 form input[type="submit"]:hover {
+  #right_coler #image5 form input[type="submit"]:hover {
     line-height: 2px;
     font-weight: bold;
   }
-  #wrapper #right_coler #image2 {
+  #right_coler #image2 {
     margin-top: 22%;
   }
-  #wrapper #right_coler #image3 {
+  #right_coler #image3 {
     background-color: #0B4763;
     background-image: -moz-linear-gradient(top, #0B4763, #3E7D9A);
     /* FF3.6 */
@@ -5561,104 +5473,111 @@ html[xmlns] .clearfix {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
     /* IE6├ó´┐¢´┐¢IE9 */
   }
-  #wrapper #worldsearchform {
+
+  /*Search_box form*/
+  #worldsearchform {
     padding: 1%;
     width: 55%;
     display: block;
     height: auto;
   }
-  #wrapper #worldsearchform h2 {
+  #worldsearchform h2 {
     font-size: 1.15em;
     margin: 0px 0px 2% 0;
     line-height: 30px;
     width: 70%;
   }
-  #wrapper #worldsearchform .searchform {
+  #worldsearchform .searchform {
     width: 80%;
     height: 40px;
     display: block;
     /*end of searchform*/
   }
-  #wrapper #worldsearchform .searchform ul {
+  #worldsearchform .searchform ul {
     height: 100%;
   }
-  #wrapper #worldsearchform .searchform ul li {
+  #worldsearchform .searchform ul li {
     width: 50%;
     display: inline-block;
     float: left;
   }
-  #wrapper #worldsearchform .searchform ul li input {
+  #worldsearchform .searchform ul li input {
     height: 35px;
   }
-  #wrapper #worldsearchform .searchform ul li input[type="submit"] {
+  #worldsearchform .searchform ul li input[type="submit"] {
     font-size: 1.25em;
     margin: 0 0 0 5%;
     padding: 0;
     display: block;
   }
-  #wrapper #worldsearchform .searchform .searchform_btn {
+  #worldsearchform .searchform .searchform_btn {
     width: 120px;
     height: 34px;
     font-size: 1em;
     line-height: 35px;
   }
-  #wrapper #worldsearchform .searchform .searchform_btn:hover {
+  #worldsearchform .searchform .searchform_btn:hover {
     font-weight: bold;
   }
-  #wrapper .destinations {
+
+  /*destination Links*/
+  .destinations {
     width: 31.094%;
   }
-  #wrapper .destinations ul {
+  .destinations ul {
     list-style: none;
   }
-  #wrapper .destinations ul li {
+  .destinations ul li {
     height: 30px;
     line-height: 30px;
   }
-  #wrapper .destinations ul li a {
+  .destinations ul li a {
     line-height: 30px;
     display: block;
     font-size: 0.9em;
   }
-  #wrapper .destinations ul li a:hover {
+  .destinations ul li a:hover {
     text-decoration: none;
   }
-  #wrapper .destinations ul li:nth-of-type(1) {
+  .destinations ul li:nth-of-type(1) {
     font-size: 1.1em;
     height: 40px;
     line-height: 40px;
   }
-  #wrapper .card {
+
+  /*end*/
+  .card {
     height: 305px;
     width: 23.9999%;
     margin: 0px 0px 0.5em 0.8%;
     padding-top: 1%;
   }
-  #wrapper .card h2 {
+  .card h2 {
     font-size: 0.9em;
     line-height: 25px;
   }
-  #wrapper .card .card-section {
+  .card .card-section {
     padding: 0.5em 0.5rem;
   }
-  #wrapper .card .card-section .front_img {
+  .card .card-section .front_img {
     margin: 1% auto;
   }
-  #wrapper .card .card-section p {
+  .card .card-section p {
     font-size: 0.6em;
     margin: 0 0 10% 0;
     line-height: 1.6em;
   }
-  #wrapper .card .card-section .link_btn {
+  .card .card-section .link_btn {
     width: 75.37931%;
     font-size: 0.9em;
     line-height: 35px;
   }
-  #wrapper .card .card-section .link_btn:hover {
+  .card .card-section .link_btn:hover {
     font-weight: bold;
     width: 75.37931%;
   }
-  #wrapper #image1 {
+
+  #image1 {
     background-color: #0B4763;
     background-image: -moz-linear-gradient(top, #0B4763, #3E7D9A);
     /* FF3.6 */
@@ -5668,7 +5587,8 @@ html[xmlns] .clearfix {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
     /* IE6├ó´┐¢´┐¢IE9 */
   }
-  #wrapper #image2 {
+
+  #image2 {
     background-color: #ff7f13;
     background-image: -moz-linear-gradient(top, #ff7f13, #ffb260);
     /* FF3.6 */
@@ -5678,7 +5598,8 @@ html[xmlns] .clearfix {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
     /* IE6├ó´┐¢´┐¢IE9 */
   }
-  #wrapper #image3 {
+
+  #image3 {
     background-color: #8DC7E2;
     background-image: -moz-linear-gradient(top, #8DC7E2, #C6E2F0);
     /* FF3.6 */
@@ -5688,7 +5609,8 @@ html[xmlns] .clearfix {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
     /* IE6├ó´┐¢´┐¢IE9 */
   }
-  #wrapper #newsletter {
+
+  #newsletter {
     background-color: #747877;
     background-image: -moz-linear-gradient(top, #747877, #A2A5A5);
     /* FF3.6 */
@@ -5698,77 +5620,80 @@ html[xmlns] .clearfix {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor');
     /* IE6├ó´┐¢´┐¢IE9 */
   }
-  #wrapper #newsletter h2 {
+  #newsletter h2 {
     font-size: 1em;
     line-height: 25px;
   }
-  #wrapper #newsletter p {
+  #newsletter p {
     font-size: 0.6em;
     margin: 0 0 2% 0;
     line-height: 1.8em;
   }
-  #wrapper #newsletter .newsletter {
+  #newsletter .newsletter {
     width: 88%;
     margin: 0 auto;
     padding: 0;
   }
-  #wrapper #newsletter .newsletter input[type="text"] {
+  #newsletter .newsletter input[type="text"] {
     line-height: 30px;
   }
-  #wrapper #newsletter .newsletter input[type="email"] {
+  #newsletter .newsletter input[type="email"] {
     line-height: 30px;
   }
-  #wrapper #newsletter .newsletter input[type="submit"] {
+  #newsletter .newsletter input[type="submit"] {
     width: 85.379%;
     line-height: 35px;
     font-size: 0.9em;
   }
-  #wrapper #newsletter .newsletter input[type="submit"]:hover {
+  #newsletter .newsletter input[type="submit"]:hover {
     font-weight: bold;
   }
-  #wrapper footer {
+
+  /*end of newsletter box*/
+  /*footer*/
+  footer {
     height: 40px;
     clear: both;
   }
-  #wrapper footer #footer_nav {
+  footer #footer_nav {
     height: 40px;
     margin: 0px auto;
     width: 85%;
   }
-  #wrapper footer #footer_nav ul {
+  footer #footer_nav ul {
     height: 40px;
     width: 75%;
   }
-  #wrapper footer #footer_nav li:nth-of-type(2) {
+  footer #footer_nav li:nth-of-type(2) {
     width: 16.66%;
   }
-  #wrapper footer #footer_nav li:nth-of-type(2) a {
+  footer #footer_nav li:nth-of-type(2) a {
     line-height: 40px;
     font-size: 0.8em;
   }
-  #wrapper footer #footer_nav li:nth-of-type(2) a:hover {
+  footer #footer_nav li:nth-of-type(2) a:hover {
     font-weight: bold;
   }
-  #wrapper footer #footer_nav li:nth-of-type(2) a:active {
+  footer #footer_nav li:nth-of-type(2) a:active {
     font-weight: bold;
   }
-  #wrapper footer #footer_nav li {
+  footer #footer_nav li {
     height: 40px;
     width: 16.66%;
     float: left;
     font-size: 0.9em;
   }
-  #wrapper footer #footer_nav li:hover {
+  footer #footer_nav li:hover {
     background-color: #fc773c;
   }
-  #wrapper footer #footer_nav a {
+  footer #footer_nav a {
     font-size: 0.75em;
     display: block;
   }
-  #wrapper footer #footer_nav a:hover {
+  footer #footer_nav a:hover {
     color: #FFFFFF;
   }
-  #wrapper footer #footer_nav a:active {
+  footer #footer_nav a:active {
     background-color: #FFCC33;
   }
 }
@@ -5916,28 +5841,14 @@ html[xmlns] .clearfix {
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 20px;
     font-size: 0.7em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:active {
-    font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li {
     height: 60px;
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 0.7em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:active {
-    font-weight: bold;
   }
   #wrapper #index_form_btn {
     width: 47.42268%;
@@ -6620,28 +6531,14 @@ html[xmlns] .clearfix {
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 20px;
     font-size: 0.65em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:active {
-    font-weight: bold;
   }
   #wrapper #header .top-bar #primary_nav ul li {
     height: 60px;
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 0.7em;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:hover {
-    font-weight: bold;
-  }
-  #wrapper #header .top-bar #primary_nav ul li a:active {
-    font-weight: bold;
   }
   #wrapper #index_form_btn {
     width: 47.42268%;
@@ -7316,7 +7213,6 @@ html[xmlns] .clearfix {
     width: 16.66%;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 20px;
     font-size: 0.65em;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
@@ -9283,16 +9179,6 @@ html[xmlns] .clearfix {
   #wrapper {
     width: 96%;
     padding-top: 1%;
-    /*Form button*/
-    /*End Form button*/
-    /*Banner*/
-    /* left Column*/
-    /*right column*/
-    /*Search_box form*/
-    /*destination Links*/
-    /*end*/
-    /*end of newsletter box*/
-    /*footer*/
   }
   #wrapper h1 {
     font-size: 1.4em;
@@ -9422,7 +9308,7 @@ html[xmlns] .clearfix {
     display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 30px;
+    line-height: 60px;
     font-size: 1em;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
@@ -9437,7 +9323,7 @@ html[xmlns] .clearfix {
     display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
+    line-height: 60px;
     font-size: 1em;
   }
   #wrapper #header .top-bar #primary_nav ul li a:hover {
@@ -10096,7 +9982,6 @@ html[xmlns] .clearfix {
     display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 30px;
     font-size: 1em;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
@@ -10111,7 +9996,6 @@ html[xmlns] .clearfix {
     display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 1em;
   }
   #wrapper #header .top-bar #primary_nav ul li a:hover {
@@ -10782,7 +10666,6 @@ html[xmlns] .clearfix {
     display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 30px;
     font-size: 1em;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
@@ -10797,7 +10680,6 @@ html[xmlns] .clearfix {
     display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 1em;
   }
   #wrapper #header .top-bar #primary_nav ul li a:hover {
@@ -11480,7 +11362,6 @@ html[xmlns] .clearfix {
     display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 30px;
     font-size: 1em;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
@@ -11495,7 +11376,6 @@ html[xmlns] .clearfix {
     display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 1em;
   }
   #wrapper #header .top-bar #primary_nav ul li a:hover {
@@ -12169,7 +12049,6 @@ html[xmlns] .clearfix {
     display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a {
-    line-height: 30px;
     font-size: 1em;
   }
   #wrapper #header .top-bar #primary_nav ul li:nth-of-type(2) a:hover {
@@ -12184,7 +12063,6 @@ html[xmlns] .clearfix {
     display: block;
   }
   #wrapper #header .top-bar #primary_nav ul li a {
-    line-height: 30px;
     font-size: 1em;
   }
   #wrapper #header .top-bar #primary_nav ul li a:hover {
