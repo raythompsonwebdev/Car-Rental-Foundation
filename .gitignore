@@ -46,12 +46,21 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-dist/
-.git/
-FILES/
+
+Files/
+npm-debug.log
 node_modules/
-test/
+crossdomain.xml
+browserconfig.xml
+crossdomain.xml
+apple-touch-icon.png
+.vscode/
+bower_components/
+nbproject/
+.git/
+_assets/
 .sass-cache/
+<<<<<<< HEAD
 foundation-icons/
 ie8-min.css.map
 CHANGELOG.md
@@ -75,3 +84,27 @@ scripts/html5shiv.min.js
 scripts/selectivizr.js
 scripts/selectivizr-min.js
 scripts/jquery.validate.min.js
+=======
+.settings/
+
+
+car-rental-app/foundation-icons/
+car-rental-app/images/
+car-rental-app/images/images/
+car-rental-app/fonts/
+car-rental-app/scripts/dist-motion-ui/
+car-rental-app/scripts/dist-what-input/
+car-rental-app/scripts/jquery/
+car-rental-app/scripts/old-browser-scripts/
+car-rental-app/scripts/dist/
+car-rental-app/nbproject/
+car-rental-app/styles/.sass-cache/
+car-rental-app/styles/style.css.map
+
+car-rental-app/ie8.css.map
+car-rental-app/normalize.css.map
+
+
+
+car-rental-app/favicons/
+>>>>>>> d58c21f239ee7fb68ab156295be75cba68eb9ea6

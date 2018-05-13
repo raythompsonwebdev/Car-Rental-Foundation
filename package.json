@@ -1,0 +1,38 @@
+{
+  "name": "car-rental-app",
+  "version": "1.0.0",
+  "main": "car-rental-app/index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.2.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-responsive-images": "^1.10.1"
+  },
+  "author": "raymond thompson",
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": "https://github.com/raythompsonwebdev/car-rental-foundation.git",
+  "bugs": {
+    "url": "https://github.com/raythompsonwebdev/car-rental-foundation/issues"
+  },
+  "homepage": "https://github.com/raythompsonwebdev/car-rental-foundation#readme",
+  "description": "car rental booking website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "car rental"
+  ]
+}
