@@ -1,48 +1,50 @@
-# Foundation for Sites Template
+![Car Rental](/www-car-rental-website-home-page-large.jpg)
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+## Car Rental
+Car Rental is a car rental booking website where you can make reservations for various types of standard,  luxury, economy cars. Website design used provided by https://www.phpjabbers.com/free-website-templates.php. Website built using Foundation for sites 6 framework. 
 
-This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
 
-## Installation
+## Installing
 
-To use this template, your computer needs:
 
-- [NodeJS](https://nodejs.org/en/) (0.12 or greater)
-- [Git](https://git-scm.com/)
+## Running the tests
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
 
-### Using the CLI
+## Credits
 
-Install the Foundation CLI with this command:
+* Zurb Foundation for sites 6 - freely distributable under the terms of the MIT license.
 
-```bash
-npm install foundation-cli --global
-```
+* Selectivizr - selectivizr v1.0.2 - (c) Keith Clark, freely distributable under the terms of the MIT license.
 
-Use this command to set up a blank Foundation for Sites project with this template:
 
-```bash
-foundation new --framework sites --template basic
-```
+* jQuery validation plug-in 1.7
 
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
+ - http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+ - http://docs.jquery.com/Plugins/Validation
 
-### Manual Setup
+ - Copyright (c) 2006 - 2008 Jörn Zaefferer - $Id: jquery.validate.js 6403 2009-06-17 14:27:16Z joern.zaefferer $
 
-To manually set up the template, first download it with Git:
+ - Dual licensed under the MIT and GPL licenses:
+ - http://www.opensource.org/licenses/mit-license.php
+ - http://www.gnu.org/licenses/gpl.html
 
-```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
-```
+* HTML5 Shiv 3.7.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
 
-Then open the folder in your command line, and install the needed dependencies:
 
-```bash
-cd projectname
-npm install
-bower install
-```
+* ! jQuery v1.10.2 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
 
-Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
+* phpjabbers - https://www.phpjabbers.com/licence-agreement.php
+
+
+
+## License
+
+MIT License
+
+
+## Acknowledgments
+
+
+
+
+
