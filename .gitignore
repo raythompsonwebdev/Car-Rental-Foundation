@@ -66,6 +66,9 @@ images/
 fonts/
 styles/.sass-cache/
 Files/
+public/css/foundation/
+public/js/foundation/
+public/images/
 
 
 

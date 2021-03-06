@@ -1,6 +1,6 @@
 import express from "express";
 import routes from "./src/routes/cr.Routes";
-import bodyParser from "body-paerser";
+import bodyParser from "body-parser";
 import mongoose from "mongoose";
 
 const app = express();
@@ -9,11 +9,11 @@ const PORT = 3000;
 //mongoose connection
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost/CRdb", {
-    useMongoClent: true,
+    useMongoClient: true,
 });
 
 //body parser set up
-app.use(bodyparser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 routes(app);
