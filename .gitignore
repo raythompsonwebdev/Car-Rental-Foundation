@@ -47,20 +47,14 @@ Temporary Items
 .apdisk
 
 
-Files/
 npm-debug.log
 node_modules/
 crossdomain.xml
 browserconfig.xml
 crossdomain.xml
 apple-touch-icon.png
-.vscode/
-bower_components/
 nbproject/
-.git/
-_assets/
 .sass-cache/
-foundation-icons/
 ie8-min.css.map
 CHANGELOG.md
 normalize-min.css.map
@@ -70,16 +64,8 @@ normalize.css.map
 ie8.css.map
 images/
 fonts/
-styles/scss/
 styles/.sass-cache/
+Files/
 
 
 
-scripts/dist-motion-ui/
-scripts/dist-what-input/
-scripts/jquery/
-scripts/Respond-master/
-scripts/html5shiv.min.js
-scripts/selectivizr.js
-scripts/selectivizr-min.js
-scripts/jquery.validate.min.js
