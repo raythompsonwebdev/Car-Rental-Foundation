@@ -1,74 +1,10 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-
+node_modules
 npm-debug.log
-node_modules/
-crossdomain.xml
-browserconfig.xml
-crossdomain.xml
-apple-touch-icon.png
-nbproject/
-.sass-cache/
-ie8-min.css.map
-CHANGELOG.md
-normalize-min.css.map
-style-min.css.map
-style.css.map
-normalize.css.map
-ie8.css.map
-images/
-fonts/
-styles/.sass-cache/
-Files/
-public/css/foundation/
-public/js/foundation/
-public/images/
-
-
-
+bower_components
+dist
+*.swp
+.cache
+.idea
+src/assets/img/
+src/assets/fonts/
