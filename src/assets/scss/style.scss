@@ -534,7 +534,7 @@ html[xmlns] .clearfix {
           line-height: 35px;
           float: left;
           text-indent: 1%;
-          width:100%;
+          width: 100%;
         }
         input[type="submit"] {
           width: 25%;
@@ -1417,7 +1417,7 @@ html[xmlns] .clearfix {
 
               a {
                 line-height: 20px;
-                font-size: 0.9em;
+                font-size: 90%;
                 &:hover {
                   font-weight: bold;
                 }
@@ -1441,7 +1441,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -2151,7 +2151,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -2856,7 +2856,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -3547,7 +3547,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -4243,7 +4243,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -4927,7 +4927,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -5605,7 +5605,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -6245,7 +6245,7 @@ html[xmlns] .clearfix {
           .name {
             height: 60px;
             h1 {
-              font-size: 1.7em;
+              font-size: 1.6em;
 
               span {
                 font-size: 1.15em;
@@ -6291,7 +6291,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -6940,11 +6940,13 @@ html[xmlns] .clearfix {
           width: 72%;
 
           ul {
-            height: 60px;
+            height: auto;
             text-align: center;
 
             li:nth-of-type(2) {
-              width: 16.66%;
+              float: none;
+              width: 100%;
+              display: block;
 
               a {
                 line-height: 20px;
@@ -6958,11 +6960,13 @@ html[xmlns] .clearfix {
               }
             }
             li {
-              height: 60px;
-              width: 16.66%;
+              height: 50px;
+              float: none;
+              width: 100%;
+              display: block;
               a {
-                line-height: 30px;
-                font-size: 0.7em;
+                line-height: 50px;
+                font-size: 1em;
                 &:hover {
                   font-weight: bold;
                 }
@@ -6972,7 +6976,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -7622,18 +7626,15 @@ html[xmlns] .clearfix {
         /*primary nav*/
         #primary_nav {
           width: 100%;
-          height: auto;
+
           ul {
             height: auto;
             text-align: center;
 
             li:nth-of-type(2) {
               float: none;
-              width: 100%;
-              display: block;
 
               a {
-                line-height: 30px;
                 font-size: 1em;
                 &:hover {
                   font-weight: bold;
@@ -7644,12 +7645,8 @@ html[xmlns] .clearfix {
               }
             }
             li {
-              height: 60px;
-              width: 100%;
               float: none;
-              display: block;
               a {
-                line-height: 30px;
                 font-size: 1em;
                 &:hover {
                   font-weight: bold;
@@ -7660,7 +7657,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -8329,12 +8326,9 @@ html[xmlns] .clearfix {
               }
             }
             li {
-              height: 60px;
               width: 100%;
-              float: none;
-              display: block;
+
               a {
-                line-height: 30px;
                 font-size: 1em;
                 &:hover {
                   font-weight: bold;
@@ -8345,7 +8339,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -9005,11 +8999,8 @@ html[xmlns] .clearfix {
               }
             }
             li {
-              height: 60px;
-              float: none;
               display: block;
               a {
-                line-height: 30px;
                 font-size: 1em;
                 &:hover {
                   font-weight: bold;
@@ -9020,7 +9011,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -9648,7 +9639,6 @@ html[xmlns] .clearfix {
           width: 100%;
           ul {
             height: auto;
-            text-align: center;
 
             li:nth-of-type(2) {
               float: none;
@@ -9664,11 +9654,8 @@ html[xmlns] .clearfix {
               }
             }
             li {
-              height: 60px;
-              float: none;
               display: block;
               a {
-                line-height: 30px;
                 font-size: 1em;
                 &:hover {
                   font-weight: bold;
@@ -9679,7 +9666,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -10337,11 +10324,8 @@ html[xmlns] .clearfix {
               }
             }
             li {
-              height: 60px;
-              float: none;
               display: block;
               a {
-                line-height: 30px;
                 font-size: 1em;
                 &:hover {
                   font-weight: bold;
@@ -10352,7 +10336,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -11007,13 +10991,11 @@ html[xmlns] .clearfix {
           width: 100%;
           ul {
             height: auto;
-            text-align: center;
 
             li:nth-of-type(2) {
               float: none;
 
               a {
-                line-height: 30px;
                 font-size: 1em;
                 &:hover {
                   font-weight: bold;
@@ -11024,11 +11006,8 @@ html[xmlns] .clearfix {
               }
             }
             li {
-              height: 60px;
-              float: none;
               display: block;
               a {
-                line-height: 30px;
                 font-size: 1em;
                 &:hover {
                   font-weight: bold;
@@ -11039,7 +11018,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
@@ -11682,13 +11661,11 @@ html[xmlns] .clearfix {
           width: 100%;
           ul {
             height: auto;
-            text-align: center;
 
             li:nth-of-type(2) {
               float: none;
 
               a {
-                line-height: 30px;
                 font-size: 1em;
                 &:hover {
                   font-weight: bold;
@@ -11699,8 +11676,6 @@ html[xmlns] .clearfix {
               }
             }
             li {
-              height: 60px;
-              float: none;
               display: block;
               a {
                 line-height: 30px;
@@ -11714,7 +11689,7 @@ html[xmlns] .clearfix {
               }
             }
           }
-        } /*end of primary nav*/
+        }
       }
     }
 
