@@ -18,8 +18,8 @@ $(document).foundation();
 $(init);
 
 function init() {
-  $("#index_form_btn").click(fadeIn);
-  $("#clearQuote").click(fadeOut);
+  $("#index_form_btn").on(fadeIn);
+  $("#clearQuote").on(fadeOut);
 }
 
 function fadeIn() {
