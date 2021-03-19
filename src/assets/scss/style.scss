@@ -814,7 +814,7 @@ html[xmlns] .clearfix {
     }
 
     /* Right column */
-    #right_coler {
+    #right_column {
       height: 900px;
       width: 100%;
       margin: 0px;
@@ -940,7 +940,7 @@ html[xmlns] .clearfix {
     }
 
     /* Search_box form */
-    #worldsearchform {
+    #location_searchform {
       background-color: $color3;
       padding: 1%;
       margin: 0px;
@@ -967,7 +967,8 @@ html[xmlns] .clearfix {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
+            display: block;
+            float: left;
 
             input {
               margin: 0;
@@ -1732,7 +1733,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: 900px;
       border: none;
       .card {
@@ -1811,53 +1812,37 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
-      padding: 1%;
-      width: 55%;
-      display: block;
+    /* Location search form */
+    #location_searchform {
       height: auto;
       h2 {
-        font-size: 1.25em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
         width: 70%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
-        display: block;
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.4em;
-              margin: 0 0 0 5%;
-              padding: 0;
-              display: block;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 1em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
+    /* Destinations Links */
     .destinations {
       margin: 10px 0px 0px 10px;
       width: 15.094333%;
@@ -1881,7 +1866,7 @@ html[xmlns] .clearfix {
           line-height: 40px;
         }
       }
-    } /*end*/
+    } /* end */
 
     .card {
       height: 340px;
@@ -2437,7 +2422,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: 900px;
       border: none;
       .card {
@@ -2518,27 +2503,17 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
-      padding: 1%;
-      width: 50%;
-      display: block;
+    #location_searchform {
       height: auto;
       h2 {
         font-size: 1.2em;
-        margin: 0px 0px 2% 0;
-        width: 63%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
-        display: block;
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
-
             input {
               height: 35px;
             }
@@ -2561,7 +2536,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*destination Links*/
     .destinations {
       margin: 10px 0px 0px 10px;
       width: 15.094333%;
@@ -3131,7 +3105,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: 900px;
       border: none;
       .card {
@@ -3213,24 +3187,18 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
-      padding: 1%;
-      width: 50%;
+    #location_searchform {
       h2 {
         font-size: 1.25em;
-        margin: 0px 0px 2% 0;
         width: 65%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
-        display: block;
+
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
@@ -3243,18 +3211,14 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
           font-size: 1em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
     .destinations {
       margin: 10px 0px 0px 10px;
       width: 15.094%;
@@ -3822,7 +3786,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: 900px;
       border: none;
       .card {
@@ -3904,53 +3868,36 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
+    #location_searchform {
       padding: 1%;
-      width: 55%;
-      display: block;
-      height: auto;
+
       h2 {
         font-size: 1.2em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
-        width: 70%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
-        display: block;
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.3em;
-              margin: 0 0 0 5%;
-              padding: 0;
-              display: block;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 1em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
     .destinations {
       width: 15.094%;
       ul {
@@ -4507,7 +4454,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: 900px;
       border: none;
       .card {
@@ -4587,55 +4534,38 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
-      padding: 1%;
-      width: 55%;
-      display: block;
-      height: auto;
+    #location_searchform {
+      width: 75%;
       h2 {
         font-size: 1.2em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
-        width: 70%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
-        display: block;
+
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.25em;
-              margin: 0 0 0 5%;
-              padding: 0;
-              display: block;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 1em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
     .destinations {
-      width: 31.094%;
+      width: 30.094%;
       ul {
         list-style: none;
         li {
@@ -5189,7 +5119,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: 900px;
       border: none;
       .card {
@@ -5269,44 +5199,28 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
+    #location_searchform {
       padding: 1%;
-      width: 55%;
-      display: block;
-      height: auto;
       h2 {
         font-size: 1.15em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
         width: 70%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
-        display: block;
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
-
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.25em;
-              margin: 0 0 0 5%;
-              padding: 0;
-              display: block;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 1em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
@@ -5315,9 +5229,8 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*destination Links*/
     .destinations {
-      width: 31.094%;
+      width: 30.094%;
       ul {
         list-style: none;
         li {
@@ -5866,7 +5779,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: 900px;
       border: none;
       .card {
@@ -5945,55 +5858,39 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
+    #location_searchform {
       padding: 1%;
-      width: 55%;
-      display: block;
-      height: auto;
+
       h2 {
         font-size: 1.15em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
-        width: 70%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
-        display: block;
+
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.2em;
-              margin: 0 0 0 5%;
-              padding: 0;
-              display: block;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 1em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
     .destinations {
-      width: 31.094%;
+      width: 30.094%;
       ul {
         list-style: none;
         li {
@@ -6552,7 +6449,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: 900px;
       border: none;
       .card {
@@ -6630,17 +6527,11 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
+    #location_searchform {
       padding: 1%;
-      width: 55%;
-      display: block;
-      height: auto;
+
       h2 {
         font-size: 1.15em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
-        width: 70%;
       }
       .searchform {
         width: 80%;
@@ -6676,9 +6567,8 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*destination Links*/
     .destinations {
-      width: 31.094%;
+      width: 30.094%;
       ul {
         list-style: none;
         li {
@@ -7237,7 +7127,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: 900px;
       border: none;
       .card {
@@ -7315,44 +7205,28 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
+    #location_searchform {
       padding: 1%;
-      width: 55%;
-      display: block;
-      height: auto;
       h2 {
         font-size: 1.15em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
-        width: 70%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
-        display: block;
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
-
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.2em;
-              margin: 0 0 0 5%;
-              padding: 0;
-              display: block;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 1em;
-          line-height: 35px;
+
           &:hover {
             font-weight: bold;
           }
@@ -7361,9 +7235,8 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*destination Links*/
     .destinations {
-      width: 31.094%;
+      width: 30.094%;
       ul {
         list-style: none;
         li {
@@ -7916,7 +7789,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: auto;
       border: none;
       width: 36%;
@@ -7999,55 +7872,40 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
+    #location_searchform {
       padding: 1%;
-      width: 55%;
-      display: block;
-      height: auto;
+
       h2 {
         font-size: 1.15em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
-        width: 70%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
-        display: block;
+
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.2em;
-              margin: 0 0 0 5%;
-              padding: 0;
-              display: block;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 1em;
-          line-height: 35px;
+
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
     .destinations {
-      width: 31.094%;
+      width: 30.094%;
       ul {
         list-style: none;
         li {
@@ -8598,7 +8456,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       height: auto;
       border: none;
       width: 36%;
@@ -8680,44 +8538,30 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
-      padding: 1%;
+    #location_searchform {
       width: 75%;
-      display: block;
-      height: auto;
       h2 {
         font-size: 1.15em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
-        width: 70%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
-        display: block;
+
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.2em;
-              margin: 0 0 0 5%;
-              padding: 0;
-              display: block;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 1em;
-          line-height: 35px;
+
           &:hover {
             font-weight: bold;
           }
@@ -8726,9 +8570,8 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*destination Links*/
     .destinations {
-      width: 31.094%;
+      width: 30.094%;
       ul {
         list-style: none;
         li {
@@ -9260,7 +9103,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       width: 45%;
       margin: 10% auto;
 
@@ -9339,50 +9182,37 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
-      padding: 1%;
+    #location_searchform {
       width: 75%;
       h2 {
         font-size: 1.15em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
-        width: 70%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
+
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
-
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.2em;
-              margin: 0 0 0 5%;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 1em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
     .destinations {
-      width: 31.094%;
+      width: 30.094%;
       ul {
         list-style: none;
         li {
@@ -9928,7 +9758,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       width: 55%;
       margin: 10% auto;
 
@@ -10007,24 +9837,18 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
-      padding: 1%;
+    #location_searchform {
       width: 85%;
       h2 {
         font-size: 1.15em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
         width: 83%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
@@ -10037,20 +9861,16 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
           font-size: 0.9em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
     .destinations {
-      width: 47.094%;
+      width: 46.094%;
       ul {
         list-style: none;
         li {
@@ -10600,7 +10420,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       width: 60%;
       margin: 10% auto;
 
@@ -10679,48 +10499,36 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
+    #location_searchform {
       padding: 1%;
       width: 100%;
       h2 {
         font-size: 1.1em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
-        width: 83%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.1em;
-              margin: 0 0 0 5%;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 0.9em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
     .destinations {
       width: 46.094%;
       ul {
@@ -11282,7 +11090,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       width: 65%;
       margin: 10% auto;
 
@@ -11361,48 +11169,35 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
-      padding: 1%;
+    #location_searchform {
       width: 100%;
       h2 {
         font-size: 1.1em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
-        width: 83%;
       }
       .searchform {
         width: 80%;
-        height: 40px;
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.1em;
-              margin: 0 0 0 5%;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 0.9em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
     .destinations {
       width: 46.094%;
       ul {
@@ -11952,7 +11747,7 @@ html[xmlns] .clearfix {
     }
 
     /*right column*/
-    #right_coler {
+    #right_column {
       width: 65%;
       margin: 10% auto;
 
@@ -12031,10 +11826,7 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Search_box form*/
-    #worldsearchform {
-      padding: 1%;
-      width: 100%;
+    #location_searchform {
       h2 {
         font-size: 1.1em;
         margin: 0px 0px 2% 0;
@@ -12043,36 +11835,28 @@ html[xmlns] .clearfix {
       }
       .searchform {
         width: 80%;
-        height: 40px;
         ul {
           height: 100%;
           li {
             width: 50%;
-            display: inline-block;
 
             input {
               height: 35px;
             }
             input[type="submit"] {
               font-size: 1.1em;
-              margin: 0 0 0 5%;
             }
           }
         }
         .searchform_btn {
           width: 120px;
-          height: 34px;
-          font-size: 0.9em;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
         }
-        /*end of searchform*/
       }
     }
 
-    /*destination Links*/
     .destinations {
       width: 46.094%;
       ul {

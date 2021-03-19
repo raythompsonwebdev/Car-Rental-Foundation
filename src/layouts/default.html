@@ -25,9 +25,16 @@ unless specified. --}}
     <![endif]-->
   </head>
   <body>
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the
-    flattened page is created. --}} {{> body}}
-    <!-- jsDelivr CDN -->
+    <div class="grid-container">
+      <div id="wrapper">
+      {{> header}}
+        {{!-- Pages you create in the src/pages/ folder are inserted here when
+        the flattened page is created. --}} {{> body}}
+        <!-- jsDelivr CDN -->
+      </div>
+      <!--wrapper end-->
+    </div>
+    <!--row end-->
 
     <!--Fallback to local -->
     <script src="{{root}}assets/js/app.js"></script>
