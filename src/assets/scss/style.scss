@@ -128,6 +128,10 @@ html[xmlns] .clearfix {
     margin: 0 auto;
     min-height: 900px;
 
+    .grid-container {
+      max-width: 85rem;
+    }
+
     h1 {
       text-align: left;
       margin: 0.5em auto;
@@ -140,13 +144,13 @@ html[xmlns] .clearfix {
 
     section#quoteform {
       position: absolute;
-      width: 36.949%;
-      z-index: 1;
-      left: 50%;
+      width: 47%;
+      z-index: 10;
+      left: 46%;
       top: 80px;
       background-color: $color;
       list-style-type: none;
-      display: none;
+      //display: none;
       @include rounded(5px);
       @include boxShadow(1px 1px 2px 2px rgba(0, 0, 0, 0.2));
 
@@ -159,6 +163,7 @@ html[xmlns] .clearfix {
         font-size: 2.3em;
         font-weight: normal;
         clear: both;
+        margin: 0.2em 0;
         @include boxShadow(0px 2px 1px 0px rgba(0, 0, 0, 0.2));
       }
 
@@ -169,12 +174,11 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        height: 40px;
-        line-height: 40px;
+        font-size: 0.85em;
         display: inline-block;
         font-weight: bold;
         padding-left: 0;
+        margin-bottom: 0;
         .dropcap {
           margin: 3%;
           display: inline-block;
@@ -190,7 +194,7 @@ html[xmlns] .clearfix {
 
       p.smaller-text {
         margin: 0 0 0 0;
-        font-size: 0.8em;
+        font-size: 0.85em;
 
         .dropcap-small {
           margin: 3%;
@@ -206,17 +210,22 @@ html[xmlns] .clearfix {
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
+
+        span {
+          display: block;
+        }
 
         p {
-          display: block;
+          display: inline-block;
           line-height: 25px;
-          height: 25px;
+          height: auto;
           font-size: 0.9em;
+          width: auto;
         }
 
         a {
-          display: block;
+          display: inline-block;
           width: 20%;
           line-height: 20px;
           font-size: 0.9em;
@@ -228,18 +237,17 @@ html[xmlns] .clearfix {
           font-family: $fontStyle;
           font-size: 0.85em;
           list-style: none;
-          line-height: 45px;
+          line-height: 35px;
           color: $color5;
           display: block;
           font-weight: normal;
           text-align: left;
-          text-indent: 5%;
-          letter-spacing: 0.02em;
+          text-indent: 0.25em;
         }
 
         .query_btn {
           text-align: center;
-          line-height: 34px;
+          line-height: 35px;
           font-family: ($fontStyle);
           color: $color;
           font-weight: bold;
@@ -247,18 +255,19 @@ html[xmlns] .clearfix {
           background-color: $color11;
           width: 70%;
           margin: 0 auto;
-          height: 34px;
+          height: auto;
           @include gradient(#fc7d3c, #ee2a26);
           border: 0;
           display: block;
           &:hover {
             @include gradient(#ee2a26, #fc7d3c);
+            cursor: pointer;
           }
         }
 
         .searchform_btn {
           width: 35%;
-          height: 34px;
+          line-height: 35px;
           margin: 0;
           @include gradient(#fc7d3c, #ee2a26);
           font-family: $fontStyle;
@@ -268,29 +277,28 @@ html[xmlns] .clearfix {
           &:hover {
             @include gradient(#ee2a26, #fc7d3c);
             font-weight: bold;
+            cursor: pointer;
           }
         }
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
+          line-height: 30px;
+          height: 30px;
           font-size: 0.8em;
           list-style: none;
         }
-
         select#pickup_return {
           width: 97%;
           margin: 0;
-          height: 35px;
+          line-height: 30px;
+          height: 30px;
           font-size: 0.85em;
         }
-
         select#rental_start,
         select#rental_end {
           width: 45%;
         }
-
         select#pickup_location {
           width: 97%;
         }
@@ -421,34 +429,34 @@ html[xmlns] .clearfix {
 
     /* Banner */
     figure#banner {
-      height: 485px;
+      height: auto;
       width: 100%;
-      margin: 1% auto;
+      margin: 0.5em 0;
+      padding: 0.75em 0.5em;
       clear: both;
       @include rounded(5px);
       @include gradient(#35bef2, #b6e6fc);
-      float: left;
-      padding: 1%;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
         height: auto;
-        margin: 0px;
+        margin: 0;
+        display: block;
       }
 
       figcaption.bannertext {
         p:first-of-type {
-          font-size: 3em;
+          font-size: 3.5em;
           text-shadow: 1px 1px 1px #999;
           font-weight: bold;
           color: $color;
           font-family: $fontStyle;
           text-transform: none;
-          width: 50%;
+          width: 40%;
           display: block;
           height: auto;
           margin: 0;
           padding: 0;
-          line-height: 55px;
+          line-height: 60px;
           text-transform: none;
         }
         p {
@@ -461,7 +469,6 @@ html[xmlns] .clearfix {
           text-transform: uppercase;
         }
       }
-      /*banner end*/
     }
 
     /* left Column */
@@ -673,6 +680,8 @@ html[xmlns] .clearfix {
           }
 
           .media-object-section {
+            display: block;
+
             div.specials_image {
               width: auto;
               margin: 0;
@@ -725,8 +734,10 @@ html[xmlns] .clearfix {
           height: 200px;
           .media-object-section {
             display: block;
+            width: 50%;
+            flex: 0 0 auto;
             .cars_box_img {
-              margin: 0;
+              margin: 0 auto;
               width: auto;
               padding: 0%;
               display: block;
@@ -734,8 +745,7 @@ html[xmlns] .clearfix {
 
             .car-icons-box {
               height: 35px;
-              display: block;
-              padding: 0;
+
               .car-icons {
                 width: auto;
                 display: inline-block;
@@ -771,21 +781,17 @@ html[xmlns] .clearfix {
             }
 
             .carsbutton {
-              display: block;
               margin: 0;
-              a {
-                display: block;
-                @include gradient(#fc7d3c, #ee2a26);
-                color: $color;
-                height: 100%;
-                width: 100%;
-                @include rounded(5px);
-                text-align: center;
-                padding: 7%;
-                &:hover {
-                  @include gradient(#ee2a26, #fc7d3c);
-                  font-weight: bold;
-                }
+              display: block;
+              @include gradient(#fc7d3c, #ee2a26);
+              color: $color;
+              line-height: 40px;
+              width: 60%;
+              @include rounded(5px);
+              text-align: center;
+              &:hover {
+                @include gradient(#ee2a26, #fc7d3c);
+                font-weight: bold;
               }
             }
           }
@@ -802,13 +808,12 @@ html[xmlns] .clearfix {
       .card {
         height: auto;
         width: 100%;
-        margin: 0px 0px 0.5em 0.8%;
         border: none;
         background-color: $color;
         display: block;
         @include rounded(5px);
         h2 {
-          font-size: 1.1em;
+          font-size: 1.3em;
           color: $color;
           height: auto;
           width: 90%;
@@ -834,12 +839,10 @@ html[xmlns] .clearfix {
             font-size: 0.75em;
             color: $color;
             width: 100%;
-            margin: 0 0 5% 0;
             height: auto;
             font-family: ($fontStyle);
-            letter-spacing: 0.05em;
             display: block;
-            line-height: 1.8em;
+            line-height: 1.6em;
             font-weight: 100;
           }
 
@@ -868,18 +871,21 @@ html[xmlns] .clearfix {
       #image5 {
         @include gradient(#747877, #a2a5a5);
 
+        h2 {
+          font-size: 1.25em;
+        }
+
         p {
           font-size: 0.75em;
           color: $color;
           height: auto;
           line-height: 2em;
-          font-weight: 100;
           letter-spacing: 0.05em;
         }
 
         form {
-          width: 90%;
-          margin: 4% auto;
+          width: 95%;
+          margin: 0.5em auto;
           input[type="text"] {
             width: 100%;
             height: 30px;
@@ -896,7 +902,6 @@ html[xmlns] .clearfix {
             font-family: ($fontStyle);
             border: 0;
             display: block;
-            padding: 7%;
             @include gradient(#fc7d3c, #ee2a26);
             @include rounded(5px);
             color: $color;
@@ -920,18 +925,17 @@ html[xmlns] .clearfix {
       }
     }
 
-    /* Search_box form */
+    /* Location search form */
     #location_searchform {
       background-color: $color3;
-      padding: 1%;
-      margin: 0px;
+      padding: 0.5em;
+      margin: 0;
       width: 55%;
       display: block;
       height: auto;
 
       h2 {
         font-size: 1.3em;
-        margin: 0px 0px 2% 0;
         line-height: 30px;
         font-weight: bold;
         width: 70%;
@@ -1024,6 +1028,7 @@ html[xmlns] .clearfix {
       }
     }
 
+    /* cards */
     .card {
       border: none;
       background-color: $color;
@@ -1031,7 +1036,7 @@ html[xmlns] .clearfix {
       @include rounded(5px);
 
       h2 {
-        font-size: 1.1em;
+        font-size: 1.25em;
         color: $color;
         height: auto;
         margin: 0.5em auto;
@@ -1045,7 +1050,7 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.8em;
+        font-size: 0.9em;
         color: $color;
         width: 100%;
         margin: 0 0 2% 0;
@@ -1088,23 +1093,26 @@ html[xmlns] .clearfix {
       }
     }
 
+    /* cards 1 */
     #image1 {
       @include gradient(#0b4763, #3e7d9a);
     }
+    /* cards 2 */
     #image2 {
       @include gradient(#ff7f13, #ffb260);
     }
+    /* cards 3 */
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
     }
 
-    /* newsletter box */
+    /* newsletter card */
     #newsletter {
       @include gradient(#747877, #a2a5a5);
 
       .newsletter {
-        width: 88%;
-        margin: 0;
+        width: 100%;
+        margin: 0 auto;
         padding: 0.5em;
 
         input[type="text"] {
@@ -1189,7 +1197,6 @@ html[xmlns] .clearfix {
     }
 
     section#quoteform {
-      width: 44.949%;
       left: 48%;
 
       h1#quoteform-title {
@@ -1203,19 +1210,15 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        height: 40px;
-        line-height: 40px;
-        padding-left: 0;
+        font-size: 0.85em;
+
         .dropcap {
           margin: 3%;
-          width: 12%;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
-        font-size: 0.8em;
+        font-size: 0.85em;
 
         .dropcap-small {
           margin: 3%;
@@ -1224,28 +1227,18 @@ html[xmlns] .clearfix {
       }
 
       #booking_form {
-        margin-bottom: 5%;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.9em;
         }
         a {
           width: 20%;
-          line-height: 20px;
           font-size: 0.9em;
         }
 
         label {
           font-size: 0.8em;
-          line-height: 45px;
-          text-indent: 5%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
-          text-align: center;
-          line-height: 34px;
-          width: 70%;
           height: 34px;
           &:hover {
             font-weight: bold;
@@ -1253,23 +1246,18 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
         }
 
         select {
-          width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
           font-size: 0.85em;
         }
 
@@ -1343,40 +1331,27 @@ html[xmlns] .clearfix {
 
     /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.8em;
 
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
     /*Banner*/
     figure#banner {
-      height: 470px;
-      margin: 1% auto;
-      padding: 1%;
       #bannerimage {
-        width: 50.26016%;
-        height: auto;
-        margin: 0px;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 3.4em;
-          text-shadow: 1px 1px 1px #999;
-          width: 49%;
-          line-height: 1.3em;
         }
         p {
-          font-size: 1.2em;
-          text-shadow: 1px 1px 1px #999;
-          width: 50%;
+          font-size: 1.4em;
         }
       }
-      /*banner end*/
     }
 
     /* left Column*/
@@ -1460,6 +1435,7 @@ html[xmlns] .clearfix {
       }
     }
 
+    /* tabs */
     .tabs {
       border: none;
 
@@ -1479,6 +1455,7 @@ html[xmlns] .clearfix {
       }
     }
 
+    /* tabs content */
     .tabs-content {
       transition: all 0.5s ease;
       .tabs-panel {
@@ -1555,10 +1532,9 @@ html[xmlns] .clearfix {
             .cars_box_txt {
               display: inline-block;
               .car-icons-box {
-                height: 35px;
                 display: block;
                 .car-icons {
-                  width: 10%;
+                  width: auto;
                 }
               }
 
@@ -1577,20 +1553,14 @@ html[xmlns] .clearfix {
             }
 
             .carsbutton {
-              margin: 0;
-              a {
-                padding: 7%;
-                &:hover {
-                  font-weight: bold;
-                }
-              }
+              width: 60%;
             }
           }
         }
       }
     }
 
-    /*right column*/
+    /* right column */
     #right_column {
       border: none;
       .card {
@@ -1619,6 +1589,7 @@ html[xmlns] .clearfix {
         }
       }
 
+      /*newsletter box*/
       #image5 {
         @include gradient(#747877, #a2a5a5);
 
@@ -1654,7 +1625,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /* Location search form */
     #location_searchform {
       height: auto;
       h2 {
@@ -1740,7 +1710,7 @@ html[xmlns] .clearfix {
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
     }
-
+    /*newsletter box*/
     #newsletter {
       h2 {
         font-size: 1.25em;
@@ -1774,7 +1744,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -1821,10 +1791,8 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        height: 40px;
-        line-height: 40px;
-        padding-left: 0;
+        font-size: 0.85em;
+
         .dropcap {
           margin: 3%;
           width: 12%;
@@ -1832,36 +1800,26 @@ html[xmlns] .clearfix {
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
-        font-size: 0.8em;
+        font-size: 0.85em;
 
         .dropcap-small {
           margin: 3%;
-          width: 12%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.9em;
         }
         a {
-          width: 20%;
-          line-height: 20px;
           font-size: 0.9em;
         }
 
         label {
           font-size: 0.8em;
-          line-height: 45px;
-          text-indent: 5%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
-          width: 75%;
           font-size: 0.9em;
           &:hover {
             font-weight: bold;
@@ -1869,7 +1827,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -1877,15 +1835,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
+
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
+
           font-size: 0.85em;
         }
 
@@ -1958,42 +1914,28 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.75em;
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 470px;
-      margin: 1% auto;
-      padding: 1%;
       #bannerimage {
-        width: 50.26016%;
-        height: auto;
-        margin: 0px;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 3.3em;
-          width: 47%;
-          line-height: 1.3em;
         }
         p {
-          font-size: 1.15em;
-          width: 50%;
+          font-size: 1.3em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -2167,15 +2109,7 @@ html[xmlns] .clearfix {
             }
 
             .carsbutton {
-              display: block;
               margin: 0;
-              a {
-                color: $color;
-
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
@@ -2184,7 +2118,7 @@ html[xmlns] .clearfix {
                 height: 35px;
 
                 .car-icons {
-                  width: 10%;
+                  width: auto;
                 }
               }
 
@@ -2206,7 +2140,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       border: none;
       .card {
@@ -2235,10 +2168,6 @@ html[xmlns] .clearfix {
 
       #image5 {
         @include gradient(#747877, #a2a5a5);
-        h2 {
-          font-size: 1.25em;
-          line-height: 30px;
-        }
 
         p {
           font-size: 0.75em;
@@ -2246,7 +2175,6 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
           input[type="text"] {
             width: 100%;
           }
@@ -2365,22 +2293,14 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1.25em;
-        margin: 1% auto;
-        line-height: 30px;
-        letter-spacing: 0.05em;
       }
       p {
         font-size: 0.8em;
-        margin: 0 0 2% 0;
-        letter-spacing: 0.05em;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
       .newsletter {
         width: 88%;
-        margin: 0 auto;
-        padding: 0;
 
         input[type="text"] {
           width: 100%;
@@ -2398,7 +2318,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -2433,7 +2353,6 @@ html[xmlns] .clearfix {
     }
 
     section#quoteform {
-      width: 64.949%;
       left: 32%;
 
       h1#quoteform-title {
@@ -2447,45 +2366,34 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        padding-left: 0;
+        font-size: 0.85em;
+
         .dropcap {
           margin: 3%;
-          width: 12%;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
-        font-size: 0.8em;
+        font-size: 0.85em;
 
         .dropcap-small {
           margin: 3%;
-          width: 12%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.8em;
         }
         a {
-          width: 20%;
-          line-height: 20px;
           font-size: 0.8em;
         }
 
         label {
           font-size: 0.8em;
-          line-height: 45px;
-          text-indent: 5%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
-          width: 75%;
           font-size: 0.9em;
           &:hover {
             font-weight: bold;
@@ -2493,7 +2401,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -2501,15 +2409,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
+
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
+
           font-size: 0.85em;
         }
 
@@ -2580,41 +2486,29 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.7em;
       height: 50px;
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 415px;
-      margin: 1% auto;
-      padding: 1%;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 3.2em;
-          width: 47%;
-          line-height: 1.2em;
         }
         p {
-          font-size: 1.1em;
-          width: 50%;
+          font-size: 1.2em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -2782,15 +2676,7 @@ html[xmlns] .clearfix {
             }
 
             .carsbutton {
-              display: block;
               margin: 0;
-              a {
-                color: $color;
-                padding: 7%;
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
@@ -2798,7 +2684,7 @@ html[xmlns] .clearfix {
                 height: 35px;
                 display: block;
                 .car-icons {
-                  width: 12%;
+                  width: auto;
                 }
               }
 
@@ -2825,7 +2711,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       border: none;
       .card {
@@ -2857,7 +2742,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1.25em;
-          line-height: 30px;
         }
 
         p {
@@ -2866,7 +2750,7 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
+
           input[type="text"] {
             width: 100%;
           }
@@ -2986,20 +2870,14 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1.15em;
-        line-height: 30px;
-        letter-spacing: 0.05em;
       }
       p {
         font-size: 0.7em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
       .newsletter {
         width: 88%;
-        margin: 0 auto;
-        padding: 0;
 
         input[type="text"] {
           width: 100%;
@@ -3017,7 +2895,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -3052,7 +2930,6 @@ html[xmlns] .clearfix {
     }
 
     section#quoteform {
-      width: 69.949%;
       left: 29%;
 
       h1#quoteform-title {
@@ -3066,45 +2943,34 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        padding-left: 0;
+        font-size: 0.85em;
+
         .dropcap {
           margin: 3%;
-          width: 12%;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
-        font-size: 0.8em;
+        font-size: 0.85em;
 
         .dropcap-small {
           margin: 3%;
-          width: 12%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.8em;
         }
         a {
-          width: 20%;
-          line-height: 20px;
           font-size: 0.8em;
         }
 
         label {
           font-size: 0.8em;
-          line-height: 45px;
-          text-indent: 5%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
-          width: 80%;
           font-size: 0.9em;
           &:hover {
             font-weight: bold;
@@ -3112,7 +2978,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -3120,15 +2986,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
+
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
+
           font-size: 0.85em;
         }
 
@@ -3199,41 +3063,29 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.7em;
-      height: 50px;
+
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 395px;
-      margin: 1% auto;
-      padding: 1%;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 3.1em;
-          width: 49%;
-          line-height: 1.2em;
         }
         p {
-          font-size: 1em;
-          width: 50%;
+          font-size: 1.1em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -3402,19 +3254,13 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0;
-              a {
-                color: $color;
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
               .car-icons-box {
                 height: 35px;
                 .car-icons {
-                  width: 12%;
+                  width: auto;
                 }
               }
 
@@ -3436,7 +3282,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       border: none;
       .card {
@@ -3470,7 +3315,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1.2em;
-          line-height: 30px;
         }
 
         p {
@@ -3479,7 +3323,7 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
+
           input[type="text"] {
             width: 100%;
           }
@@ -3506,8 +3350,6 @@ html[xmlns] .clearfix {
     }
 
     #location_searchform {
-      padding: 1%;
-
       h2 {
         font-size: 1.2em;
       }
@@ -3595,12 +3437,9 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1.1em;
-        line-height: 30px;
       }
       p {
         font-size: 0.65em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
@@ -3623,7 +3462,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -3662,7 +3501,6 @@ html[xmlns] .clearfix {
     }
 
     section#quoteform {
-      width: 81.949%;
       left: 15%;
 
       h1#quoteform-title {
@@ -3676,42 +3514,32 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        padding-left: 0;
+        font-size: 0.8em;
+
         .dropcap {
           margin: 3%;
-          width: 12%;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
         font-size: 0.8em;
 
         .dropcap-small {
           margin: 3%;
-          width: 12%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.8em;
         }
         a {
-          width: 20%;
-          line-height: 20px;
           font-size: 0.8em;
         }
 
         label {
           font-size: 0.75em;
-          line-height: 45px;
-          text-indent: 5%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
           width: 80%;
@@ -3722,7 +3550,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -3730,15 +3558,11 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
           font-size: 0.85em;
         }
 
@@ -3809,41 +3633,29 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.5em;
-      height: 50px;
+
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 340px;
-      margin: 1% auto;
-      padding: 1%;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 3em;
-          width: 60%;
-          line-height: 1.2em;
         }
         p {
-          font-size: 0.85em;
-          width: 50%;
+          font-size: 1em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -4010,13 +3822,6 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0;
-              a {
-                color: $color;
-                padding: 7%;
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
@@ -4046,7 +3851,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       border: none;
       .card {
@@ -4078,7 +3882,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1.1em;
-          line-height: 30px;
         }
 
         p {
@@ -4087,7 +3890,7 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
+
           input[type="text"] {
             width: 100%;
           }
@@ -4204,19 +4007,14 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1em;
-        line-height: 30px;
       }
       p {
         font-size: 0.6em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
       .newsletter {
         width: 88%;
-        margin: 0 auto;
-        padding: 0;
 
         input[type="text"] {
           line-height: 30px;
@@ -4233,7 +4031,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -4272,7 +4070,6 @@ html[xmlns] .clearfix {
     }
 
     section#quoteform {
-      width: 84.949%;
       left: 13%;
 
       h1#quoteform-title {
@@ -4286,42 +4083,32 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        padding-left: 0;
+        font-size: 0.8em;
+
         .dropcap {
           margin: 3%;
-          width: 12%;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
         font-size: 0.8em;
 
         .dropcap-small {
           margin: 3%;
-          width: 12%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.8em;
         }
         a {
-          width: 20%;
-          line-height: 20px;
           font-size: 0.8em;
         }
 
         label {
           font-size: 0.75em;
-          line-height: 45px;
-          text-indent: 5%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
           width: 80%;
@@ -4332,7 +4119,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -4340,15 +4127,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
+
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
+
           font-size: 0.85em;
         }
 
@@ -4419,40 +4204,29 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.5em;
-      height: 50px;
+
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 320px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.9em;
-          width: 60%;
-          line-height: 1.1em;
         }
         p {
-          font-size: 0.85em;
-          width: 50%;
+          font-size: 0.9em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -4616,13 +4390,6 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0;
-              a {
-                color: $color;
-                padding: 7%;
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
@@ -4630,7 +4397,7 @@ html[xmlns] .clearfix {
                 height: 35px;
 
                 .car-icons {
-                  width: 16%;
+                  width: auto;
                 }
               }
 
@@ -4652,7 +4419,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       border: none;
       .card {
@@ -4684,7 +4450,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1em;
-          line-height: 25px;
         }
 
         p {
@@ -4693,7 +4458,7 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
+
           input[type="text"] {
             width: 100%;
           }
@@ -4720,7 +4485,6 @@ html[xmlns] .clearfix {
     }
 
     #location_searchform {
-      padding: 1%;
       h2 {
         font-size: 1.15em;
         width: 70%;
@@ -4810,12 +4574,9 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1em;
-        line-height: 25px;
       }
       p {
         font-size: 0.6em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
@@ -4839,7 +4600,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -4873,7 +4634,6 @@ html[xmlns] .clearfix {
     }
 
     section#quoteform {
-      width: 93.949%;
       left: 5%;
 
       h1#quoteform-title {
@@ -4887,45 +4647,34 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        padding-left: 0;
+        font-size: 0.8em;
+
         .dropcap {
           margin: 3%;
-          width: 12%;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
         font-size: 0.8em;
 
         .dropcap-small {
           margin: 3%;
-          width: 12%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.8em;
         }
         a {
-          width: 20%;
-          line-height: 20px;
           font-size: 0.8em;
         }
 
         label {
           font-size: 0.75em;
-          line-height: 45px;
-          text-indent: 5%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
-          width: 80%;
           font-size: 0.9em;
           &:hover {
             font-weight: bold;
@@ -4933,7 +4682,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -4941,15 +4690,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
+
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
+
           font-size: 0.85em;
         }
 
@@ -5020,40 +4767,29 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.5em;
-      height: 50px;
+
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 305px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.8em;
-          width: 60%;
-          line-height: 1.1em;
         }
         p {
           font-size: 0.85em;
-          width: 50%;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -5218,13 +4954,6 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0;
-              a {
-                color: $color;
-
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
@@ -5232,7 +4961,7 @@ html[xmlns] .clearfix {
                 height: 35px;
 
                 .car-icons {
-                  width: 18%;
+                  width: auto;
                 }
               }
 
@@ -5254,7 +4983,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       border: none;
       .card {
@@ -5288,7 +5016,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1em;
-          line-height: 25px;
         }
 
         p {
@@ -5297,7 +5024,7 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
+
           input[type="text"] {
             height: 30px;
           }
@@ -5324,8 +5051,6 @@ html[xmlns] .clearfix {
     }
 
     #location_searchform {
-      padding: 1%;
-
       h2 {
         font-size: 1.15em;
       }
@@ -5416,12 +5141,9 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1em;
-        line-height: 25px;
       }
       p {
         font-size: 0.6em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
@@ -5445,7 +5167,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -5504,42 +5226,32 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        padding-left: 0;
+        font-size: 0.8em;
+
         .dropcap {
           margin: 3%;
-          width: 12%;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
         font-size: 0.8em;
 
         .dropcap-small {
           margin: 3%;
-          width: 12%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.8em;
         }
         a {
-          width: 20%;
-          line-height: 20px;
           font-size: 0.8em;
         }
 
         label {
           font-size: 0.75em;
-          line-height: 45px;
-          text-indent: 5%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
           width: 80%;
@@ -5550,7 +5262,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -5558,15 +5270,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
+
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
+
           font-size: 0.85em;
         }
 
@@ -5637,40 +5347,29 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.5em;
-      height: 50px;
+
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 290px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.7em;
-          width: 60%;
-          line-height: 1.1em;
         }
         p {
-          font-size: 0.8em;
-          width: 50%;
+          font-size: 0.85em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -5836,13 +5535,6 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0;
-              a {
-                color: $color;
-                padding: 7%;
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
@@ -5872,7 +5564,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       height: auto;
       border: none;
@@ -5905,7 +5596,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 0.95em;
-          line-height: 25px;
         }
 
         p {
@@ -5914,7 +5604,7 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
+
           input[type="text"] {
             height: 30px;
           }
@@ -5941,8 +5631,6 @@ html[xmlns] .clearfix {
     }
 
     #location_searchform {
-      padding: 1%;
-
       h2 {
         font-size: 1.15em;
       }
@@ -6040,12 +5728,9 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1em;
-        line-height: 25px;
       }
       p {
         font-size: 0.6em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
@@ -6069,7 +5754,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -6124,42 +5809,32 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        padding-left: 0;
+        font-size: 0.8em;
+
         .dropcap {
           margin: 3%;
-          width: 12%;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
         font-size: 0.8em;
 
         .dropcap-small {
           margin: 3%;
-          width: 12%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.8em;
         }
         a {
-          width: 20%;
-          line-height: 20px;
           font-size: 0.8em;
         }
 
         label {
           font-size: 0.78em;
-          line-height: 45px;
-          text-indent: 3%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
           width: 80%;
@@ -6170,7 +5845,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -6178,15 +5853,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
+
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
+
           font-size: 0.85em;
         }
 
@@ -6259,40 +5932,29 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.5em;
-      height: 50px;
+
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 285px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.6em;
-          width: 60%;
-          line-height: 1.1em;
         }
         p {
-          font-size: 0.75em;
-          width: 50%;
+          font-size: 0.8em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -6457,13 +6119,6 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0;
-              a {
-                color: $color;
-
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
@@ -6471,8 +6126,7 @@ html[xmlns] .clearfix {
                 height: 35px;
 
                 .car-icons {
-                  width: 18%;
-                  margin: 1%;
+                  width: auto;
                 }
               }
 
@@ -6494,7 +6148,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       border: none;
       .card {
@@ -6526,7 +6179,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 0.95em;
-          line-height: 25px;
         }
 
         p {
@@ -6535,7 +6187,7 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
+
           input[type="text"] {
             height: 30px;
           }
@@ -6562,7 +6214,6 @@ html[xmlns] .clearfix {
     }
 
     #location_searchform {
-      padding: 1%;
       h2 {
         font-size: 1.15em;
       }
@@ -6650,12 +6301,9 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1em;
-        line-height: 25px;
       }
       p {
         font-size: 0.6em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
@@ -6679,7 +6327,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -6726,45 +6374,34 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        padding-left: 0;
+        font-size: 0.8em;
+
         .dropcap {
           margin: 3%;
-          width: 12%;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
         font-size: 0.8em;
 
         .dropcap-small {
-          margin: 3%;
           width: 12%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.8em;
         }
         a {
-          width: 20%;
-          line-height: 20px;
           font-size: 0.8em;
         }
 
         label {
           font-size: 0.85em;
-          line-height: 45px;
-          text-indent: 3%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
-          width: 80%;
           font-size: 0.9em;
           &:hover {
             font-weight: bold;
@@ -6772,7 +6409,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -6780,15 +6417,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
+
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
+
           font-size: 0.85em;
         }
 
@@ -6868,39 +6503,28 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.4em;
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 270px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.5em;
-          width: 60%;
-          line-height: 1.1em;
         }
         p {
-          font-size: 0.7em;
-          width: 50%;
+          font-size: 0.75em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -7069,13 +6693,6 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0;
-              a {
-                color: $color;
-
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
@@ -7083,7 +6700,7 @@ html[xmlns] .clearfix {
                 height: 35px;
 
                 .car-icons {
-                  width: 16%;
+                  width: auto;
                 }
               }
 
@@ -7105,7 +6722,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       height: auto;
       width: 36%;
@@ -7141,7 +6757,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1.1em;
-          line-height: 30px;
         }
 
         p {
@@ -7150,7 +6765,7 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
+
           input[type="text"] {
             height: 30px;
           }
@@ -7177,8 +6792,6 @@ html[xmlns] .clearfix {
     }
 
     #location_searchform {
-      padding: 1%;
-
       h2 {
         font-size: 1.15em;
       }
@@ -7269,12 +6882,9 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1.3em;
-        line-height: 30px;
       }
       p {
         font-size: 0.75em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
@@ -7298,7 +6908,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -7344,42 +6954,32 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.7em;
-        padding-left: 0;
+        font-size: 0.8em;
+
         .dropcap {
           margin: 3%;
-          width: 12%;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
         font-size: 0.8em;
 
         .dropcap-small {
           margin: 3%;
-          width: 12%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
-          line-height: 25px;
-          height: 25px;
           font-size: 0.8em;
         }
         a {
-          width: 20%;
-          line-height: 20px;
           font-size: 0.8em;
         }
 
         label {
           font-size: 0.85em;
-          line-height: 45px;
-          text-indent: 3%;
-          letter-spacing: 0.02em;
         }
         .query_btn {
           width: 80%;
@@ -7390,7 +6990,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -7398,15 +6998,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
-          line-height: 1.5em;
+
           font-size: 0.8em;
         }
 
         select#pickup_return {
           width: 97%;
-          margin: 0;
-          height: 35px;
+
           font-size: 0.85em;
         }
 
@@ -7482,39 +7080,28 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.4em;
       &:hover {
         color: $color9;
       }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 270px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.4em;
-          width: 60%;
-          line-height: 1.1em;
         }
         p {
-          font-size: 0.7em;
-          width: 50%;
+          font-size: 0.75em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -7679,13 +7266,6 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0;
-              a {
-                color: $color;
-                padding: 7%;
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
@@ -7715,7 +7295,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       margin: 5% auto;
 
@@ -7748,7 +7327,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1.1em;
-          line-height: 30px;
         }
 
         p {
@@ -7757,7 +7335,7 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
+
           input[type="text"] {
             height: 30px;
           }
@@ -7874,12 +7452,9 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1.3em;
-        line-height: 30px;
       }
       p {
         font-size: 0.75em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
@@ -7903,7 +7478,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -7949,39 +7524,32 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.55em;
-        padding-left: 0;
+        font-size: 0.75em;
+
         .dropcap {
-          margin: 3%;
           width: 19%;
           font-size: 1.5em;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
-        font-size: 0.65em;
+        font-size: 0.75em;
 
         .dropcap-small {
-          margin: 3%;
           width: 19%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
         p {
           font-size: 0.7em;
         }
         a {
-          width: 20%;
           font-size: 0.8em;
         }
 
         label {
           font-size: 0.78em;
-          line-height: 40px;
-          text-indent: 2%;
         }
         .query_btn {
           width: 80%;
@@ -7992,7 +7560,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 35%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -8000,13 +7568,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          height: 35px;
+
           font-size: 0.75em;
         }
 
         select#pickup_return {
           width: 97%;
-          height: 35px;
+
           font-size: 0.75em;
         }
 
@@ -8080,39 +7648,26 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.25em;
-      &:hover {
-        color: $color9;
-      }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 235px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.3em;
-          width: 68%;
-          line-height: 1.1em;
         }
         p {
-          font-size: 0.7em;
+          font-size: 0.75em;
           width: 50%;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -8271,14 +7826,7 @@ html[xmlns] .clearfix {
             }
 
             .carsbutton {
-              margin: 0;
-              a {
-                color: $color;
-                padding: 7%;
-                &:hover {
-                  font-weight: bold;
-                }
-              }
+              margin: 0 auto;
             }
 
             .cars_box_txt {
@@ -8308,7 +7856,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       width: 45%;
       margin: 10% auto;
@@ -8342,7 +7889,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1.1em;
-          line-height: 30px;
         }
 
         p {
@@ -8465,12 +8011,9 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1.2em;
-        line-height: 30px;
       }
       p {
         font-size: 0.75em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
@@ -8494,7 +8037,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -8540,27 +8083,23 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.51em;
-        padding-left: 0;
+        font-size: 0.75em;
+
         .dropcap {
-          margin: 3%;
-          width: 19%;
           font-size: 1.5em;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
-        font-size: 0.6em;
+        font-size: 0.75em;
 
         .dropcap-small {
-          margin: 3%;
           width: 19%;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
           font-size: 0.75em;
         }
@@ -8571,11 +8110,8 @@ html[xmlns] .clearfix {
 
         label {
           font-size: 0.7em;
-          line-height: 40px;
-          text-indent: 1%;
         }
         .query_btn {
-          width: 90%;
           font-size: 0.8em;
           &:hover {
             font-weight: bold;
@@ -8583,7 +8119,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 45%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -8591,13 +8127,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25%;
-          height: 35px;
+
           font-size: 0.75em;
         }
 
         select#pickup_return {
           width: 97%;
-          height: 35px;
+
           font-size: 0.75em;
         }
 
@@ -8672,39 +8208,25 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1.15em;
-      &:hover {
-        color: $color9;
-      }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 215px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.2em;
-          width: 83%;
-          line-height: 1.1em;
         }
         p {
-          font-size: 0.7em;
-          width: 60%;
+          font-size: 0.75em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -8866,50 +8388,42 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0 auto;
-              a {
-                color: $color;
+            }
 
-                &:hover {
-                  font-weight: bold;
+            .cars_box_txt {
+              width: 100%;
+              .car-icons-box {
+                height: 35px;
+
+                .car-icons {
+                  width: auto;
                 }
               }
-            }
-          }
 
-          .cars_box_txt {
-            width: 100%;
-            .car-icons-box {
-              height: 35px;
-
-              .car-icons {
-                width: auto;
+              p:nth-of-type(4) {
+                margin: 5px 0px 5px 0px;
+                font-size: 1.1em;
+                clear: both;
               }
-            }
-
-            p:nth-of-type(4) {
-              margin: 5px 0px 5px 0px;
-              font-size: 1.1em;
-              clear: both;
-            }
-            p:nth-of-type(1) {
-              font-size: 1.2em;
-              text-align: center;
-            }
-            p:nth-of-type(2) {
-              font-size: 1.1em;
-              text-align: center;
-            }
-            p:nth-of-type(3) {
-              color: $color5;
-              font-size: 1em;
-              text-align: center;
+              p:nth-of-type(1) {
+                font-size: 1.2em;
+                text-align: center;
+              }
+              p:nth-of-type(2) {
+                font-size: 1.1em;
+                text-align: center;
+              }
+              p:nth-of-type(3) {
+                color: $color5;
+                font-size: 1em;
+                text-align: center;
+              }
             }
           }
         }
       }
     }
 
-    /*right column*/
     #right_column {
       width: 55%;
 
@@ -8942,7 +8456,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1.15em;
-          line-height: 30px;
         }
 
         p {
@@ -8951,7 +8464,7 @@ html[xmlns] .clearfix {
 
         form {
           width: 90%;
-          margin: 4% auto;
+
           input[type="text"] {
             height: 30px;
           }
@@ -9069,19 +8582,14 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1.05em;
-        line-height: 30px;
       }
       p {
         font-size: 0.65em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
       .newsletter {
         width: 88%;
-        margin: 0 auto;
-        padding: 0;
 
         input[type="text"] {
           line-height: 30px;
@@ -9098,7 +8606,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -9143,28 +8651,25 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.45em;
-        padding-left: 0;
+        font-size: 0.7em;
+
         .dropcap {
-          margin: 3%;
           width: 20%;
           font-size: 1.8em;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
-        font-size: 0.6em;
+        font-size: 0.7em;
 
         .dropcap-small {
-          margin: 3%;
           width: 20%;
           font-size: 1.5em;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
           font-size: 0.7em;
         }
@@ -9175,11 +8680,8 @@ html[xmlns] .clearfix {
 
         label {
           font-size: 0.65em;
-          line-height: 40px;
-          text-indent: 3%;
         }
         .query_btn {
-          width: 90%;
           font-size: 0.8em;
           &:hover {
             font-weight: bold;
@@ -9187,7 +8689,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 45%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -9195,13 +8697,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25%;
-          height: 35px;
+
           font-size: 0.75em;
         }
 
         select#pickup_return {
           width: 97%;
-          height: 35px;
+
           font-size: 0.75em;
         }
 
@@ -9277,39 +8779,25 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1em;
-      &:hover {
-        color: $color9;
-      }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 200px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.1em;
-          width: 83%;
-          line-height: 1.1em;
         }
         p {
-          font-size: 0.65em;
-          width: 60%;
+          font-size: 0.7em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -9475,19 +8963,11 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0 auto;
-              a {
-                color: $color;
-
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
               width: 100%;
               .car-icons-box {
-                height: 35px;
                 width: 45%;
 
                 .car-icons {
@@ -9513,7 +8993,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       width: 60%;
 
@@ -9546,7 +9025,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1.15em;
-          line-height: 30px;
         }
 
         p {
@@ -9582,7 +9060,6 @@ html[xmlns] .clearfix {
     }
 
     #location_searchform {
-      padding: 1%;
       width: 100%;
       h2 {
         font-size: 1.1em;
@@ -9672,19 +9149,14 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1.1em;
-        line-height: 30px;
       }
       p {
         font-size: 0.75em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
       .newsletter {
         width: 88%;
-        margin: 0 auto;
-        padding: 0;
 
         input[type="text"] {
           line-height: 30px;
@@ -9703,7 +9175,7 @@ html[xmlns] .clearfix {
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -9756,28 +9228,23 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.45em;
-        padding-left: 0;
+        font-size: 0.7em;
+
         .dropcap {
-          margin: 3%;
-          width: 20%;
           font-size: 1.8em;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
-        font-size: 0.6em;
+        font-size: 0.7em;
 
         .dropcap-small {
-          margin: 3%;
-          width: 20%;
           font-size: 1.5em;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
           font-size: 0.7em;
         }
@@ -9788,11 +9255,8 @@ html[xmlns] .clearfix {
 
         label {
           font-size: 0.6em;
-          line-height: 40px;
-          text-indent: 3%;
         }
         .query_btn {
-          width: 96%;
           font-size: 0.8em;
           &:hover {
             font-weight: bold;
@@ -9800,7 +9264,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 45%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -9808,13 +9272,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25%;
-          height: 35px;
+
           font-size: 0.7em;
         }
 
         select#pickup_return {
           width: 97%;
-          height: 35px;
+
           font-size: 0.7em;
         }
 
@@ -9889,39 +9353,25 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 1em;
-      &:hover {
-        color: $color9;
-      }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 200px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.1em;
-          width: 83%;
-          line-height: 1.1em;
         }
         p {
-          font-size: 0.65em;
-          width: 60%;
+          font-size: 0.7em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -10087,13 +9537,6 @@ html[xmlns] .clearfix {
 
             .carsbutton {
               margin: 0 auto;
-              a {
-                color: $color;
-
-                &:hover {
-                  font-weight: bold;
-                }
-              }
             }
 
             .cars_box_txt {
@@ -10123,7 +9566,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       width: 65%;
 
@@ -10156,7 +9598,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1.15em;
-          line-height: 30px;
         }
 
         p {
@@ -10279,38 +9720,30 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1.1em;
-        line-height: 30px;
       }
       p {
         font-size: 0.75em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
       .newsletter {
         width: 88%;
-        margin: 0 auto;
-        padding: 0;
 
         input[type="text"] {
           line-height: 30px;
-          height: 30px;
         }
         input[type="email"] {
           line-height: 30px;
-          height: 30px;
         }
         input[type="submit"] {
           width: 65.379%;
-          line-height: 35px;
           font-size: 0.9em;
           &:hover {
             font-weight: bold;
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {
@@ -10354,28 +9787,24 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.35em;
-        padding-left: 0;
+        font-size: 0.7em;
+
         .dropcap {
-          margin: 3%;
           width: 25%;
           font-size: 1.8em;
         }
       }
 
       p.smaller-text {
-        margin: 0 0 0 0;
-        font-size: 0.5em;
+        font-size: 0.7em;
 
         .dropcap-small {
-          margin: 3%;
           width: 25%;
-          font-size: 1.5em;
         }
       }
 
       #booking_form {
-        margin-bottom: 5%;
+        margin-bottom: 1em;
         p {
           font-size: 0.65em;
         }
@@ -10386,8 +9815,6 @@ html[xmlns] .clearfix {
 
         label {
           font-size: 0.53em;
-          line-height: 40px;
-          text-indent: 3%;
         }
         .query_btn {
           width: 96%;
@@ -10398,7 +9825,7 @@ html[xmlns] .clearfix {
         }
         .searchform_btn {
           width: 45%;
-          height: 34px;
+
           &:hover {
             font-weight: bold;
           }
@@ -10406,13 +9833,13 @@ html[xmlns] .clearfix {
 
         select {
           width: 25%;
-          height: 35px;
+
           font-size: 0.7em;
         }
 
         select#pickup_return {
           width: 97%;
-          height: 35px;
+
           font-size: 0.7em;
         }
 
@@ -10488,39 +9915,25 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*Form button*/
     #reveal_form_btn {
-      width: 47.42268%;
       font-size: 0.9em;
-      &:hover {
-        color: $color9;
-      }
     }
-    /*End Form button*/
 
-    /*Banner*/
     figure#banner {
-      height: 180px;
-      margin: 1% auto;
       #bannerimage {
-        width: 50.26016%;
+        width: auto;
       }
 
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2em;
-          width: 90%;
-          line-height: 1.1em;
         }
         p {
-          font-size: 0.6em;
-          width: 60%;
+          font-size: 0.7em;
         }
       }
-      /*banner end*/
     }
 
-    /* left Column*/
     #left_column {
       float: left;
 
@@ -10683,13 +10096,6 @@ html[xmlns] .clearfix {
 
           .carsbutton {
             margin: 0 auto;
-            a {
-              color: $color;
-
-              &:hover {
-                font-weight: bold;
-              }
-            }
           }
 
           .cars_box_txt {
@@ -10718,7 +10124,6 @@ html[xmlns] .clearfix {
       }
     }
 
-    /*right column*/
     #right_column {
       width: 65%;
 
@@ -10751,7 +10156,6 @@ html[xmlns] .clearfix {
         @include gradient(#747877, #a2a5a5);
         h2 {
           font-size: 1.15em;
-          line-height: 30px;
         }
 
         p {
@@ -10789,8 +10193,6 @@ html[xmlns] .clearfix {
     #location_searchform {
       h2 {
         font-size: 1.1em;
-        margin: 0px 0px 2% 0;
-        line-height: 30px;
         width: 83%;
       }
       .searchform {
@@ -10876,38 +10278,29 @@ html[xmlns] .clearfix {
     #newsletter {
       h2 {
         font-size: 1.1em;
-        line-height: 30px;
       }
       p {
         font-size: 0.75em;
-        margin: 0 0 2% 0;
-        line-height: 1.8em;
       }
 
       @include gradient(#747877, #a2a5a5);
       .newsletter {
         width: 88%;
-        margin: 0 auto;
-        padding: 0;
 
         input[type="text"] {
           line-height: 30px;
-          height: 30px;
         }
         input[type="email"] {
           line-height: 30px;
-          height: 30px;
         }
         input[type="submit"] {
-          width: 65.379%;
-          line-height: 35px;
           font-size: 0.9em;
           &:hover {
             font-weight: bold;
           }
         }
       }
-    } /*end of newsletter box*/
+    }
 
     /*footer*/
     footer {

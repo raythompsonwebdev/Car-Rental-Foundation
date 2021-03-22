@@ -6,15 +6,15 @@
 
 @mixin gradient($baseColor, $toColor) {
   background-color: $baseColor;
-  background-image: -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0, $baseColor),
-    color-stop(1, $toColor)
-  ); /* Saf4+, Chrome */
-  background-image: linear-gradient(top, $baseColor, $toColor);
+  // background-image: -moz-linear-gradient(top, $baseColor, $toColor); /* FF3.6 */
+  // background-image: -webkit-gradient(
+  //   linear,
+  //   to right,
+  //   left bottom,
+  //   color-stop(0, $baseColor),
+  //   color-stop(1, $toColor)
+  // ); /* Saf4+, Chrome */
+  background-image: linear-gradient(180deg, $baseColor, $toColor);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$baseColor', EndColorStr='$toColor'); /* IE6â��IE9 */
 }
 
