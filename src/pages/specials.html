@@ -1,11 +1,12 @@
 ---
 title: specials
+pagetitle: Car Hire WorldWide
 ---
 
 <div class="grid-container">
-  <div class="grid-x grid-padding-x">
+  <div class="grid-x">
     <div class="large-12 medium-12 cell">
-      <h1>Car Hire WorldWide</h1>
+      <h1>{{pagetitle}}</h1>
       <ul
         class="tabs"
         data-active-collapse="true"
@@ -33,10 +34,10 @@ title: specials
         <!--panel1-->
         <div class="tabs-panel is-active" id="panel1c">
           {{#each specials.special}}
-          <article class="specials_box">
-            <div class="media-object specials_box_img">
-              <div class="media-object-section float-right">
-                <div class="responsive car">
+          <article class="specials_card cell">
+            <div class="media-object specials_card_img">
+              <div class="media-object-section float right">
+                <div class="specials_image">
                   <img
                     src="{{imageUrl}}"
                     alt="car-rental-website-hyundai-accent"
@@ -44,25 +45,27 @@ title: specials
                 </div>
               </div>
 
-              <div class="media-object-section">
+              <div class="media-object-section main-section">
                 <h4>{{header}}</h4>
-                <p class="special1">{{text}}</p>
+                <p class="special_text">{{text}}</p>
               </div>
             </div>
+            <div class="media-object-section bottom">
+              <ul class="specials_info">
+                <li>{{country}}</li>
+                <li>Rental period: {{rentalperiod}}</li>
+                <li>Booking period: {{bookingperiod}}</li>
+                <li>Minimum rental period: {{minrentalperiod}}</li>
+                <li>Maximum rental period: {{maxrentalperiod}}</li>
+                <li>Advance booking time: {{advancedbooking}}</li>
+              </ul>
 
-            <ul class="specials_box_txt">
-              <li>{{country}}</li>
-              <li>Rental period: {{rentalperiod}}</li>
-              <li>Booking period: {{bookingperiod}}</li>
-              <li>Minimum rental period: {{minrentalperiod}}</li>
-              <li>Maximum rental period: {{maxrentalperiod}}</li>
-              <li>Advance booking time: {{advancedbooking}}</li>
-            </ul>
-            <div class="specials_btn_box">
-              <span class="special_price"
-                >&pound;{{specialprice}}<span>per Day</span></span
-              >
-              <span class="cont_btn"><a href=""> Continue </a></span>
+              <div class="specials_cta">
+                <span class="specials_price"
+                  >&pound;{{specialprice}}<span>per Day</span>
+                </span>
+                <span class="specials_btn"><a href=""> Continue </a></span>
+              </div>
             </div>
           </article>
           {{/each}}
@@ -71,10 +74,10 @@ title: specials
         <!--panel2-->
         <div class="tabs-panel" id="panel2c">
           {{#each specials.economy}}
-          <article class="specials_box">
-            <div class="media-object specials_box_img">
+          <article class="specials_card">
+            <div class="media-object specials_card_img">
               <div class="media-object-section float-right">
-                <div class="responsive car">
+                <div class="specials_image">
                   <img
                     src="{{imageUrl}}"
                     alt="car-rental-website-hyundai-accent"
@@ -88,7 +91,7 @@ title: specials
               </div>
             </div>
 
-            <ul class="specials_box_txt">
+            <ul class="specials_info">
               <li>{{country}}</li>
               <li>Rental period: {{rentalperiod}}</li>
               <li>Booking period: {{bookingperiod}}</li>
@@ -96,7 +99,7 @@ title: specials
               <li>Maximum rental period: {{maxrentalperiod}}</li>
               <li>Advance booking time: {{advancedbooking}}</li>
             </ul>
-            <div class="specials_btn_box">
+            <div class="specials_btn">
               <span class="special_price"
                 >&pound;{{specialprice}}<span>per Day</span></span
               >
@@ -109,10 +112,10 @@ title: specials
         <!--panel3-->
         <div class="tabs-panel" id="panel3c">
           {{#each specials.standard}}
-          <article class="specials_box">
-            <div class="media-object specials_box_img">
+          <article class="specials_card">
+            <div class="media-object specials_card_img">
               <div class="media-object-section float-right">
-                <div class="responsive car">
+                <div class="specials_image">
                   <img
                     src="{{imageUrl}}"
                     alt="car-rental-website-hyundai-accent"
@@ -126,7 +129,7 @@ title: specials
               </div>
             </div>
 
-            <ul class="specials_box_txt">
+            <ul class="specials_info">
               <li>{{country}}</li>
               <li>Rental period: {{rentalperiod}}</li>
               <li>Booking period: {{bookingperiod}}</li>
@@ -134,7 +137,7 @@ title: specials
               <li>Maximum rental period: {{maxrentalperiod}}</li>
               <li>Advance booking time: {{advancedbooking}}</li>
             </ul>
-            <div class="specials_btn_box">
+            <div class="specials_btn">
               <span class="special_price"
                 >&pound;{{specialprice}}<span>per Day</span></span
               >
@@ -147,10 +150,10 @@ title: specials
         <!--panel4-->
         <div class="tabs-panel" id="panel4c">
           {{#each specials.hybrid}}
-          <article class="specials_box">
-            <div class="media-object specials_box_img">
+          <article class="specials_card">
+            <div class="media-object specials_card_img">
               <div class="media-object-section float-right">
-                <div class="responsive car">
+                <div class="specials_image">
                   <img
                     src="{{imageUrl}}"
                     alt="car-rental-website-hyundai-accent"
@@ -164,7 +167,7 @@ title: specials
               </div>
             </div>
 
-            <ul class="specials_box_txt">
+            <ul class="specials_info">
               <li>{{country}}</li>
               <li>Rental period: {{rentalperiod}}</li>
               <li>Booking period: {{bookingperiod}}</li>
@@ -172,7 +175,7 @@ title: specials
               <li>Maximum rental period: {{maxrentalperiod}}</li>
               <li>Advance booking time: {{advancedbooking}}</li>
             </ul>
-            <div class="specials_btn_box">
+            <div class="specials_btn">
               <span class="special_price"
                 >&pound;{{specialprice}}<span>per Day</span></span
               >
@@ -185,10 +188,10 @@ title: specials
         <!--panel5-->
         <div class="tabs-panel" id="panel5c">
           {{#each specials.luxury}}
-          <article class="specials_box">
-            <div class="media-object specials_box_img">
+          <article class="specials_card">
+            <div class="media-object specials_card_img">
               <div class="media-object-section float-right">
-                <div class="responsive car">
+                <div class="specials_image">
                   <img
                     src="{{imageUrl}}"
                     alt="car-rental-website-hyundai-accent"
@@ -202,7 +205,7 @@ title: specials
               </div>
             </div>
 
-            <ul class="specials_box_txt">
+            <ul class="specials_info">
               <li>{{country}}</li>
               <li>Rental period: {{rentalperiod}}</li>
               <li>Booking period: {{bookingperiod}}</li>
@@ -210,7 +213,7 @@ title: specials
               <li>Maximum rental period: {{maxrentalperiod}}</li>
               <li>Advance booking time: {{advancedbooking}}</li>
             </ul>
-            <div class="specials_btn_box">
+            <div class="specials_btn">
               <span class="special_price"
                 >&pound;{{specialprice}}<span>per Day</span></span
               >

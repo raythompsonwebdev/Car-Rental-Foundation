@@ -1,12 +1,13 @@
 ---
 title: cars
+pagetitle: Car Hire WorldWide
 ---
 
 <div class="grid-container">
   <div class="grid-x grid-padding-x">
     <div class="large-9 medium-9 small-12 cell">
       <!--left column -->
-      <h1>Car Hire WorldWide</h1>
+      <h1>{{pagetitle}}</h1>
       <article id="left_column">
         <!--tabgroup-CARS -->
 
@@ -150,22 +151,21 @@ title: cars
 
           <!--panel3-->
           <div class="tabs-panel" id="panel3c">
+            {{#each cars.standard}}
             <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
+              <div class="media-object cars_box_img">
                 <div class="responsive car">
                   <img
-                    src="assets/img/car-rental-website-cheverolet-aveo-large.png"
-                    title="car-rental-website-cheverolet-aveo-"
+                    src="{{imageUrl}}"
+                    title="car-rental-website-cheverolet-aveo"
                   />
                 </div>
               </div>
 
               <div class="media-object cars_box_txt">
-                <p>Ecomomy</p>
-                <p>Chevrolet Aveo</p>
-                <p>Or similar</p>
+                <p>{{type}}</p>
+                <p>{{name}}</p>
+                <p>{{text}}</p>
 
                 <div class="media-object-section car-icons-box">
                   <figure class="car-icons">
@@ -195,250 +195,34 @@ title: cars
                   <br />
                 </div>
 
-                <p>$34.50 per day</p>
+                <p></p>
 
                 <figure class="carsbutton">
                   <a href="#">Continue &rsaquo;</a>
                 </figure>
               </div>
             </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-ford-fusion-large.png"
-                    title="car-rental-website-ford-fusion"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Standard</p>
-                <p>Ford Fusion</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-toyota-avalon-large.png"
-                    title="car-rental-website-toyota-avalon"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Ecomomy</p>
-                <p>Chevrolet Aveo</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-toyota-avalon-large.png"
-                    title="car-rental-website-toyota-avalon"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Premium</p>
-                <p>Toyota Avalon</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-cadillac-DTS-large.png"
-                    title="car-rental-website-cadillac-DTS"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Luxury</p>
-                <p>Cadillac DTS</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
+            {{/each}}
             <br />
           </div>
 
           <!--panel4-->
           <div class="tabs-panel" id="panel4c">
+            {{#each cars.premium}}
             <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
+              <div class="media-object cars_box_img">
                 <div class="responsive car">
                   <img
-                    src="assets/img/car-rental-website-toyota-avalon-large.png"
-                    title="car-rental-website-toyota-avalon"
+                    src="{{imageUrl}}"
+                    title="car-rental-website-cheverolet-aveo"
                   />
                 </div>
               </div>
 
               <div class="media-object cars_box_txt">
-                <p>Premium</p>
-                <p>Toyota Avalon</p>
-                <p>Or similar</p>
+                <p>{{type}}</p>
+                <p>{{name}}</p>
+                <p>{{text}}</p>
 
                 <div class="media-object-section car-icons-box">
                   <figure class="car-icons">
@@ -468,250 +252,34 @@ title: cars
                   <br />
                 </div>
 
-                <p>$34.50 per day</p>
+                <p></p>
 
                 <figure class="carsbutton">
                   <a href="#">Continue &rsaquo;</a>
                 </figure>
               </div>
             </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-cadillac-DTS-large.png"
-                    title="car-rental-website-cadillac-DTS"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Luxury</p>
-                <p>Cadillac DTS</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-cheverolet-aveo-large.png"
-                    title="car-rental-website-cheverolet-aveo-"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Ecomomy</p>
-                <p>Chevrolet Aveo</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-ford-fusion-large.png"
-                    title="car-rental-website-ford-fusion"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Standard</p>
-                <p>Ford Fusion</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-toyota-avalon-large.png"
-                    title="car-rental-website-toyota-avalon"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Ecomomy</p>
-                <p>Chevrolet Aveo</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
+            {{/each}}
             <br />
           </div>
 
           <!--panel5-->
           <div class="tabs-panel" id="panel5c">
+            {{#each cars.luxury}}
             <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
+              <div class="media-object cars_box_img">
                 <div class="responsive car">
                   <img
-                    src="assets/img/car-rental-website-cheverolet-aveo-large.png"
-                    title="car-rental-website-cheverolet-aveo-"
+                    src="{{imageUrl}}"
+                    title="car-rental-website-cheverolet-aveo"
                   />
                 </div>
               </div>
 
               <div class="media-object cars_box_txt">
-                <p>Ecomomy</p>
-                <p>Chevrolet Aveo</p>
-                <p>Or similar</p>
+                <p>{{type}}</p>
+                <p>{{name}}</p>
+                <p>{{text}}</p>
 
                 <div class="media-object-section car-icons-box">
                   <figure class="car-icons">
@@ -741,229 +309,14 @@ title: cars
                   <br />
                 </div>
 
-                <p>$34.50 per day</p>
+                <p></p>
 
                 <figure class="carsbutton">
                   <a href="#">Continue &rsaquo;</a>
                 </figure>
               </div>
             </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-ford-fusion-large.png"
-                    title="car-rental-website-ford-fusion"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Standard</p>
-                <p>Ford Fusion</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-toyota-avalon-large.png"
-                    title="car-rental-website-toyota-avalon"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Ecomomy</p>
-                <p>Chevrolet Aveo</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-toyota-avalon.png"
-                    title="car-rental-website-toyota-avalon"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Premium</p>
-                <p>Toyota Avalon</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
-            <br />
-
-            <article class="cars_box">
-              <!--box 6-->
-
-              <div class="media-object cars_box_img float-left">
-                <div class="responsive car">
-                  <img
-                    src="assets/img/car-rental-website-cadillac-DTS-large.png"
-                    title="car-rental-website-cadillac-DTS"
-                  />
-                </div>
-              </div>
-
-              <div class="media-object cars_box_txt">
-                <p>Luxury</p>
-                <p>Cadillac DTS</p>
-                <p>Or similar</p>
-
-                <div class="media-object-section car-icons-box">
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-passengers-large.png"
-                      alt="car-rental-website-passengers"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-luggage-large.png"
-                      alt="car-rental-website-luggage"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-car-doors-large.png"
-                      alt="car-rental-website-car-doors"
-                    />
-                  </figure>
-                  <figure class="car-icons">
-                    <img
-                      src="assets/img/car-rental-website-auto-or-manual-large.png"
-                      alt="car-rental-website-auto-or-manual"
-                    />
-                  </figure>
-                  <br />
-                </div>
-
-                <p>$34.50 per day</p>
-
-                <figure class="carsbutton">
-                  <a href="#">Continue &rsaquo;</a>
-                </figure>
-              </div>
-            </article>
+            {{/each}}
             <br />
           </div>
         </div>
@@ -978,7 +331,7 @@ title: cars
           <h2>Weekend Car Rental Special</h2>
           <div class="card-section">
             <img
-              class="front_img"
+              class="card_image"
               src="assets/img/car-rental-website-weekend-car-rentals-large.png"
             />
           </div>
@@ -999,7 +352,7 @@ title: cars
           <h2>Our Locations</h2>
           <div class="card-section">
             <img
-              class="front_image"
+              class="card_image"
               src="assets/img/car-rental-website-locations-map-large.png"
               alt="car-rental-website-locations-map"
             />

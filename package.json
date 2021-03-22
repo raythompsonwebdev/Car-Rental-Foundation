@@ -34,7 +34,7 @@
     "gulp-load-plugins": "^1.6.0",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^1.4.1",
     "js-yaml": "^3.14.1",
     "panini": "^1.7.1",
