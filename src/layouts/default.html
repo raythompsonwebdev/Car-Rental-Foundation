@@ -7,7 +7,7 @@ unless specified. --}}
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation for Sites</title>
+    <title>{{title}}</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css" />
     <link
       href="http://fonts.googleapis.com/css?family=Signika:400,600,700,300"
@@ -18,24 +18,23 @@ unless specified. --}}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
       <link rel="stylesheet" href="styles/ie8-min.css" />
-      <script src="scripts/vendor/jquery.min.js"></script>
-      <script src="scripts/html5shiv.min.js"></script>
-      <script src="scripts/Respond-master/src/respond.min.js"></script>
-      <script src="scripts/selectivizr.min.js"></script>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/Respond-master/src/respond.min.js"></script>
+      <script src="assets/js/selectivizr.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="grid-container">
-      <div id="wrapper">
-      {{> header}}
-        {{!-- Pages you create in the src/pages/ folder are inserted here when
-        the flattened page is created. --}} {{> body}}
-        <!-- jsDelivr CDN -->
-      </div>
-      <!--wrapper end-->
+    <div id="wrapper">
+      {{> header}} {{!-- Pages you create in the src/pages/ folder are inserted
+      here when the flattened page is created. --}} {{> body}} {{> footer}}
+      <p class="copy">
+        Raymond Thompson 2017<br />
+        built from Photoshop template downloaded from www.phpjabber.com<br />
+        <script type="text/javascript">
+          document.write("Page Last Updated: " + document.lastModified);
+        </script>
+      </p>
     </div>
-    <!--row end-->
-
     <!--Fallback to local -->
     <script src="{{root}}assets/js/app.js"></script>
   </body>

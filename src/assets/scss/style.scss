@@ -99,6 +99,7 @@ figure {
 .clearfix {
   display: inline-block;
   clear: both;
+  clear: both;
 }
 
 html[xmlns] .clearfix {
@@ -367,20 +368,6 @@ html[xmlns] .clearfix {
             text-align: center;
             list-style: none;
 
-            li:nth-of-type(2) {
-              width: 16.66%;
-
-              a {
-                line-height: 20px;
-                font-size: 0.9em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               height: 60px;
               list-style: none;
@@ -414,7 +401,7 @@ html[xmlns] .clearfix {
     }
 
     /* Form button */
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       height: 100px;
       float: right;
@@ -449,7 +436,7 @@ html[xmlns] .clearfix {
 
       figcaption.bannertext {
         p:first-of-type {
-          font-size: 3.5em;
+          font-size: 3em;
           text-shadow: 1px 1px 1px #999;
           font-weight: bold;
           color: $color;
@@ -460,11 +447,11 @@ html[xmlns] .clearfix {
           height: auto;
           margin: 0;
           padding: 0;
-          line-height: 1.4em;
+          line-height: 55px;
           text-transform: none;
         }
         p {
-          font-size: 1.3em;
+          font-size: 1.5em;
           text-shadow: 1px 1px 1px #999;
           width: 50%;
           color: $color;
@@ -1046,7 +1033,6 @@ html[xmlns] .clearfix {
     .card {
       height: 340px;
       width: 24.69%;
-      padding-top: 1%;
       border: none;
       background-color: $color;
       display: inline-block;
@@ -1054,10 +1040,10 @@ html[xmlns] .clearfix {
 
       h2 {
         font-size: 1.25em;
-        padding-left: 6%;
+        text-indent: 0.5em;
         color: $color;
         height: auto;
-        margin: 1% auto;
+        margin: 0.5em auto;
         line-height: 30px;
         text-align: left;
         font-weight: bold;
@@ -1066,11 +1052,11 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 1rem;
+        padding: 0.5em;
 
         .front_img {
           width: 100%;
-          margin: 1% auto;
+          margin: 0 auto;
           padding: 0;
           display: block;
         }
@@ -1216,20 +1202,6 @@ html[xmlns] .clearfix {
         height: 40px;
         width: 80%;
         margin: 0px auto;
-
-        li:nth-of-type(2) {
-          width: 16%;
-          a {
-            line-height: 40px;
-            font-size: 90%;
-            &:hover {
-              font-weight: bold;
-            }
-            &:active {
-              font-weight: bold;
-            }
-          }
-        }
 
         li {
           height: 40px;
@@ -1413,20 +1385,6 @@ html[xmlns] .clearfix {
             height: 60px;
             text-align: center;
 
-            li:nth-of-type(2) {
-              width: 16.66%;
-
-              a {
-                line-height: 20px;
-                font-size: 90%;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               height: 60px;
               width: 16.66%;
@@ -1447,7 +1405,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.8em;
 
@@ -2107,20 +2065,6 @@ html[xmlns] .clearfix {
             height: 60px;
             text-align: center;
 
-            li:nth-of-type(2) {
-              width: 16.66%;
-
-              a {
-                line-height: 20px;
-                font-size: 0.9em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               height: 60px;
               width: 16.66%;
@@ -2141,7 +2085,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.75em;
       &:hover {
@@ -2801,20 +2745,6 @@ html[xmlns] .clearfix {
             height: 60px;
             text-align: center;
 
-            li:nth-of-type(2) {
-              width: 16.66%;
-
-              a {
-                line-height: 20px;
-                font-size: 0.8em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               height: 60px;
               width: 16.66%;
@@ -2835,7 +2765,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.7em;
       height: 50px;
@@ -3482,20 +3412,6 @@ html[xmlns] .clearfix {
             height: 60px;
             text-align: center;
 
-            li:nth-of-type(2) {
-              width: 16.66%;
-
-              a {
-                line-height: 20px;
-                font-size: 0.75em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               height: 60px;
               width: 16.66%;
@@ -3516,7 +3432,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.7em;
       height: 50px;
@@ -4161,20 +4077,6 @@ html[xmlns] .clearfix {
             height: 60px;
             text-align: center;
 
-            li:nth-of-type(2) {
-              width: 16.66%;
-
-              a {
-                line-height: 20px;
-                font-size: 0.7em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               height: 60px;
               width: 16.66%;
@@ -4195,7 +4097,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.5em;
       height: 50px;
@@ -4828,20 +4730,6 @@ html[xmlns] .clearfix {
             height: 60px;
             text-align: center;
 
-            li:nth-of-type(2) {
-              width: 16.66%;
-
-              a {
-                line-height: 20px;
-                font-size: 0.7em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               height: 60px;
               width: 16.66%;
@@ -4862,7 +4750,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.5em;
       height: 50px;
@@ -5489,20 +5377,6 @@ html[xmlns] .clearfix {
             height: 60px;
             text-align: center;
 
-            li:nth-of-type(2) {
-              width: 16.66%;
-
-              a {
-                line-height: 20px;
-                font-size: 0.7em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               height: 60px;
               width: 16.66%;
@@ -5523,7 +5397,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.5em;
       height: 50px;
@@ -6159,20 +6033,6 @@ html[xmlns] .clearfix {
             height: 60px;
             text-align: center;
 
-            li:nth-of-type(2) {
-              width: 16.66%;
-
-              a {
-                line-height: 20px;
-                font-size: 0.65em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               height: 60px;
               width: 16.66%;
@@ -6193,7 +6053,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.5em;
       height: 50px;
@@ -6833,22 +6693,6 @@ html[xmlns] .clearfix {
             height: auto;
             text-align: center;
 
-            li:nth-of-type(2) {
-              float: none;
-              width: 100%;
-              display: block;
-
-              a {
-                line-height: 20px;
-                font-size: 0.65em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               height: 50px;
               float: none;
@@ -6871,7 +6715,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.5em;
       height: 50px;
@@ -7504,19 +7348,6 @@ html[xmlns] .clearfix {
             height: auto;
             text-align: center;
 
-            li:nth-of-type(2) {
-              float: none;
-
-              a {
-                font-size: 1em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               float: none;
               a {
@@ -7535,7 +7366,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.4em;
       &:hover {
@@ -8170,19 +8001,6 @@ html[xmlns] .clearfix {
           ul {
             height: auto;
 
-            li:nth-of-type(2) {
-              float: none;
-
-              a {
-                font-size: 1em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               width: 100%;
 
@@ -8202,7 +8020,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.4em;
       &:hover {
@@ -8828,19 +8646,6 @@ html[xmlns] .clearfix {
             height: auto;
             text-align: center;
 
-            li:nth-of-type(2) {
-              float: none;
-
-              a {
-                font-size: 1em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               display: block;
               a {
@@ -8859,7 +8664,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.25em;
       &:hover {
@@ -9470,19 +9275,6 @@ html[xmlns] .clearfix {
           ul {
             height: auto;
 
-            li:nth-of-type(2) {
-              float: none;
-
-              a {
-                font-size: 1em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               display: block;
               a {
@@ -9501,7 +9293,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1.15em;
       &:hover {
@@ -10130,19 +9922,6 @@ html[xmlns] .clearfix {
             height: auto;
             text-align: center;
 
-            li:nth-of-type(2) {
-              float: none;
-
-              a {
-                font-size: 1em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               display: block;
               a {
@@ -10161,7 +9940,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1em;
       &:hover {
@@ -10800,19 +10579,6 @@ html[xmlns] .clearfix {
           ul {
             height: auto;
 
-            li:nth-of-type(2) {
-              float: none;
-
-              a {
-                font-size: 1em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               display: block;
               a {
@@ -10831,7 +10597,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 1em;
       &:hover {
@@ -11457,19 +11223,6 @@ html[xmlns] .clearfix {
           ul {
             height: auto;
 
-            li:nth-of-type(2) {
-              float: none;
-
-              a {
-                font-size: 1em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
             li {
               display: block;
               a {
@@ -11489,7 +11242,7 @@ html[xmlns] .clearfix {
     }
 
     /*Form button*/
-    #index_form_btn {
+    #reveal_form_btn {
       width: 47.42268%;
       font-size: 0.9em;
       &:hover {
