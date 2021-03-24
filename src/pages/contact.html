@@ -16,7 +16,7 @@ pagetitle: Contact
         <br /><br />
 
         <form id="contact_form">
-          <div class="grid-x grid-padding-x">
+          <div class="grid-x">
             <div class="large-4 medium-4 small-4 cell">
               <label for="Name">Name</label>
             </div>
@@ -25,16 +25,16 @@ pagetitle: Contact
             </div>
           </div>
 
-          <div class="grid-x grid-padding-x">
+          <div class="grid-x">
             <div class="large-4 medium-4 small-4 cell">
               <label for="E-mail">E-mail </label>
             </div>
             <div class="large-12 medium-12 small-12 cell">
-              <input type="text" required />
+              <input type="text" required pattern="email" />
             </div>
           </div>
 
-          <div class="grid-x grid-padding-x">
+          <div class="grid-x">
             <div class="large-4 medium-4 small-4 cell">
               <label for="Message">Message</label>
             </div>
@@ -43,7 +43,7 @@ pagetitle: Contact
             </div>
           </div>
           <br />
-          <div class="grid-x grid-padding-x">
+          <div class="grid-x">
             <div class="large-2 medium-2 small-2 cell"></div>
             <div class="large-12 medium-12 small-12 cell">
               <input type="submit" class="button" value="Send" />
@@ -67,11 +67,27 @@ pagetitle: Contact
               tellus eu nisl bibendum facilisis.
             </p>
           </div>
-          <form action="" method="post" class="newsletter" data-abide>
-            <input name="NAME" type="text" placeholder="Name" />
-            <!--<small class="error">Name must be letters.</small>-->
-            <input name="EMAIL" type="email" placeholder="Email" required />
-            <!--<small class="error">A valid email address is required.</small>-->
+          <form
+            action=""
+            method="post"
+            class="newsletter"
+            data-abide
+            novalidate
+          >
+            <input name="NAME" type="text" placeholder="Name" required />
+            <span class="form-error"
+              >Yo, you had better fill this out, it's required.</span
+            >
+            <input
+              name="EMAIL"
+              type="email"
+              placeholder="Email"
+              required
+              pattern="email"
+            />
+            <span class="form-error" data-form-error-on="pattern"
+              >Invalid Email</span
+            >
             <input type="submit" class="link_btn" value="SUBSCRIBE" />
           </form>
         </div>

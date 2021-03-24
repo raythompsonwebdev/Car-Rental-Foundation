@@ -77,11 +77,27 @@ pagetitle: About
               tellus eu nisl bibendum facilisis.
             </p>
           </div>
-          <form action="" method="post" class="newsletter" data-abide>
-            <input name="NAME" type="text" placeholder="Name" />
-            <!--<small class="error">Name must be letters.</small>-->
-            <input name="EMAIL" type="email" placeholder="Email" required />
-            <!--<small class="error">A valid email address is required.</small>-->
+          <form
+            action=""
+            method="post"
+            class="newsletter"
+            data-abide
+            novalidate
+          >
+            <input name="NAME" type="text" placeholder="Name" required />
+            <span class="form-error"
+              >Yo, you had better fill this out, it's required.</span
+            >
+            <input
+              name="EMAIL"
+              type="email"
+              placeholder="Email"
+              required
+              pattern="email"
+            />
+            <span class="form-error" data-form-error-on="pattern"
+              >Invalid Email</span
+            >
             <input type="submit" class="link_btn" value="SUBSCRIBE" />
           </form>
         </div>

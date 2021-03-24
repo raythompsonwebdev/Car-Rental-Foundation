@@ -4,11 +4,15 @@ pagetitle: Car Hire WorldWide
 ---
 
 <div class="grid-container">
-  <div class="grid-x">
+  <div class="grid-x grid-margin-x">
     <div class="large-12 medium-12 cell">
       <h1>{{pagetitle}}</h1>
       <ul
         class="tabs"
+        data-deep-link="true"
+        data-update-history="true"
+        data-deep-link-smudge="true"
+        data-deep-link-smudge-delay="500"
         data-active-collapse="true"
         data-tabs
         id="collapsing-tabs"
@@ -34,7 +38,7 @@ pagetitle: Car Hire WorldWide
         <!--panel1-->
         <div class="tabs-panel is-active" id="panel1c">
           {{#each specials.special}}
-          <article class="specials_card cell">
+          <article class="specials_card large-12 medium-12 small-12 cell">
             <div class="media-object specials_card_img">
               <div class="media-object-section float right">
                 <div class="specials_image">

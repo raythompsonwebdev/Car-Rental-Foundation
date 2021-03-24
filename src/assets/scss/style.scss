@@ -122,7 +122,7 @@ html[xmlns] .clearfix {
 @media only screen and (max-width: 1920px) {
   #wrapper {
     height: auto;
-    width: 90%;
+    width: 85%;
     padding-top: 1%;
     font-family: ($fontStyle);
     margin: 0 auto;
@@ -238,11 +238,11 @@ html[xmlns] .clearfix {
           font-size: 0.85em;
           list-style: none;
           line-height: 35px;
-          color: $color5;
+          color: $color7;
           display: block;
           font-weight: normal;
           text-align: left;
-          text-indent: 0.25em;
+          text-indent: 0.5em;
         }
 
         .query_btn {
@@ -256,11 +256,11 @@ html[xmlns] .clearfix {
           width: 70%;
           margin: 0 auto;
           height: auto;
-          @include gradient(#fc7d3c, #ee2a26);
+          @include gradient($color11, $color13);
           border: 0;
           display: block;
           &:hover {
-            @include gradient(#ee2a26, #fc7d3c);
+            @include gradient($color13, $color11);
             cursor: pointer;
           }
         }
@@ -269,13 +269,13 @@ html[xmlns] .clearfix {
           width: 35%;
           line-height: 35px;
           margin: 0;
-          @include gradient(#fc7d3c, #ee2a26);
+          @include gradient($color11, $color13);
           font-family: $fontStyle;
           color: $color;
           border: 0;
           display: block;
           &:hover {
-            @include gradient(#ee2a26, #fc7d3c);
+            @include gradient($color13, $color11);
             font-weight: bold;
             cursor: pointer;
           }
@@ -283,16 +283,16 @@ html[xmlns] .clearfix {
 
         select {
           width: 25.5%;
-          line-height: 30px;
-          height: 30px;
+          line-height: 35px;
+          height: 35px;
           font-size: 0.8em;
           list-style: none;
         }
         select#pickup_return {
           width: 97%;
           margin: 0;
-          line-height: 30px;
-          height: 30px;
+          line-height: 35px;
+          height: 35px;
           font-size: 0.85em;
         }
         select#rental_start,
@@ -386,13 +386,14 @@ html[xmlns] .clearfix {
               text-align: center;
               a {
                 height: 100%;
-                line-height: 30px;
+                line-height: 60px;
                 width: 100%;
                 color: $color;
                 font-size: 0.9em;
                 text-decoration: none;
                 display: block;
                 font-family: ($fontStyle);
+                padding: 0;
                 &:hover {
                   color: $color;
                   background-color: $color11;
@@ -445,7 +446,7 @@ html[xmlns] .clearfix {
 
       figcaption.bannertext {
         p:first-of-type {
-          font-size: 3.5em;
+          font-size: 4em;
           text-shadow: 1px 1px 1px #999;
           font-weight: bold;
           color: $color;
@@ -456,11 +457,13 @@ html[xmlns] .clearfix {
           height: auto;
           margin: 0;
           padding: 0;
-          line-height: 60px;
+          line-height: 70px;
           text-transform: none;
         }
         p {
-          font-size: 1.5em;
+          font-size: 1.6em;
+          font-family: $fontStyle;
+          line-height: 35px;
           text-shadow: 1px 1px 1px #999;
           width: 50%;
           color: $color;
@@ -539,11 +542,11 @@ html[xmlns] .clearfix {
           font-family: ($fontStyle);
           line-height: 0;
           font-size: 1em;
-          @include gradient(#fc7d3c, #ee2a26);
+          @include gradient($color11, $color13);
           color: $color;
           @include rounded(5px);
           &:hover {
-            @include gradient(#ee2a26, #fc7d3c);
+            @include gradient($color13, $color11);
             font-weight: bold;
             width: 20%;
           }
@@ -556,7 +559,7 @@ html[xmlns] .clearfix {
           font-size: 1.1em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.9em;
         }
         p:nth-of-type(3) {
@@ -597,9 +600,9 @@ html[xmlns] .clearfix {
           height: 40px;
           line-height: 40px;
           &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
+            border-top: solid $color 0.5px;
+            border-right: solid $color 0.5px;
+            border-left: solid $color 0.5px;
           }
         }
       }
@@ -616,7 +619,7 @@ html[xmlns] .clearfix {
 
         .specials_card {
           width: 49.7%;
-          height: 330px;
+          height: auto;
           float: none;
           display: inline-block;
           margin-left: 0;
@@ -624,15 +627,15 @@ html[xmlns] .clearfix {
           div.specials_cta {
             width: 27%;
             height: auto;
-            padding-right: 2%;
             display: inline-block;
             .specials_price {
               font-family: ($fontStyle);
+              text-shadow: 0.5px 0.5px #ccc;
               float: right;
-              margin: 10px 0px 30px 0px;
+              margin: 10px 0 20px 0;
               display: block;
               text-align: center;
-              @include gradient(#38bff3, #afe5fc);
+              @include gradient($color2, #afe5fc);
               padding: 7%;
               width: 50%;
               color: $color;
@@ -642,6 +645,7 @@ html[xmlns] .clearfix {
               span {
                 font-size: 45%;
                 display: block;
+                color: $color;
               }
             }
             .specials_btn {
@@ -657,12 +661,12 @@ html[xmlns] .clearfix {
                 font-family: $fontStyle;
                 border: 0;
                 display: block;
-                @include gradient(#fc7d3c, #ee2a26);
+                @include gradient($color11, $color13);
                 @include rounded(5px);
                 color: $color;
                 text-align: center;
                 &:hover {
-                  @include gradient(#ee2a26, #fc7d3c);
+                  @include gradient($color13, $color11);
                   font-weight: bold;
                 }
               }
@@ -671,7 +675,7 @@ html[xmlns] .clearfix {
 
           .specials_card_img {
             width: 100%;
-            height: 140px;
+            height: auto;
             padding: 2%;
             color: $color;
             background-color: $color14;
@@ -717,8 +721,8 @@ html[xmlns] .clearfix {
             list-style: none;
             li {
               color: $color5;
-              font-size: 0.8em;
-              line-height: 1.7em;
+              font-size: 0.9em;
+              line-height: 25px;
               margin: 0;
               width: 100%;
               height: auto;
@@ -757,20 +761,13 @@ html[xmlns] .clearfix {
               width: 100%;
               display: inline-block;
               padding: 0;
-              p:nth-of-type(4) {
-                margin: 5px 0px 5px 0px;
-                width: 100%;
-                font-size: 0.9em;
-                line-height: 30px;
-                text-align: left;
-                clear: both;
-              }
+
               p:nth-of-type(1) {
                 font-weight: bold;
                 font-size: 1em;
               }
               p:nth-of-type(2) {
-                color: #00ccff;
+                color: $cartextcolor;
                 font-size: 0.9em;
               }
               p:nth-of-type(3) {
@@ -783,14 +780,14 @@ html[xmlns] .clearfix {
             .carsbutton {
               margin: 0;
               display: block;
-              @include gradient(#fc7d3c, #ee2a26);
+              @include gradient($color11, $color13);
               color: $color;
               line-height: 40px;
-              width: 60%;
+              width: 40%;
               @include rounded(5px);
               text-align: center;
               &:hover {
-                @include gradient(#ee2a26, #fc7d3c);
+                @include gradient($color13, $color11);
                 font-weight: bold;
               }
             }
@@ -819,11 +816,10 @@ html[xmlns] .clearfix {
           width: 90%;
           display: block;
           margin: 0.5em auto;
-          line-height: 40px;
+          line-height: 30px;
           font-family: $fontStyle;
           text-align: left;
           font-weight: bold;
-          letter-spacing: 0.05em;
         }
 
         .card-section {
@@ -855,12 +851,12 @@ html[xmlns] .clearfix {
             text-align: center;
             font-size: 1em;
             padding: 0;
-            @include gradient(#fc7d3c, #ee2a26);
+            @include gradient($color11, $color13);
             @include rounded(5px);
             display: block;
             color: $color;
             &:hover {
-              @include gradient(#ee2a26, #fc7d3c);
+              @include gradient($color13, $color11);
               font-weight: bold;
               width: 60.37931%;
             }
@@ -869,7 +865,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
 
         h2 {
           font-size: 1.25em;
@@ -902,12 +898,12 @@ html[xmlns] .clearfix {
             font-family: ($fontStyle);
             border: 0;
             display: block;
-            @include gradient(#fc7d3c, #ee2a26);
+            @include gradient($color11, $color13);
             @include rounded(5px);
             color: $color;
             &:hover {
               color: $color;
-              @include gradient(#ee2a26, #fc7d3c);
+              @include gradient($color13, $color11);
               @include rounded(5px);
               font-weight: bold;
             }
@@ -916,12 +912,12 @@ html[xmlns] .clearfix {
       }
 
       #image2 {
-        @include gradient(#ff7f13, #ffb260);
+        @include gradient($color16a, $color16b);
         margin-top: 22%;
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -978,11 +974,11 @@ html[xmlns] .clearfix {
           border: none;
           line-height: 35px;
           background-color: $color13;
-          @include gradient(#fc7d3c, #ee2a26);
+          @include gradient($color11, $color13);
           @include rounded(5px);
           color: $color;
           &:hover {
-            @include gradient(#ee2a26, #fc7d3c);
+            @include gradient($color13, $color11);
             font-weight: bold;
           }
         }
@@ -1034,16 +1030,16 @@ html[xmlns] .clearfix {
       background-color: $color;
       display: inline-block;
       @include rounded(5px);
+      margin: 0.1em;
 
       h2 {
         font-size: 1.25em;
         color: $color;
         height: auto;
         margin: 0.5em auto;
-        line-height: 40px;
+        line-height: 30px;
         text-align: left;
         font-weight: bold;
-        letter-spacing: 0.05em;
         font-family: $fontStyle;
         width: 95%;
         display: block;
@@ -1056,7 +1052,6 @@ html[xmlns] .clearfix {
         margin: 0 0 2% 0;
         height: auto;
         font-family: $fontStyle;
-        letter-spacing: 0.05em;
         display: block;
         line-height: 1.6em;
         font-weight: normal;
@@ -1079,13 +1074,13 @@ html[xmlns] .clearfix {
           line-height: 35px;
           margin: 0;
           font-family: ($fontStyle);
-          @include gradient(#fc7d3c, #ee2a26);
+          @include gradient($color11, $color13);
           @include rounded(5px);
           display: block;
           color: $color;
           padding: 0;
           &:hover {
-            @include gradient(#ee2a26, #fc7d3c);
+            @include gradient($color13, $color11);
             font-weight: bold;
             width: 55.37931%;
           }
@@ -1095,11 +1090,11 @@ html[xmlns] .clearfix {
 
     /* cards 1 */
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     /* cards 2 */
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     /* cards 3 */
     #image3 {
@@ -1108,10 +1103,10 @@ html[xmlns] .clearfix {
 
     /* newsletter card */
     #newsletter {
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
 
       .newsletter {
-        width: 100%;
+        width: 94%;
         margin: 0 auto;
         padding: 0.5em;
 
@@ -1128,11 +1123,11 @@ html[xmlns] .clearfix {
           display: block;
           width: 55.37931%;
           line-height: 35px;
-          @include gradient(#fc7d3c, #ee2a26);
+          @include gradient($color11, $color13);
           color: $color;
           @include rounded(5px);
           &:hover {
-            @include gradient(#ee2a26, #fc7d3c);
+            @include gradient($color13, $color11);
             font-weight: bold;
           }
         }
@@ -1188,12 +1183,9 @@ html[xmlns] .clearfix {
 @media only screen and (max-width: 1440px) {
   #wrapper {
     width: 90%;
-    padding-top: 1%;
 
     h1 {
-      margin: 1% auto;
       font-size: 1.65em;
-      line-height: 40px;
     }
 
     section#quoteform {
@@ -1210,7 +1202,7 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.85em;
+        font-size: 0.8em;
 
         .dropcap {
           margin: 3%;
@@ -1218,7 +1210,7 @@ html[xmlns] .clearfix {
       }
 
       p.smaller-text {
-        font-size: 0.85em;
+        font-size: 0.8em;
 
         .dropcap-small {
           margin: 3%;
@@ -1314,7 +1306,6 @@ html[xmlns] .clearfix {
               height: 60px;
               width: 16.66%;
               a {
-                line-height: 30px;
                 font-size: 0.9em;
                 &:hover {
                   font-weight: bold;
@@ -1346,7 +1337,7 @@ html[xmlns] .clearfix {
 
       figcaption.bannertext {
         p:first-of-type {
-          font-size: 3.4em;
+          font-size: 3.7em;
         }
         p {
           font-size: 1.4em;
@@ -1416,7 +1407,7 @@ html[xmlns] .clearfix {
           font-size: 1.05em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.9em;
         }
         p:nth-of-type(3) {
@@ -1446,11 +1437,6 @@ html[xmlns] .clearfix {
           font-size: 0.9em;
           height: 40px;
           line-height: 40px;
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -1465,8 +1451,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 325px;
-
+          height: auto;
           div.specials_cta {
             width: 27%;
 
@@ -1495,7 +1480,6 @@ html[xmlns] .clearfix {
 
           .specials_card_img {
             width: 100%;
-            height: 140px;
           }
 
           .media-object-section {
@@ -1504,7 +1488,6 @@ html[xmlns] .clearfix {
             }
             h4 {
               font-weight: bold;
-              font-size: 1em;
             }
 
             p.special_text {
@@ -1516,7 +1499,7 @@ html[xmlns] .clearfix {
             height: auto;
 
             li {
-              font-size: 0.8em;
+              font-size: 0.9em;
             }
           }
         }
@@ -1538,9 +1521,6 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                font-size: 0.9em;
-              }
               p:nth-of-type(1) {
                 font-size: 1em;
               }
@@ -1553,7 +1533,7 @@ html[xmlns] .clearfix {
             }
 
             .carsbutton {
-              width: 60%;
+              width: 40%;
             }
           }
         }
@@ -1591,7 +1571,7 @@ html[xmlns] .clearfix {
 
       /*newsletter box*/
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
 
         p {
           font-size: 0.75em;
@@ -1621,7 +1601,7 @@ html[xmlns] .clearfix {
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -1702,10 +1682,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -1722,11 +1702,9 @@ html[xmlns] .clearfix {
         line-height: 1.8em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
         margin: 0 auto;
-        padding: 0;
 
         input[type="text"] {
           width: 100%;
@@ -1769,16 +1747,13 @@ html[xmlns] .clearfix {
 @media only screen and (max-width: 1280px) {
   #wrapper {
     width: 90%;
-    padding-top: 1%;
 
     h1 {
-      margin: 1% auto;
       font-size: 1.6em;
-      line-height: 40px;
     }
 
     section#quoteform {
-      width: 50.949%;
+      width: 50%;
 
       h1#quoteform-title {
         font-size: 2em;
@@ -1791,7 +1766,7 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.85em;
+        font-size: 0.75em;
 
         .dropcap {
           margin: 3%;
@@ -1800,7 +1775,7 @@ html[xmlns] .clearfix {
       }
 
       p.smaller-text {
-        font-size: 0.85em;
+        font-size: 0.75em;
 
         .dropcap-small {
           margin: 3%;
@@ -1897,9 +1872,8 @@ html[xmlns] .clearfix {
 
             li {
               height: 60px;
-              width: 16.66%;
+
               a {
-                line-height: 30px;
                 font-size: 0.9em;
                 &:hover {
                   font-weight: bold;
@@ -1928,7 +1902,7 @@ html[xmlns] .clearfix {
 
       figcaption.bannertext {
         p:first-of-type {
-          font-size: 3.3em;
+          font-size: 3.5em;
         }
         p {
           font-size: 1.3em;
@@ -1998,7 +1972,7 @@ html[xmlns] .clearfix {
           font-size: 1.05em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.9em;
         }
         p:nth-of-type(3) {
@@ -2027,11 +2001,6 @@ html[xmlns] .clearfix {
           font-size: 0.9em;
           height: 40px;
           line-height: 40px;
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -2045,7 +2014,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 310px;
+          height: auto;
 
           div.specials_cta {
             float: left;
@@ -2083,7 +2052,6 @@ html[xmlns] .clearfix {
             }
             h4 {
               font-weight: bold;
-              font-size: 1em;
             }
 
             p.special_text {
@@ -2122,9 +2090,6 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                font-size: 0.9em;
-              }
               p:nth-of-type(1) {
                 font-size: 1em;
               }
@@ -2167,7 +2132,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
 
         p {
           font-size: 0.75em;
@@ -2196,7 +2161,7 @@ html[xmlns] .clearfix {
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -2281,10 +2246,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -2298,9 +2263,9 @@ html[xmlns] .clearfix {
         font-size: 0.8em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
+        width: 94%;
 
         input[type="text"] {
           width: 100%;
@@ -2343,17 +2308,14 @@ html[xmlns] .clearfix {
 /* Tablets */
 @media only screen and (max-width: 1024px) {
   #wrapper {
-    width: 90%;
-    padding-top: 1%;
+    width: 94%;
 
     h1 {
-      margin: 1% auto;
       font-size: 1.55em;
-      line-height: 40px;
     }
 
     section#quoteform {
-      left: 32%;
+      left: 45%;
 
       h1#quoteform-title {
         font-size: 1.9em;
@@ -2366,7 +2328,7 @@ html[xmlns] .clearfix {
       }
 
       p {
-        font-size: 0.85em;
+        font-size: 0.75em;
 
         .dropcap {
           margin: 3%;
@@ -2374,7 +2336,7 @@ html[xmlns] .clearfix {
       }
 
       p.smaller-text {
-        font-size: 0.85em;
+        font-size: 0.75em;
 
         .dropcap-small {
           margin: 3%;
@@ -2469,10 +2431,9 @@ html[xmlns] .clearfix {
 
             li {
               height: 60px;
-              width: 16.66%;
+
               a {
-                line-height: 30px;
-                font-size: 0.9em;
+                font-size: 0.85em;
                 &:hover {
                   font-weight: bold;
                 }
@@ -2501,7 +2462,7 @@ html[xmlns] .clearfix {
 
       figcaption.bannertext {
         p:first-of-type {
-          font-size: 3.2em;
+          font-size: 3.3em;
         }
         p {
           font-size: 1.2em;
@@ -2568,7 +2529,7 @@ html[xmlns] .clearfix {
           font-size: 1em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.8em;
         }
         p:nth-of-type(3) {
@@ -2597,11 +2558,6 @@ html[xmlns] .clearfix {
           font-size: 0.9em;
           height: 40px;
           line-height: 40px;
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -2615,7 +2571,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 300px;
+          height: auto;
           margin-left: 0;
 
           div.specials_cta {
@@ -2642,7 +2598,7 @@ html[xmlns] .clearfix {
           }
 
           .specials_card_img {
-            height: 135px;
+            height: auto;
           }
 
           .media-object-section {
@@ -2650,7 +2606,7 @@ html[xmlns] .clearfix {
               width: auto;
             }
             h4 {
-              font-size: 1em;
+              font-size: 1.1em;
             }
 
             p.special_text {
@@ -2688,21 +2644,13 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                width: 100%;
-                font-size: 0.9em;
-              }
               p:nth-of-type(1) {
-                font-weight: bold;
                 font-size: 1em;
               }
               p:nth-of-type(2) {
-                color: #00ccff;
                 font-size: 0.9em;
               }
               p:nth-of-type(3) {
-                color: $color5;
-                font-style: italic;
                 font-size: 0.85em;
               }
             }
@@ -2739,7 +2687,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1.25em;
         }
@@ -2772,7 +2720,7 @@ html[xmlns] .clearfix {
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -2858,10 +2806,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -2875,9 +2823,9 @@ html[xmlns] .clearfix {
         font-size: 0.7em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
+        width: 94%;
 
         input[type="text"] {
           width: 100%;
@@ -2920,17 +2868,15 @@ html[xmlns] .clearfix {
 
 @media only screen and (max-width: 980px) {
   #wrapper {
-    width: 90%;
-    padding-top: 1%;
+    width: 94%;
 
     h1 {
-      margin: 1% auto;
       font-size: 1.5em;
-      line-height: 40px;
     }
 
     section#quoteform {
-      left: 29%;
+      left: 45%;
+      width: 53%;
 
       h1#quoteform-title {
         font-size: 1.8em;
@@ -2938,12 +2884,12 @@ html[xmlns] .clearfix {
 
       li {
         a {
-          font-size: 0.85em;
+          font-size: 0.8em;
         }
       }
 
       p {
-        font-size: 0.85em;
+        font-size: 0.7em;
 
         .dropcap {
           margin: 3%;
@@ -2951,7 +2897,7 @@ html[xmlns] .clearfix {
       }
 
       p.smaller-text {
-        font-size: 0.85em;
+        font-size: 0.7em;
 
         .dropcap-small {
           margin: 3%;
@@ -3038,7 +2984,7 @@ html[xmlns] .clearfix {
 
         /*primary nav*/
         #primary_nav {
-          width: 60%;
+          width: 70%;
 
           ul {
             height: 60px;
@@ -3046,10 +2992,9 @@ html[xmlns] .clearfix {
 
             li {
               height: 60px;
-              width: 16.66%;
+
               a {
-                line-height: 30px;
-                font-size: 0.9em;
+                font-size: 0.8em;
                 &:hover {
                   font-weight: bold;
                 }
@@ -3078,7 +3023,8 @@ html[xmlns] .clearfix {
 
       figcaption.bannertext {
         p:first-of-type {
-          font-size: 3.1em;
+          font-size: 3em;
+          width: 50%;
         }
         p {
           font-size: 1.1em;
@@ -3147,7 +3093,7 @@ html[xmlns] .clearfix {
           font-size: 1em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.8em;
         }
         p:nth-of-type(3) {
@@ -3176,11 +3122,6 @@ html[xmlns] .clearfix {
           font-size: 0.9em;
           height: 40px;
           line-height: 40px;
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -3194,7 +3135,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 280px;
+          height: auto;
           margin-left: 0;
 
           div.specials_cta {
@@ -3218,7 +3159,7 @@ html[xmlns] .clearfix {
           }
 
           .specials_card_img {
-            height: 125px;
+            height: auto;
           }
 
           .media-object-section {
@@ -3227,11 +3168,11 @@ html[xmlns] .clearfix {
             }
             h4 {
               font-weight: bold;
-              font-size: 0.95em;
+              font-size: 1em;
             }
 
             p.special_text {
-              font-size: 0.8em;
+              font-size: 0.9em;
             }
           }
 
@@ -3264,9 +3205,6 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                font-size: 0.9em;
-              }
               p:nth-of-type(1) {
                 font-size: 1em;
               }
@@ -3312,7 +3250,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1.2em;
         }
@@ -3345,7 +3283,7 @@ html[xmlns] .clearfix {
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -3425,10 +3363,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -3442,11 +3380,9 @@ html[xmlns] .clearfix {
         font-size: 0.65em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
         margin: 0 auto;
-        padding: 0;
 
         input[type="text"] {
           line-height: 30px;
@@ -3491,30 +3427,28 @@ html[xmlns] .clearfix {
   }
 
   #wrapper {
-    width: 90%;
-    padding-top: 1%;
+    width: 94%;
 
     h1 {
       margin: 1% auto;
       font-size: 1.45em;
-      line-height: 40px;
     }
 
     section#quoteform {
-      left: 15%;
+      left: 45%;
 
       h1#quoteform-title {
-        font-size: 1.7em;
+        font-size: 1.6em;
       }
 
       li {
         a {
-          font-size: 0.85em;
+          font-size: 0.7em;
         }
       }
 
       p {
-        font-size: 0.8em;
+        font-size: 0.7em;
 
         .dropcap {
           margin: 3%;
@@ -3522,7 +3456,7 @@ html[xmlns] .clearfix {
       }
 
       p.smaller-text {
-        font-size: 0.8em;
+        font-size: 0.7em;
 
         .dropcap-small {
           margin: 3%;
@@ -3532,17 +3466,16 @@ html[xmlns] .clearfix {
       #booking_form {
         margin-bottom: 1em;
         p {
-          font-size: 0.8em;
+          font-size: 0.75em;
         }
         a {
-          font-size: 0.8em;
+          font-size: 0.75em;
         }
 
         label {
           font-size: 0.75em;
         }
         .query_btn {
-          width: 80%;
           font-size: 0.9em;
           &:hover {
             font-weight: bold;
@@ -3616,10 +3549,9 @@ html[xmlns] .clearfix {
 
             li {
               height: 60px;
-              width: 16.66%;
+
               a {
-                line-height: 30px;
-                font-size: 0.8em;
+                font-size: 0.75em;
                 &:hover {
                   font-weight: bold;
                 }
@@ -3714,7 +3646,7 @@ html[xmlns] .clearfix {
           font-size: 1em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.8em;
         }
         p:nth-of-type(3) {
@@ -3743,11 +3675,6 @@ html[xmlns] .clearfix {
           font-size: 0.9em;
           height: 40px;
           line-height: 40px;
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -3761,7 +3688,8 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 280px;
+          height: auto;
+          width: 100%;
 
           div.specials_cta {
             width: 37%;
@@ -3787,7 +3715,7 @@ html[xmlns] .clearfix {
           }
 
           .specials_card_img {
-            height: 120px;
+            height: auto;
           }
 
           .media-object-section {
@@ -3795,11 +3723,11 @@ html[xmlns] .clearfix {
               width: auto;
             }
             h4 {
-              font-size: 0.9em;
+              font-size: 1em;
             }
 
             p.special_text {
-              font-size: 0.8em;
+              font-size: 0.9em;
             }
           }
 
@@ -3833,9 +3761,6 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                font-size: 0.9em;
-              }
               p:nth-of-type(1) {
                 font-size: 1em;
               }
@@ -3879,7 +3804,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1.1em;
         }
@@ -3912,7 +3837,7 @@ html[xmlns] .clearfix {
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -3995,10 +3920,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -4012,578 +3937,9 @@ html[xmlns] .clearfix {
         font-size: 0.6em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
-        input[type="submit"] {
-          width: 85.379%;
-          line-height: 35px;
-          font-size: 0.9em;
-          &:hover {
-            font-weight: bold;
-          }
-        }
-      }
-    }
-
-    /*footer*/
-    footer {
-      height: 40px;
-      clear: both;
-
-      ul#footer_nav {
-        width: 85%;
-
-        li {
-          font-size: 0.9em;
-        }
-
-        a {
-          font-size: 0.75em;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  [data-abide].error small.error {
-    font-size: 0.65rem;
-    margin-bottom: 0.5rem;
-  }
-
-  #wrapper {
-    width: 90%;
-    padding-top: 1%;
-
-    h1 {
-      margin: 1% auto;
-      font-size: 1.45em;
-      line-height: 40px;
-    }
-
-    section#quoteform {
-      left: 13%;
-
-      h1#quoteform-title {
-        font-size: 1.7em;
-      }
-
-      li {
-        a {
-          font-size: 0.85em;
-        }
-      }
-
-      p {
-        font-size: 0.8em;
-
-        .dropcap {
-          margin: 3%;
-        }
-      }
-
-      p.smaller-text {
-        font-size: 0.8em;
-
-        .dropcap-small {
-          margin: 3%;
-        }
-      }
-
-      #booking_form {
-        margin-bottom: 1em;
-        p {
-          font-size: 0.8em;
-        }
-        a {
-          font-size: 0.8em;
-        }
-
-        label {
-          font-size: 0.75em;
-        }
-        .query_btn {
-          width: 80%;
-          font-size: 0.9em;
-          &:hover {
-            font-weight: bold;
-          }
-        }
-        .searchform_btn {
-          width: 35%;
-
-          &:hover {
-            font-weight: bold;
-          }
-        }
-
-        select {
-          width: 25.5%;
-
-          font-size: 0.8em;
-        }
-
-        select#pickup_return {
-          width: 97%;
-
-          font-size: 0.85em;
-        }
-
-        select#rental_start,
-        select#rental_end {
-          width: 45%;
-        }
-
-        select#pickup_location {
-          width: 97%;
-        }
-      }
-    }
-
-    #header {
-      height: 60px;
-
-      .title-bar {
-        display: none;
-      }
-
-      .top-bar {
-        height: 60px;
-
-        .top-bar-left {
-          width: 25%;
-        }
-
-        .title-area {
-          width: 100%;
-
-          .name {
-            height: 60px;
-            h1 {
-              font-size: 1.8em;
-
-              span {
-                font-size: 1.15em;
-              }
-            }
-          }
-        }
-
-        /*primary nav*/
-        #primary_nav {
-          width: 70%;
-
-          ul {
-            height: 60px;
-            text-align: center;
-
-            li {
-              height: 60px;
-              width: 16.66%;
-              a {
-                line-height: 30px;
-                font-size: 0.8em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    #reveal_form_btn {
-      font-size: 1.5em;
-
-      &:hover {
-        color: $color9;
-      }
-    }
-
-    figure#banner {
-      #bannerimage {
-        width: auto;
-      }
-
-      figcaption.bannertext {
-        p:first-of-type {
-          font-size: 2.9em;
-        }
-        p {
-          font-size: 0.9em;
-        }
-      }
-    }
-
-    #left_column {
-      float: left;
-
-      p {
-        font-size: 0.8em;
-        line-height: 1.8em;
-      }
-      h1 {
-        margin: 1% 0;
-        font-size: 1.5em;
-      }
-      h3 {
-        margin: 1% 0;
-        font-size: 1.1em;
-      }
-
-      /*Contact form*/
-      #contact_form {
-        width: 80%;
-        height: 500px;
-        margin-left: 2%;
-
-        input {
-          width: 100%;
-          height: 35px;
-          font-size: 0.9em;
-        }
-        input[type="submit"] {
-          width: 123px;
-          height: 35px;
-        }
-        textarea {
-          width: 100%;
-          font-size: 0.9em;
-          line-height: 1.5em;
-        }
-        label {
-          font-size: 0.85em;
-          height: 35px;
-          line-height: 35px;
-          text-indent: 1%;
-        }
-        input[type="submit"] {
-          width: 20%;
-          font-size: 1em;
-          &:hover {
-            font-weight: bold;
-            width: 20%;
-          }
-        }
-      }
-      /*end of contact form*/
-      .media-object {
-        p:nth-of-type(1) {
-          font-weight: bold;
-          font-size: 1em;
-        }
-        p:nth-of-type(2) {
-          color: #00ccff;
-          font-size: 0.8em;
-        }
-        p:nth-of-type(3) {
-          font-size: 0.75em;
-        }
-        p:nth-of-type(4) {
-          font-size: 0.85em;
-          line-height: 30px;
-        }
-      }
-
-      /*specials page */
-      .spacer {
-        width: 3px;
-        height: 300px;
-      }
-    }
-
-    .tabs {
-      border: none;
-
-      li.tabs-title {
-        width: 15%;
-        @include rounded(5px);
-        a {
-          font-size: 0.8em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
-        }
-      }
-    }
-
-    .tabs-content {
-      transition: all 0.5s ease;
-      .tabs-panel {
-        .clearfix {
-          display: inline-block;
-          clear: both;
-        }
-
-        .specials_card {
-          height: 270px;
-          m div.specials_cta {
-            width: 37%;
-
-            .specials_price {
-              width: 50%;
-              font-size: 1.5em;
-              span {
-                font-size: 45%;
-                display: block;
-              }
-            }
-            .specials_btn {
-              width: 90%;
-              a {
-                margin: 0 auto;
-                &:hover {
-                  font-weight: bold;
-                }
-              }
-            }
-          }
-
-          .specials_card_img {
-            height: 105px;
-          }
-
-          .media-object-section {
-            div.specials_image {
-              width: auto;
-            }
-            h4 {
-              font-size: 0.75em;
-            }
-
-            p.special_text {
-              font-size: 0.7em;
-            }
-          }
-
-          ul.specials_info {
-            width: 62.5%;
-
-            li {
-              font-size: 0.7em;
-            }
-          }
-        }
-
-        /*left Column*/
-        .cars_box {
-          .media-object-section {
-            display: block;
-            .cars_box_img {
-              width: auto;
-            }
-
-            .carsbutton {
-              margin: 0;
-            }
-
-            .cars_box_txt {
-              .car-icons-box {
-                height: 35px;
-
-                .car-icons {
-                  width: auto;
-                }
-              }
-
-              p:nth-of-type(4) {
-                font-size: 0.9em;
-              }
-              p:nth-of-type(1) {
-                font-size: 1em;
-              }
-              p:nth-of-type(2) {
-                font-size: 0.9em;
-              }
-              p:nth-of-type(3) {
-                font-size: 0.85em;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    #right_column {
-      border: none;
-      .card {
-        height: auto;
-
-        h2 {
-          font-size: 0.9em;
-        }
-
-        .card-section {
-          .card_image {
-            margin: 1% auto;
-          }
-
-          p {
-            font-size: 0.65em;
-          }
-
-          .link_btn {
-            font-size: 0.9em;
-            &:hover {
-              font-weight: bold;
-            }
-          }
-        }
-      }
-
-      #image5 {
-        @include gradient(#747877, #a2a5a5);
-        h2 {
-          font-size: 1em;
-        }
-
-        p {
-          font-size: 0.6em;
-        }
-
-        form {
-          width: 90%;
-
-          input[type="text"] {
-            width: 100%;
-          }
-          input[type="email"] {
-            width: 100%;
-          }
-          input[type="submit"] {
-            width: 76.379%;
-
-            &:hover {
-              font-weight: bold;
-            }
-          }
-        }
-      }
-
-      #image2 {
-        margin-top: 22%;
-      }
-
-      #image3 {
-        @include gradient(#0b4763, #3e7d9a);
-      }
-    }
-
-    #location_searchform {
-      h2 {
-        font-size: 1.15em;
-        width: 70%;
-      }
-      .searchform {
-        width: 80%;
-        ul {
-          height: 100%;
-          li {
-            width: 50%;
-            input {
-              height: 35px;
-            }
-            input[type="submit"] {
-              font-size: 1.25em;
-            }
-          }
-        }
-        .searchform_btn {
-          width: 120px;
-          &:hover {
-            font-weight: bold;
-          }
-        }
-        /*end of searchform*/
-      }
-    }
-
-    .destinations {
-      width: 30.094%;
-      ul {
-        list-style: none;
-        li {
-          height: 30px;
-
-          a {
-            font-size: 0.9em;
-            &:hover {
-              text-decoration: none;
-            }
-          }
-        }
-        li:nth-of-type(1) {
-          font-size: 1.1em;
-        }
-      }
-    }
-
-    .card {
-      height: auto;
-
-      h2 {
-        font-size: 0.9em;
-        line-height: 25px;
-      }
-
-      .card-section {
-        padding: 0.5em 0.5rem;
-        .card_image {
-          margin: 1% auto;
-        }
-
-        p {
-          font-size: 0.6em;
-        }
-
-        .link_btn {
-          font-size: 0.9em;
-
-          &:hover {
-            font-weight: bold;
-          }
-        }
-      }
-    }
-
-    #image1 {
-      @include gradient(#0b4763, #3e7d9a);
-    }
-    #image2 {
-      @include gradient(#ff7f13, #ffb260);
-    }
-    #image3 {
-      @include gradient(#8dc7e2, #c6e2f0);
-    }
-
-    #newsletter {
-      h2 {
-        font-size: 1em;
-      }
-      p {
-        font-size: 0.6em;
-      }
-
-      @include gradient(#747877, #a2a5a5);
-      .newsletter {
-        width: 88%;
-        margin: 0 auto;
-        padding: 0;
+        width: 94%;
 
         input[type="text"] {
           line-height: 30px;
@@ -4624,17 +3980,15 @@ html[xmlns] .clearfix {
 
 @media only screen and (max-width: 736px) {
   #wrapper {
-    width: 90%;
-    padding-top: 1%;
+    width: 94%;
 
     h1 {
-      margin: 1% auto;
       font-size: 1.45em;
-      line-height: 40px;
     }
 
     section#quoteform {
-      left: 5%;
+      left: 33%;
+      width: 63%;
 
       h1#quoteform-title {
         font-size: 1.6em;
@@ -4642,12 +3996,12 @@ html[xmlns] .clearfix {
 
       li {
         a {
-          font-size: 0.85em;
+          font-size: 0.7em;
         }
       }
 
       p {
-        font-size: 0.8em;
+        font-size: 0.7em;
 
         .dropcap {
           margin: 3%;
@@ -4655,7 +4009,7 @@ html[xmlns] .clearfix {
       }
 
       p.smaller-text {
-        font-size: 0.8em;
+        font-size: 0.7em;
 
         .dropcap-small {
           margin: 3%;
@@ -4665,14 +4019,14 @@ html[xmlns] .clearfix {
       #booking_form {
         margin-bottom: 1em;
         p {
-          font-size: 0.8em;
+          font-size: 0.7em;
         }
         a {
-          font-size: 0.8em;
+          font-size: 0.7em;
         }
 
         label {
-          font-size: 0.75em;
+          font-size: 0.7em;
         }
         .query_btn {
           font-size: 0.9em;
@@ -4750,9 +4104,8 @@ html[xmlns] .clearfix {
 
             li {
               height: 60px;
-              width: 16.66%;
+
               a {
-                line-height: 30px;
                 font-size: 0.7em;
                 &:hover {
                   font-weight: bold;
@@ -4783,9 +4136,11 @@ html[xmlns] .clearfix {
       figcaption.bannertext {
         p:first-of-type {
           font-size: 2.8em;
+          line-height: 50px;
+          width: 55%;
         }
         p {
-          font-size: 0.85em;
+          font-size: 0.9em;
         }
       }
     }
@@ -4847,7 +4202,7 @@ html[xmlns] .clearfix {
           font-size: 1em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.8em;
         }
         p:nth-of-type(3) {
@@ -4874,12 +4229,6 @@ html[xmlns] .clearfix {
         @include rounded(5px);
         a {
           font-size: 0.75em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -4893,7 +4242,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 270px;
+          height: auto;
 
           div.specials_cta {
             width: 37%;
@@ -4918,7 +4267,7 @@ html[xmlns] .clearfix {
           }
 
           .specials_card_img {
-            height: 105px;
+            height: auto;
           }
 
           .media-object-section {
@@ -4926,11 +4275,11 @@ html[xmlns] .clearfix {
               width: auto;
             }
             h4 {
-              font-size: 0.75em;
+              font-size: 0.9em;
             }
 
             p.special_text {
-              font-size: 0.65em;
+              font-size: 0.8em;
             }
           }
 
@@ -4965,9 +4314,6 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                font-size: 0.9em;
-              }
               p:nth-of-type(1) {
                 font-size: 1em;
               }
@@ -5013,7 +4359,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1em;
         }
@@ -5046,7 +4392,7 @@ html[xmlns] .clearfix {
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -5129,10 +4475,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -5146,598 +4492,9 @@ html[xmlns] .clearfix {
         font-size: 0.6em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
-        margin: 0 auto;
-        padding: 0;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
-        input[type="submit"] {
-          width: 85.379%;
-          line-height: 35px;
-          font-size: 0.9em;
-          &:hover {
-            font-weight: bold;
-          }
-        }
-      }
-    }
-
-    /*footer*/
-    footer {
-      height: 40px;
-      clear: both;
-
-      ul#footer_nav {
-        height: 40px;
-        margin: 0px auto;
-        width: 85%;
-
-        li {
-          font-size: 0.9em;
-        }
-
-        a {
-          font-size: 0.75em;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 667px) {
-  [data-abide].error small.error {
-    font-size: 0.65rem;
-    margin-bottom: 0.5rem;
-  }
-  .no-js .top-bar {
-    display: block;
-  }
-  .no-js .title-bar {
-    display: none;
-  }
-  #wrapper {
-    width: 90%;
-    padding-top: 1%;
-
-    h1 {
-      margin: 1% auto;
-      font-size: 1.45em;
-      line-height: 40px;
-    }
-
-    section#quoteform {
-      width: 92.949%;
-
-      h1#quoteform-title {
-        font-size: 1.7em;
-      }
-
-      li {
-        a {
-          font-size: 0.85em;
-        }
-      }
-
-      p {
-        font-size: 0.8em;
-
-        .dropcap {
-          margin: 3%;
-        }
-      }
-
-      p.smaller-text {
-        font-size: 0.8em;
-
-        .dropcap-small {
-          margin: 3%;
-        }
-      }
-
-      #booking_form {
-        margin-bottom: 1em;
-        p {
-          font-size: 0.8em;
-        }
-        a {
-          font-size: 0.8em;
-        }
-
-        label {
-          font-size: 0.75em;
-        }
-        .query_btn {
-          width: 80%;
-          font-size: 0.9em;
-          &:hover {
-            font-weight: bold;
-          }
-        }
-        .searchform_btn {
-          width: 35%;
-
-          &:hover {
-            font-weight: bold;
-          }
-        }
-
-        select {
-          width: 25.5%;
-
-          font-size: 0.8em;
-        }
-
-        select#pickup_return {
-          width: 97%;
-
-          font-size: 0.85em;
-        }
-
-        select#rental_start,
-        select#rental_end {
-          width: 45%;
-        }
-
-        select#pickup_location {
-          width: 97%;
-        }
-      }
-    }
-
-    #header {
-      height: 60px;
-
-      .title-bar {
-        display: none;
-      }
-
-      .top-bar {
-        height: 60px;
-
-        .top-bar-left {
-          width: 25%;
-        }
-
-        .title-area {
-          width: 100%;
-
-          .name {
-            height: 60px;
-            h1 {
-              font-size: 1.6em;
-
-              span {
-                font-size: 1.15em;
-              }
-            }
-          }
-        }
-
-        /*primary nav*/
-        #primary_nav {
-          width: 72%;
-
-          ul {
-            height: 60px;
-            text-align: center;
-
-            li {
-              height: 60px;
-              width: 16.66%;
-              a {
-                line-height: 30px;
-                font-size: 0.7em;
-                &:hover {
-                  font-weight: bold;
-                }
-                &:active {
-                  font-weight: bold;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    #reveal_form_btn {
-      font-size: 1.5em;
-
-      &:hover {
-        color: $color9;
-      }
-    }
-
-    figure#banner {
-      #bannerimage {
-        width: auto;
-      }
-
-      figcaption.bannertext {
-        p:first-of-type {
-          font-size: 2.7em;
-        }
-        p {
-          font-size: 0.85em;
-        }
-      }
-    }
-
-    #left_column {
-      float: left;
-
-      p {
-        font-size: 0.75em;
-      }
-      h1 {
-        margin: 1% 0;
-        font-size: 1.4em;
-      }
-      h3 {
-        margin: 1% 0;
-        font-size: 1em;
-      }
-
-      /*Contact form*/
-      #contact_form {
-        width: 80%;
-        height: 500px;
-        margin-left: 2%;
-
-        input {
-          width: 100%;
-          height: 35px;
-          font-size: 0.9em;
-        }
-        input[type="submit"] {
-          width: 123px;
-          height: 35px;
-        }
-        textarea {
-          width: 100%;
-          font-size: 0.9em;
-          line-height: 1.5em;
-        }
-        label {
-          font-size: 0.85em;
-          height: 35px;
-          line-height: 35px;
-          text-indent: 1%;
-        }
-        input[type="submit"] {
-          width: 25%;
-          font-size: 1em;
-          &:hover {
-            font-weight: bold;
-            width: 25%;
-          }
-        }
-      }
-      /*end of contact form*/
-      .media-object {
-        p:nth-of-type(1) {
-          font-weight: bold;
-          font-size: 1em;
-        }
-        p:nth-of-type(2) {
-          color: #00ccff;
-          font-size: 0.8em;
-        }
-        p:nth-of-type(3) {
-          font-size: 0.75em;
-        }
-        p:nth-of-type(4) {
-          font-size: 0.85em;
-          line-height: 30px;
-        }
-      }
-
-      /*specials page */
-      .spacer {
-        width: 3px;
-        height: 300px;
-      }
-    }
-
-    .tabs {
-      border: none;
-
-      li.tabs-title {
-        width: 15%;
-        @include rounded(5px);
-        a {
-          font-size: 0.75em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
-        }
-      }
-    }
-
-    .tabs-content {
-      transition: all 0.5s ease;
-      .tabs-panel {
-        .clearfix {
-          display: inline-block;
-          clear: both;
-        }
-
-        .specials_card {
-          width: 49.5%;
-          height: 250px;
-
-          div.specials_cta {
-            width: 37%;
-
-            .specials_price {
-              width: 55%;
-              font-size: 1.4em;
-              span {
-                font-size: 45%;
-                display: block;
-              }
-            }
-            .specials_btn {
-              width: 90%;
-              a {
-                margin: 0 auto;
-                &:hover {
-                  font-weight: bold;
-                }
-              }
-            }
-          }
-
-          .specials_card_img {
-            height: 100px;
-          }
-
-          .media-object-section {
-            div.specials_image {
-              width: auto;
-            }
-            h4 {
-              font-size: 0.75em;
-            }
-
-            p.special_text {
-              font-size: 0.65em;
-            }
-          }
-
-          ul.specials_info {
-            width: 62.5%;
-
-            li {
-              font-size: 0.7em;
-            }
-          }
-        }
-
-        /*left Column*/
-        .cars_box {
-          .media-object-section {
-            display: block;
-
-            .cars_box_img {
-              width: auto;
-            }
-
-            .carsbutton {
-              margin: 0;
-            }
-
-            .cars_box_txt {
-              .car-icons-box {
-                height: 35px;
-
-                .car-icons {
-                  width: auto;
-                }
-              }
-
-              p:nth-of-type(4) {
-                font-size: 0.9em;
-              }
-              p:nth-of-type(1) {
-                font-size: 1em;
-              }
-              p:nth-of-type(2) {
-                font-size: 0.9em;
-              }
-              p:nth-of-type(3) {
-                font-size: 0.85em;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    #right_column {
-      height: auto;
-      border: none;
-      .card {
-        height: auto;
-
-        h2 {
-          font-size: 1em;
-        }
-
-        .card-section {
-          .card_image {
-            margin: 1% auto;
-          }
-
-          p {
-            font-size: 0.65em;
-          }
-
-          .link_btn {
-            font-size: 0.9em;
-            &:hover {
-              font-weight: bold;
-            }
-          }
-        }
-      }
-
-      #image5 {
-        @include gradient(#747877, #a2a5a5);
-        h2 {
-          font-size: 0.95em;
-        }
-
-        p {
-          font-size: 0.6em;
-        }
-
-        form {
-          width: 90%;
-
-          input[type="text"] {
-            height: 30px;
-          }
-          input[type="email"] {
-            height: 30px;
-          }
-          input[type="submit"] {
-            width: 85.379%;
-
-            &:hover {
-              font-weight: bold;
-            }
-          }
-        }
-      }
-
-      #image2 {
-        margin-top: 22%;
-      }
-
-      #image3 {
-        @include gradient(#0b4763, #3e7d9a);
-      }
-    }
-
-    #location_searchform {
-      h2 {
-        font-size: 1.15em;
-      }
-      .searchform {
-        width: 80%;
-        height: 40px;
-        display: block;
-        ul {
-          height: 100%;
-          li {
-            width: 50%;
-            display: inline-block;
-
-            input {
-              height: 35px;
-            }
-            input[type="submit"] {
-              font-size: 1.2em;
-              margin: 0 0 0 5%;
-              padding: 0;
-              display: block;
-            }
-          }
-        }
-        .searchform_btn {
-          width: 120px;
-          height: 34px;
-          font-size: 1em;
-          line-height: 35px;
-          &:hover {
-            font-weight: bold;
-          }
-        }
-        /*end of searchform*/
-      }
-    }
-
-    .destinations {
-      width: 30.094%;
-      ul {
-        list-style: none;
-        li {
-          height: 30px;
-
-          a {
-            font-size: 0.9em;
-            &:hover {
-              text-decoration: none;
-            }
-          }
-        }
-        li:nth-of-type(1) {
-          font-size: 1.1em;
-        }
-      }
-    }
-
-    .card {
-      height: auto;
-
-      h2 {
-        font-size: 0.9em;
-      }
-
-      .card-section {
-        padding: 0.5em 0.5rem;
-        .card_image {
-          margin: 1% auto;
-        }
-
-        p {
-          font-size: 0.6em;
-        }
-
-        .link_btn {
-          font-size: 0.9em;
-
-          &:hover {
-            font-weight: bold;
-          }
-        }
-      }
-    }
-
-    #image1 {
-      @include gradient(#0b4763, #3e7d9a);
-    }
-    #image2 {
-      @include gradient(#ff7f13, #ffb260);
-    }
-    #image3 {
-      @include gradient(#8dc7e2, #c6e2f0);
-    }
-
-    #newsletter {
-      h2 {
-        font-size: 1em;
-      }
-      p {
-        font-size: 0.6em;
-      }
-
-      @include gradient(#747877, #a2a5a5);
-      .newsletter {
-        width: 88%;
-        margin: 0 auto;
-        padding: 0;
+        width: 94%;
 
         input[type="text"] {
           line-height: 30px;
@@ -5786,17 +4543,15 @@ html[xmlns] .clearfix {
 
   #wrapper {
     width: 96%;
-    padding-top: 1%;
 
     h1 {
-      margin: 1% auto;
       font-size: 1.4em;
-      line-height: 40px;
     }
 
     section#quoteform {
-      width: 96.949%;
+      width: 90.949%;
       left: 2%;
+      display: none;
 
       h1#quoteform-title {
         font-size: 1.7em;
@@ -5879,6 +4634,7 @@ html[xmlns] .clearfix {
 
       .title-bar {
         display: none;
+        line-height: 40px;
       }
 
       .top-bar {
@@ -5905,7 +4661,7 @@ html[xmlns] .clearfix {
 
         /*primary nav*/
         #primary_nav {
-          width: 72%;
+          width: 100%;
 
           ul {
             height: auto;
@@ -5918,6 +4674,7 @@ html[xmlns] .clearfix {
               display: block;
               a {
                 line-height: 50px;
+                height: 50px;
                 font-size: 1em;
                 &:hover {
                   font-weight: bold;
@@ -6012,7 +4769,7 @@ html[xmlns] .clearfix {
           font-size: 1em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.8em;
         }
         p:nth-of-type(3) {
@@ -6039,12 +4796,6 @@ html[xmlns] .clearfix {
         @include rounded(5px);
         a {
           font-size: 0.75em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -6058,7 +4809,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 250px;
+          height: auto;
 
           div.specials_cta {
             width: 37%;
@@ -6083,7 +4834,7 @@ html[xmlns] .clearfix {
           }
 
           .specials_card_img {
-            height: 100px;
+            height: auto;
           }
 
           .media-object-section {
@@ -6091,11 +4842,11 @@ html[xmlns] .clearfix {
               width: auto;
             }
             h4 {
-              font-size: 0.75em;
+              font-size: 0.9em;
             }
 
             p.special_text {
-              font-size: 0.65em;
+              font-size: 0.8em;
             }
           }
 
@@ -6130,9 +4881,6 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                font-size: 0.9em;
-              }
               p:nth-of-type(1) {
                 font-size: 1em;
               }
@@ -6176,7 +4924,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 0.95em;
         }
@@ -6209,7 +4957,7 @@ html[xmlns] .clearfix {
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -6289,10 +5037,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -6306,11 +5054,9 @@ html[xmlns] .clearfix {
         font-size: 0.6em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
-        margin: 0 auto;
-        padding: 0;
+        width: 94%;
 
         input[type="text"] {
           line-height: 30px;
@@ -6353,15 +5099,13 @@ html[xmlns] .clearfix {
 @media only screen and (max-width: 600px) {
   #wrapper {
     width: 96%;
-    padding-top: 1%;
 
     h1 {
       font-size: 1.4em;
-      line-height: 40px;
     }
 
     section#quoteform {
-      width: 93.949%;
+      width: 90.949%;
 
       h1#quoteform-title {
         font-size: 1.7em;
@@ -6582,7 +5326,7 @@ html[xmlns] .clearfix {
           font-size: 1em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.8em;
         }
         p:nth-of-type(3) {
@@ -6609,12 +5353,6 @@ html[xmlns] .clearfix {
         @include rounded(5px);
         a {
           font-size: 0.75em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -6627,7 +5365,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 250px;
+          height: auto;
 
           div.specials_cta {
             width: 37%;
@@ -6652,7 +5390,7 @@ html[xmlns] .clearfix {
           }
 
           .specials_card_img {
-            height: 100px;
+            height: auto;
           }
 
           .media-object-section {
@@ -6660,11 +5398,11 @@ html[xmlns] .clearfix {
               width: auto;
             }
             h4 {
-              font-size: 0.75em;
+              font-size: 0.9em;
             }
 
             p.special_text {
-              font-size: 0.65em;
+              font-size: 0.8em;
             }
           }
 
@@ -6683,8 +5421,7 @@ html[xmlns] .clearfix {
             display: block;
 
             .cars_box_img {
-              float: left;
-              width: 50%;
+              width: auto;
               img {
                 margin: 0 auto;
                 width: 90%;
@@ -6704,11 +5441,8 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                font-size: 0.95em;
-              }
               p:nth-of-type(1) {
-                font-size: 1.05em;
+                font-size: 1.1em;
               }
               p:nth-of-type(2) {
                 font-size: 0.95em;
@@ -6724,11 +5458,13 @@ html[xmlns] .clearfix {
 
     #right_column {
       height: auto;
-      width: 36%;
+      width: 100%;
       margin: 5% auto;
 
       .card {
         height: auto;
+        width: 49%;
+        display: inline-block;
 
         h2 {
           font-size: 1.1em;
@@ -6754,7 +5490,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1.1em;
         }
@@ -6783,11 +5519,11 @@ html[xmlns] .clearfix {
       }
 
       #image2 {
-        margin-top: 22%;
+        margin-top: 5%;
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -6870,10 +5606,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -6887,11 +5623,9 @@ html[xmlns] .clearfix {
         font-size: 0.75em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
-        margin: 0 auto;
-        padding: 0;
+        width: 94%;
 
         input[type="text"] {
           line-height: 30px;
@@ -6933,15 +5667,13 @@ html[xmlns] .clearfix {
 @media only screen and (max-width: 536px) {
   #wrapper {
     width: 96%;
-    padding-top: 1%;
 
     h1 {
       font-size: 1.4em;
-      line-height: 40px;
     }
 
     section#quoteform {
-      width: 93.949%;
+      width: 90.949%;
 
       h1#quoteform-title {
         font-size: 1.7em;
@@ -7159,7 +5891,7 @@ html[xmlns] .clearfix {
           font-size: 1em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.8em;
         }
         p:nth-of-type(3) {
@@ -7186,12 +5918,6 @@ html[xmlns] .clearfix {
         @include rounded(5px);
         a {
           font-size: 0.75em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -7205,7 +5931,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 250px;
+          height: auto;
 
           div.specials_cta {
             width: 37%;
@@ -7230,7 +5956,7 @@ html[xmlns] .clearfix {
           }
 
           .specials_card_img {
-            height: 100px;
+            height: auto;
           }
 
           .media-object-section {
@@ -7238,11 +5964,11 @@ html[xmlns] .clearfix {
               width: auto;
             }
             h4 {
-              font-size: 0.75em;
+              font-size: 0.85em;
             }
 
             p.special_text {
-              font-size: 0.65em;
+              font-size: 0.8em;
             }
           }
 
@@ -7277,11 +6003,8 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                font-size: 0.95em;
-              }
               p:nth-of-type(1) {
-                font-size: 1.05em;
+                font-size: 1.1em;
               }
               p:nth-of-type(2) {
                 font-size: 0.95em;
@@ -7324,7 +6047,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1.1em;
         }
@@ -7353,11 +6076,11 @@ html[xmlns] .clearfix {
       }
 
       #image2 {
-        margin-top: 22%;
+        margin-top: 5%;
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -7440,10 +6163,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -7457,11 +6180,9 @@ html[xmlns] .clearfix {
         font-size: 0.75em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
-        margin: 0 auto;
-        padding: 0;
+        width: 94%;
 
         input[type="text"] {
           line-height: 30px;
@@ -7503,15 +6224,13 @@ html[xmlns] .clearfix {
 @media only screen and (max-width: 480px) {
   #wrapper {
     width: 96%;
-    padding-top: 1%;
 
     h1 {
       font-size: 1.4em;
-      line-height: 40px;
     }
 
     section#quoteform {
-      width: 95.949%;
+      width: 90.949%;
 
       h1#quoteform-title {
         font-size: 1.6em;
@@ -7720,7 +6439,7 @@ html[xmlns] .clearfix {
           font-size: 1em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.8em;
         }
         p:nth-of-type(3) {
@@ -7747,12 +6466,6 @@ html[xmlns] .clearfix {
         @include rounded(5px);
         a {
           font-size: 0.75em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -7765,9 +6478,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          width: 99.5%;
-          height: 250px;
-
+          height: auto;
           div.specials_cta {
             width: 37%;
 
@@ -7789,7 +6500,7 @@ html[xmlns] .clearfix {
           }
 
           .specials_card_img {
-            height: 100px;
+            height: auto;
           }
 
           .media-object-section {
@@ -7838,9 +6549,6 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                font-size: 1em;
-              }
               p:nth-of-type(1) {
                 font-size: 1.1em;
               }
@@ -7857,9 +6565,6 @@ html[xmlns] .clearfix {
     }
 
     #right_column {
-      width: 45%;
-      margin: 10% auto;
-
       .card {
         height: auto;
 
@@ -7886,7 +6591,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1.1em;
         }
@@ -7915,11 +6620,11 @@ html[xmlns] .clearfix {
       }
 
       #image2 {
-        margin-top: 22%;
+        margin-top: 5%;
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -7999,10 +6704,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -8016,11 +6721,9 @@ html[xmlns] .clearfix {
         font-size: 0.75em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
-        margin: 0 auto;
-        padding: 0;
+        width: 94%;
 
         input[type="text"] {
           line-height: 30px;
@@ -8062,11 +6765,9 @@ html[xmlns] .clearfix {
 @media only screen and (max-width: 414px) {
   #wrapper {
     width: 96%;
-    padding-top: 1%;
 
     h1 {
       font-size: 1.35em;
-      line-height: 40px;
     }
 
     section#quoteform {
@@ -8279,7 +6980,7 @@ html[xmlns] .clearfix {
           font-size: 1.15em;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 0.95em;
         }
         p:nth-of-type(3) {
@@ -8311,12 +7012,6 @@ html[xmlns] .clearfix {
         @include rounded(5px);
         a {
           font-size: 0.7em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -8329,7 +7024,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 250px;
+          height: auto;
 
           div.specials_cta {
             width: 37%;
@@ -8352,7 +7047,7 @@ html[xmlns] .clearfix {
           }
 
           .specials_card_img {
-            height: 100px;
+            height: auto;
           }
 
           .media-object-section {
@@ -8360,11 +7055,11 @@ html[xmlns] .clearfix {
               width: auto;
             }
             h4 {
-              font-size: 0.95em;
+              font-size: 1em;
             }
 
             p.special_text {
-              font-size: 0.75em;
+              font-size: 0.8em;
             }
           }
 
@@ -8400,22 +7095,17 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                margin: 5px 0px 5px 0px;
-                font-size: 1.1em;
-                clear: both;
-              }
               p:nth-of-type(1) {
-                font-size: 1.2em;
+                font-size: 1.1em;
                 text-align: center;
               }
               p:nth-of-type(2) {
-                font-size: 1.1em;
+                font-size: 1em;
                 text-align: center;
               }
               p:nth-of-type(3) {
                 color: $color5;
-                font-size: 1em;
+                font-size: 0.9em;
                 text-align: center;
               }
             }
@@ -8425,8 +7115,6 @@ html[xmlns] .clearfix {
     }
 
     #right_column {
-      width: 55%;
-
       .card {
         height: auto;
 
@@ -8453,7 +7141,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1.15em;
         }
@@ -8482,11 +7170,11 @@ html[xmlns] .clearfix {
       }
 
       #image2 {
-        margin-top: 22%;
+        margin-top: 5%;
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -8570,10 +7258,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -8587,9 +7275,9 @@ html[xmlns] .clearfix {
         font-size: 0.65em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
+        width: 94%;
 
         input[type="text"] {
           line-height: 30px;
@@ -8851,7 +7539,7 @@ html[xmlns] .clearfix {
           text-align: center;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 1em;
           text-align: center;
         }
@@ -8885,12 +7573,6 @@ html[xmlns] .clearfix {
         @include rounded(5px);
         a {
           font-size: 0.7em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -8903,7 +7585,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 265px;
+          height: auto;
 
           div.specials_cta {
             width: 37%;
@@ -8935,11 +7617,11 @@ html[xmlns] .clearfix {
               width: auto;
             }
             h4 {
-              font-size: 0.95em;
+              font-size: 1em;
             }
 
             p.special_text {
-              font-size: 0.75em;
+              font-size: 0.8em;
             }
           }
 
@@ -8975,17 +7657,14 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                line-height: 30px;
-              }
               p:nth-of-type(1) {
-                font-size: 1.2em;
-              }
-              p:nth-of-type(2) {
                 font-size: 1.1em;
               }
-              p:nth-of-type(3) {
+              p:nth-of-type(2) {
                 font-size: 1em;
+              }
+              p:nth-of-type(3) {
+                font-size: 0.9em;
               }
             }
           }
@@ -8994,8 +7673,6 @@ html[xmlns] .clearfix {
     }
 
     #right_column {
-      width: 60%;
-
       .card {
         height: auto;
 
@@ -9022,7 +7699,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1.15em;
         }
@@ -9051,11 +7728,11 @@ html[xmlns] .clearfix {
       }
 
       #image2 {
-        margin-top: 22%;
+        margin-top: 5%;
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -9137,10 +7814,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -9154,9 +7831,9 @@ html[xmlns] .clearfix {
         font-size: 0.75em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
+        width: 94%;
 
         input[type="text"] {
           line-height: 30px;
@@ -9425,7 +8102,7 @@ html[xmlns] .clearfix {
           text-align: center;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 1em;
           text-align: center;
         }
@@ -9459,12 +8136,6 @@ html[xmlns] .clearfix {
         @include rounded(5px);
         a {
           font-size: 0.7em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -9477,7 +8148,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 265px;
+          height: auto;
 
           div.specials_cta {
             width: 37%;
@@ -9509,11 +8180,11 @@ html[xmlns] .clearfix {
               width: auto;
             }
             h4 {
-              font-size: 0.95em;
+              font-size: 15em;
             }
 
             p.special_text {
-              font-size: 0.75em;
+              font-size: 0.8em;
             }
           }
 
@@ -9548,17 +8219,14 @@ html[xmlns] .clearfix {
                 }
               }
 
-              p:nth-of-type(4) {
-                font-size: 1.1em;
-              }
               p:nth-of-type(1) {
-                font-size: 1.2em;
+                font-size: 1.1em;
               }
               p:nth-of-type(2) {
-                font-size: 1.1em;
+                font-size: 1em;
               }
               p:nth-of-type(3) {
-                font-size: 1em;
+                font-size: 0.9em;
               }
             }
           }
@@ -9567,8 +8235,6 @@ html[xmlns] .clearfix {
     }
 
     #right_column {
-      width: 65%;
-
       .card {
         height: auto;
 
@@ -9595,7 +8261,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1.15em;
         }
@@ -9624,11 +8290,11 @@ html[xmlns] .clearfix {
       }
 
       #image2 {
-        margin-top: 22%;
+        margin-top: 5%;
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -9708,10 +8374,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -9725,9 +8391,9 @@ html[xmlns] .clearfix {
         font-size: 0.75em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
+        width: 94%;
 
         input[type="text"] {
           line-height: 30px;
@@ -9987,7 +8653,7 @@ html[xmlns] .clearfix {
           text-align: center;
         }
         p:nth-of-type(2) {
-          color: #00ccff;
+          color: $cartextcolor;
           font-size: 1em;
           text-align: center;
         }
@@ -10021,12 +8687,6 @@ html[xmlns] .clearfix {
         @include rounded(5px);
         a {
           font-size: 0.7em;
-
-          &:hover {
-            border-top: solid #e6e6e6 0.5px;
-            border-right: solid #e6e6e6 0.5px;
-            border-left: solid #e6e6e6 0.5px;
-          }
         }
       }
     }
@@ -10039,7 +8699,7 @@ html[xmlns] .clearfix {
         }
 
         .specials_card {
-          height: 265px;
+          height: auto;
 
           div.specials_cta {
             width: 37%;
@@ -10071,11 +8731,11 @@ html[xmlns] .clearfix {
               width: auto;
             }
             h4 {
-              font-size: 0.9em;
+              font-size: 1em;
             }
 
             p.special_text {
-              font-size: 0.7em;
+              font-size: 0.8em;
             }
           }
 
@@ -10107,17 +8767,14 @@ html[xmlns] .clearfix {
               }
             }
 
-            p:nth-of-type(4) {
-              font-size: 1.1em;
-            }
             p:nth-of-type(1) {
-              font-size: 1.2em;
+              font-size: 1.1em;
             }
             p:nth-of-type(2) {
-              font-size: 1.1em;
+              font-size: 1em;
             }
             p:nth-of-type(3) {
-              font-size: 1em;
+              font-size: 0.9em;
             }
           }
         }
@@ -10125,8 +8782,6 @@ html[xmlns] .clearfix {
     }
 
     #right_column {
-      width: 65%;
-
       .card {
         height: auto;
 
@@ -10153,7 +8808,7 @@ html[xmlns] .clearfix {
       }
 
       #image5 {
-        @include gradient(#747877, #a2a5a5);
+        @include gradient($color17a, $color17b);
         h2 {
           font-size: 1.15em;
         }
@@ -10182,11 +8837,11 @@ html[xmlns] .clearfix {
       }
 
       #image2 {
-        margin-top: 22%;
+        margin-top: 5%;
       }
 
       #image3 {
-        @include gradient(#0b4763, #3e7d9a);
+        @include gradient($color3b, $color3a);
       }
     }
 
@@ -10266,10 +8921,10 @@ html[xmlns] .clearfix {
     }
 
     #image1 {
-      @include gradient(#0b4763, #3e7d9a);
+      @include gradient($color3b, $color3a);
     }
     #image2 {
-      @include gradient(#ff7f13, #ffb260);
+      @include gradient($color16a, $color16b);
     }
     #image3 {
       @include gradient(#8dc7e2, #c6e2f0);
@@ -10283,9 +8938,9 @@ html[xmlns] .clearfix {
         font-size: 0.75em;
       }
 
-      @include gradient(#747877, #a2a5a5);
+      @include gradient($color17a, $color17b);
       .newsletter {
-        width: 88%;
+        width: 94%;
 
         input[type="text"] {
           line-height: 30px;

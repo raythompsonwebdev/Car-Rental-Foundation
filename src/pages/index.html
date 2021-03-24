@@ -3,13 +3,13 @@ title: home
 ---
 
 <div class="grid-container">
-  <div class="grid-x grid-padding-x" role="banner">
+  <div class="grid-x" role="banner">
     <div class="large-12 medium-12 small-12 cell">
       <!--Quote_form box-->
       <section id="quoteform">
-        <div class="grid-x grid-padding-x">
+        <div class="grid-x">
           <div class="large-4 medium-4 small-4 cell">
-            <p><span class="dropcap">1</span>Date, Time and Location</p>
+            <p><span class="dropcap">1</span>Date, Time &amp; Location</p>
           </div>
 
           <div class="large-4 medium-4 small-4 cell">
@@ -29,12 +29,12 @@ title: home
         <br />
         <!--form-->
         <form id="booking_form" class="group" action="" method="post">
-          <div class="grid-x grid-padding-x">
-            <div class="large-3 medium-3 small-4 cell">
+          <div class="grid-x medium-margin-collapse">
+            <div class="large-4 medium-4 small-4 cell">
               <label for="rental_start">Rental Start Date/Time</label>
             </div>
 
-            <div class="large-9 medium-9 small-8 cell">
+            <div class="large-8 medium-8 small-8 cell">
               <select name="rental_start" size="1" id="rental_start">
                 <option value="Date">22/10/2013</option>
                 <option value="Date">24/10/2013</option>
@@ -62,11 +62,11 @@ title: home
             </div>
           </div>
 
-          <div class="grid-x grid-padding-x">
-            <div class="large-3 medium-3 small-4 cell">
+          <div class="grid-x medium-margin-collapse">
+            <div class="large-4 medium-4 small-4 cell">
               <label for="rental_end">Rental End Date/Time</label>
             </div>
-            <div class="large-9 medium-9 small-8 cell">
+            <div class="large-8 medium-8 small-8 cell">
               <select name="rental_end" size="1" id="rental_end">
                 <option value="Date">22/10/2013</option>
                 <option value="Date">24/10/2013</option>
@@ -95,11 +95,11 @@ title: home
               </select>
             </div>
           </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-3 medium-3 small-4 cell">
+          <div class="grid-x medium-margin-collapse">
+            <div class="large-4 medium-4 small-4 cell">
               <label for="pickup_location">Pick Up Location</label>
             </div>
-            <div class="large-9 medium-9 small-8 cell">
+            <div class="large-8 medium-8 small-8 cell">
               <select name="pickup_location" size="1" id="pickup_location">
                 <option value="Home">Home</option>
                 <option value="Office">Office</option>
@@ -108,11 +108,11 @@ title: home
             </div>
           </div>
 
-          <div class="grid-x grid-padding-x">
-            <div class="large-3 medium-3 small-4 cell">
+          <div class="grid-x medium-margin-collapse">
+            <div class="large-4 medium-4 small-4 cell">
               <label for="pickup_return">Returning to</label>
             </div>
-            <div class="large-9 medium-9 small-8 cell">
+            <div class="large-8 medium-8 small-8 cell">
               <select name="pickup_return" id="pickup_return">
                 <option value="Home">Home</option>
                 <option value="Office">Office</option>
@@ -121,9 +121,9 @@ title: home
             </div>
           </div>
           <br />
-          <div class="grid-x grid-padding-x">
-            <div class="large-3 medium-3 small-4 cell"></div>
-            <div class="large-9 medium-9 small-8 cell">
+          <div class="grid-x medium-margin-collapse">
+            <div class="large-4 medium-4 small-4 cell"></div>
+            <div class="large-8 medium-8 small-8 cell">
               <span>
                 <p>Can't find the location you are looking for?</p>
 
@@ -132,13 +132,9 @@ title: home
             </div>
           </div>
           <br />
-          <div class="grid-x grid-padding-x">
-            <div class="large-3 medium-3 small-4 cell">
-              <span class="query_btn" id="clearQuote" onclick="fadeOut();"
-                >Hide Form</span
-              >
-            </div>
-            <div class="large-9 medium-9 small-8 cell">
+          <div class="grid-x medium-margin-collapse">
+            <div class="large-4 medium-4 small-4 cell"></div>
+            <div class="large-8 medium-8 small-8 cell">
               <input
                 name="Get Quote"
                 type="submit"
@@ -161,7 +157,8 @@ title: home
         <!--Banner Text-->
         <img
           id="bannerimage"
-          src="assets/img/car-rental-website-4x4-car-large.png"
+          data-interchange="[assets/img/car-rental-website-4x4-car-small.png, small], [assets/img/car-rental-website-4x4-car-medium.png, medium], [assets/img/car-rental-website-4x4-car-large.png, large]"
+          src="#"
           alt="car-rental-website-4x4-car"
         /><!--Banner Image-->
 
@@ -175,14 +172,15 @@ title: home
     </div>
   </div>
 
-  <div class="grid-x grid-padding-x small-up-3 medium-up-4">
-    <div class="cell">
+  <div class="grid-x small-up-2 medium-up-4 large-up-4">
+    <div class="cell auto">
       <div class="card" id="image1">
         <h2>Different Makes and Models</h2>
         <div class="card-section">
           <img
             class="card_image"
-            src="assets/img/car-rental-website-luxury-car-audi-large.png"
+            data-interchange="[assets/img/car-rental-website-luxury-car-audi-small.png, small], [assets/img/car-rental-website-luxury-car-audi-medium.png, medium], [assets/img/car-rental-website-luxury-car-audi-large.png, large]"
+            src="#"
           />
         </div>
         <div class="card-section">
@@ -199,13 +197,14 @@ title: home
         </div>
       </div>
     </div>
-    <div class="cell">
+    <div class="cell auto">
       <div class="card" id="image2">
         <h2>Weekend Car Rental Special</h2>
         <div class="card-section">
           <img
             class="card_image"
-            src="assets/img/car-rental-website-weekend-car-rentals-large.png"
+            data-interchange="[assets/img/car-rental-website-weekend-car-rentals-small.png, small], [assets/img/car-rental-website-weekend-car-rentals-medium.png, medium], [assets/img/car-rental-website-weekend-car-rentals-large.png, large]"
+            src="#"
             alt="car-rental-website-weekend-car-rentals"
           />
         </div>
@@ -220,13 +219,14 @@ title: home
         </div>
       </div>
     </div>
-    <div class="cell">
+    <div class="cell auto">
       <div class="card" id="image3">
         <h2>Our Locations</h2>
         <div class="card-section">
           <img
             class="card_image"
-            src="assets/img/car-rental-website-locations-map-large.png"
+            data-interchange="[assets/img/car-rental-website-locations-map-small.png, small], [assets/img/car-rental-website-locations-map-medium.png, medium], [assets/img/car-rental-website-locations-map-large.png, large]"
+            src="#"
             alt="car-rental-website-locations-map"
           />
         </div>
@@ -244,7 +244,7 @@ title: home
         </div>
       </div>
     </div>
-    <div class="cell">
+    <div class="cell auto">
       <div class="card" id="newsletter">
         <h2>Subscribe to Our Newsletter</h2>
         <div class="card-section">
@@ -253,11 +253,21 @@ title: home
             tellus eu nisl bibendum facilisis.
           </p>
         </div>
-        <form action="" method="post" class="newsletter" data-abide>
-          <input name="NAME" type="text" placeholder="Name" />
-          <!--<small class="error">Name must be letters.</small>-->
-          <input name="EMAIL" type="email" placeholder="Email" required />
-          <!--<small class="error">A valid email address is required.</small>-->
+        <form action="" method="post" class="newsletter" data-abide novalidate>
+          <input name="NAME" type="text" placeholder="Name" required />
+          <span class="form-error"
+            >Yo, you had better fill this out, it's required.</span
+          >
+          <input
+            name="EMAIL"
+            type="email"
+            placeholder="Email"
+            required
+            pattern="email"
+          />
+          <span class="form-error" data-form-error-on="pattern"
+            >Invalid Email</span
+          >
           <input type="submit" class="link_btn" value="SUBSCRIBE" />
         </form>
       </div>
