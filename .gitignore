@@ -8,3 +8,4 @@ dist
 .idea
 src/assets/img/
 src/assets/fonts/
+yarn.lock

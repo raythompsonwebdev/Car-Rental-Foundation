@@ -15,13 +15,16 @@ pagetitle: Contact
         </p>
         <br /><br />
 
-        <form id="contact_form">
+        <form id="contact_form" data-abide novalidate>
           <div class="grid-x">
             <div class="large-4 medium-4 small-4 cell">
               <label for="Name">Name</label>
             </div>
             <div class="large-12 medium-12 small-12 cell">
-              <input type="text" required pattern="[a-zA-Z]+" />
+              <input type="text" required pattern="string+" />
+              <span class="form-error"
+                >Hey, you had better fill this out, it's required.</span
+              >
             </div>
           </div>
 
@@ -31,6 +34,9 @@ pagetitle: Contact
             </div>
             <div class="large-12 medium-12 small-12 cell">
               <input type="text" required pattern="email" />
+              <span class="form-error"
+                >Yo, you had better fill this out, it's required.</span
+              >
             </div>
           </div>
 
@@ -39,14 +45,19 @@ pagetitle: Contact
               <label for="Message">Message</label>
             </div>
             <div class="large-12 medium-12 small-12 cell">
-              <textarea col="10" rows="7" pattern="[0-9][a-zA-Z]"></textarea>
+              <textarea col="10" rows="7"></textarea>
             </div>
           </div>
           <br />
           <div class="grid-x">
             <div class="large-2 medium-2 small-2 cell"></div>
             <div class="large-12 medium-12 small-12 cell">
-              <input type="submit" class="button" value="Send" />
+              <input
+                type="submit"
+                class="button"
+                value="Send"
+                data-form-error-on="pattern"
+              />
             </div>
           </div>
         </form>

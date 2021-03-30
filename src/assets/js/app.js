@@ -16,4 +16,4 @@ import "./lib/foundation-explicit-pieces";
 $(document).foundation();
 
 var elem = new Foundation.ResponsiveMenu("#primary_nav");
-//$("#primary_nav").foundation("toggleMenu");
+//$("#primary_nav").foundation("toggle");
