@@ -123,7 +123,6 @@ html[xmlns] .clearfix {
   #wrapper {
     height: auto;
     width: 85%;
-    padding-top: 1%;
     font-family: ($fontStyle);
     margin: 0 auto;
     min-height: 900px;
@@ -734,26 +733,25 @@ html[xmlns] .clearfix {
         /*left Column*/
         .cars_box {
           width: 100%;
-          margin-bottom: 1.5em;
-          height: 200px;
+
           .media-object-section {
             display: block;
             width: 50%;
             flex: 0 0 auto;
             .cars_box_img {
               margin: 0 auto;
-              width: auto;
-              padding: 0%;
+              padding: 0;
               display: block;
             }
 
             .car-icons-box {
+              display: flex;
+              justify-content: space-between;
+              width: 68%;
               height: 35px;
-
               .car-icons {
-                width: auto;
-                display: inline-block;
                 height: auto;
+                margin-right: 0.25em;
               }
             }
 
@@ -1106,9 +1104,8 @@ html[xmlns] .clearfix {
       @include gradient($color17a, $color17b);
 
       .newsletter {
-        width: 94%;
-        margin: 0 auto;
-        padding: 0.5em;
+        width: 96%;
+        margin: 0.5em auto;
 
         input[type="text"] {
           width: 100%;
@@ -1509,7 +1506,7 @@ html[xmlns] .clearfix {
           .media-object-section {
             display: block;
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .cars_box_txt {
@@ -1662,7 +1659,7 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 1rem;
+        padding: 0.5em;
         .card_image {
           margin: 1% auto;
         }
@@ -1704,23 +1701,7 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        margin: 0 auto;
-
-        input[type="text"] {
-          width: 100%;
-          line-height: 30px;
-        }
-        input[type="email"] {
-          width: 100%;
-          line-height: 30px;
-        }
-        input[type="submit"] {
-          width: 55.37931%;
-          line-height: 35px;
-          &:hover {
-            font-weight: bold;
-          }
-        }
+        margin: 0.5em auto;
       }
     }
 
@@ -2073,7 +2054,7 @@ html[xmlns] .clearfix {
           .media-object-section {
             display: block;
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -2226,7 +2207,7 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 1rem;
+        padding: 0.45em;
         .card_image {
           margin: 1% auto;
         }
@@ -2265,16 +2246,6 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          width: 100%;
-          line-height: 30px;
-        }
-        input[type="email"] {
-          width: 100%;
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 55.37931%;
           line-height: 35px;
@@ -2628,7 +2599,7 @@ html[xmlns] .clearfix {
           .media-object-section {
             display: block;
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -2784,7 +2755,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 1rem;
         .card_image {
           margin: 1% auto;
         }
@@ -2825,19 +2795,8 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          width: 100%;
-          line-height: 30px;
-        }
-        input[type="email"] {
-          width: 100%;
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 65.37931%;
-          line-height: 35px;
           &:hover {
             font-weight: bold;
           }
@@ -3190,7 +3149,7 @@ html[xmlns] .clearfix {
           .media-object-section {
             display: block;
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -3343,7 +3302,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 1rem;
         .card_image {
           margin: 1% auto;
         }
@@ -3374,7 +3332,7 @@ html[xmlns] .clearfix {
 
     #newsletter {
       h2 {
-        font-size: 1.1em;
+        font-size: 1em;
       }
       p {
         font-size: 0.65em;
@@ -3382,17 +3340,9 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        margin: 0 auto;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 75.379%;
-          line-height: 35px;
+
           &:hover {
             font-weight: bold;
           }
@@ -3745,7 +3695,7 @@ html[xmlns] .clearfix {
           .media-object-section {
             display: block;
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -3898,7 +3848,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 0.5rem;
         .card_image {
           margin: 1% auto;
         }
@@ -3939,17 +3888,8 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 85.379%;
-          line-height: 35px;
           font-size: 0.9em;
           &:hover {
             font-weight: bold;
@@ -4300,7 +4240,7 @@ html[xmlns] .clearfix {
             display: block;
 
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -4455,7 +4395,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 0.5rem;
         .card_image {
           margin: 1% auto;
         }
@@ -4496,18 +4435,8 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 85.379%;
-          line-height: 35px;
-          font-size: 0.9em;
           &:hover {
             font-weight: bold;
           }
@@ -4641,9 +4570,11 @@ html[xmlns] .clearfix {
 
       .top-bar {
         height: 60px;
+        z-index: 999;
 
         .top-bar-left {
           width: 25%;
+          z-index: 999;
         }
 
         .title-area {
@@ -4664,6 +4595,9 @@ html[xmlns] .clearfix {
         /*primary nav*/
         #primary_nav {
           width: 100%;
+          height: auto;
+          float: none;
+          z-index: 1;
 
           ul {
             height: auto;
@@ -4868,7 +4802,7 @@ html[xmlns] .clearfix {
             display: block;
 
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -5020,7 +4954,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 0.5rem;
         .card_image {
           margin: 1% auto;
         }
@@ -5059,18 +4992,8 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 85.379%;
-          line-height: 35px;
-          font-size: 0.9em;
           &:hover {
             font-weight: bold;
           }
@@ -5424,11 +5347,7 @@ html[xmlns] .clearfix {
             display: block;
 
             .cars_box_img {
-              width: auto;
-              img {
-                margin: 0 auto;
-                width: 90%;
-              }
+              padding: 0;
             }
 
             .carsbutton {
@@ -5589,7 +5508,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 0.5rem;
         .card_image {
           margin: 1% auto;
         }
@@ -5628,18 +5546,8 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 65.379%;
-          line-height: 35px;
-          font-size: 0.9em;
           &:hover {
             font-weight: bold;
           }
@@ -5991,7 +5899,7 @@ html[xmlns] .clearfix {
             display: block;
 
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -6147,7 +6055,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 0.5rem;
         .card_image {
           margin: 1% auto;
         }
@@ -6186,18 +6093,9 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 65.379%;
-          line-height: 35px;
-          font-size: 0.9em;
+
           &:hover {
             font-weight: bold;
           }
@@ -6537,7 +6435,7 @@ html[xmlns] .clearfix {
             display: block;
 
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -6688,7 +6586,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 0.5rem;
         .card_image {
           margin: 1% auto;
         }
@@ -6727,18 +6624,9 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 65.379%;
-          line-height: 35px;
-          font-size: 0.9em;
+
           &:hover {
             font-weight: bold;
           }
@@ -7084,7 +6972,7 @@ html[xmlns] .clearfix {
             display: block;
 
             .cars_box_img {
-              height: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -7244,7 +7132,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 0.5rem;
         .card_image {
           margin: 1% auto;
         }
@@ -7283,18 +7170,9 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 65.379%;
-          line-height: 35px;
-          font-size: 0.9em;
+
           &:hover {
             font-weight: bold;
           }
@@ -7647,7 +7525,7 @@ html[xmlns] .clearfix {
             display: block;
 
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -7799,7 +7677,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 0.5rem;
         .card_image {
           margin: 1% auto;
         }
@@ -7840,20 +7717,9 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          line-height: 30px;
-          height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-          height: 30px;
-        }
         input[type="submit"] {
           width: 65.379%;
-          line-height: 35px;
-          font-size: 0.9em;
+
           &:hover {
             font-weight: bold;
           }
@@ -8210,7 +8076,7 @@ html[xmlns] .clearfix {
             display: block;
 
             .cars_box_img {
-              width: auto;
+              padding: 0;
             }
 
             .carsbutton {
@@ -8361,7 +8227,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 0.5rem;
         .card_image {
           margin: 1% auto;
         }
@@ -8400,17 +8265,9 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
         input[type="submit"] {
           width: 65.379%;
-          font-size: 0.9em;
+
           &:hover {
             font-weight: bold;
           }
@@ -8758,7 +8615,7 @@ html[xmlns] .clearfix {
         /*left Column*/
         .cars_box {
           .cars_box_img {
-            width: auto;
+            padding: 0;
           }
 
           .carsbutton {
@@ -8908,7 +8765,6 @@ html[xmlns] .clearfix {
       }
 
       .card-section {
-        padding: 0.5em 0.5rem;
         .card_image {
           margin: 1% auto;
         }
@@ -8947,14 +8803,6 @@ html[xmlns] .clearfix {
 
       @include gradient($color17a, $color17b);
       .newsletter {
-        width: 94%;
-
-        input[type="text"] {
-          line-height: 30px;
-        }
-        input[type="email"] {
-          line-height: 30px;
-        }
         input[type="submit"] {
           font-size: 0.9em;
           &:hover {
