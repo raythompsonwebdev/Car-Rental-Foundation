@@ -742,11 +742,12 @@ html[xmlns] .clearfix {
               margin: 0 auto;
               padding: 0;
               display: block;
+              width: 55%;
             }
 
             .car-icons-box {
               display: flex;
-              justify-content: space-between;
+
               width: 68%;
               height: 35px;
               .car-icons {
@@ -1104,16 +1105,16 @@ html[xmlns] .clearfix {
       @include gradient($color17a, $color17b);
 
       .newsletter {
-        width: 96%;
+        width: 92%;
         margin: 0.5em auto;
 
         input[type="text"] {
           width: 100%;
-          line-height: 30px;
+          line-height: 25px;
         }
         input[type="email"] {
           width: 100%;
-          line-height: 30px;
+          line-height: 25px;
         }
         input[type="submit"] {
           margin: 0;
@@ -2055,6 +2056,7 @@ html[xmlns] .clearfix {
             display: block;
             .cars_box_img {
               padding: 0;
+              width: 60%;
             }
 
             .carsbutton {
@@ -3150,6 +3152,7 @@ html[xmlns] .clearfix {
             display: block;
             .cars_box_img {
               padding: 0;
+              width: 65%;
             }
 
             .carsbutton {
@@ -3696,6 +3699,7 @@ html[xmlns] .clearfix {
             display: block;
             .cars_box_img {
               padding: 0;
+              width: 85%;
             }
 
             .carsbutton {
@@ -3929,6 +3933,7 @@ html[xmlns] .clearfix {
     section#quoteform {
       left: 33%;
       width: 63%;
+      top: 65px;
 
       h1#quoteform-title {
         font-size: 1.6em;
@@ -4241,6 +4246,7 @@ html[xmlns] .clearfix {
 
             .cars_box_img {
               padding: 0;
+              width: 100%;
             }
 
             .carsbutton {
